@@ -5,37 +5,37 @@
           <ul>
             <li>
               <a href="index.html"
-                ><img src="assets/images/home.svg" alt="" />
+                ><img src="<?=$base;?>/assets/images/home.svg" alt="" />
                 <div>Feed</div></a
               >
             </li>
             <li>
               <a href="perfil.html"
-                ><img src="assets/images/perfil.svg" alt="" />
+                ><img src="<?=$base;?>/assets/images/perfil.svg" alt="" />
                 <div>Perfil</div></a
               >
             </li>
             <li>
               <a href="notificacoes.html"
-                ><img src="assets/images/sino.svg" alt="" />
+                ><img src="<?=$base;?>/assets/images/sino.svg" alt="" />
                 <div>Notificações</div></a
               >
             </li>
             <li>
               <a href="comunidade.html"
-                ><img src="assets/images/comunidade.svg" alt="" />
+                ><img src="<?=$base;?>/assets/images/comunidade.svg" alt="" />
                 <div>Comunidade</div></a
               >
             </li>
             <li>
               <a href="mapa.html">
-                <img src="assets/images/ponteiro.svg" alt="" />
+                <img src="<?=$base;?>/assets/images/ponteiro.svg" alt="" />
                 <div>Mapa de Problemas</div></a
               >
             </li>
             <li>
               <a href="prefeitos.html"
-                ><img src="assets/images/tribunal.svg" alt="" />
+                ><img src="<?=$base;?>/assets/images/tribunal.svg" alt="" />
                 <div>Prefeitos</div></a
               >
             </li>
@@ -47,19 +47,19 @@
           <ul>
             <li>
               <a href="#"
-                ><img src="assets/images/lua.svg" alt="" />
+                ><img src="<?=$base;?>/assets/images/lua.svg" alt="" />
                 <div>Tema</div></a
               >
             </li>
             <li>
               <a href="ajuda.html"
-                ><img src="assets/images/ajuda.svg" alt="" />
+                ><img src="<?=$base;?>/assets/images/ajuda.svg" alt="" />
                 <div>Ajuda</div></a
               >
             </li>
             <li>
               <a href="config.html"
-                ><img src="assets/images/config.svg" alt="" />
+                ><img src="<?=$base;?>/assets/images/config.svg" alt="" />
                 <div>Configurações</div></a
               >
             </li>
@@ -67,7 +67,7 @@
           <div id="perfil-area">
             <a href="perfil.html">
               <figure id="perfil-area-img">
-                <img src="assets/images/bernardo.png" alt="" />
+                <img src="<?=$base;?>/assets/images/bernardo.png" alt="" />
               </figure>
               <div id="perfil-area-info">
                 <h2>Bernardo Cota</h2>
@@ -84,30 +84,30 @@
     <header>
       <div class="header-content">
         <div id="pesquisa">
-          <img src="assets/images/pesquisa.svg" alt="" />
+          <img src="<?=$base;?>/assets/images/pesquisa.svg" alt="" />
           <div class="linha-vertical"></div>
           <input type="text" placeholder="Pesquisar" />
         </div>
         <div id="header-buttons">
           <div id="notificacoes">
-            <img src="assets/images/sino_vazio.svg" alt="" />
+            <img src="<?=$base;?>/assets/images/sino_vazio.svg" alt="" />
             <div id="notificacoes-qtd"></div>
           </div>
           <div id="config">
-            <img src="assets/images/config.svg" alt="" />
+            <img src="<?=$base;?>/assets/images/config.svg" alt="" />
           </div>
         </div>
       </div>
       <!-- ESSE HEADER SÓ APARECE NO MOBILE -->
       <div class="header-content mobile">
-        <img src="assets/images/bernardo.png" alt="" id="perfil-mobile" />
-        <img src="assets/images/logo_padrao.svg" alt="" id="logo-mobile" />
+        <img src="<?=$base;?>/assets/images/bernardo.png" alt="" id="perfil-mobile" />
+        <img src="<?=$base;?>/assets/images/logo_padrao.svg" alt="" id="logo-mobile" />
         <div id="header-buttons-mobile">
           <div id="pesquisa-mobile">
-            <img src="assets/images/pesquisa_mobile.svg" alt="" />
+            <img src="<?=$base;?>/assets/images/pesquisa_mobile.svg" alt="" />
           </div>
           <div id="notificacoes-mobile">
-            <img src="assets/images/chat.svg" alt="" />
+            <img src="<?=$base;?>/assets/images/chat.svg" alt="" />
           </div>
         </div>
       </div>
@@ -134,7 +134,7 @@
                   <h4>Falta de água em Nilópolis</h4>
                   <p>Mais reclamado em: <span>Nilópolis</span></p>
                 </div>
-                <img src="assets/images/emalta.png" alt="" />
+                <img src="<?=$base;?>/assets/images/emalta.png" alt="" />
               </div>
               <div class="linha-em-alta-card"></div>
             </div>
@@ -146,7 +146,7 @@
                   <h4>Falta de água em Nilópolis</h4>
                   <p>Mais reclamado em: <span>Nilópolis</span></p>
                 </div>
-                <img src="assets/images/emalta.png" alt="" />
+                <img src="<?=$base;?>/assets/images/emalta.png" alt="" />
               </div>
               <div class="linha-em-alta-card"></div>
             </div>
@@ -158,7 +158,7 @@
                   <h4>Falta de água em Nilópolis</h4>
                   <p>Mais reclamado em: <span>Nilópolis</span></p>
                 </div>
-                <img src="assets/images/emalta.png" alt="" />
+                <img src="<?=$base;?>/assets/images/emalta.png" alt="" />
               </div>
               <div class="linha-em-alta-card"></div>
             </div>
@@ -168,7 +168,7 @@
           <h3>Sugestões para seguir:</h3>
           <div class="linha-em-alta"></div>
           <div class="sugestoes-card">
-            <img src="assets/images/cidade.png" alt="" />
+            <img src="<?=$base;?>/assets/images/cidade.png" alt="" />
             <div class="sugestoes-card-content">
               <h4>Nova Iguaçu</h4>
               <p>21,2 mil membros</p>
@@ -176,7 +176,7 @@
             <a href="#">Juntar-se</a>
           </div>
           <div class="sugestoes-card">
-            <img src="assets/images/cidade.png" alt="" />
+            <img src="<?=$base;?>/assets/images/cidade.png" alt="" />
             <div class="sugestoes-card-content">
               <h4>Nova Iguaçu</h4>
               <p>21,2 mil membros</p>
@@ -184,7 +184,7 @@
             <a href="#">Juntar-se</a>
           </div>
           <div class="sugestoes-card">
-            <img src="assets/images/cidade.png" alt="" />
+            <img src="<?=$base;?>/assets/images/cidade.png" alt="" />
             <div class="sugestoes-card-content">
               <h4>Nova Iguaçu</h4>
               <p>21,2 mil membros</p>

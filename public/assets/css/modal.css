@@ -1,0 +1,177 @@
+.modal-nova-reclamacao-x {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: 9999;
+  display: none;
+  align-items: center;
+  justify-content: center;
+  background: rgba(21, 32, 43, 0.65);
+  transition: background 0.2s;
+}
+.modal-nova-reclamacao-x.active {
+  display: flex;
+}
+.modal-nova-reclamacao-x-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: transparent;
+}
+.modal-nova-reclamacao-x-content {
+  position: relative;
+  background: #15202b;
+  color: #fff;
+  border-radius: 18px;
+  box-shadow: 0 0 32px 0 rgba(0, 0, 0, 0.25);
+  width: 600px;
+  max-width: 95vw;
+  padding: 0 0 8px 0;
+  display: flex;
+  flex-direction: column;
+  animation: modalFadeIn 0.25s cubic-bezier(0.4, 0, 0.2, 1);
+}
+@keyframes modalFadeIn {
+  from {
+    transform: scale(0.97) translateY(30px);
+    opacity: 0;
+  }
+  to {
+    transform: scale(1) translateY(0);
+    opacity: 1;
+  }
+}
+.modal-nova-reclamacao-x-close {
+  position: absolute;
+  top: 12px;
+  left: 12px;
+  background: none;
+  border: none;
+  color: #fff;
+  font-size: 2rem;
+  cursor: pointer;
+  z-index: 2;
+  border-radius: 50%;
+  width: 40px;
+  height: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: background 0.15s;
+}
+.modal-nova-reclamacao-x-close:hover {
+  background: rgba(29, 161, 242, 0.12);
+}
+.modal-nova-reclamacao-x-header {
+  display: flex;
+  align-items: flex-start;
+  gap: 12px;
+  padding: 20px 24px 0 24px;
+}
+.modal-nova-reclamacao-x-avatar {
+  width: 48px;
+  height: 48px;
+  border-radius: 50%;
+  object-fit: cover;
+}
+.modal-nova-reclamacao-x-placeholder {
+  color: #8899a6;
+  font-size: 1.25rem;
+  position: absolute;
+  left: 84px;
+  top: 32px;
+  pointer-events: none;
+  transition: opacity 0.2s;
+  opacity: 1;
+}
+#modal-nova-reclamacao-x-textarea {
+  background: transparent;
+  border: none;
+  color: #fff;
+  font-size: 1.25rem;
+  resize: none;
+  width: 100%;
+  min-height: 80px;
+  max-height: 220px;
+  outline: none;
+  padding: 0 24px 0 84px;
+  margin-top: -8px;
+  margin-bottom: 8px;
+  font-family: inherit;
+}
+.modal-nova-reclamacao-x-footer {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 24px 8px 84px;
+  min-height: 48px;
+}
+.modal-nova-reclamacao-x-icons {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+.modal-nova-reclamacao-x-icon-btn {
+  background: none;
+  border: none;
+  padding: 4px;
+  border-radius: 50%;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: background 0.15s;
+}
+.modal-nova-reclamacao-x-icon-btn:enabled:hover {
+  background: rgba(29, 161, 242, 0.12);
+}
+.modal-nova-reclamacao-x-postar {
+  background: #1da1f2;
+  color: #fff;
+  border: none;
+  border-radius: 999px;
+  font-weight: bold;
+  font-size: 1rem;
+  padding: 8px 22px;
+  cursor: pointer;
+  transition: background 0.15s;
+  opacity: 0.7;
+}
+.modal-nova-reclamacao-x-postar:enabled {
+  opacity: 1;
+}
+.modal-nova-reclamacao-x-postar:active {
+  background: #1577b3;
+}
+.modal-nova-reclamacao-x-img-preview {
+  display: flex;
+  justify-content: flex-start;
+  padding-left: 84px;
+  padding-bottom: 8px;
+}
+.modal-nova-reclamacao-x-img-preview img {
+  width: 280px;
+  height: 280px;
+  object-fit: cover;
+  border-radius: 18px;
+  margin-top: 8px;
+  box-shadow: 0 2px 12px 0 rgba(0, 0, 0, 0.1);
+  border: 1px solid #22303c;
+}
+@media (max-width: 700px) {
+  .modal-nova-reclamacao-x-content {
+    width: 98vw;
+    min-width: 0;
+    padding: 0 0 8px 0;
+  }
+  .modal-nova-reclamacao-x-img-preview img {
+    width: 90vw;
+    height: auto;
+    max-width: 320px;
+    max-height: 320px;
+  }
+}
