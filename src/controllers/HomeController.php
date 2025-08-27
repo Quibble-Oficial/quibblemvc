@@ -16,7 +16,12 @@ class HomeController extends Controller {
     public function sobreP($args) {
         print_r($args);
     }
+
     public function sobreA($args) {
+        print_r($args);
+    }
+
+    public function sobreBERNARDO($args) {
         print_r($args);
     }
 
