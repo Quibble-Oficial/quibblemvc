@@ -1,0 +1,138 @@
+/* Hovers animados nos botões da sidebar esquerda */
+
+aside nav ul li a {
+  position: relative;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  transition: color 0.25s cubic-bezier(.4,1.6,.6,1);
+  z-index: 1;
+}
+aside nav ul li a::before {
+  content: '';
+  position: absolute;
+  left: -12px;
+  top: 50%;
+  transform: translateY(-50%) scaleY(0.2);
+  width: 6px;
+  height: 32px;
+  border-radius: 8px;
+  background: var(--amarelo-secundario);
+  opacity: 0;
+  transition: opacity 0.3s, transform 0.3s;
+  z-index: 0;
+}
+aside nav ul li a:hover,
+aside nav ul li a:focus {
+  color: var(--amarelo-secundario);
+}
+aside nav ul li a:hover::before,
+aside nav ul li a:focus::before {
+  opacity: 1;
+  transform: translateY(-50%) scaleY(1);
+}
+aside nav ul li a img {
+  transition: filter 0.3s, transform 0.3s;
+}
+aside nav ul li a:hover img,
+aside nav ul li a:focus img {
+  filter: drop-shadow(0 0 6px var(--amarelo-secundario));
+  transform: scale(1.08) rotate(-3deg);
+}
+
+/* Hover animado para botão de configuração e notificação (header) */
+#notificacoes, #config {
+  transition: transform 0.22s cubic-bezier(.4,1.6,.6,1), box-shadow 0.22s;
+  border-radius: 50%;
+  cursor: pointer;
+  position: relative;
+}
+#notificacoes:hover, #config:hover {
+  transform: scale(1.13) rotate(-6deg);
+  box-shadow: 0 2px 12px 0 rgba(222, 162, 42, 0.18);
+  background: var(--amarelo-secundario);
+}
+#notificacoes img, #config img {
+  transition: filter 0.22s, transform 0.22s;
+}
+#notificacoes:hover img, #config:hover img {
+  filter: drop-shadow(0 0 8px var(--amarelo-secundario));
+  transform: scale(1.12) rotate(6deg);
+}
+/* Fundo animado com gradiente e partículas suaves, respeitando a paleta */
+#bg-animado {
+  position: fixed;
+  top: 0; left: 0; width: 100vw; height: 100vh;
+  z-index: 0;
+  pointer-events: none;
+  background: radial-gradient(circle at 70% 30%, var(--azul-primario-claro) 0%, transparent 60%),
+              radial-gradient(circle at 20% 80%, var(--amarelo-sec-light) 0%, transparent 70%),
+              linear-gradient(120deg, var(--azul-primario-claromais) 0%, var(--branco) 100%);
+  opacity: 0.13;
+  animation: bgMove 18s ease-in-out infinite alternate;
+}
+
+@keyframes bgMove {
+  0% { background-position: 70% 30%, 20% 80%, 0% 0%; }
+  100% { background-position: 60% 40%, 30% 70%, 100% 100%; }
+}
+
+/* Animação de hover nos cards do feed */
+.feed-card {
+  transition: box-shadow 0.3s, transform 0.3s;
+  box-shadow: 0 2px 12px 0 rgba(43, 114, 223, 0.07);
+  position: relative;
+  z-index: 1;
+}
+.feed-card:hover {
+  box-shadow: 0 8px 32px 0 rgba(43, 114, 223, 0.18), 0 1.5px 0 0 var(--amarelo-secundario);
+  transform: translateY(-6px) scale(1.025) rotate(-0.5deg);
+}
+
+/* Efeito de brilho animado no botão Nova Reclamação */
+aside button {
+  position: relative;
+  overflow: hidden;
+  
+  color: var(--branco);
+  font-weight: 700;
+  box-shadow: 0 2px 8px 0 rgba(43, 114, 223, 0.13);
+  transition: background 0.4s;
+}
+aside button::after {
+  content: '';
+  position: absolute;
+  left: -60%;
+  top: 0;
+  width: 60%;
+  height: 100%;
+  background: linear-gradient(120deg, rgba(255,255,255,0.18) 0%, rgba(255,255,255,0.0) 100%);
+  transform: skewX(-18deg);
+  transition: left 0.7s cubic-bezier(.4,1.6,.6,1);
+}
+aside button:hover::after {
+  left: 120%;
+}
+
+/* Animação de entrada dos cards do feed (Anime.js cuida, mas fallback para quem não tem JS) */
+.feed-card {
+  opacity: 0;
+  transform: scale(0.8);
+  animation: feedCardIn 1.2s cubic-bezier(.22,1.2,.36,1) forwards;
+  animation-delay: 0.7s;
+}
+@keyframes feedCardIn {
+  to {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+
+/* Efeito de "pulse" nos ícones de notificação */
+#notificacoes img, #notificacoes-mobile img {
+  animation: pulseNotificacao 2.2s infinite cubic-bezier(.4,0,.6,1);
+}
+@keyframes pulseNotificacao {
+  0%, 100% { filter: drop-shadow(0 0 0 var(--amarelo-secundario)); }
+  50% { filter: drop-shadow(0 0 8px var(--amarelo-secundario)); }
+}
