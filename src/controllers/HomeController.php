@@ -21,4 +21,8 @@ class HomeController extends Controller {
         $this->render('perfil');
     }
 
+    public function prefeito() {
+        $this->render('prefeito');
+    }
+
 }

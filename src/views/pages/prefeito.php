@@ -4,16 +4,16 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="shortcut icon" href="<?=$base;?>/assets/images/logo_padrao.svg" type="image/x-icon">
-    <title>Quibble - Perfil</title>
-    <link rel="stylesheet" href="<?=$base;?>/assets/css/perfil.css">
-    <link rel="stylesheet" href="<?=$base;?>/assets/js/animacoes.css">
+    <link rel="shortcut icon" href="<?= $base ?>/assets/images/logo_padrao.svg" type="image/x-icon">
+    <title>Quibble - Prefeito</title>
+    <link rel="stylesheet" href="<?= $base ?>/assets/css/prefeito.css">
+    <link rel="stylesheet" href="<?= $base ?>/assets/js/animacoes.css">
     <link href='https://cdn.boxicons.com/fonts/basic/boxicons.min.css' rel='stylesheet'>
     <!-- Anime.js CDN -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/3.2.1/anime.min.js"></script>
 </head>
 
-<body onload="  alternarIcone();juntar();">
+<body onload=" alternarIcone();juntar();">
 
     <!-- ANIMAÇÃO DE ENTRADA DO LOGO -->
     <script>
@@ -55,7 +55,7 @@
         });
     </script>
 
-    <?php $render('aside')?>
+    <?php $render('aside'); ?>
 
     <div class="perfil-noticias">
         <main>
@@ -65,14 +65,52 @@
                     <div class="foto-seguir">
                         <div class="descricao">
                             <div class="foto-perfil-central">
-                                <img src="<?=$base;?>/assets/images/foto_perfil_central.png" alt="">
+                                <img src="<?= $base ?>/assets/images/eduardopaes.jpg" alt="">
                             </div>
                             <div id="descricao-perfil">
                                 <div class="nome-recado">
                                     <div class="nome-selo">
-                                        <h1>Bernardo Cota</h1>
+                                        <h1>Eduardo Paes</h1>
+                                        <div class="selo-verificado">
+                                            <img src="<?= $base ?>/assets/icons/seloverificado.svg" alt="">
+                                        </div>
                                     </div>
-                                    <span>Aluno, morador de Anchieta</span>
+                                    <span>Prefeito da cidade do <a href="">Rio de Janeiro</a></span>
+                                </div>
+                            </div>
+                            <div class="avaliacao-geral">
+                                <div class="estrelas">
+                                    <i class='bxr  bxs-star' style='color:#DEA22A'></i>
+                                </div>
+                                <div class="estrelas">
+                                    <i class='bxr  bxs-star' style='color:#DEA22A'></i>
+                                </div>
+                                <div class="estrelas">
+                                    <i class='bxr  bxs-star' style='color:#DEA22A'></i>
+                                </div>
+                                <div class="estrelas">
+                                    <i class='bxr  bxs-star' style='color:#DEA22A'></i>
+                                </div>
+
+                                <div class="estrelas">
+                                    <i class='bxr  bxs-star-half' style='color:#DEA22A'></i>
+                                </div>
+                            </div>
+                            <div class="avaliacao-sistema">
+                                <div class="estrelas">
+                                    <i class='bxr  bxs-star' style='color:#2B72DF'></i>
+                                </div>
+                                <div class="estrelas">
+                                    <i class='bxr  bxs-star' style='color:#2B72DF'></i>
+                                </div>
+                                <div class="estrelas">
+                                    <i class='bxr  bxs-star' style='color:#2B72DF'></i>
+                                </div>
+                                <div class="estrelas">
+                                    <i class='bxr  bxs-star' style='color:#2B72DF'></i>
+                                </div>
+                                <div class="estrelas">
+                                    <i class='bxr  bxs-star-half' style='color:#2B72DF'></i>
                                 </div>
                             </div>
                             <div class="informacoes">
@@ -98,7 +136,7 @@
                     <ul>
                         <li><a href="">Reclamações <span id="texto-adc">Recentes</span></a></li>
                         <li id="selecionado"><a href="">Upvotes</a></li>
-                        <li><a href="<?=$base;?>/prefeito">Comunidades</a></li>
+                        <li><a href="comunidade.html">Comunidades</a></li>
                     </ul>
                 </div>
                 <div id="feed">
@@ -106,22 +144,22 @@
                         <div class="feed-card">
                             <div class="feed-card-content-feedback mobile">
                                 <div class="feedback-upvote">
-                                    <img src="<?=$base;?>/assets/images/upvote.svg" alt="">
+                                    <img src="<?= $base ?>/assets/images/upvote.svg" alt="">
                                     2,5 mil
                                 </div>
                                 <div class="feedback-comment">
-                                    <img src="<?=$base;?>/assets/images/comentario.svg" alt="">
+                                    <img src="<?= $base ?>/assets/images/comentario.svg" alt="">
                                     194
                                 </div>
                                 <div class="feedback-share">
-                                    <img src="<?=$base;?>/assets/images/compartilhar.svg" alt="">
+                                    <img src="<?= $base ?>/assets/images/compartilhar.svg" alt="">
                                     Compartilhar
                                 </div>
                             </div>
-                            <img src="<?=$base;?>/assets/images/feed.png" alt="">
+                            <img src="<?= $base ?>/assets/images/feed.png" alt="">
                             <div class="feed-card-content">
                                 <div class="feed-card-content-text">
-                                    <img src="<?=$base;?>/assets/images/bernardo.png" alt="">
+                                    <img src="<?= $base ?>/assets/images/bernardo.png" alt="">
                                     <div class="feed-card-content-text-area">
                                         <h5>Bernardo Cota</h5>
                                         <p>Buraco em Rua A tá atrapalhando a passagem da população, completo descaso com o trabalhador...</p>
@@ -129,15 +167,15 @@
                                 </div>
                                 <div class="feed-card-content-feedback">
                                     <div class="feedback-upvote">
-                                        <img src="<?=$base;?>/assets/images/upvote.svg" alt="">
+                                        <img src="<?= $base ?>/assets/images/upvote.svg" alt="">
                                         2,5 mil
                                     </div>
                                     <div class="feedback-comment">
-                                        <img src="<?=$base;?>/assets/images/comentario.svg" alt="">
+                                        <img src="<?= $base ?>/assets/images/comentario.svg" alt="">
                                         194
                                     </div>
                                     <div class="feedback-share">
-                                        <img src="<?=$base;?>/assets/images/compartilhar.svg" alt="">
+                                        <img src="<?= $base ?>/assets/images/compartilhar.svg" alt="">
                                         Compartilhar
                                     </div>
                                 </div>
@@ -146,9 +184,8 @@
         </main>
     </div>
 
-    <?php $render("footer-mobile");?>
-    
-    <script src="<?=$base;?>/assets/js/script.js"></script>
+    <?php $render("footer-mobile"); ?>
+    <script src="<?= $base ?>/assets/js/script.js"></script>
 </body>
 
 </html>
