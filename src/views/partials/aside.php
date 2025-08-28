@@ -88,7 +88,7 @@
           <img src="<?= $base; ?>/assets/images/sino_vazio.svg" alt="" />
           <div id="notificacoes-qtd"></div>
         </div>
-        <div id="notification-dropdown" class="notification-dropdown">
+        <div id="notification-dropdown" class="notification-dropdown" style="display: none;">
           <div id="fechar-dropdown">
             <img src="<?= $base; ?>/assets/images/sino_vazio.svg" alt="">
           </div>
