@@ -53,5 +53,6 @@
     <!-- CSS do modal -->
     <link rel="stylesheet" href="<?=$base;?>/assets/js/modal-nova-reclamacao.css" />
     <script src="<?=$base;?>/assets/js/modal-nova-reclamacao.js"></script>
+    <script src="<?=$base;?>/assets/js/notificacoes.js"></script>
   </body>
 </html>
