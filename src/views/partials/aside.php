@@ -16,7 +16,7 @@
               >
             </li>
             <li>
-              <a href="notificacoes.html"
+              <a href="<?=$base;?>/notificacoes"
                 ><img src="<?=$base;?>/assets/images/sino.svg" alt="" />
                 <div>Notificações</div></a
               >
@@ -122,6 +122,7 @@
 
     <!-- SUGESTÕES (DIREITA) -->
 
+    <?php if(!isset($mostrarsugestoes) || $mostrarsugestoes): ?>
     <div id="sugestoes">
       <div id="sugestoes-content">
         <div id="em-alta">
@@ -194,3 +195,4 @@
         </div>
       </div>
     </div>
+    <?php endif; ?>

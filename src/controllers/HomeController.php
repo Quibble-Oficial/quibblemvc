@@ -25,4 +25,8 @@ class HomeController extends Controller {
         $this->render('prefeito');
     }
 
+    public function notificacoes() {
+        $this->render('notificacoes');
+    }
+
 }
