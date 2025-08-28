@@ -22,7 +22,7 @@
               >
             </li>
             <li>
-              <a href="comunidade.html"
+              <a href="<?=$base;?>/comunidade"
                 ><img src="<?=$base;?>/assets/images/comunidade.svg" alt="" />
                 <div>Comunidade</div></a
               >

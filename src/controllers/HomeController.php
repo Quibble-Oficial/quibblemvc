@@ -29,4 +29,8 @@ class HomeController extends Controller {
         $this->render('notificacoes');
     }
 
+    public function comunidade() {
+        $this->render('comunidade');
+    }
+
 }

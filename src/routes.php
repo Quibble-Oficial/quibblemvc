@@ -9,3 +9,4 @@ $router->get('/sobre', 'HomeController@sobre');
 $router->get('/perfil', 'HomeController@perfil');
 $router->get('/prefeito', 'HomeController@prefeito');
 $router->get('/notificacoes', 'HomeController@notificacoes');
+$router->get('/comunidade', 'HomeController@comunidade');
