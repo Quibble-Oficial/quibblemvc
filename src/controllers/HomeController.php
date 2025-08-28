@@ -6,7 +6,7 @@ use \core\Controller;
 class HomeController extends Controller {
 
     public function index() {
-        $this->render('home');
+        $this->render('feed');
     }
 
     public function sobre() {
@@ -17,12 +17,8 @@ class HomeController extends Controller {
         print_r($args);
     }
 
-    public function sobreA($args) {
-        print_r($args);
-    }
-
-    public function sobreBERNARDO($args) {
-        print_r($args);
+    public function perfil() {
+        $this->render('perfil');
     }
 
 }

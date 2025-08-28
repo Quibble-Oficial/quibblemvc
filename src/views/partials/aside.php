@@ -4,13 +4,13 @@
         <nav>
           <ul>
             <li>
-              <a href="index.html"
+              <a href="<?=$base;?>/"
                 ><img src="<?=$base;?>/assets/images/home.svg" alt="" />
                 <div>Feed</div></a
               >
             </li>
             <li>
-              <a href="perfil.html"
+              <a href="<?=$base;?>/perfil"
                 ><img src="<?=$base;?>/assets/images/perfil.svg" alt="" />
                 <div>Perfil</div></a
               >
