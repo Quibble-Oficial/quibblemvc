@@ -10,3 +10,7 @@ $router->get('/perfil', 'HomeController@perfil');
 $router->get('/prefeito', 'HomeController@prefeito');
 $router->get('/notificacoes', 'HomeController@notificacoes');
 $router->get('/comunidade', 'HomeController@comunidade');
+
+
+$router->get('/login', 'AuthController@login');
+$router->get('/cadastro', 'AuthController@cadastro');
