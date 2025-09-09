@@ -2,15 +2,26 @@
 namespace src\controllers;
 
 use \core\Controller;
+use \src\handlers\UsuarioHandler;
 
 class HomeController extends Controller {
 
+    private $loggedUser;
+
+    public function __construct() {
+        $this->loggedUser = UsuarioHandler::checkLogin();
+
+        if ($this->loggedUser === false) {
+            $this->redirect('/login');
+        }
+    }
+
     public function index() {
-        $this->render('feed');
+        $this->render('feed', ['loggedUser' => $this->loggedUser]);
     }
 
     public function sobre() {
-        $this->render('sobre');
+        $this->render('sobre', ['loggedUser' => $this->loggedUser]);
     }
 
     public function sobreP($args) {
@@ -18,19 +29,19 @@ class HomeController extends Controller {
     }
 
     public function perfil() {
-        $this->render('perfil');
+        $this->render('perfil', ['loggedUser' => $this->loggedUser]);
     }
 
     public function prefeito() {
-        $this->render('prefeito');
+        $this->render('prefeito', ['loggedUser' => $this->loggedUser]);
     }
 
     public function notificacoes() {
-        $this->render('notificacoes');
+        $this->render('notificacoes', ['loggedUser' => $this->loggedUser]);
     }
 
     public function comunidade() {
-        $this->render('comunidade');
+        $this->render('comunidade', ['loggedUser' => $this->loggedUser]);
     }
 
 }

@@ -24,7 +24,7 @@
     <!-- ANIMAÇÃO DE ENTRADA DO LOGO -->
     <script src="<?=$base?>/assets/js/bloco-comentario.js"></script>
 
-    <?php $render("aside");?>
+    <?php $render("aside", ['usuario' => $loggedUser]);?>
 
     <!-- CONTEÚDO DO MEIO PRINCIPAL -->
     <main>

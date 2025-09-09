@@ -50,6 +50,7 @@ CREATE TABLE Usuarios (
     nome VARCHAR(100) NOT NULL,
     email VARCHAR(150) NOT NULL UNIQUE,
     senha VARCHAR(255) NOT NULL,
+    token VARCHAR(255) NULL,
     tipo_usuario ENUM('administrador','cidadao','prefeito','secretaria') NOT NULL DEFAULT 'cidadao',
     bio TEXT NULL,
     foto_perfil VARCHAR(255) NULL,

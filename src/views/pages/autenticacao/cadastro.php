@@ -3,8 +3,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Tela de login</title>
-    <link rel="stylesheet" href="<?=$base?>/assets/css/login.css">
+    <title>Cadastro - Quibble</title>
+    <link rel="stylesheet" href="<?=$base?>/assets/css/cadastro.css">
     <link rel="shortcut icon" href="<?=$base?>/assets/images/logo_padrao.svg" type="image/x-icon">
 </head>
 <body>
@@ -15,16 +15,16 @@
     <main>
         <section class="b1"> <!--Bloco 1-->
             <div> <!--Cada parte da sessão dividida por divs-->
-                <h1>Faça Login!</h1>
+                <h1>Cadastre-se</h1>
             </div> 
 
             <div>
-                <h2>Não deixe de acessar os nossos serviços</h2>
+                <h2>Para acessar os nossos serviços!</h2>
             </div>
 
             <div>
-                <h3>Se você não tem uma conta</h3>
-                <h3><span><a href="<?=$base?>/cadastro">Cadastre-se!</a></span></h3>
+                <h3>Se você já tem uma conta</h3>
+                <h3>Você pode fazer <span><a href="<?=$base?>/login">Login aqui!</a></span></h3>
             </div>
 
             <div class="imagem">
@@ -36,20 +36,25 @@
 
         <section class="b2"> <!--Bloco 2-->
 
-            <form action="#">
+            <form action="<?=$base?>/cadastro" method="POST">
                  <div class="campos">
-                     <input type="text" name="user" id="user" placeholder="E-mail ou nome de usuário">
+                     <input type="email" name="email" id="email" placeholder="Seu e-mail aqui">
+                     <input type="text" name="nome" id="user" placeholder="Insira seu nome">
 
                      <div class="password-container">
                          <input type="password" name="senha" id="senha" placeholder="Senha">
-                         <img src="<?=$base?>/assets/images/olho_fechado.png" id="togglePassword" alt="Mostrar senha" class="toggle-password"> <!-- Ícone de olho -->
+                         <img src="<?=$base?>/assets/images/olho_fechado.png" id="togglePassword1" alt="Mostrar senha" class="toggle-password"> <!-- Ícone de olho -->
                      </div>
-                     <p><a href="#">Esqueceu a senha?</a></p>
+
+                     <div class="password-container">
+                        <input type="password" name="confirm" id="confirm" placeholder="Confirmar a Senha">
+                        <img src="<?=$base?>/assets/images/olho_fechado.png" id="togglePassword2" alt="Mostrar senha" class="toggle-password"> <!-- Ícone de olho -->
+                     </div>
                  </div> 
                
 
                 <div>
-                    <input type="submit" value="Login">
+                    <input type="submit" value="Cadastrar">
                 </div>
 
                 <p id="meio">ou continue com</p>
@@ -70,6 +75,6 @@
             </form>
         </section>
     </main>
-    <script src="<?=$base?>/assets/js/login.js"></script>
+    <script src="<?=$base?>/assets/js/cadastro.js"></script>
 </body>
 </html>

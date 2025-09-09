@@ -64,7 +64,7 @@
             <img src="<?= $base; ?>/assets/images/bernardo.png" alt="" />
           </figure>
           <div id="perfil-area-info">
-            <h2>Bernardo Cota</h2>
+            <h2><?=$usuario->nome;?></h2>
             <p>RJ - Rio de Janeiro</p>
           </div>
         </a>
