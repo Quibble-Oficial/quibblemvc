@@ -19,3 +19,5 @@ $router->get('/cadastro', 'AuthController@cadastro');
 $router->post('/cadastro', 'AuthController@cadastroAction');
 
 $router->get('/sair', 'AuthController@logout');
+
+$router->post('/reclamacao/nova', 'ReclamacaoController@criarReclamacao');
