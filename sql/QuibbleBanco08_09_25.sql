@@ -125,7 +125,7 @@ CREATE TABLE reclamacoes (
     categoria_id INT UNSIGNED NOT NULL,
     comunidade_id INT UNSIGNED NULL,
     instituicao_id INT UNSIGNED NULL,
-    localizacao_id INT UNSIGNED NOT NULL,
+    localizacao_id INT UNSIGNED NULL,
     titulo VARCHAR(200) NOT NULL,
     descricao TEXT NOT NULL,
     midia VARCHAR(255) NULL,
