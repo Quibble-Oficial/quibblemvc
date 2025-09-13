@@ -22,7 +22,9 @@
         <div class="feed-card-content-text">
             <img src="<?= $base; ?>/assets/images/bernardo.png" alt="" />
             <div class="feed-card-content-text-area">
-                <h5><?= htmlspecialchars($reclamacao['usuario_nome']); ?></h5>
+                <a href="<?= $base; ?>/usuario/<?= $reclamacao['usuario_id']; ?>">
+                    <h5><?= htmlspecialchars($reclamacao['usuario_nome']); ?></h5>
+                </a>
                 <p><?= htmlspecialchars($reclamacao['descricao']); ?></p>
             </div>
         </div>

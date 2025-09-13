@@ -53,6 +53,7 @@ class ReclamacaoHandler
     {
         $reclamacoes = Reclamacoe::select([
             'reclamacoes.reclamacao_id',
+            'reclamacoes.usuario_id', // <-- Adicione esta linha
             'reclamacoes.titulo',
             'reclamacoes.descricao',
             'reclamacoes.midia',
