@@ -9,7 +9,7 @@
           </a>
         </li>
         <li>
-          <a href="<?= $base; ?>/perfil"><img src="<?= $base; ?>/assets/images/perfil.svg" alt="" />
+          <a href="<?= $base; ?>/usuario/<?=$usuario->usuario_id;?>"><img src="<?= $base; ?>/assets/images/perfil.svg" alt="" />
             <div>Perfil</div>
           </a>
         </li>

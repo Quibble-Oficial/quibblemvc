@@ -38,14 +38,22 @@ class HomeController extends Controller
         $this->render('sobre', ['loggedUser' => $this->loggedUser]);
     }
 
-    public function sobreP($args)
+    public function usuario($args)
     {
-        print_r($args);
-    }
+        // pega os dados do usuário com o Id passado na URL
+        $usuario = UsuarioHandler::getUsuarioById($args['id']);
 
-    public function perfil()
-    {
-        $this->render('perfil', ['loggedUser' => $this->loggedUser]);
+        if (!$usuario) {
+            // se não encontrar, pode redirecionar pra home ou 404
+            $this->render('404');
+            return;
+        }
+
+        // renderiza a view do perfil
+        $this->render('usuario', [
+            'loggedUser' => $this->loggedUser,
+            'usuario' => $usuario
+        ]);
     }
 
     public function prefeito()

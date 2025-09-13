@@ -58,4 +58,25 @@ class UsuarioHandler {
 
         return $token;
     }
+
+    public static function getUsuarioById($id)
+    {
+        $data = Usuario::select()->where('usuario_id', $id)->one();
+
+        if ($data) {
+            $usuario = new Usuario();
+            $usuario->usuario_id   = $data['usuario_id'];
+            $usuario->nome         = $data['nome'];
+            $usuario->email        = $data['email'];
+            $usuario->tipo_usuario = $data['tipo_usuario'];
+            $usuario->foto_perfil  = $data['foto_perfil'];
+            $usuario->bio          = $data['bio'] ?? null;
+            $usuario->telefone     = $data['telefone'] ?? null;
+            $usuario->criado_em    = $data['criado_em'];
+
+            return $usuario;
+        }
+
+        return null;
+    }
 }

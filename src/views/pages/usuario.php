@@ -55,7 +55,7 @@
         });
     </script>
 
-    <?php $render('aside')?>
+    <?php $render('aside', ['usuario' => $loggedUser])?>
 
     <div class="perfil-noticias">
         <main>
@@ -70,9 +70,9 @@
                             <div id="descricao-perfil">
                                 <div class="nome-recado">
                                     <div class="nome-selo">
-                                        <h1>Bernardo Cota</h1>
+                                        <h1><?=$usuario->nome;?></h1>
                                     </div>
-                                    <span>Aluno, morador de Anchieta</span>
+                                    <span><?=$usuario->bio;?></span>
                                 </div>
                             </div>
                             <div class="informacoes">
@@ -82,7 +82,7 @@
                                 </div>
                                 <div class="info-adc">
                                     <i class='bx  bxs-calendar-alt'></i>
-                                    <span>Usuário desde outubro 2020</span>
+                                    <span>Usuário desde <?=$usuario->criado_em;?></span>
                                 </div>
                             </div>
                         </div>
