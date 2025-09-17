@@ -55,7 +55,7 @@
         });
     </script>
 
-    <?php $render('aside'); ?>
+    <?php $render('aside', ['usuario' => $loggedUser]); ?>
 
     <div class="perfil-noticias">
         <main>
@@ -70,12 +70,13 @@
                             <div id="descricao-perfil">
                                 <div class="nome-recado">
                                     <div class="nome-selo">
-                                        <h1>Eduardo Paes</h1>
+                                        <h1><?=$usuario->nome;?></h1>
                                         <div class="selo-verificado">
                                             <img src="<?= $base ?>/assets/icons/seloverificado.svg" alt="">
                                         </div>
                                     </div>
                                     <span>Prefeito da cidade do <a href="">Rio de Janeiro</a></span>
+                                    <div><span><?=$usuario->bio;?></span></div>
                                 </div>
                             </div>
                             <div class="avaliacao-geral">
@@ -120,7 +121,7 @@
                                 </div>
                                 <div class="info-adc">
                                     <i class='bx  bxs-calendar-alt'></i>
-                                    <span>Usuário desde outubro 2020</span>
+                                    <span>Usuário desde <?=$usuario->criado_em;?></span>
                                 </div>
                             </div>
                         </div>

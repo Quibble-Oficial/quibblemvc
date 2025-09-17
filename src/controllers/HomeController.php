@@ -56,9 +56,26 @@ class HomeController extends Controller
         ]);
     }
 
-    public function prefeito()
+    public function usuarioPrefeito($args)
     {
-        $this->render('prefeito', ['loggedUser' => $this->loggedUser]);
+        $usuario = UsuarioHandler::getUsuarioById($args['id']);
+
+        if (!$usuario) {
+            // se não encontrar, pode redirecionar pra home ou 404
+            $this->render('404');
+            return;
+        }
+
+        if ($usuario->tipo_usuario !== 'prefeito') {
+            $this->render('404');
+            return;
+        }
+
+        // renderiza a view do perfil
+        $this->render('prefeito', [
+            'loggedUser' => $this->loggedUser,
+            'usuario' => $usuario
+        ]);
     }
 
     public function notificacoes()

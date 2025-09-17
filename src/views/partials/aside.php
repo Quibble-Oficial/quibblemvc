@@ -59,7 +59,7 @@
         </li>
       </ul>
       <div id="perfil-area">
-        <a href="perfil.html">
+        <a href="<?= $base; ?>/sair">
           <figure id="perfil-area-img">
             <img src="<?= $base; ?>/assets/images/bernardo.png" alt="" />
           </figure>

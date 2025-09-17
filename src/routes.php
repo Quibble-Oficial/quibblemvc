@@ -22,3 +22,4 @@ $router->get('/sair', 'AuthController@logout');
 $router->post('/reclamacao/nova', 'ReclamacaoController@criarReclamacao');
 
 $router->get('/usuario/{id}', 'HomeController@usuario');
+$router->get('/usuario/prefeito/{id}', 'HomeController@usuarioPrefeito');
