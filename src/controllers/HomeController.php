@@ -23,7 +23,7 @@ class HomeController extends Controller
 
     public function index()
     {
-        $reclamacoes = ReclamacaoHandler::getAll(); // pega todas as reclamações
+        $reclamacoes = ReclamacaoHandler::getAll($this->loggedUser); // pega todas as reclamações
         $categorias = CategoriaHandler::getAll();
 
         $this->render('feed', [

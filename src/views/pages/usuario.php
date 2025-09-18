@@ -146,7 +146,7 @@
         </main>
     </div>
 
-    <?php $render("footer-mobile");?>
+    <?php $render("footer-mobile", ['usuario' => $loggedUser]);?>
     
     <script src="<?=$base;?>/assets/js/script.js"></script>
 </body>
