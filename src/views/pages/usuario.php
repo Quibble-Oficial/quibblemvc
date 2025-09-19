@@ -9,6 +9,10 @@
     <link rel="stylesheet" href="<?=$base;?>/assets/css/perfil.css">
     <link rel="stylesheet" href="<?=$base;?>/assets/js/animacoes.css">
     <link href='https://cdn.boxicons.com/fonts/basic/boxicons.min.css' rel='stylesheet'>
+    <script>
+    const BASE = "<?= $base; ?>";
+    const id_usuario = "<?= $loggedUser->usuario_id; ?>";
+    </script>
     <!-- Anime.js CDN -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/3.2.1/anime.min.js"></script>
 </head>
@@ -89,8 +93,16 @@
                         <div class="seguir">
                             <i class='  bx  bx-dots-horizontal-rounded'></i>
                             <i class='  bx  bx-share'></i>
-                            <button class="btnicone"><i class=' bx  bx-bell'></i></button>
-                            <button id="btnseguir">Seguir</button>
+                            <?php if($usuario->usuario_id === $loggedUser->usuario_id): ?>
+                            <button class="btneditar">Editar Perfil</button>
+                            <?php else: ?>
+                            <div style="display: flex;">
+                                <button class="btnicone"><i class=' bx  bx-bell'></i></button>
+                                <button id="btnseguir" data-id="<?=$usuario->usuario_id;?>"  class="<?= $estáSeguindo ? 'seguindo' : '' ?>">
+                                    <?= $estáSeguindo ? 'Seguindo' : 'Seguir' ?>
+                                </button>
+                            </div>
+                            <?php endif; ?>
                         </div>
                     </div>
                 </div>
