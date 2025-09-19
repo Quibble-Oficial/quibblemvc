@@ -3,6 +3,9 @@
 namespace src\handlers;
 
 use \src\models\Reclamacoe;
+use \src\models\Upvote;
+
+use PDO;
 
 class ReclamacaoHandler
 {
@@ -49,34 +52,54 @@ class ReclamacaoHandler
         return $ultima ? $ultima['reclamacao_id'] : false;
     }
 
-    public static function getAll()
+    public static function getAll($usuario = null)
     {
-        $reclamacoes = Reclamacoe::select([
-            'reclamacoes.reclamacao_id',
-            'reclamacoes.usuario_id', // <-- Adicione esta linha
-            'reclamacoes.titulo',
-            'reclamacoes.descricao',
-            'reclamacoes.midia',
-            'reclamacoes.status',
-            'reclamacoes.criado_em',
-            'usuarios.nome as usuario_nome',
-            'usuarios.foto_perfil as usuario_foto',
-            'categorias.nome as categoria_nome',
-            'instituicoes.nome as instituicao_nome',
-            'comunidades.nome as comunidade_nome',
-            'localizacoes.logradouro as logradouro',
-            'localizacoes.numero as numero',
-            'localizacoes.cep as cep'
-        ])
-            ->join('usuarios', 'usuarios.usuario_id', '=', 'reclamacoes.usuario_id')
-            ->join('categorias', 'categorias.categoria_id', '=', 'reclamacoes.categoria_id')
-            ->leftJoin('instituicoes', 'instituicoes.instituicao_id', '=', 'reclamacoes.instituicao_id')
-            ->leftJoin('comunidades', 'comunidades.comunidade_id', '=', 'reclamacoes.comunidade_id')
-            ->leftJoin('localizacoes', 'localizacoes.localizacao_id', '=', 'reclamacoes.localizacao_id')
-            ->orderBy('reclamacoes.reclamacao_id', 'DESC')
-            ->get();
+        $userId = $usuario ? $usuario->usuario_id : 0;
 
+        $sql = "
+        SELECT 
+            r.reclamacao_id,
+            r.usuario_id,
+            r.titulo,
+            r.descricao,
+            r.midia,
+            r.status,
+            r.criado_em,
+            u.nome AS usuario_nome,
+            u.foto_perfil AS usuario_foto,
+            c.nome AS categoria_nome,
+            i.nome AS instituicao_nome,
+            com.nome AS comunidade_nome,
+            l.logradouro,
+            l.numero,
+            l.cep,
+            COUNT(up.reclamacao_id) AS total_upvotes,
+            SUM(CASE WHEN up.usuario_id = :userId THEN 1 ELSE 0 END) AS usuario_upvotou
+        FROM reclamacoes r
+        JOIN usuarios u ON u.usuario_id = r.usuario_id
+        JOIN categorias c ON c.categoria_id = r.categoria_id
+        LEFT JOIN instituicoes i ON i.instituicao_id = r.instituicao_id
+        LEFT JOIN comunidades com ON com.comunidade_id = r.comunidade_id
+        LEFT JOIN localizacoes l ON l.localizacao_id = r.localizacao_id
+        LEFT JOIN upvotes up ON up.reclamacao_id = r.reclamacao_id
+        GROUP BY r.reclamacao_id
+        ORDER BY r.reclamacao_id DESC
+    ";
 
-        return $reclamacoes;
+        $stmt = self::getPDO()->prepare($sql);
+        $stmt->execute(['userId' => $userId]);
+
+        return $stmt->fetchAll(PDO::FETCH_ASSOC);
+    }
+
+    // Método para pegar a instância PDO
+    private static function getPDO()
+    {
+        static $pdo = null;
+        if (!$pdo) {
+            $pdo = new PDO('mysql:host=localhost;dbname=quibble;charset=utf8mb4', 'root', '');
+            $pdo->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
+        }
+        return $pdo;
     }
 }

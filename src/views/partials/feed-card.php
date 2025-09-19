@@ -1,8 +1,8 @@
 <div class="feed-card">
     <div class="feed-card-content-feedback mobile">
-        <div class="feedback-upvote">
+        <div class="feedback-upvote" data-id="<?= $reclamacao['reclamacao_id']; ?>">
             <img src="<?= $base; ?>/assets/images/upvote.svg" alt="" />
-            0
+            <span class="upvote-count"><?= $reclamacao['total_upvotes']; ?></span>
         </div>
         <div class="feedback-comment">
             <img src="<?= $base; ?>/assets/images/comentario.svg" alt="" />
@@ -14,7 +14,7 @@
         </div>
     </div>
 
-    <?php if(!empty($reclamacao['midia'])): ?>
+    <?php if (!empty($reclamacao['midia'])): ?>
         <img src="<?= $base; ?>/<?= $reclamacao['midia']; ?>" alt="Imagem da reclamação" />
     <?php endif; ?>
 
@@ -30,9 +30,9 @@
         </div>
 
         <div class="feed-card-content-feedback">
-            <div class="feedback-upvote">
+            <div class="feedback-upvote" data-id="<?= $reclamacao['reclamacao_id']; ?>">
                 <img src="<?= $base; ?>/assets/images/upvote.svg" alt="" />
-                0
+                <span class="upvote-count"><?= $reclamacao['total_upvotes']; ?></span>
             </div>
             <div class="feedback-comment">
                 <img src="<?= $base; ?>/assets/images/comentario.svg" alt="" />

@@ -222,6 +222,15 @@ CREATE TABLE mensagens (
     FOREIGN KEY (conversa_id) REFERENCES conversas(conversa_id) ON DELETE CASCADE
 ) ENGINE=InnoDB;
 
+CREATE TABLE upvotes (
+    usuario_id INT UNSIGNED NOT NULL,
+    reclamacao_id INT UNSIGNED NOT NULL,
+    upvotado_em TIMESTAMP NULL DEFAULT CURRENT_TIMESTAMP,
+    PRIMARY KEY (usuario_id, reclamacao_id),
+    FOREIGN KEY (usuario_id) REFERENCES usuarios(usuario_id) ON DELETE CASCADE,
+    FOREIGN KEY (reclamacao_id) REFERENCES reclamacoes(reclamacao_id) ON DELETE CASCADE
+) ENGINE=InnoDB;
+
 INSERT INTO categorias (nome) VALUES
 ('Mobilidade Urbana'),
 ('Educação'),

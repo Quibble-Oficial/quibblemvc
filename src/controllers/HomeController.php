@@ -6,6 +6,7 @@ use \core\Controller;
 use \src\handlers\UsuarioHandler;
 use \src\handlers\CategoriaHandler;
 use \src\handlers\ReclamacaoHandler;
+use \src\handlers\SeguidorHandler;
 
 class HomeController extends Controller
 {
@@ -23,7 +24,7 @@ class HomeController extends Controller
 
     public function index()
     {
-        $reclamacoes = ReclamacaoHandler::getAll(); // pega todas as reclamações
+        $reclamacoes = ReclamacaoHandler::getAll($this->loggedUser); // pega todas as reclamações
         $categorias = CategoriaHandler::getAll();
 
         $this->render('feed', [
@@ -49,10 +50,13 @@ class HomeController extends Controller
             return;
         }
 
+        $estáSeguindo = SeguidorHandler::estáSeguindo($this->loggedUser->usuario_id, $args['id']);
+
         // renderiza a view do perfil
         $this->render('usuario', [
             'loggedUser' => $this->loggedUser,
-            'usuario' => $usuario
+            'usuario' => $usuario,
+            'estáSeguindo' => $estáSeguindo
         ]);
     }
 
