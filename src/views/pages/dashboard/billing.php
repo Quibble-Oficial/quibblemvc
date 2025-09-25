@@ -1339,7 +1339,7 @@
       <div class="row align-items-center">
         <div class="col">
           <span class="text-uppercase tiny text-gray-600 Montserrat-font font-weight-semibold">Account</span>
-          <h1 class="h2 mb-0 lh-sm">Billing</h1>
+          <h1 class="h2 mb-0 lh-sm">Olá</h1>
         </div>
         <div class="col-auto d-flex align-items-center my-2 my-sm-0">
           <a href="#" class="btn btn-lg btn-warning"><svg class="me-2" data-name="icons/tabler/user" xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 16 16">

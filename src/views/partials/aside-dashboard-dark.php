@@ -22,7 +22,7 @@
                         </a>
                     </li>
                     <li>
-                        <a href="<?=$base;?>/biling">
+                        <a href="<?=$base;?>/billing">
                             <img src="<?=$base;?>/assets/images/comunidades_dashboard.svg" alt="">
                             Comunidades
                         </a>
