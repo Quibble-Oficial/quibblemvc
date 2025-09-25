@@ -1497,30 +1497,22 @@
               <table class="table card-table table-nowrap overflow-hidden">
                 <thead>
                   <tr>
-                    <th>ID</th>
                     <th>CIDADÃO</th>
                     <th>STATUS</th>
                     <th>CATEGORIA</th>
                     <th>DATA</th>
                     <th>LOCAL</th>
-                    
+                    <th></th>
                   </tr>
                 </thead>
                 <tbody class="list">
                   <tr>
-                    <td>
-                      <div class="d-flex align-items-center">
-                        <span class="ps-2 font-weight-semibold text-gray-700">01</span>
-                      </div>
-                    </td>
                     <td>João Silva</td>
                     <td><span class="badge bg-teal-50 text-teal-500">Pendente</span></td>
                     <td>Infraestrutura</td>
                     <td>02/09/2025</td>
                      <td>Anchieta </td>
                      <td>
-                      
-
                         <div class="dropdown text-end">
                           <a href="#" class="btn btn-dark-100 btn-icon btn-sm rounded-circle" role="button" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                             <svg data-name="Icons/Tabler/Notification" xmlns="http://www.w3.org/2000/svg" width="13.419" height="13.419" viewBox="0 0 13.419 13.419">
@@ -1544,12 +1536,6 @@
                      </td>
                     </tr>
                   <tr> 
-                    <td>
-                      <div class="d-flex align-items-center">
-                        
-                        <span class="ps-2 font-weight-semibold text-gray-700">02</span>
-                      </div>
-                    </td>
                    <td>João Silva</td>
                     <td><span class="badge bg-teal-50 text-teal-500">Pendente</span></td>
                     <td>Infraestrutura</td>
@@ -1577,12 +1563,6 @@
                     </td>
                   </tr>
                     <tr>
-                    <td>
-                      <div class="d-flex align-items-center">
-                        
-                        <span class="ps-2 font-weight-semibold text-gray-700">03</span>
-                      </div>
-                    </td>
                    <td>João Silva</td>
                     <td><span class="badge bg-teal-50 text-teal-500">Pendente</span></td>
                     <td>Infraestrutura</td>
@@ -1610,12 +1590,6 @@
                     </td>
                   </tr>
                     <tr>
-                    <td>
-                      <div class="d-flex align-items-center">
-                        
-                        <span class="ps-2 font-weight-semibold text-gray-700">04</span>
-                      </div>
-                    </td>
                    <td>João Silva</td>
                     <td><span class="badge bg-teal-50 text-teal-500">Pendente</span></td>
                     <td>Infraestrutura</td>
@@ -1643,12 +1617,6 @@
                     </td>
                   </tr>
                   <tr>
-                    <td>
-                      <div class="d-flex align-items-center">
-                        
-                        <span class="ps-2 font-weight-semibold text-gray-700">05</span>
-                      </div>
-                    </td>
                    <td>João Silva</td>
                     <td><span class="badge bg-teal-50 text-teal-500">Pendente</span></td>
                     <td>Infraestrutura</td>
@@ -1679,7 +1647,7 @@
               </table>
             </div>
             <div class="d-flex align-items-center p-3 p-md-4 border-top border-gray-200">
-              <a href="#" class="my-1 tiny font-weight-semibold mx-auto btn btn-link link-dark">View all<svg class="ms-1" data-name="icons/tabler/chevron right" xmlns="http://www.w3.org/2000/svg" width="10" height="10" viewBox="0 0 16 16">
+              <a href="#" class="my-1 tiny font-weight-semibold mx-auto btn btn-link link-dark">Ver Mais<svg class="ms-1" data-name="icons/tabler/chevron right" xmlns="http://www.w3.org/2000/svg" width="10" height="10" viewBox="0 0 16 16">
                 <rect data-name="Icons/Tabler/Chevron Right background" width="16" height="16" fill="none"></rect>
                 <path d="M.26.26A.889.889,0,0,1,1.418.174l.1.086L8.629,7.371a.889.889,0,0,1,.086,1.157l-.086.1L1.517,15.74A.889.889,0,0,1,.174,14.582l.086-.1L6.743,8,.26,1.517A.889.889,0,0,1,.174.36Z" transform="translate(4)" fill="#1e1e1e"></path>
               </svg></a>

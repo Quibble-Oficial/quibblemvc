@@ -1452,7 +1452,7 @@
           <div class="card mb-4 rounded-12 shadow">
             <div class="card-body p-3 p-xl-3 p-xxl-4">
               <div class="row align-items-center">
-                <div class="col-5 col-xxl-6">
+                <div class="col-5 col-xxl-7">
                   <span class="caption text-gray-600 d-block mb-1">Execução Ornamentário</span>
                   <span class="h3 mb-0" >12M de 20M</span>
                   <span class="d-block fs-11 mt-2 font-weight-semibold"><svg class="me-1" xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 16 16">
@@ -1462,7 +1462,7 @@
                     </g>
                   </svg> -14%</span>
                 </div>
-                <div class="col-7 col-xxl-6 pe-xxl-0">
+                <div class="col-7 col-xxl-5 pe-xxl-0">
                   <div id="MuzeSimpleDonut2"></div>
                 </div>
               </div>
@@ -1478,17 +1478,17 @@
                 <h5 class="card-header-title mb-0 font-weight-semibold ps-md-2">Evoluções de Demandas Resolvidas</h5>
                 <div class="ms-auto pe-md-2">
                   <div class="dropdown export-dropdown">
-                   
+                   <a href="#" role="button" id="UserOverview" data-bs-toggle="dropdown" aria-expanded="false" class="btn btn-outline-dark border-gray-700 text-gray-700 px-3"><span>Hoje </span> <svg class="ms-2" xmlns="http://www.w3.org/2000/svg" width="13" height="13" viewBox="0 0 13 13">
                       <rect data-name="Icons/Tabler/Chevron Down background" width="13" height="13" fill="none"/>
                       <path d="M.214.212a.738.738,0,0,1,.952-.07l.082.07L7.1,5.989a.716.716,0,0,1,.071.94L7.1,7.011l-5.85,5.778a.738.738,0,0,1-1.034,0,.716.716,0,0,1-.071-.94l.071-.081L5.547,6.5.214,1.233A.716.716,0,0,1,.143.293Z" transform="translate(13 3.25) rotate(90)" fill="#495057"/>
                     </svg>
                     </a>
                     <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="UserOverview">
-                      <li><a class="dropdown-item" href="#"><span>Today</span></a></li>
-                      <li><a class="dropdown-item" href="#"><span>Yesterday</span></a></li>
-                      <li><a class="dropdown-item" href="#"><span>Last 7 days</span></a></li>
-                      <li><a class="dropdown-item" href="#"><span>This month</span></a></li>
-                      <li><a class="dropdown-item" href="#"><span>Last month</span></a></li>
+                      <li><a class="dropdown-item" href="#"><span>Hoje</span></a></li>
+                      <li><a class="dropdown-item" href="#"><span>Ontem</span></a></li>
+                      <li><a class="dropdown-item" href="#"><span>Há 7 dias</span></a></li>
+                      <li><a class="dropdown-item" href="#"><span>Este mês</span></a></li>
+                      <li><a class="dropdown-item" href="#"><span>Mês passado</span></a></li>
                       <li><hr class="dropdown-divider"></li>
                       <li><a class="dropdown-item" href="#"><svg data-name="icons/tabler/calendar" xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16">
                         <rect data-name="Icons/Tabler/Calendar background" width="16" height="16" fill="none"/>
