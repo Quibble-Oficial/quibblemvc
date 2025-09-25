@@ -125,6 +125,7 @@ aside #div-btn a img {
 
 aside hr {
     border-color: #343A40;
+    border: 1px solid;
 }
 
 #div-btn a {

@@ -30,7 +30,7 @@
           </a>
         </li>
         <li>
-          <a href="prefeitos.html"><img src="<?= $base; ?>/assets/images/tribunal.svg" alt="" />
+          <a href="<?=$base;?>/visao-geral"><img src="<?= $base; ?>/assets/images/tribunal.svg" alt="" />
             <div>Prefeitos</div>
           </a>
         </li>

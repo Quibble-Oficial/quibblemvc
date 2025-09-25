@@ -9,6 +9,19 @@ $router->get('/sobre', 'HomeController@sobre');
 $router->get('/prefeito', 'HomeController@prefeito');
 $router->get('/notificacoes', 'HomeController@notificacoes');
 $router->get('/comunidade', 'HomeController@comunidade');
+$router->get('/visao-geral', 'HomeController@visaoGeral');
+
+$router->get('/reclamacoes', 'DashboardController@reclamacoes');
+$router->get('/api-keys', 'DashboardController@apiKeys');
+$router->get('/billing', 'DashboardController@billing');
+$router->get('/calendar', 'DashboardController@calendar');
+$router->get('/chat', 'DashboardController@chat');
+$router->get('/empty-state', 'DashboardController@emptyState');
+$router->get('/festive', 'DashboardController@festive');
+$router->get('/file-manager', 'DashboardController@fileManager');
+$router->get('/help-center', 'DashboardController@helpCenter');
+$router->get('/invoice', 'DashboardController@invoice');
+$router->get('/new-project', 'DashboardController@newProject');
 
 
 $router->get('/login', 'AuthController@login');
