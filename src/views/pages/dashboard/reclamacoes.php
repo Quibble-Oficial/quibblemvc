@@ -1408,7 +1408,7 @@
           <div class="card mb-4 rounded-12 shadow">
             <div class="card-body p-3 p-xl-3 p-xxl-4">
               <div class="row align-items-center">
-                <div class="col-5 col-xxl-6">
+                <div class="col-5 col-xxl-7">
                   <span class="caption text-gray-600 d-block mb-1">Reclamações Resolvidas</span>
                   <span class="h3 mb-0">6,443</span>
                   <span class="d-block fs-11 mt-2 font-weight-semibold"><svg class="me-1" xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 14 14">
@@ -1418,7 +1418,7 @@
                     </g>
                   </svg> -10.45</span>
                 </div>
-                <div class="col-7 col-xxl-6 pe-xxl-0">
+                <div class="col-7 col-xxl-5 pe-xxl-0">
                   <div id="MuzeSingleLine"></div>
                 </div>
               </div>
@@ -1429,7 +1429,7 @@
           <div class="card mb-4 rounded-12 shadow">
             <div class="card-body p-3 p-xl-3 p-xxl-4">
               <div class="row align-items-center">
-                <div class="col-5 col-xxl-6">
+                <div class="col-5 col-xxl-8">
                   <span class="caption text-gray-600 d-block mb-1">Reclamações em Andamento</span>
                   <span class="h3 mb-0">50.1%</span>
                   <span class="d-block fs-11 mt-2 font-weight-semibold"><svg class="me-1" xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 16 16">
@@ -1439,7 +1439,7 @@
                     </g>
                   </svg> 2.7%</span>
                 </div>
-                <div class="col-7 col-xxl-6 pe-xxl-0">
+                <div class="col-7 col-xxl-4 pe-xxl-0">
                   <div id="MuzeSimpleDonut"></div>
                 </div>
               </div>
@@ -1450,7 +1450,7 @@
           <div class="card mb-4 rounded-12 shadow">
             <div class="card-body p-3 p-xl-3 p-xxl-4">
               <div class="row align-items-center">
-                <div class="col-5 col-xxl-6">
+                <div class="col-5 col-xxl-7">
                   <span class="caption text-gray-600 d-block mb-1">Reclamações Pendentes</span>
                   <span class="h3 mb-0">04:20</span>
                   <span class="d-block fs-11 mt-2 font-weight-semibold"><svg class="me-1" xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 14 14">
@@ -1460,7 +1460,7 @@
                     </g>
                   </svg> -0.04%</span>
                 </div>
-                <div class="col-7 col-xxl-6 pe-xxl-0">
+                <div class="col-7 col-xxl-5 pe-xxl-0">
                   <div id="MuzeColumnsChartTwo"></div>
                 </div>
               </div>
@@ -1474,17 +1474,17 @@
             <div class="d-flex align-items-center px-3 px-md-4 py-3">
               <h5 class="card-header-title mb-0 ps-md-2 font-weight-semibold">Principais Reclamações</h5>
               <div class="dropdown export-dropdown ms-auto pe-md-2">
-                <a href="#" role="button" id="Sources" data-bs-toggle="dropdown" aria-expanded="false" class="btn btn-outline-dark border-gray-700 text-gray-700 px-3"><span>Today </span> <svg class="ms-2" xmlns="http://www.w3.org/2000/svg" width="13" height="13" viewBox="0 0 13 13">
+                <a href="#" role="button" id="Sources" data-bs-toggle="dropdown" aria-expanded="false" class="btn btn-outline-dark border-gray-700 text-gray-700 px-3"><span>Hoje </span> <svg class="ms-2" xmlns="http://www.w3.org/2000/svg" width="13" height="13" viewBox="0 0 13 13">
                   <rect data-name="Icons/Tabler/Chevron Down background" width="13" height="13" fill="none"/>
                   <path d="M.214.212a.738.738,0,0,1,.952-.07l.082.07L7.1,5.989a.716.716,0,0,1,.071.94L7.1,7.011l-5.85,5.778a.738.738,0,0,1-1.034,0,.716.716,0,0,1-.071-.94l.071-.081L5.547,6.5.214,1.233A.716.716,0,0,1,.143.293Z" transform="translate(13 3.25) rotate(90)" fill="#495057"/>
                 </svg>
                 </a>
                 <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="Sources">
-                  <li><a class="dropdown-item" href="#"><span>Today</span></a></li>
-                  <li><a class="dropdown-item" href="#"><span>Yesterday</span></a></li>
-                  <li><a class="dropdown-item" href="#"><span>Last 7 days</span></a></li>
-                  <li><a class="dropdown-item" href="#"><span>This month</span></a></li>
-                  <li><a class="dropdown-item" href="#"><span>Last month</span></a></li>
+                  <li><a class="dropdown-item" href="#"><span>Hoje</span></a></li>
+                  <li><a class="dropdown-item" href="#"><span>Ontem</span></a></li>
+                  <li><a class="dropdown-item" href="#"><span>Há 7 dias</span></a></li>
+                  <li><a class="dropdown-item" href="#"><span>Este mês</span></a></li>
+                  <li><a class="dropdown-item" href="#"><span>Mês passado</span></a></li>
                   <li><hr class="dropdown-divider"></li>
                   <li><a class="dropdown-item" href="#"><svg data-name="icons/tabler/calendar" xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16">
                     <rect data-name="Icons/Tabler/Calendar background" width="16" height="16" fill="none"/>
@@ -1663,7 +1663,7 @@
                 <h5 class="card-header-title mb-0 font-weight-semibold ps-md-2">Fluxo de Reclamações</h5>
                 <div class="ms-auto pe-md-2">
                   <div class="dropdown export-dropdown">
-                    <a href="#" role="button" id="UserOverview" data-bs-toggle="dropdown" aria-expanded="false" class="btn btn-outline-dark text-gray-700 border-gray-700 px-3"><span>Today </span> <svg class="ms-2" xmlns="http://www.w3.org/2000/svg" width="13" height="13" viewBox="0 0 13 13">
+                    <a href="#" role="button" id="UserOverview" data-bs-toggle="dropdown" aria-expanded="false" class="btn btn-outline-dark text-gray-700 border-gray-700 px-3"><span>Hoje </span> <svg class="ms-2" xmlns="http://www.w3.org/2000/svg" width="13" height="13" viewBox="0 0 13 13">
                       <rect data-name="Icons/Tabler/Chevron Down background" width="13" height="13" fill="none"/>
                       <path d="M.214.212a.738.738,0,0,1,.952-.07l.082.07L7.1,5.989a.716.716,0,0,1,.071.94L7.1,7.011l-5.85,5.778a.738.738,0,0,1-1.034,0,.716.716,0,0,1-.071-.94l.071-.081L5.547,6.5.214,1.233A.716.716,0,0,1,.143.293Z" transform="translate(13 3.25) rotate(90)" fill="#495057"/>
                     </svg>
@@ -1703,7 +1703,7 @@
                   </a>
                   <ul class="dropdown-menu">
                     <li class="dropdown-sub-title">
-                      <span>EXPORT AS</span>
+                      <span>Exportar como</span>
                     </li>
                     <li><a class="dropdown-item" href="#"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16">
                       <g data-name="Icons/Tabler/Share" transform="translate(0)">
@@ -1723,7 +1723,7 @@
                     <li><a class="dropdown-item" href="#"><svg data-name="Icons/Tabler/Share" xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16">
                       <rect data-name="Icons/Tabler/Share background" width="16" height="16" fill="none"></rect>
                       <path d="M9.846,12.923a3.07,3.07,0,0,1,.1-.768L5.516,9.874a3.077,3.077,0,1,1,0-3.748L9.943,3.845a3.084,3.084,0,1,1,.541,1.106L6.057,7.232a3.087,3.087,0,0,1,0,1.537l4.427,2.281a3.075,3.075,0,1,1-.638,1.874Zm1.231,0a1.846,1.846,0,1,0,.2-.84q-.011.028-.025.055l-.014.025A1.836,1.836,0,0,0,11.077,12.923ZM1.231,8a1.846,1.846,0,0,0,3.487.845.623.623,0,0,1,.027-.061l.017-.031a1.845,1.845,0,0,0,0-1.508l-.017-.031a.622.622,0,0,1-.027-.061A1.846,1.846,0,0,0,1.231,8ZM12.923,4.923a1.846,1.846,0,1,0-1.682-1.086l.013.024q.014.027.025.056A1.848,1.848,0,0,0,12.923,4.923Z" fill="#495057"></path>
-                    </svg><span class="ms-2">Share</span></a></li>
+                    </svg><span class="ms-2">Compartilhar</span></a></li>
                   </ul>
                 </div>
               </div>
@@ -2163,19 +2163,17 @@
           </div>
         </div> -->
         
-      </div>
-    </div>
     <footer class="pt-xxl-5 mt-lg-2">
       <div class="container-fluid px-0 border-top border-gray-200 pt-2 pt-lg-3">
         <div class="row align-items-center">
           <div class="col-md-6">
-            <p class="fs-16 text-gray-600 my-2">2020 &copy; Fabrx Design - All rights reserved.</p>
+            <p class="fs-16 text-gray-600 my-2">2025 &copy; Quibble - Todos os direitos reservados.</p>
           </div>
           <div class="col-md-6">
             <ul class="nav navbar">
-              <li><a href="#0">About</a></li>
-              <li><a href="#0">Support</a></li>
-              <li><a href="#0">Contact</a></li>
+              <li><a href="#0">Sobre</a></li>
+              <li><a href="#0">Suporte</a></li>
+              <li><a href="#0">Contato</a></li>
             </ul>
           </div>
         </div>
