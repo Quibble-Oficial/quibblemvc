@@ -38,7 +38,7 @@
 *,
 ::after,
 ::before {
-    box-sizing: border-box
+    box-sizing: border-box;
 }
 
 @media (prefers-reduced-motion:no-preference) {
@@ -1225,12 +1225,12 @@ progress {
     margin-left: 91.66667%
 }
 
-.g-0,
+
 .gx-0 {
     --bs-gutter-x: 0
 }
 
-.g-0,
+
 .gy-0 {
     --bs-gutter-y: 0
 }

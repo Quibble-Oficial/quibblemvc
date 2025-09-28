@@ -2,21 +2,21 @@
 <!DOCTYPE html>
 <html dir="ltr" lang="en">
 <head>
-<title>Buy Muze Bootstrap 5 Billing & Payment Page</title>
+<title>Buy Muze Bootstrap 5 Analytics Page</title>
 <meta charset="UTF-8">
-<meta name="description" content="Presenting Muze, All-in-one Bootstrap 5 Billing & Payment Admin Dashboard, 30+ Premium HTML pages, 500+ components, dark mode, RTL. Starts @ Only $35">
-<meta name="title" content="Muze Bootstrap 5 Billing & Payment Templates, Themes, & Dashboard">
-<meta name="keywords" content="bootstrap billing template, bootstrap billing page, bootstrap payment page template, billing table design">
+<meta name="description" content="Presenting Muze, All-in-one Bootstrap 5 Analytics Admin Dashboard, 30+ premium HTML pages, 500+ components, dark mode, RTL. Starts @ Only $35">
+<meta name="title" content="Muze Bootstrap 5 Analytics Templates, Pages & Dashboard, analytics chart, chart design, chart template">
+<meta name="keywords" content="bootstrap analytics dashboard page, bootstrap analytics dashboard template">
 <meta name="author" content="Muze Dashboard">
 <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
 <!-- Muze Favicon -->
-<link href="<?= $base;?>/assets/images/favicon.ico" rel="shortcut icon" type="image/x-icon">
+<link href="<?= $base;?>/assets/favicon.ico" rel="shortcut icon" type="image/x-icon">
 <!-- Muze Plugins CSS -->
 <link href="<?= $base;?>/assets/vendor/simplebar/dist/simplebar.min.css" rel="stylesheet" type="text/css" media="all">
 <!-- Muze Theme CSS -->
 <link href="<?= $base;?>/assets/css/theme.min.css" rel="stylesheet" type="text/css" media="all">
 </head>
-<body class="bg-gray-100 billing-templete">
+<body class="bg-gray-100 analytics-template">
 
 <!-- Muze Customize Sidebar -->
 <!-- <div class="customize-sidebar">
@@ -30,7 +30,7 @@
       </a>
     </div>
     <div class="px-2 px-md-4">
-      <h3 class="mb-0"><img src="../assets/svg/icons/tio-tune2.svg" alt="Tio Tune"> Customize</h3>
+  <h3 class="mb-0"><img src="<?= $base;?>/assets/svg/icons/tio-tune2.svg" alt="Tio Tune"> Customize</h3>
       <p class="text-gray-700 mb-0 lh-lg">Choose your style and settings</p>
     </div>
   </div>
@@ -91,21 +91,21 @@
         <div class="me-3 sidebar-style">
           <div class="form-check form-check-sm me-0">
             <input class="form-check-input" type="radio" name="SidebarStyles" id="SidebarDefault" value="default-sidebar" checked="checked">
-            <label class="form-check-label" for="SidebarDefault"><img src="../assets/img/sidebar-default.svg" alt="Sidebar Default" class="rounded mb-2 border-gray-400 border"><span>Default</span></label>
+            <label class="form-check-label" for="SidebarDefault"><img src="<?= $base;?>/assets/images/sidebar-default.svg" alt="Sidebar Default" class="rounded mb-2 border-gray-400 border"><span>Default</span></label>
           </div>
         </div>
         <div class="me-3 sidebar-style">
           
           <div class="form-check form-check-sm me-0">
             <input class="form-check-input" type="radio" name="SidebarStyles" id="SidebarCompact" value="sidebar-compact">
-            <label class="form-check-label" for="SidebarCompact"><img src="../assets/img/sidebar-compact.svg" alt="Sidebar Compact" class="rounded mb-2 border-gray-400 border"><span>Compact</span></label>
+            <label class="form-check-label" for="SidebarCompact"><img src="<?= $base;?>/assets/images/sidebar-compact.svg" alt="Sidebar Compact" class="rounded mb-2 border-gray-400 border"><span>Compact</span></label>
           </div>
         </div>
         <div class="me-3 sidebar-style">
           
           <div class="form-check form-check-sm me-0">
             <input class="form-check-input" type="radio" name="SidebarStyles" id="SidebarIcons" value="sidebar-icons">
-            <label class="form-check-label" for="SidebarIcons"><img src="../assets/img/sidebar-icons.svg" alt="Sidebar Icons" class="rounded mb-2 border-gray-400 border"><span>Icons</span></label>
+            <label class="form-check-label" for="SidebarIcons"><img src="<?= $base;?>/assets/images/sidebar-icons.svg" alt="Sidebar Icons" class="rounded mb-2 border-gray-400 border"><span>Icons</span></label>
           </div>
         </div>
       </div>
@@ -121,20 +121,20 @@
       </div>
     </div>
   </div>
-</div> -->
+</div>
 
-<!-- Muze Default Sidebar, Muze Navbar, Muze Navbar Vertical, Muze Navbar Expand Lg, Muze Navbar Light -->
-<!-- <nav class="navbar navbar-vertical navbar-expand-lg navbar-light">
+<!-- Muze Default Sidebar, Muze Navbar, Muze Navbar Vertical, Muze Navbar Expand Lg, Muze Navbar Light 
+<nav class="navbar navbar-vertical navbar-expand-lg navbar-light">
   <a class="navbar-brand mx-auto d-none d-lg-block my-0 my-lg-4" href="#">
-    <img src="../assets/svg/brand/logo.svg" alt="Muze">
-    <img src="../assets/svg/brand/logo-white.svg" alt="Muze" class="white-logo2">
-    <img src="../assets/svg/brand/muze-icon.svg" class="muze-icon" alt="Muze">
-    <img src="../assets/svg/brand/muze-icon-white.svg" class="muze-icon-white" alt="Muze">
+  <img src="/assets/svg/brand/logo.svg" alt="Muze">
+  <img src="/assets/svg/brand/logo-white.svg" alt="Muze" class="white-logo2">
+  <img src="/assets/svg/brand/muze-icon.svg" class="muze-icon" alt="Muze">
+  <img src="/assets/svg/brand/muze-icon-white.svg" class="muze-icon-white" alt="Muze">
   </a>
   <div class="navbar-collapse">
     <ul class="navbar-nav mb-2" id="accordionExample" data-simplebar>
       <li class="nav-item">
-        <a class="nav-link collapsed" href="#sidebarDashboards" data-bs-toggle="collapse" role="button" aria-expanded="false" aria-controls="sidebarDashboards">
+        <a class="nav-link collapsed" href="#sidebarDashboards" data-bs-toggle="collapse" role="button" aria-expanded="true" aria-controls="sidebarDashboards">
           <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16">
             <g data-name="icons/tabler/chart" transform="translate(0)">
               <rect data-name="Icons/Tabler/Chart background" width="16" height="16" fill="none"/>
@@ -142,10 +142,10 @@
             </g>
           </svg> &nbsp;<span class="ms-2">Dashboards</span>
         </a>
-        <div class="collapse collapse-box" id="sidebarDashboards" data-bs-parent="#accordionExample">
+        <div class="collapse collapse-box show" id="sidebarDashboards" data-bs-parent="#accordionExample">
           <ul class="nav nav-sm flex-column">
             <li class="nav-item">
-              <a href="analytics.html" class="nav-link">Analytics</a>
+              <a href="analytics.html" class="nav-link active">Analytics</a>
             </li>
             <li class="nav-item">
               <a href="project-management.html" class="nav-link">Project management</a>
@@ -160,23 +160,23 @@
         <small>Pages</small>
       </li>
       <li class="nav-item">
-        <a class="nav-link collapsed" href="#sidebarPages" data-bs-toggle="collapse" role="button" aria-expanded="true" aria-controls="sidebarPages">
+        <a class="nav-link collapsed" href="#sidebarPages" data-bs-toggle="collapse" role="button" aria-expanded="false" aria-controls="sidebarPages">
           <svg data-name="Icons/Tabler/Bolt" xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16">
             <rect data-name="Icons/Tabler/Page background" width="16" height="16" fill="none"/>
             <path d="M1.975,14A1.977,1.977,0,0,1,0,12.026V1.975A1.977,1.977,0,0,1,1.975,0h5.04a.535.535,0,0,1,.249.069l.007,0h0a.534.534,0,0,1,.109.084l3.574,3.575a.536.536,0,0,1,.163.289h0l0,.013h0l0,.013v0l0,.011v.053s0,.009,0,.014v7.9A1.977,1.977,0,0,1,9.154,14Zm-.9-12.026V12.026a.9.9,0,0,0,.9.9H9.154a.9.9,0,0,0,.9-.9V4.667H7.718a1.255,1.255,0,0,1-1.248-1.12L6.461,3.41V1.077H1.975A.9.9,0,0,0,1.077,1.975ZM7.538,3.41a.179.179,0,0,0,.122.17l.057.01H9.29L7.538,1.838Z" transform="translate(2 1)" fill="#1e1e1e"/>
           </svg> &nbsp;<span class="ms-2">Pages</span>
         </a>
-        <div class="collapse collapse-box show" id="sidebarPages" data-bs-parent="#accordionExample">
+        <div class="collapse collapse-box" id="sidebarPages" data-bs-parent="#accordionExample">
           <ul class="nav nav-sm flex-column" id="submenu">
             <li class="nav-item">
-              <a class="nav-link collapsed" href="#AccountPage" data-bs-toggle="collapse" role="button" aria-expanded="true" aria-controls="AccountPage">Account</a>
-              <div class="collapse collapse-box show" id="AccountPage" data-bs-parent="#submenu">
+              <a class="nav-link collapsed" href="#AccountPage" data-bs-toggle="collapse" role="button" aria-expanded="false" aria-controls="AccountPage">Account</a>
+              <div class="collapse collapse-box" id="AccountPage" data-bs-parent="#submenu">
                 <ul class="nav nav-sm flex-column">
                   <li class="nav-item">
                     <a href="settings.html" class="nav-link">Settings</a>
                   </li>
                   <li class="nav-item">
-                    <a href="billing.html" class="nav-link active">Billing</a>
+                    <a href="billing.html" class="nav-link">Billing</a>
                   </li>
                   <li class="nav-item">
                     <a href="invoice.html" class="nav-link">Invoice</a>
@@ -446,7 +446,7 @@
                     <div class="collapse collapse-box" id="sidebarDashboards2" data-bs-parent="#accordionExample2">
                       <ul class="nav nav-sm flex-column">
                         <li class="nav-item">
-                          <a href="analytics.html" class="nav-link">Analytics</a>
+                          <a href="analytics.html" class="nav-link active">Analytics</a>
                         </li>
                         <li class="nav-item">
                           <a href="project-management.html" class="nav-link">Project management</a>
@@ -474,7 +474,7 @@
                                 <a href="settings.html" class="nav-link">Settings</a>
                               </li>
                               <li class="nav-item">
-                                <a href="billing.html" class="nav-link active">Billing</a>
+                                <a href="billing.html" class="nav-link">Billing</a>
                               </li>
                               <li class="nav-item">
                                 <a href="invoice.html" class="nav-link">Invoice</a>
@@ -1138,7 +1138,7 @@
                 <div class="collapse collapse-box" id="sidebarDashboards3" data-bs-parent="#accordionExample3">
                   <ul class="nav nav-sm flex-column">
                     <li class="nav-item">
-                      <a href="analytics.html" class="nav-link">Analytics</a>
+                      <a href="analytics.html" class="nav-link active">Analytics</a>
                     </li>
                     <li class="nav-item">
                       <a href="project-management.html" class="nav-link">Project management</a>
@@ -1166,7 +1166,7 @@
                             <a href="settings.html" class="nav-link">Settings</a>
                           </li>
                           <li class="nav-item">
-                            <a href="billing.html" class="nav-link active">Billing</a>
+                            <a href="billing.html" class="nav-link">Billing</a>
                           </li>
                           <li class="nav-item">
                             <a href="invoice.html" class="nav-link">Invoice</a>
@@ -1338,15 +1338,44 @@
     <div class="container-fluid px-0">
       <div class="row align-items-center">
         <div class="col">
-          <span class="text-uppercase tiny text-gray-600 Montserrat-font font-weight-semibold">Account</span>
-          <h1 class="h2 mb-0 lh-sm">Olá</h1>
+          <h1 class="h2 mb-0">Comunidades</h1>
         </div>
         <div class="col-auto d-flex align-items-center my-2 my-sm-0">
-          <a href="#" class="btn btn-lg btn-warning"><svg class="me-2" data-name="icons/tabler/user" xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 16 16">
-            <rect data-name="Icons/Tabler/User background" width="16" height="16" fill="none"/>
-            <path d="M11.334,16H.667a.665.665,0,0,1-.661-.568L0,15.343v-1.75A4.179,4.179,0,0,1,4.029,9.44l.193,0H7.778A4.186,4.186,0,0,1,12,13.4l0,.191v1.75a.661.661,0,0,1-.576.651ZM4.222,10.749a2.869,2.869,0,0,0-2.884,2.683l-.005.162v1.094h9.334V13.594A2.857,2.857,0,0,0,8.1,10.767l-.162-.013-.164,0ZM6,8.314A4.2,4.2,0,0,1,1.778,4.157a4.223,4.223,0,0,1,8.445,0A4.2,4.2,0,0,1,6,8.314Zm0-7A2.87,2.87,0,0,0,3.111,4.157a2.889,2.889,0,0,0,5.778,0A2.87,2.87,0,0,0,6,1.313Z" transform="translate(2)" fill="#1e1e1e"/>
-          </svg><span>My Profile</span>
+          <a href="#" class="btn btn-lg btn-outline-dark px-3 me-2 me-md-3"><span class="ps-1">Adicionar</span> <svg class="ms-4" xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 14 14">
+            <rect data-name="Icons/Tabler/Add background" width="14" height="14" fill="none"/>
+            <path d="M6.329,13.414l-.006-.091V7.677H.677A.677.677,0,0,1,.585,6.329l.092-.006H6.323V.677A.677.677,0,0,1,7.671.585l.006.092V6.323h5.646a.677.677,0,0,1,.091,1.348l-.091.006H7.677v5.646a.677.677,0,0,1-1.348.091Z" fill="#1e1e1e"/>
+          </svg>
           </a>
+          <div class="dropdown export-dropdown">
+            <a href="#" role="button" id="Exportbtn" data-bs-toggle="dropdown" aria-expanded="false" class="btn btn-lg btn-warning ms-1 px-3"><span class="ps-1">Exportar</span> <svg class="ms-4" xmlns="http://www.w3.org/2000/svg" width="14" height="7.875" viewBox="0 0 14 7.875">
+              <path d="M.231.228A.8.8,0,0,1,1.256.152l.088.075,6.3,6.222a.771.771,0,0,1,.076,1.013l-.076.087-6.3,6.222a.794.794,0,0,1-1.114,0,.771.771,0,0,1-.076-1.013l.076-.087L5.973,7,.231,1.328A.771.771,0,0,1,.154.315Z" transform="translate(14) rotate(90)" fill="#1e1e1e"/>
+            </svg>
+            </a>
+            <ul class="dropdown-menu" aria-labelledby="Exportbtn">
+              <li class="dropdown-sub-title">
+                <span>EXPORT AS</span>
+              </li>
+              <li><a class="dropdown-item" href="#"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16">
+                <g data-name="Icons/Tabler/Share" transform="translate(0)">
+                  <rect data-name="Icons/Tabler/Code background" width="16" height="16" fill="none"/>
+                  <path d="M6.21,13.982a.6.6,0,0,1-.463-.647l.014-.08L9.044.455A.617.617,0,0,1,9.79.018a.6.6,0,0,1,.463.647l-.014.08-3.282,12.8a.612.612,0,0,1-.6.455A.629.629,0,0,1,6.21,13.982Zm5.458-3.357a.588.588,0,0,1-.059-.781l.059-.067L14.514,7,11.668,4.225a.588.588,0,0,1-.059-.781l.059-.068a.627.627,0,0,1,.8-.059l.069.059,3.282,3.2a.59.59,0,0,1,.059.781l-.059.068-3.282,3.2a.627.627,0,0,1-.87,0Zm-8.136.058-.069-.058L.18,7.424a.589.589,0,0,1-.059-.781L.18,6.575l3.282-3.2a.627.627,0,0,1,.87,0,.588.588,0,0,1,.059.781l-.059.068L1.486,7,4.333,9.776a.588.588,0,0,1,.059.781l-.059.068a.627.627,0,0,1-.8.058Z" transform="translate(0 1)" fill="#495057"/>
+                </g>
+              </svg><span class="ms-2">HTML</span></a></li>
+              <li><a class="dropdown-item" href="#"><svg data-name="Icons/Tabler/Share" xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16">
+                <rect data-name="Icons/Tabler/File background" width="16" height="16" fill="none"/>
+                <path data-name="Combined Shape" d="M2.256,16A2.259,2.259,0,0,1,0,13.744V2.256A2.259,2.259,0,0,1,2.256,0H8a.613.613,0,0,1,.4.148l0,0L8.41.157l0,0,.005.005L8.425.17l0,0L8.435.18l4.1,4.1a.614.614,0,0,1,.185.44v9.026A2.259,2.259,0,0,1,10.462,16ZM1.231,2.256V13.744a1.026,1.026,0,0,0,1.025,1.025h8.205a1.027,1.027,0,0,0,1.026-1.025V5.333H8.821A1.436,1.436,0,0,1,7.387,3.979l0-.082V1.231H2.256A1.026,1.026,0,0,0,1.231,2.256ZM8.616,3.9a.206.206,0,0,0,.168.2l.037,0h1.8l-2-2ZM3.9,12.718a.615.615,0,0,1-.059-1.228l.059,0H8.821a.615.615,0,0,1,.059,1.228l-.059,0Zm0-3.282a.615.615,0,0,1-.059-1.228l.059,0H8.821a.615.615,0,0,1,.059,1.228l-.059,0Zm0-3.281a.616.616,0,0,1-.059-1.228l.059,0h.821a.615.615,0,0,1,.059,1.228l-.059,0Z" transform="translate(2)" fill="#495057"/>
+              </svg><span class="ms-2">XML</span></a></li>
+              <li><a class="dropdown-item" href="#"><svg data-name="Icons/Tabler/Share" xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16">
+                <rect data-name="Icons/Tabler/Code02 background" width="16" height="16" fill="none"/>
+                <path data-name="Combined Shape" d="M2.256,16A2.259,2.259,0,0,1,0,13.744V2.256A2.259,2.259,0,0,1,2.256,0H8a.613.613,0,0,1,.4.148l0,0L8.41.157l0,0,.005.005L8.425.17l0,0L8.435.18l4.1,4.1a.614.614,0,0,1,.185.44v9.026A2.259,2.259,0,0,1,10.462,16ZM1.231,2.256V13.744a1.026,1.026,0,0,0,1.025,1.025h8.205a1.027,1.027,0,0,0,1.026-1.025V5.333H8.821A1.436,1.436,0,0,1,7.387,3.979l0-.082V1.231H2.256A1.026,1.026,0,0,0,1.231,2.256ZM8.616,3.9a.206.206,0,0,0,.168.2l.037,0h1.8l-2-2Zm-.891,8.756a.615.615,0,0,1-.3-.768l.025-.058.683-1.366L7.449,9.1A.616.616,0,0,1,7.67,8.3l.055-.031a.615.615,0,0,1,.795.22l.031.055.821,1.641a.617.617,0,0,1,.029.484l-.029.067L8.55,12.378a.614.614,0,0,1-.825.275ZM4.2,12.433l-.031-.055-.821-1.641a.617.617,0,0,1-.029-.484l.029-.067.821-1.641a.615.615,0,0,1,1.126.492L5.269,9.1l-.684,1.366.684,1.366a.615.615,0,0,1-.22.794l-.055.031a.615.615,0,0,1-.795-.22Z" transform="translate(2)" fill="#495057"/>
+              </svg><span class="ms-2">JSON</span></a></li>
+              <li><hr class="dropdown-divider"></li>
+              <li><a class="dropdown-item" href="#"><svg data-name="Icons/Tabler/Share" xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16">
+                <rect data-name="Icons/Tabler/Share background" width="16" height="16" fill="none"/>
+                <path d="M9.846,12.923a3.07,3.07,0,0,1,.1-.768L5.516,9.874a3.077,3.077,0,1,1,0-3.748L9.943,3.845a3.084,3.084,0,1,1,.541,1.106L6.057,7.232a3.087,3.087,0,0,1,0,1.537l4.427,2.281a3.075,3.075,0,1,1-.638,1.874Zm1.231,0a1.846,1.846,0,1,0,.2-.84q-.011.028-.025.055l-.014.025A1.836,1.836,0,0,0,11.077,12.923ZM1.231,8a1.846,1.846,0,0,0,3.487.845.623.623,0,0,1,.027-.061l.017-.031a1.845,1.845,0,0,0,0-1.508l-.017-.031a.622.622,0,0,1-.027-.061A1.846,1.846,0,0,0,1.231,8ZM12.923,4.923a1.846,1.846,0,1,0-1.682-1.086l.013.024q.014.027.025.056A1.848,1.848,0,0,0,12.923,4.923Z" fill="#495057"/>
+              </svg><span class="ms-2">Share</span></a></li>
+            </ul>
+          </div>
         </div>
       </div>
     </div>
@@ -1354,241 +1383,932 @@
   <div class="p-3 p-xxl-5">
     <div class="container-fluid px-0">
       <div class="row">
-        <div class="col-12">
-          <div class="card rounded-12 shadow-dark-80 border border-gray-50 mb-3 mb-xl-5 p-3">
-            <div class="card-body p-0 p-md-4">
-              <h2>You’re on Pro plan</h2>
-              <h3 class="h1 font-weight-normal pt-1">$124 / mo</h3>
-              <a href="#0" class="fs-16 link-primary d-inline-block mb-2">Plan details</a>
-              <div class="border-top border-gray-200 mt-2 mt-md-4 pt-2 pt-md-4">
-                <div class="row mt-1 align-items-center">
-                  <div class="col-md-4 col-xxl-6">
-                    <span class="text-gray-600">Auto renews on: Jan 14 2022</span>
-                  </div>
-                  <div class="col-md-8 col-xxl-6 text-md-end">
-                    <a href="#0" class="btn btn-lg btn-outline-dark me-3 mt-2">Cancel subscription</a>
-                    <a href="#0" class="btn btn-lg btn-primary mt-2">Change plan</a>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="card rounded-12 shadow-dark-80 border border-gray-50 mb-3 mb-xl-5">
-            <div class="d-flex align-items-center px-3 px-md-4 py-3 border-bottom border-gray-200">
-              <h5 class="card-header-title my-md-2 ps-md-3 font-weight-semibold">Consumption</h5>
-            </div>
-            <div class="card-body px-0 px-md-4 py-0">
-              <div class="px-3">
-                <div class="media border-bottom border-gray-200 py-2 py-md-4">
-                  <div class="media-body my-2 w-100">
-                    <div class="row align-items-center">
-                      <div class="col-md-6 col-xl-8">
-                        <span class="fs-16 font-weight-semibold">Monthly Usage</span>
-                        <span class="d-block fs-16 text-gray-600 my-2">5,348 unique contacts stored this month</span>
-                        <a href="#0" class="fs-16 link-primary d-inline-block mb-2">Plan details</a>
-                      </div>
-                      <div class="col-md-6 col-xl-4 ps-xxl-5">
-                        <div class="d-flex align-items-center ps-xxl-5">
-                          <div class="progress" style="height: 5px;width: 100%;">
-                            <div class="progress-bar bg-teal-500" role="progressbar" style="width: 26%;" aria-valuenow="26" aria-valuemin="0" aria-valuemax="100"></div>
-                          </div>
-                          <span class="h3 ms-4 ps-2">26%</span>
-                        </div>
-                      </div>
+
+        <div class="row">
+            <div class="col-12 col-xxl-4 mb-4">
+              <div class="card rounded-24 shadow-dark-80 border border-gray-50 py-3 px-2 p-md-4">
+                <div class="p-2">
+                  <div class="d-flex align-items-center mb-2">
+                    <span class="small text-muted font-weight-semibold">15 Jun 2021</span>
+                    <div class="ms-auto dropdown">
+                      <a href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false" class="btn btn-dark-100 btn-icon btn-sm rounded-circle">
+                        <svg data-name="Icons/Tabler/Notification" xmlns="http://www.w3.org/2000/svg" width="13.419" height="13.419" viewBox="0 0 13.419 13.419">
+                          <rect data-name="Icons/Tabler/Dots background" width="13.419" height="13.419" fill="none"></rect>
+                          <path d="M0,10.4a1.342,1.342,0,1,1,1.342,1.342A1.344,1.344,0,0,1,0,10.4Zm1.15,0a.192.192,0,1,0,.192-.192A.192.192,0,0,0,1.15,10.4ZM0,5.871A1.342,1.342,0,1,1,1.342,7.213,1.344,1.344,0,0,1,0,5.871Zm1.15,0a.192.192,0,1,0,.192-.192A.192.192,0,0,0,1.15,5.871ZM0,1.342A1.342,1.342,0,1,1,1.342,2.684,1.344,1.344,0,0,1,0,1.342Zm1.15,0a.192.192,0,1,0,.192-.192A.192.192,0,0,0,1.15,1.342Z" transform="translate(5.368 0.839)" fill="#6c757d"></path>
+                        </svg>
+                      </a>
+                      <ul class="dropdown-menu">
+                        <li class="dropdown-sub-title">
+                          <span>EXPORT AS</span>
+                        </li>
+                        <li>
+                          <a class="dropdown-item" href="#"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16">
+                            <g data-name="Icons/Tabler/Share" transform="translate(0)">
+                              <rect data-name="Icons/Tabler/Code background" width="16" height="16" fill="none"></rect>
+                              <path d="M6.21,13.982a.6.6,0,0,1-.463-.647l.014-.08L9.044.455A.617.617,0,0,1,9.79.018a.6.6,0,0,1,.463.647l-.014.08-3.282,12.8a.612.612,0,0,1-.6.455A.629.629,0,0,1,6.21,13.982Zm5.458-3.357a.588.588,0,0,1-.059-.781l.059-.067L14.514,7,11.668,4.225a.588.588,0,0,1-.059-.781l.059-.068a.627.627,0,0,1,.8-.059l.069.059,3.282,3.2a.59.59,0,0,1,.059.781l-.059.068-3.282,3.2a.627.627,0,0,1-.87,0Zm-8.136.058-.069-.058L.18,7.424a.589.589,0,0,1-.059-.781L.18,6.575l3.282-3.2a.627.627,0,0,1,.87,0,.588.588,0,0,1,.059.781l-.059.068L1.486,7,4.333,9.776a.588.588,0,0,1,.059.781l-.059.068a.627.627,0,0,1-.8.058Z" transform="translate(0 1)" fill="#495057"></path>
+                            </g>
+                          </svg><span class="ms-2">HTML</span></a>
+                        </li>
+                        <li>
+                          <a class="dropdown-item" href="#"><svg data-name="Icons/Tabler/Share" xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16">
+                            <rect data-name="Icons/Tabler/File background" width="16" height="16" fill="none"></rect>
+                            <path data-name="Combined Shape" d="M2.256,16A2.259,2.259,0,0,1,0,13.744V2.256A2.259,2.259,0,0,1,2.256,0H8a.613.613,0,0,1,.4.148l0,0L8.41.157l0,0,.005.005L8.425.17l0,0L8.435.18l4.1,4.1a.614.614,0,0,1,.185.44v9.026A2.259,2.259,0,0,1,10.462,16ZM1.231,2.256V13.744a1.026,1.026,0,0,0,1.025,1.025h8.205a1.027,1.027,0,0,0,1.026-1.025V5.333H8.821A1.436,1.436,0,0,1,7.387,3.979l0-.082V1.231H2.256A1.026,1.026,0,0,0,1.231,2.256ZM8.616,3.9a.206.206,0,0,0,.168.2l.037,0h1.8l-2-2ZM3.9,12.718a.615.615,0,0,1-.059-1.228l.059,0H8.821a.615.615,0,0,1,.059,1.228l-.059,0Zm0-3.282a.615.615,0,0,1-.059-1.228l.059,0H8.821a.615.615,0,0,1,.059,1.228l-.059,0Zm0-3.281a.616.616,0,0,1-.059-1.228l.059,0h.821a.615.615,0,0,1,.059,1.228l-.059,0Z" transform="translate(2)" fill="#495057"></path>
+                          </svg><span class="ms-2">XML</span></a>
+                        </li>
+                        <li>
+                          <a class="dropdown-item" href="#"><svg data-name="Icons/Tabler/Share" xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16">
+                            <rect data-name="Icons/Tabler/Code02 background" width="16" height="16" fill="none"></rect>
+                            <path data-name="Combined Shape" d="M2.256,16A2.259,2.259,0,0,1,0,13.744V2.256A2.259,2.259,0,0,1,2.256,0H8a.613.613,0,0,1,.4.148l0,0L8.41.157l0,0,.005.005L8.425.17l0,0L8.435.18l4.1,4.1a.614.614,0,0,1,.185.44v9.026A2.259,2.259,0,0,1,10.462,16ZM1.231,2.256V13.744a1.026,1.026,0,0,0,1.025,1.025h8.205a1.027,1.027,0,0,0,1.026-1.025V5.333H8.821A1.436,1.436,0,0,1,7.387,3.979l0-.082V1.231H2.256A1.026,1.026,0,0,0,1.231,2.256ZM8.616,3.9a.206.206,0,0,0,.168.2l.037,0h1.8l-2-2Zm-.891,8.756a.615.615,0,0,1-.3-.768l.025-.058.683-1.366L7.449,9.1A.616.616,0,0,1,7.67,8.3l.055-.031a.615.615,0,0,1,.795.22l.031.055.821,1.641a.617.617,0,0,1,.029.484l-.029.067L8.55,12.378a.614.614,0,0,1-.825.275ZM4.2,12.433l-.031-.055-.821-1.641a.617.617,0,0,1-.029-.484l.029-.067.821-1.641a.615.615,0,0,1,1.126.492L5.269,9.1l-.684,1.366.684,1.366a.615.615,0,0,1-.22.794l-.055.031a.615.615,0,0,1-.795-.22Z" transform="translate(2)" fill="#495057"></path>
+                          </svg><span class="ms-2">JSON</span></a>
+                        </li>
+                        <li><hr class="dropdown-divider"></li>
+                        <li>
+                          <a class="dropdown-item" href="#"><svg data-name="Icons/Tabler/Share" xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16">
+                            <rect data-name="Icons/Tabler/Share background" width="16" height="16" fill="none"></rect>
+                            <path d="M9.846,12.923a3.07,3.07,0,0,1,.1-.768L5.516,9.874a3.077,3.077,0,1,1,0-3.748L9.943,3.845a3.084,3.084,0,1,1,.541,1.106L6.057,7.232a3.087,3.087,0,0,1,0,1.537l4.427,2.281a3.075,3.075,0,1,1-.638,1.874Zm1.231,0a1.846,1.846,0,1,0,.2-.84q-.011.028-.025.055l-.014.025A1.836,1.836,0,0,0,11.077,12.923ZM1.231,8a1.846,1.846,0,0,0,3.487.845.623.623,0,0,1,.027-.061l.017-.031a1.845,1.845,0,0,0,0-1.508l-.017-.031a.622.622,0,0,1-.027-.061A1.846,1.846,0,0,0,1.231,8ZM12.923,4.923a1.846,1.846,0,1,0-1.682-1.086l.013.024q.014.027.025.056A1.848,1.848,0,0,0,12.923,4.923Z" fill="#495057"></path>
+                          </svg><span class="ms-2">Share</span></a>
+                        </li>
+                      </ul>
                     </div>
                   </div>
+                  <h5 class="font-weight-semibold title-box mb-0">Anchieta</h5>
+                  <h6 class="font-weight-semibold title-box mb-0">Reclamações: 30</h6>
+                  <h6 class="font-weight-semibold title-box mb-0">Resolvidas: 16</h6>
+                  <div class="pt-4 pb-4">
+                    <span class="small font-weight-semibold mb-2 d-block">Progress</span>
+                    <div class="progress rounded-pill" style="height: 5px;width: 100%;">
+                      <div class="progress-bar bg-teal-500" role="progressbar" style="width: 75%;" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100"></div>
+                    </div>
+                    <span class="small font-weight-semibold d-block text-end mt-2">75%</span>
+                  </div>
+                  <div class="d-flex align-items-center">
+                    <div class="avatar-group">
+                      <span class="avatar avatar-xs avatar-circle">
+                        <img class="avatar-img" src="<?= $base;?>/assets/img/avatar2.png" alt="Avatar">
+                      </span>
+                      <span class="avatar avatar-xs avatar-circle">
+                        <img class="avatar-img" src="<?= $base;?>/assets/img/avatar3.png" alt="Avatar">
+                      </span>
+                      <span class="avatar avatar-xs avatar-circle">
+                        <img class="avatar-img" src="<?= $base;?>/assets/img/avatar4.png" alt="Avatar">
+                      </span>
+                    </div>
+                    <span class="badge bg-teal-50 text-teal-500 p-2 ms-auto">3 days left</span>
+                  </div>
                 </div>
-                <div class="py-md-4 my-3 text-end">
-                  <button type="submit" class="btn btn-lg btn-primary"><svg class="me-2" data-name="icons/tabler/add" xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16">
-                    <rect data-name="Icons/Tabler/Add background" width="14" height="14" fill="none"/>
-                    <path d="M7.233,15.331l-.007-.1V8.774H.774A.774.774,0,0,1,.669,7.233l.105-.007H7.226V.774A.774.774,0,0,1,8.767.669l.007.105V7.226h6.452a.774.774,0,0,1,.1,1.541l-.1.007H8.774v6.452a.774.774,0,0,1-1.541.1Z" fill="#ffffff"/>
-                  </svg><span>Buy Addons</span></button>
+              </div>
+            </div>
+            <div class="col-12 col-xxl-4 mb-4">
+              <div class="card rounded-24 shadow-dark-80 border border-gray-50 py-3 px-2 p-md-4">
+                <div class="p-2">
+                  <div class="d-flex align-items-center mb-2">
+                    <span class="small text-muted font-weight-semibold">15 Jun 2021</span>
+                    <div class="ms-auto dropdown">
+                      <a href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false" class="btn btn-dark-100 btn-icon btn-sm rounded-circle">
+                        <svg data-name="Icons/Tabler/Notification" xmlns="http://www.w3.org/2000/svg" width="13.419" height="13.419" viewBox="0 0 13.419 13.419">
+                          <rect data-name="Icons/Tabler/Dots background" width="13.419" height="13.419" fill="none"></rect>
+                          <path d="M0,10.4a1.342,1.342,0,1,1,1.342,1.342A1.344,1.344,0,0,1,0,10.4Zm1.15,0a.192.192,0,1,0,.192-.192A.192.192,0,0,0,1.15,10.4ZM0,5.871A1.342,1.342,0,1,1,1.342,7.213,1.344,1.344,0,0,1,0,5.871Zm1.15,0a.192.192,0,1,0,.192-.192A.192.192,0,0,0,1.15,5.871ZM0,1.342A1.342,1.342,0,1,1,1.342,2.684,1.344,1.344,0,0,1,0,1.342Zm1.15,0a.192.192,0,1,0,.192-.192A.192.192,0,0,0,1.15,1.342Z" transform="translate(5.368 0.839)" fill="#6c757d"></path>
+                        </svg>
+                      </a>
+                      <ul class="dropdown-menu">
+                        <li class="dropdown-sub-title">
+                          <span>EXPORT AS</span>
+                        </li>
+                        <li>
+                          <a class="dropdown-item" href="#"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16">
+                            <g data-name="Icons/Tabler/Share" transform="translate(0)">
+                              <rect data-name="Icons/Tabler/Code background" width="16" height="16" fill="none"></rect>
+                              <path d="M6.21,13.982a.6.6,0,0,1-.463-.647l.014-.08L9.044.455A.617.617,0,0,1,9.79.018a.6.6,0,0,1,.463.647l-.014.08-3.282,12.8a.612.612,0,0,1-.6.455A.629.629,0,0,1,6.21,13.982Zm5.458-3.357a.588.588,0,0,1-.059-.781l.059-.067L14.514,7,11.668,4.225a.588.588,0,0,1-.059-.781l.059-.068a.627.627,0,0,1,.8-.059l.069.059,3.282,3.2a.59.59,0,0,1,.059.781l-.059.068-3.282,3.2a.627.627,0,0,1-.87,0Zm-8.136.058-.069-.058L.18,7.424a.589.589,0,0,1-.059-.781L.18,6.575l3.282-3.2a.627.627,0,0,1,.87,0,.588.588,0,0,1,.059.781l-.059.068L1.486,7,4.333,9.776a.588.588,0,0,1,.059.781l-.059.068a.627.627,0,0,1-.8.058Z" transform="translate(0 1)" fill="#495057"></path>
+                            </g>
+                          </svg><span class="ms-2">HTML</span></a>
+                        </li>
+                        <li>
+                          <a class="dropdown-item" href="#"><svg data-name="Icons/Tabler/Share" xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16">
+                            <rect data-name="Icons/Tabler/File background" width="16" height="16" fill="none"></rect>
+                            <path data-name="Combined Shape" d="M2.256,16A2.259,2.259,0,0,1,0,13.744V2.256A2.259,2.259,0,0,1,2.256,0H8a.613.613,0,0,1,.4.148l0,0L8.41.157l0,0,.005.005L8.425.17l0,0L8.435.18l4.1,4.1a.614.614,0,0,1,.185.44v9.026A2.259,2.259,0,0,1,10.462,16ZM1.231,2.256V13.744a1.026,1.026,0,0,0,1.025,1.025h8.205a1.027,1.027,0,0,0,1.026-1.025V5.333H8.821A1.436,1.436,0,0,1,7.387,3.979l0-.082V1.231H2.256A1.026,1.026,0,0,0,1.231,2.256ZM8.616,3.9a.206.206,0,0,0,.168.2l.037,0h1.8l-2-2ZM3.9,12.718a.615.615,0,0,1-.059-1.228l.059,0H8.821a.615.615,0,0,1,.059,1.228l-.059,0Zm0-3.282a.615.615,0,0,1-.059-1.228l.059,0H8.821a.615.615,0,0,1,.059,1.228l-.059,0Zm0-3.281a.616.616,0,0,1-.059-1.228l.059,0h.821a.615.615,0,0,1,.059,1.228l-.059,0Z" transform="translate(2)" fill="#495057"></path>
+                          </svg><span class="ms-2">XML</span></a>
+                        </li>
+                        <li>
+                          <a class="dropdown-item" href="#"><svg data-name="Icons/Tabler/Share" xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16">
+                            <rect data-name="Icons/Tabler/Code02 background" width="16" height="16" fill="none"></rect>
+                            <path data-name="Combined Shape" d="M2.256,16A2.259,2.259,0,0,1,0,13.744V2.256A2.259,2.259,0,0,1,2.256,0H8a.613.613,0,0,1,.4.148l0,0L8.41.157l0,0,.005.005L8.425.17l0,0L8.435.18l4.1,4.1a.614.614,0,0,1,.185.44v9.026A2.259,2.259,0,0,1,10.462,16ZM1.231,2.256V13.744a1.026,1.026,0,0,0,1.025,1.025h8.205a1.027,1.027,0,0,0,1.026-1.025V5.333H8.821A1.436,1.436,0,0,1,7.387,3.979l0-.082V1.231H2.256A1.026,1.026,0,0,0,1.231,2.256ZM8.616,3.9a.206.206,0,0,0,.168.2l.037,0h1.8l-2-2Zm-.891,8.756a.615.615,0,0,1-.3-.768l.025-.058.683-1.366L7.449,9.1A.616.616,0,0,1,7.67,8.3l.055-.031a.615.615,0,0,1,.795.22l.031.055.821,1.641a.617.617,0,0,1,.029.484l-.029.067L8.55,12.378a.614.614,0,0,1-.825.275ZM4.2,12.433l-.031-.055-.821-1.641a.617.617,0,0,1-.029-.484l.029-.067.821-1.641a.615.615,0,0,1,1.126.492L5.269,9.1l-.684,1.366.684,1.366a.615.615,0,0,1-.22.794l-.055.031a.615.615,0,0,1-.795-.22Z" transform="translate(2)" fill="#495057"></path>
+                          </svg><span class="ms-2">JSON</span></a>
+                        </li>
+                        <li><hr class="dropdown-divider"></li>
+                        <li>
+                          <a class="dropdown-item" href="#"><svg data-name="Icons/Tabler/Share" xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16">
+                            <rect data-name="Icons/Tabler/Share background" width="16" height="16" fill="none"></rect>
+                            <path d="M9.846,12.923a3.07,3.07,0,0,1,.1-.768L5.516,9.874a3.077,3.077,0,1,1,0-3.748L9.943,3.845a3.084,3.084,0,1,1,.541,1.106L6.057,7.232a3.087,3.087,0,0,1,0,1.537l4.427,2.281a3.075,3.075,0,1,1-.638,1.874Zm1.231,0a1.846,1.846,0,1,0,.2-.84q-.011.028-.025.055l-.014.025A1.836,1.836,0,0,0,11.077,12.923ZM1.231,8a1.846,1.846,0,0,0,3.487.845.623.623,0,0,1,.027-.061l.017-.031a1.845,1.845,0,0,0,0-1.508l-.017-.031a.622.622,0,0,1-.027-.061A1.846,1.846,0,0,0,1.231,8ZM12.923,4.923a1.846,1.846,0,1,0-1.682-1.086l.013.024q.014.027.025.056A1.848,1.848,0,0,0,12.923,4.923Z" fill="#495057"></path>
+                          </svg><span class="ms-2">Share</span></a>
+                        </li>
+                      </ul>
+                    </div>
+                  </div>
+                  <h5 class="font-weight-semibold title-box mb-0">Realengo</h5>
+                  <h6 class="font-weight-semibold title-box mb-0">Reclamações: 30</h6>
+                  <h6 class="font-weight-semibold title-box mb-0">Resolvidas: 16</h6>
+
+                  <div class="pt-4 pb-4">
+                    <span class="small font-weight-semibold mb-2 d-block">Progress</span>
+                    <div class="progress rounded-pill" style="height: 5px;width: 100%;">
+                      <div class="progress-bar bg-away" role="progressbar" style="width: 50%;" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100"></div>
+                    </div>
+                    <span class="small font-weight-semibold d-block text-end mt-2">50%</span>
+                  </div>
+                  <div class="d-flex align-items-center">
+                    <div class="avatar-group">
+                      <span class="avatar avatar-xs avatar-circle">
+                        <img class="avatar-img" src="<?= $base;?>/assets/images/avatar2.png" alt="Avatar">
+                      </span>
+                      <span class="avatar avatar-xs avatar-circle">
+                        <img class="avatar-img" src="<?= $base;?>/assets/images/avatar3.png" alt="Avatar">
+                      </span>
+                    </div>
+                    <span class="badge bg-ornage-150 text-orange-500 p-2 ms-auto">3 days left</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-12 col-xxl-4 mb-4">
+              <div class="card rounded-24 shadow-dark-80 border border-gray-50 py-3 px-2 p-md-4">
+                <div class="p-2">
+                  <div class="d-flex align-items-center mb-2">
+                    <span class="small text-muted font-weight-semibold">21 Jul 2021</span>
+                    <div class="ms-auto dropdown">
+                      <a href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false" class="btn btn-dark-100 btn-icon btn-sm rounded-circle">
+                        <svg data-name="Icons/Tabler/Notification" xmlns="http://www.w3.org/2000/svg" width="13.419" height="13.419" viewBox="0 0 13.419 13.419">
+                          <rect data-name="Icons/Tabler/Dots background" width="13.419" height="13.419" fill="none"></rect>
+                          <path d="M0,10.4a1.342,1.342,0,1,1,1.342,1.342A1.344,1.344,0,0,1,0,10.4Zm1.15,0a.192.192,0,1,0,.192-.192A.192.192,0,0,0,1.15,10.4ZM0,5.871A1.342,1.342,0,1,1,1.342,7.213,1.344,1.344,0,0,1,0,5.871Zm1.15,0a.192.192,0,1,0,.192-.192A.192.192,0,0,0,1.15,5.871ZM0,1.342A1.342,1.342,0,1,1,1.342,2.684,1.344,1.344,0,0,1,0,1.342Zm1.15,0a.192.192,0,1,0,.192-.192A.192.192,0,0,0,1.15,1.342Z" transform="translate(5.368 0.839)" fill="#6c757d"></path>
+                        </svg>
+                      </a>
+                      <ul class="dropdown-menu">
+                        <li class="dropdown-sub-title">
+                          <span>EXPORT AS</span>
+                        </li>
+                        <li>
+                          <a class="dropdown-item" href="#"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16">
+                            <g data-name="Icons/Tabler/Share" transform="translate(0)">
+                              <rect data-name="Icons/Tabler/Code background" width="16" height="16" fill="none"></rect>
+                              <path d="M6.21,13.982a.6.6,0,0,1-.463-.647l.014-.08L9.044.455A.617.617,0,0,1,9.79.018a.6.6,0,0,1,.463.647l-.014.08-3.282,12.8a.612.612,0,0,1-.6.455A.629.629,0,0,1,6.21,13.982Zm5.458-3.357a.588.588,0,0,1-.059-.781l.059-.067L14.514,7,11.668,4.225a.588.588,0,0,1-.059-.781l.059-.068a.627.627,0,0,1,.8-.059l.069.059,3.282,3.2a.59.59,0,0,1,.059.781l-.059.068-3.282,3.2a.627.627,0,0,1-.87,0Zm-8.136.058-.069-.058L.18,7.424a.589.589,0,0,1-.059-.781L.18,6.575l3.282-3.2a.627.627,0,0,1,.87,0,.588.588,0,0,1,.059.781l-.059.068L1.486,7,4.333,9.776a.588.588,0,0,1,.059.781l-.059.068a.627.627,0,0,1-.8.058Z" transform="translate(0 1)" fill="#495057"></path>
+                            </g>
+                          </svg><span class="ms-2">HTML</span></a>
+                        </li>
+                        <li>
+                          <a class="dropdown-item" href="#"><svg data-name="Icons/Tabler/Share" xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16">
+                            <rect data-name="Icons/Tabler/File background" width="16" height="16" fill="none"></rect>
+                            <path data-name="Combined Shape" d="M2.256,16A2.259,2.259,0,0,1,0,13.744V2.256A2.259,2.259,0,0,1,2.256,0H8a.613.613,0,0,1,.4.148l0,0L8.41.157l0,0,.005.005L8.425.17l0,0L8.435.18l4.1,4.1a.614.614,0,0,1,.185.44v9.026A2.259,2.259,0,0,1,10.462,16ZM1.231,2.256V13.744a1.026,1.026,0,0,0,1.025,1.025h8.205a1.027,1.027,0,0,0,1.026-1.025V5.333H8.821A1.436,1.436,0,0,1,7.387,3.979l0-.082V1.231H2.256A1.026,1.026,0,0,0,1.231,2.256ZM8.616,3.9a.206.206,0,0,0,.168.2l.037,0h1.8l-2-2ZM3.9,12.718a.615.615,0,0,1-.059-1.228l.059,0H8.821a.615.615,0,0,1,.059,1.228l-.059,0Zm0-3.282a.615.615,0,0,1-.059-1.228l.059,0H8.821a.615.615,0,0,1,.059,1.228l-.059,0Zm0-3.281a.616.616,0,0,1-.059-1.228l.059,0h.821a.615.615,0,0,1,.059,1.228l-.059,0Z" transform="translate(2)" fill="#495057"></path>
+                          </svg><span class="ms-2">XML</span></a>
+                        </li>
+                        <li>
+                          <a class="dropdown-item" href="#"><svg data-name="Icons/Tabler/Share" xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16">
+                            <rect data-name="Icons/Tabler/Code02 background" width="16" height="16" fill="none"></rect>
+                            <path data-name="Combined Shape" d="M2.256,16A2.259,2.259,0,0,1,0,13.744V2.256A2.259,2.259,0,0,1,2.256,0H8a.613.613,0,0,1,.4.148l0,0L8.41.157l0,0,.005.005L8.425.17l0,0L8.435.18l4.1,4.1a.614.614,0,0,1,.185.44v9.026A2.259,2.259,0,0,1,10.462,16ZM1.231,2.256V13.744a1.026,1.026,0,0,0,1.025,1.025h8.205a1.027,1.027,0,0,0,1.026-1.025V5.333H8.821A1.436,1.436,0,0,1,7.387,3.979l0-.082V1.231H2.256A1.026,1.026,0,0,0,1.231,2.256ZM8.616,3.9a.206.206,0,0,0,.168.2l.037,0h1.8l-2-2Zm-.891,8.756a.615.615,0,0,1-.3-.768l.025-.058.683-1.366L7.449,9.1A.616.616,0,0,1,7.67,8.3l.055-.031a.615.615,0,0,1,.795.22l.031.055.821,1.641a.617.617,0,0,1,.029.484l-.029.067L8.55,12.378a.614.614,0,0,1-.825.275ZM4.2,12.433l-.031-.055-.821-1.641a.617.617,0,0,1-.029-.484l.029-.067.821-1.641a.615.615,0,0,1,1.126.492L5.269,9.1l-.684,1.366.684,1.366a.615.615,0,0,1-.22.794l-.055.031a.615.615,0,0,1-.795-.22Z" transform="translate(2)" fill="#495057"></path>
+                          </svg><span class="ms-2">JSON</span></a>
+                        </li>
+                        <li><hr class="dropdown-divider"></li>
+                        <li>
+                          <a class="dropdown-item" href="#"><svg data-name="Icons/Tabler/Share" xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16">
+                            <rect data-name="Icons/Tabler/Share background" width="16" height="16" fill="none"></rect>
+                            <path d="M9.846,12.923a3.07,3.07,0,0,1,.1-.768L5.516,9.874a3.077,3.077,0,1,1,0-3.748L9.943,3.845a3.084,3.084,0,1,1,.541,1.106L6.057,7.232a3.087,3.087,0,0,1,0,1.537l4.427,2.281a3.075,3.075,0,1,1-.638,1.874Zm1.231,0a1.846,1.846,0,1,0,.2-.84q-.011.028-.025.055l-.014.025A1.836,1.836,0,0,0,11.077,12.923ZM1.231,8a1.846,1.846,0,0,0,3.487.845.623.623,0,0,1,.027-.061l.017-.031a1.845,1.845,0,0,0,0-1.508l-.017-.031a.622.622,0,0,1-.027-.061A1.846,1.846,0,0,0,1.231,8ZM12.923,4.923a1.846,1.846,0,1,0-1.682-1.086l.013.024q.014.027.025.056A1.848,1.848,0,0,0,12.923,4.923Z" fill="#495057"></path>
+                          </svg><span class="ms-2">Share</span></a>
+                        </li>
+                      </ul>
+                    </div>
+                  </div>
+                  <h5 class="font-weight-semibold title-box mb-0">Bangu</h5>
+                  <h6 class="font-weight-semibold title-box mb-0">Reclamações: 30</h6>
+                  <h6 class="font-weight-semibold title-box mb-0">Resolvidas: 16</h6>
+
+                  <div class="pt-4 pb-4">
+                    <span class="small font-weight-semibold mb-2 d-block">Progress</span>
+                    <div class="progress rounded-pill" style="height: 5px;width: 100%;">
+                      <div class="progress-bar bg-dnd" role="progressbar" style="width: 25%;" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
+                    </div>
+                    <span class="small font-weight-semibold d-block text-end mt-2">25%</span>
+                  </div>
+                  <div class="d-flex align-items-center">
+                    <div class="avatar-group">
+                      <span class="avatar avatar-xs avatar-circle">
+                        <img class="avatar-img" src="<?= $base;?>/assets/images/avatar2.png" alt="Avatar">
+                      </span>
+                      <span class="avatar avatar-xs avatar-circle">
+                        <img class="avatar-img" src="<?= $base;?>/assets/images/avatar3.png" alt="Avatar">
+                      </span>
+                    </div>
+                    <span class="badge bg-red-50 text-dnd p-2 ms-auto">3 days left</span>
+                  </div>
                 </div>
               </div>
             </div>
           </div>
-          <div class="card rounded-12 shadow-dark-80 border border-gray-50 mb-3 mb-xl-5">
-            <div class="d-flex align-items-center px-3 px-md-4 py-3 border-bottom border-gray-200">
-              <h5 class="card-header-title my-2 ps-md-3 font-weight-semibold">Payment Methods</h5>
+
+      </div>
+      </div>
+     
+      <div class="row">
+        <div class="col-12 mb-4">
+          <div class="card rounded-12 shadow-dark-80">
+            <div class="d-flex align-items-center px-3 px-md-4 py-3">
+              <h5 class="card-header-title mb-0 ps-md-2 font-weight-semibold">Detalhes da Comunidade</h5>
+              <div class="dropdown export-dropdown ms-auto pe-md-2">
+                <a href="#" role="button" id="Sources" data-bs-toggle="dropdown" aria-expanded="false" class="btn btn-outline-dark border-gray-700 text-gray-700 px-3"><span>Hoje </span> <svg class="ms-2" xmlns="http://www.w3.org/2000/svg" width="13" height="13" viewBox="0 0 13 13">
+                  <rect data-name="Icons/Tabler/Chevron Down background" width="13" height="13" fill="none"/>
+                  <path d="M.214.212a.738.738,0,0,1,.952-.07l.082.07L7.1,5.989a.716.716,0,0,1,.071.94L7.1,7.011l-5.85,5.778a.738.738,0,0,1-1.034,0,.716.716,0,0,1-.071-.94l.071-.081L5.547,6.5.214,1.233A.716.716,0,0,1,.143.293Z" transform="translate(13 3.25) rotate(90)" fill="#495057"/>
+                </svg>
+                </a>
+    
+              </div>
             </div>
-            <div class="card-body px-0 px-md-4 py-0">
-              <div class="px-3">
-                <div class="media border-bottom border-gray-200 py-2 py-md-4">
-                  <div class="media-body my-2 w-100">
-                    <div class="row align-items-center">
-                      <div class="col">
-                        <div class="d-md-flex align-items-center">
-                          <span class="me-3 mb-2"><img src="<?= $base;?>/assets/svg/icons/visa.svg" alt="Visa"></span>
-                          <div>
-                            <h6 class="font-weight-normal open-sans-font">Ending in 456</h6>
-                            <small class="d-block text-gray-600">Expiers 01/05/2025</small>
-                          </div>
-                        </div>
-                      </div>
-                      <div class="col-auto">
-                        <div class="d-flex align-items-center">
-                          <span class="badge badge-lg bg-blue-50 text-primary font-weight-bold me-4">Default</span>
-                          <div class="dropdown ">
-                            <a href="#" class="btn btn-dark-100 btn-icon btn-sm rounded-circle" role="button" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                              <svg data-name="Icons/Tabler/Notification" xmlns="http://www.w3.org/2000/svg" width="13.419" height="13.419" viewBox="0 0 13.419 13.419">
-                                <rect data-name="Icons/Tabler/Dots background" width="13.419" height="13.419" fill="none"></rect>
-                                <path d="M0,10.4a1.342,1.342,0,1,1,1.342,1.342A1.344,1.344,0,0,1,0,10.4Zm1.15,0a.192.192,0,1,0,.192-.192A.192.192,0,0,0,1.15,10.4ZM0,5.871A1.342,1.342,0,1,1,1.342,7.213,1.344,1.344,0,0,1,0,5.871Zm1.15,0a.192.192,0,1,0,.192-.192A.192.192,0,0,0,1.15,5.871ZM0,1.342A1.342,1.342,0,1,1,1.342,2.684,1.344,1.344,0,0,1,0,1.342Zm1.15,0a.192.192,0,1,0,.192-.192A.192.192,0,0,0,1.15,1.342Z" transform="translate(5.368 0.839)" fill="#6c757d"></path>
-                              </svg>
+            <div class="table-responsive mb-0">
+              <table class="table card-table table-nowrap overflow-hidden">
+                <thead>
+                  <tr>
+                    <th>Comunidade</th>
+                    <th>Total de Reclamações</th>
+                    <th>Resolvidas</th>
+                    <th>Em Andamento</th>
+                    <th>Obras Ativas</th>
+                    <th>Satisfação</th>
+                  </tr>
+                </thead>
+                <tbody class="list">
+                  <tr>
+                    <td>Anchieta</td>
+                    <td><span class="badge bg-teal-50 text-teal-500">105</span></td>
+                    <td>73</td>
+                    <td>20</td>
+                     <td>5</td>
+                     <td>4.5</td>
+                     <td>
+                        <div class="dropdown text-end">
+                          <a href="#" class="btn btn-dark-100 btn-icon btn-sm rounded-circle" role="button" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            <svg data-name="Icons/Tabler/Notification" xmlns="http://www.w3.org/2000/svg" width="13.419" height="13.419" viewBox="0 0 13.419 13.419">
+                              <rect data-name="Icons/Tabler/Dots background" width="13.419" height="13.419" fill="none"/>
+                              <path d="M0,10.4a1.342,1.342,0,1,1,1.342,1.342A1.344,1.344,0,0,1,0,10.4Zm1.15,0a.192.192,0,1,0,.192-.192A.192.192,0,0,0,1.15,10.4ZM0,5.871A1.342,1.342,0,1,1,1.342,7.213,1.344,1.344,0,0,1,0,5.871Zm1.15,0a.192.192,0,1,0,.192-.192A.192.192,0,0,0,1.15,5.871ZM0,1.342A1.342,1.342,0,1,1,1.342,2.684,1.344,1.344,0,0,1,0,1.342Zm1.15,0a.192.192,0,1,0,.192-.192A.192.192,0,0,0,1.15,1.342Z" transform="translate(5.368 0.839)" fill="#6c757d"/>
+                            </svg>
+                          </a>
+                          <div class="dropdown-menu dropdown-menu-end shadow-sm">
+                            <a href="#!" class="dropdown-item">
+                              Action
                             </a>
-                            <div class="dropdown-menu dropdown-menu-end">
-                              <a href="#!" class="dropdown-item">
-                                Action
-                              </a>
-                              <a href="#!" class="dropdown-item">
-                                Another action
-                              </a>
-                              <a href="#!" class="dropdown-item">
-                                Something else here
-                              </a>
-                            </div>
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-                <div class="media border-bottom border-gray-200 py-2 py-md-4">
-                  <div class="media-body my-2 w-100">
-                    <div class="row align-items-center">
-                      <div class="col">
-                        <div class="d-md-flex align-items-center">
-                          <span class="me-3 mb-2"><img src="<?= $base;?>/assets/svg/icons/mastercard.svg" alt="Visa"></span>
-                          <div>
-                            <h6 class="font-weight-normal open-sans-font">Ending in 756</h6>
-                            <small class="d-block text-gray-600">Expiers 02/10/2023</small>
-                          </div>
-                        </div>
-                      </div>
-                      <div class="col-auto">
-                        <div class="d-flex align-items-center">
-                          <div class="dropdown ">
-                            <a href="#" class="btn btn-dark-100 btn-icon btn-sm rounded-circle" role="button" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                              <svg data-name="Icons/Tabler/Notification" xmlns="http://www.w3.org/2000/svg" width="13.419" height="13.419" viewBox="0 0 13.419 13.419">
-                                <rect data-name="Icons/Tabler/Dots background" width="13.419" height="13.419" fill="none"></rect>
-                                <path d="M0,10.4a1.342,1.342,0,1,1,1.342,1.342A1.344,1.344,0,0,1,0,10.4Zm1.15,0a.192.192,0,1,0,.192-.192A.192.192,0,0,0,1.15,10.4ZM0,5.871A1.342,1.342,0,1,1,1.342,7.213,1.344,1.344,0,0,1,0,5.871Zm1.15,0a.192.192,0,1,0,.192-.192A.192.192,0,0,0,1.15,5.871ZM0,1.342A1.342,1.342,0,1,1,1.342,2.684,1.344,1.344,0,0,1,0,1.342Zm1.15,0a.192.192,0,1,0,.192-.192A.192.192,0,0,0,1.15,1.342Z" transform="translate(5.368 0.839)" fill="#6c757d"></path>
-                              </svg>
+                            <a href="#!" class="dropdown-item">
+                              Another action
                             </a>
-                            <div class="dropdown-menu dropdown-menu-end">
-                              <a href="#!" class="dropdown-item">
-                                Action
-                              </a>
-                              <a href="#!" class="dropdown-item">
-                                Another action
-                              </a>
-                              <a href="#!" class="dropdown-item">
-                                Something else here
-                              </a>
-                            </div>
+                            <a href="#!" class="dropdown-item">
+                              Something else here
+                            </a>
                           </div>
                         </div>
+                      </tr>
+                     </td>
+                    </tr>
+                  <tr> 
+                   <td>Realengo</td>
+                    <td><span class="badge bg-teal-50 text-teal-500">55</span></td>
+                    <td>43</td>
+                    <td>23</td>
+                     <td>8</td>
+                     <td>4.8</td>
+                     <td>
+                      <div class="dropdown text-end">
+                        <a href="#" class="btn btn-dark-100 btn-icon btn-sm rounded-circle" role="button" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                          <svg data-name="Icons/Tabler/Notification" xmlns="http://www.w3.org/2000/svg" width="13.419" height="13.419" viewBox="0 0 13.419 13.419">
+                            <rect data-name="Icons/Tabler/Dots background" width="13.419" height="13.419" fill="none"/>
+                            <path d="M0,10.4a1.342,1.342,0,1,1,1.342,1.342A1.344,1.344,0,0,1,0,10.4Zm1.15,0a.192.192,0,1,0,.192-.192A.192.192,0,0,0,1.15,10.4ZM0,5.871A1.342,1.342,0,1,1,1.342,7.213,1.344,1.344,0,0,1,0,5.871Zm1.15,0a.192.192,0,1,0,.192-.192A.192.192,0,0,0,1.15,5.871ZM0,1.342A1.342,1.342,0,1,1,1.342,2.684,1.344,1.344,0,0,1,0,1.342Zm1.15,0a.192.192,0,1,0,.192-.192A.192.192,0,0,0,1.15,1.342Z" transform="translate(5.368 0.839)" fill="#6c757d"/>
+                          </svg>
+                        </a>
+                        <div class="dropdown-menu dropdown-menu-end shadow-sm">
+                          <a href="#!" class="dropdown-item">
+                            Action
+                          </a>
+                          <a href="#!" class="dropdown-item">
+                            Another action
+                          </a>
+                          <a href="#!" class="dropdown-item">
+                            Something else here
+                          </a>
+                        </div>
                       </div>
-                    </div>
-                  </div>
-                </div>
-                <div class="py-md-4 my-3 text-end">
-                  <button type="submit" class="btn btn-lg btn-primary"><svg class="me-2" data-name="icons/tabler/add" xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16">
-                    <rect data-name="Icons/Tabler/Add background" width="14" height="14" fill="none"/>
-                    <path d="M7.233,15.331l-.007-.1V8.774H.774A.774.774,0,0,1,.669,7.233l.105-.007H7.226V.774A.774.774,0,0,1,8.767.669l.007.105V7.226h6.452a.774.774,0,0,1,.1,1.541l-.1.007H8.774v6.452a.774.774,0,0,1-1.541.1Z" fill="#ffffff"/>
-                  </svg><span>Add new payment</span></button>
-                </div>
-              </div>
+                    </td>
+                  </tr>
+                    <tr>
+                  <td>Vilar dos teles</td>
+                    <td><span class="badge bg-teal-50 text-teal-500">110</span></td>
+                    <td>64</td>
+                    <td>35</td>
+                     <td>12</td>
+                     <td>4.5</td>
+                     <td>
+                      <div class="dropdown text-end">
+                        <a href="#" class="btn btn-dark-100 btn-icon btn-sm rounded-circle" role="button" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                          <svg data-name="Icons/Tabler/Notification" xmlns="http://www.w3.org/2000/svg" width="13.419" height="13.419" viewBox="0 0 13.419 13.419">
+                            <rect data-name="Icons/Tabler/Dots background" width="13.419" height="13.419" fill="none"/>
+                            <path d="M0,10.4a1.342,1.342,0,1,1,1.342,1.342A1.344,1.344,0,0,1,0,10.4Zm1.15,0a.192.192,0,1,0,.192-.192A.192.192,0,0,0,1.15,10.4ZM0,5.871A1.342,1.342,0,1,1,1.342,7.213,1.344,1.344,0,0,1,0,5.871Zm1.15,0a.192.192,0,1,0,.192-.192A.192.192,0,0,0,1.15,5.871ZM0,1.342A1.342,1.342,0,1,1,1.342,2.684,1.344,1.344,0,0,1,0,1.342Zm1.15,0a.192.192,0,1,0,.192-.192A.192.192,0,0,0,1.15,1.342Z" transform="translate(5.368 0.839)" fill="#6c757d"/>
+                          </svg>
+                        </a>
+                        <div class="dropdown-menu dropdown-menu-end shadow-sm">
+                          <a href="#!" class="dropdown-item">
+                            Action
+                          </a>
+                          <a href="#!" class="dropdown-item">
+                            Another action
+                          </a>
+                          <a href="#!" class="dropdown-item">
+                            Something else here
+                          </a>
+                        </div>
+                      </div>
+                    </td>
+                  </tr>
+                    <tr>
+                  <td>Madureira</td>
+                    <td><span class="badge bg-teal-50 text-teal-500">37</span></td>
+                    <td>19</td>
+                    <td>11</td>
+                     <td>6</td>
+                     <td>4.4</td>
+                     <td>
+                      <div class="dropdown text-end">
+                        <a href="#" class="btn btn-dark-100 btn-icon btn-sm rounded-circle" role="button" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                          <svg data-name="Icons/Tabler/Notification" xmlns="http://www.w3.org/2000/svg" width="13.419" height="13.419" viewBox="0 0 13.419 13.419">
+                            <rect data-name="Icons/Tabler/Dots background" width="13.419" height="13.419" fill="none"/>
+                            <path d="M0,10.4a1.342,1.342,0,1,1,1.342,1.342A1.344,1.344,0,0,1,0,10.4Zm1.15,0a.192.192,0,1,0,.192-.192A.192.192,0,0,0,1.15,10.4ZM0,5.871A1.342,1.342,0,1,1,1.342,7.213,1.344,1.344,0,0,1,0,5.871Zm1.15,0a.192.192,0,1,0,.192-.192A.192.192,0,0,0,1.15,5.871ZM0,1.342A1.342,1.342,0,1,1,1.342,2.684,1.344,1.344,0,0,1,0,1.342Zm1.15,0a.192.192,0,1,0,.192-.192A.192.192,0,0,0,1.15,1.342Z" transform="translate(5.368 0.839)" fill="#6c757d"/>
+                          </svg>
+                        </a>
+                        <div class="dropdown-menu dropdown-menu-end shadow-sm">
+                          <a href="#!" class="dropdown-item">
+                            Action
+                          </a>
+                          <a href="#!" class="dropdown-item">
+                            Another action
+                          </a>
+                          <a href="#!" class="dropdown-item">
+                            Something else here
+                          </a>
+                        </div>
+                      </div>
+                    </td>
+                  </tr>
+                  <tr>
+                  <td>Marechal</td>
+                    <td><span class="badge bg-teal-50 text-teal-500">43</span></td>
+                    <td>26</td>
+                    <td>13</td>
+                     <td>8</td>
+                     <td>4.5</td>
+                     <td>
+                      <div class="dropdown text-end">
+                        <a href="#" class="btn btn-dark-100 btn-icon btn-sm rounded-circle" role="button" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                          <svg data-name="Icons/Tabler/Notification" xmlns="http://www.w3.org/2000/svg" width="13.419" height="13.419" viewBox="0 0 13.419 13.419">
+                            <rect data-name="Icons/Tabler/Dots background" width="13.419" height="13.419" fill="none"/>
+                            <path d="M0,10.4a1.342,1.342,0,1,1,1.342,1.342A1.344,1.344,0,0,1,0,10.4Zm1.15,0a.192.192,0,1,0,.192-.192A.192.192,0,0,0,1.15,10.4ZM0,5.871A1.342,1.342,0,1,1,1.342,7.213,1.344,1.344,0,0,1,0,5.871Zm1.15,0a.192.192,0,1,0,.192-.192A.192.192,0,0,0,1.15,5.871ZM0,1.342A1.342,1.342,0,1,1,1.342,2.684,1.344,1.344,0,0,1,0,1.342Zm1.15,0a.192.192,0,1,0,.192-.192A.192.192,0,0,0,1.15,1.342Z" transform="translate(5.368 0.839)" fill="#6c757d"/>
+                          </svg>
+                        </a>
+                        <div class="dropdown-menu dropdown-menu-end shadow-sm">
+                          <a href="#!" class="dropdown-item">
+                            Action
+                          </a>
+                          <a href="#!" class="dropdown-item">
+                            Another action
+                          </a>
+                          <a href="#!" class="dropdown-item">
+                            Something else here
+                          </a>
+                        </div>
+                      </div>
+                    </td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+            <div class="d-flex align-items-center p-3 p-md-4 border-top border-gray-200">
+              <a href="#" class="my-1 tiny font-weight-semibold mx-auto btn btn-link link-dark">Ver Mais<svg class="ms-1" data-name="icons/tabler/chevron right" xmlns="http://www.w3.org/2000/svg" width="10" height="10" viewBox="0 0 16 16">
+                <rect data-name="Icons/Tabler/Chevron Right background" width="16" height="16" fill="none"></rect>
+                <path d="M.26.26A.889.889,0,0,1,1.418.174l.1.086L8.629,7.371a.889.889,0,0,1,.086,1.157l-.086.1L1.517,15.74A.889.889,0,0,1,.174,14.582l.086-.1L6.743,8,.26,1.517A.889.889,0,0,1,.174.36Z" transform="translate(4)" fill="#1e1e1e"></path>
+              </svg></a>
             </div>
           </div>
-          <div class="card rounded-12 shadow-dark-80 border border-gray-50 mb-3 mb-xl-5">
-            <div class="d-flex align-items-center px-3 px-md-4 py-3 border-bottom border-gray-200">
-              <h5 class="card-header-title my-2 ps-md-3 font-weight-semibold">Invoices</h5>
-            </div>
-            <div class="card-body px-0 px-md-4 py-0">
-              <div class="px-3">
-                <div class="table-responsive invoice-table">
-                  <table class="table">
-                    <tbody>
-                      <tr>
-                        <td><span class="avatar avatar-sm-status bottom-0 end-0 avatar-danger avatar-border me-2">&nbsp;</span><span class="fs-16">Pending</span></td>
-                        <td><span class="fs-16 text-primary font-weight-semibold">Dec 01, 2021</span></td>
-                        <td><div class="text-end"><a href="#0" class="btn btn-primary me-4">Pay</a><span class="fs-16">$25.00</span></div></td>
-                      </tr>
-                      <tr>
-                        <td><span class="avatar avatar-sm-status bottom-0 end-0 avatar-success avatar-border me-2">&nbsp;</span><span class="fs-16">Paid</span></td>
-                        <td><span class="fs-16 text-primary font-weight-semibold">Nov 01, 2021</span></td>
-                        <td><div class="text-end"><span class="fs-16">$25.00</span></div></td>
-                      </tr>
-                      <tr>
-                        <td><span class="avatar avatar-sm-status bottom-0 end-0 avatar-success avatar-border me-2">&nbsp;</span><span class="fs-16">Paid</span></td>
-                        <td><span class="fs-16 text-primary font-weight-semibold">Nov 01, 2021</span></td>
-                        <td><div class="text-end"><span class="fs-16">$25.00</span></div></td>
-                      </tr>
-                      <tr>
-                        <td><span class="avatar avatar-sm-status bottom-0 end-0 avatar-success avatar-border me-2">&nbsp;</span><span class="fs-16">Paid</span></td>
-                        <td><span class="fs-16 text-primary font-weight-semibold">Nov 01, 2021</span></td>
-                        <td><div class="text-end"><span class="fs-16">$25.00</span></div></td>
-                      </tr>
-                      <tr>
-                        <td><span class="avatar avatar-sm-status bottom-0 end-0 avatar-success avatar-border me-2">&nbsp;</span><span class="fs-16">Paid</span></td>
-                        <td><span class="fs-16 text-primary font-weight-semibold">Nov 01, 2021</span></td>
-                        <td><div class="text-end"><span class="fs-16">$25.00</span></div></td>
-                      </tr>
-                      <tr>
-                        <td><span class="avatar avatar-sm-status bottom-0 end-0 avatar-success avatar-border me-2">&nbsp;</span><span class="fs-16">Paid</span></td>
-                        <td><span class="fs-16 text-primary font-weight-semibold">Nov 01, 2021</span></td>
-                        <td><div class="text-end"><span class="fs-16">$25.00</span></div></td>
-                      </tr>
-                      <tr>
-                        <td><span class="avatar avatar-sm-status bottom-0 end-0 avatar-success avatar-border me-2">&nbsp;</span><span class="fs-16">Paid</span></td>
-                        <td><span class="fs-16 text-primary font-weight-semibold">Nov 01, 2021</span></td>
-                        <td><div class="text-end"><span class="fs-16">$25.00</span></div></td>
-                      </tr>
-                      <tr>
-                        <td><span class="avatar avatar-sm-status bottom-0 end-0 avatar-success avatar-border me-2">&nbsp;</span><span class="fs-16">Paid</span></td>
-                        <td><span class="fs-16 text-primary font-weight-semibold">Nov 01, 2021</span></td>
-                        <td><div class="text-end"><span class="fs-16">$25.00</span></div></td>
-                      </tr>
-                      <tr>
-                        <td><span class="avatar avatar-sm-status bottom-0 end-0 avatar-success avatar-border me-2">&nbsp;</span><span class="fs-16">Paid</span></td>
-                        <td><span class="fs-16 text-primary font-weight-semibold">Nov 01, 2021</span></td>
-                        <td><div class="text-end"><span class="fs-16">$25.00</span></div></td>
-                      </tr>
-                      <tr>
-                        <td><span class="avatar avatar-sm-status bottom-0 end-0 avatar-success avatar-border me-2">&nbsp;</span><span class="fs-16">Paid</span></td>
-                        <td><span class="fs-16 text-primary font-weight-semibold">Nov 01, 2021</span></td>
-                        <td><div class="text-end"><span class="fs-16">$25.00</span></div></td>
-                      </tr>
-                      <tr>
-                        <td><span class="avatar avatar-sm-status bottom-0 end-0 avatar-success avatar-border me-2">&nbsp;</span><span class="fs-16">Paid</span></td>
-                        <td><span class="fs-16 text-primary font-weight-semibold">Nov 01, 2021</span></td>
-                        <td><div class="text-end"><span class="fs-16">$25.00</span></div></td>
-                      </tr>
-                      <tr>
-                        <td><span class="avatar avatar-sm-status bottom-0 end-0 avatar-success avatar-border me-2">&nbsp;</span><span class="fs-16">Paid</span></td>
-                        <td><span class="fs-16 text-primary font-weight-semibold">Nov 01, 2021</span></td>
-                        <td><div class="text-end"><span class="fs-16">$25.00</span></div></td>
-                      </tr>
-                    </tbody>
-                  </table>
-                </div>
-              </div>
-            </div>
-          </div>
-          <p class="font-weight-semibold text-gray-600">Have a question? Get in touch with our <a href="#0" class="link-primary">Support Team</a></p>
         </div>
       </div>
-    </div>
-    <footer class="pt-xl-5 mt-lg-2">
+      <div class="row">
+       <div class="col-12 col-xl-8 col-xxl-9 mb-4">
+          <div class="card rounded-12 shadow-dark-80 border border-gray-50">
+            <div class="card-body px-0">
+              <div class="d-flex align-items-center border-bottom border-gray-200 pb-3 mb-2 px-3 px-md-4">
+                <h5 class="card-header-title mb-0 font-weight-semibold ps-md-2">Fluxo de Reclamações</h5>
+                <div class="ms-auto pe-md-2">
+                  <div class="dropdown export-dropdown">
+                    <a href="#" role="button" id="UserOverview" data-bs-toggle="dropdown" aria-expanded="false" class="btn btn-outline-dark text-gray-700 border-gray-700 px-3"><span>Hoje </span> <svg class="ms-2" xmlns="http://www.w3.org/2000/svg" width="13" height="13" viewBox="0 0 13 13">
+                      <rect data-name="Icons/Tabler/Chevron Down background" width="13" height="13" fill="none"/>
+                      <path d="M.214.212a.738.738,0,0,1,.952-.07l.082.07L7.1,5.989a.716.716,0,0,1,.071.94L7.1,7.011l-5.85,5.778a.738.738,0,0,1-1.034,0,.716.716,0,0,1-.071-.94l.071-.081L5.547,6.5.214,1.233A.716.716,0,0,1,.143.293Z" transform="translate(13 3.25) rotate(90)" fill="#495057"/>
+                    </svg>
+                    </a>
+                    <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="UserOverview">
+                      <li><a class="dropdown-item" href="#"><span>Hoje</span></a></li>
+                      <li><a class="dropdown-item" href="#"><span>Ontem</span></a></li>
+                      <li><a class="dropdown-item" href="#"><span>Há 7 dias</span></a></li>
+                      <li><a class="dropdown-item" href="#"><span>Há 1 mês</span></a></li>
+                      <li><a class="dropdown-item" href="#"><span>Último mês</span></a></li>
+                      <li><hr class="dropdown-divider"></li>
+                      <li><a class="dropdown-item" href="#"><svg data-name="icons/tabler/calendar" xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16">
+                        <rect data-name="Icons/Tabler/Calendar background" width="16" height="16" fill="none"/>
+                        <path d="M2.256,16A2.259,2.259,0,0,1,0,13.743V3.9A2.259,2.259,0,0,1,2.256,1.641H3.282V.616A.615.615,0,0,1,4.507.532l.005.084V1.641H9.846V.616A.615.615,0,0,1,11.071.532l.006.084V1.641H12.1A2.259,2.259,0,0,1,14.359,3.9v9.846A2.259,2.259,0,0,1,12.1,16ZM1.231,13.743a1.027,1.027,0,0,0,1.025,1.026H12.1a1.027,1.027,0,0,0,1.026-1.026V7.795H1.231Zm11.9-7.179V3.9A1.027,1.027,0,0,0,12.1,2.872H11.077V3.9a.616.616,0,0,1-1.226.084L9.846,3.9V2.872H4.513V3.9a.615.615,0,0,1-1.225.084L3.282,3.9V2.872H2.256A1.026,1.026,0,0,0,1.231,3.9V6.564Z" transform="translate(1)" fill="#495057"/>
+                      </svg><span class="ms-2">Custom</span></a></li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+              <div class="card-body-inner px-3 px-md-4">
+                <div id="MuzeMultipleColumnsChartOne" class="px-md-2"></div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-12 col-xxl-3 mb-4">
+          <div class="card rounded-12 shadow-dark-80">
+            <div class="card-body px-0 pb-0">
+              <div class="d-flex align-items-center border-bottom border-gray-200 pb-3 px-3 px-md-4">
+                <h5 class="card-header-title mb-0 font-weight-semibold ps-md-2">Bairros mais prejudicados</h5>
+                <div class="ms-auto pe-md-2 dropdown">
+                  <a href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false" class="btn btn-dark-100 btn-icon btn-sm rounded-circle">
+                    <svg data-name="Icons/Tabler/Notification" xmlns="http://www.w3.org/2000/svg" width="13.419" height="13.419" viewBox="0 0 13.419 13.419">
+                      <rect data-name="Icons/Tabler/Dots background" width="13.419" height="13.419" fill="none"/>
+                      <path d="M0,10.4a1.342,1.342,0,1,1,1.342,1.342A1.344,1.344,0,0,1,0,10.4Zm1.15,0a.192.192,0,1,0,.192-.192A.192.192,0,0,0,1.15,10.4ZM0,5.871A1.342,1.342,0,1,1,1.342,7.213,1.344,1.344,0,0,1,0,5.871Zm1.15,0a.192.192,0,1,0,.192-.192A.192.192,0,0,0,1.15,5.871ZM0,1.342A1.342,1.342,0,1,1,1.342,2.684,1.344,1.344,0,0,1,0,1.342Zm1.15,0a.192.192,0,1,0,.192-.192A.192.192,0,0,0,1.15,1.342Z" transform="translate(5.368 0.839)" fill="#6c757d"/>
+                    </svg>
+                  </a>
+                  <ul class="dropdown-menu">
+                    <li class="dropdown-sub-title">
+                      <span>Exportar como</span>
+                    </li>
+                    <li><a class="dropdown-item" href="#"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16">
+                      <g data-name="Icons/Tabler/Share" transform="translate(0)">
+                        <rect data-name="Icons/Tabler/Code background" width="16" height="16" fill="none"></rect>
+                        <path d="M6.21,13.982a.6.6,0,0,1-.463-.647l.014-.08L9.044.455A.617.617,0,0,1,9.79.018a.6.6,0,0,1,.463.647l-.014.08-3.282,12.8a.612.612,0,0,1-.6.455A.629.629,0,0,1,6.21,13.982Zm5.458-3.357a.588.588,0,0,1-.059-.781l.059-.067L14.514,7,11.668,4.225a.588.588,0,0,1-.059-.781l.059-.068a.627.627,0,0,1,.8-.059l.069.059,3.282,3.2a.59.59,0,0,1,.059.781l-.059.068-3.282,3.2a.627.627,0,0,1-.87,0Zm-8.136.058-.069-.058L.18,7.424a.589.589,0,0,1-.059-.781L.18,6.575l3.282-3.2a.627.627,0,0,1,.87,0,.588.588,0,0,1,.059.781l-.059.068L1.486,7,4.333,9.776a.588.588,0,0,1,.059.781l-.059.068a.627.627,0,0,1-.8.058Z" transform="translate(0 1)" fill="#495057"></path>
+                      </g>
+                    </svg><span class="ms-2">HTML</span></a></li>
+                    <li><a class="dropdown-item" href="#"><svg data-name="Icons/Tabler/Share" xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16">
+                      <rect data-name="Icons/Tabler/File background" width="16" height="16" fill="none"></rect>
+                      <path data-name="Combined Shape" d="M2.256,16A2.259,2.259,0,0,1,0,13.744V2.256A2.259,2.259,0,0,1,2.256,0H8a.613.613,0,0,1,.4.148l0,0L8.41.157l0,0,.005.005L8.425.17l0,0L8.435.18l4.1,4.1a.614.614,0,0,1,.185.44v9.026A2.259,2.259,0,0,1,10.462,16ZM1.231,2.256V13.744a1.026,1.026,0,0,0,1.025,1.025h8.205a1.027,1.027,0,0,0,1.026-1.025V5.333H8.821A1.436,1.436,0,0,1,7.387,3.979l0-.082V1.231H2.256A1.026,1.026,0,0,0,1.231,2.256ZM8.616,3.9a.206.206,0,0,0,.168.2l.037,0h1.8l-2-2ZM3.9,12.718a.615.615,0,0,1-.059-1.228l.059,0H8.821a.615.615,0,0,1,.059,1.228l-.059,0Zm0-3.282a.615.615,0,0,1-.059-1.228l.059,0H8.821a.615.615,0,0,1,.059,1.228l-.059,0Zm0-3.281a.616.616,0,0,1-.059-1.228l.059,0h.821a.615.615,0,0,1,.059,1.228l-.059,0Z" transform="translate(2)" fill="#495057"></path>
+                    </svg><span class="ms-2">XML</span></a></li>
+                    <li><a class="dropdown-item" href="#"><svg data-name="Icons/Tabler/Share" xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16">
+                      <rect data-name="Icons/Tabler/Code02 background" width="16" height="16" fill="none"></rect>
+                      <path data-name="Combined Shape" d="M2.256,16A2.259,2.259,0,0,1,0,13.744V2.256A2.259,2.259,0,0,1,2.256,0H8a.613.613,0,0,1,.4.148l0,0L8.41.157l0,0,.005.005L8.425.17l0,0L8.435.18l4.1,4.1a.614.614,0,0,1,.185.44v9.026A2.259,2.259,0,0,1,10.462,16ZM1.231,2.256V13.744a1.026,1.026,0,0,0,1.025,1.025h8.205a1.027,1.027,0,0,0,1.026-1.025V5.333H8.821A1.436,1.436,0,0,1,7.387,3.979l0-.082V1.231H2.256A1.026,1.026,0,0,0,1.231,2.256ZM8.616,3.9a.206.206,0,0,0,.168.2l.037,0h1.8l-2-2Zm-.891,8.756a.615.615,0,0,1-.3-.768l.025-.058.683-1.366L7.449,9.1A.616.616,0,0,1,7.67,8.3l.055-.031a.615.615,0,0,1,.795.22l.031.055.821,1.641a.617.617,0,0,1,.029.484l-.029.067L8.55,12.378a.614.614,0,0,1-.825.275ZM4.2,12.433l-.031-.055-.821-1.641a.617.617,0,0,1-.029-.484l.029-.067.821-1.641a.615.615,0,0,1,1.126.492L5.269,9.1l-.684,1.366.684,1.366a.615.615,0,0,1-.22.794l-.055.031a.615.615,0,0,1-.795-.22Z" transform="translate(2)" fill="#495057"></path>
+                    </svg><span class="ms-2">JSON</span></a></li>
+                    <li><hr class="dropdown-divider"></li>
+                    <li><a class="dropdown-item" href="#"><svg data-name="Icons/Tabler/Share" xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16">
+                      <rect data-name="Icons/Tabler/Share background" width="16" height="16" fill="none"></rect>
+                      <path d="M9.846,12.923a3.07,3.07,0,0,1,.1-.768L5.516,9.874a3.077,3.077,0,1,1,0-3.748L9.943,3.845a3.084,3.084,0,1,1,.541,1.106L6.057,7.232a3.087,3.087,0,0,1,0,1.537l4.427,2.281a3.075,3.075,0,1,1-.638,1.874Zm1.231,0a1.846,1.846,0,1,0,.2-.84q-.011.028-.025.055l-.014.025A1.836,1.836,0,0,0,11.077,12.923ZM1.231,8a1.846,1.846,0,0,0,3.487.845.623.623,0,0,1,.027-.061l.017-.031a1.845,1.845,0,0,0,0-1.508l-.017-.031a.622.622,0,0,1-.027-.061A1.846,1.846,0,0,0,1.231,8ZM12.923,4.923a1.846,1.846,0,1,0-1.682-1.086l.013.024q.014.027.025.056A1.848,1.848,0,0,0,12.923,4.923Z" fill="#495057"></path>
+                    </svg><span class="ms-2">Compartilhar</span></a></li>
+                  </ul>
+                </div>
+              </div>
+              <div class="list-group">
+                <div class="px-3 px-md-4 py-3 border-bottom border-gray-200">
+                  <div class="row px-md-2">
+                    <div class="col">
+                      <!-- <img src="<?= $base;?>/assets/svg/icons/germany@26.svg" class="avatar avatar-xs avatar-circle me-1" alt="Flag"> -->
+                      <span class="ps-ms-2 font-weight-semibold text-gray-700 fs-16 me-1">1°</span> 
+                      <span class="ps-ms-2 font-weight-semibold text-gray-700 fs-16">Anchieta</span> 
+                    </div>
+                    <div class="col-auto">
+                      <span class="text-gray-700 fs-16">67.43%</span>
+                    </div>
+                  </div>
+                </div>
+                <div class="px-3 px-md-4 py-3 border-bottom border-gray-200">
+                  <div class="row px-md-2">
+                    <div class="col">
+                      <!-- <img src="<?= $base;?>/assets/svg/icons/united-kingdom@26.svg" class="avatar avatar-xs avatar-circle me-1" alt="Flag"> -->
+                      <span class="ps-ms-2 font-weight-semibold text-gray-700 fs-16">2°</span>
+                      <span class="ps-ms-2 font-weight-semibold text-gray-700 fs-16">Bangu</span>
+                    </div>
+                    <div class="col-auto">
+                      <span class="text-gray-700 fs-16">20.11%</span>
+                    </div>
+                  </div>
+                </div>
+                <div class="px-3 px-md-4 py-3 border-bottom border-gray-200">
+                  <div class="row px-md-2">
+                    <div class="col ">
+                      <!-- <img src="<?= $base;?>/assets/svg/icons/brazil@26.svg" class="avatar avatar-xs avatar-circle me-1" alt="Flag"> -->
+                      <span class="ps-ms-2 font-weight-semibold text-gray-700 fs-16">3°</span>
+                      <span class="ps-ms-2 font-weight-semibold text-gray-700 fs-16">Madureira</span>
+                    </div>
+                    <div class="col-auto">
+                      <span class="text-gray-700 fs-16">6.92%</span>
+                    </div>
+                  </div>
+                </div>
+                <div class="px-3 px-md-4 py-3 border-bottom border-gray-200">
+                  <div class="row px-md-2">
+                    <div class="col">
+                      <!-- <img src="<?= $base;?>/assets/svg/icons/united-states@26.svg" class="avatar avatar-xs avatar-circle me-1" alt="Flag"> -->
+                      <span class="ps-ms-2 font-weight-semibold text-gray-700 fs-16 mr-4">4°</span>
+                      <span class="ps-ms-2 font-weight-semibold text-gray-700 fs-16">Realengo</span>
+                    </div>
+                    <div class="col-auto">
+                      <span class="text-gray-700 fs-16">3.56%</span>
+                    </div>
+                  </div>
+                </div>
+                <div class="px-3 px-md-4 py-3">
+                  <div class="row px-md-2">
+                    <div class="col">
+                      <!-- <img src="<?= $base;?>/assets/svg/icons/argentina@26.svg" class="avatar avatar-xs avatar-circle me-1" alt="Flag"> -->
+                      <span class="ps-ms-2 font-weight-semibold text-gray-700 fs-16">5°</span>
+                      <span class="ps-ms-2 font-weight-semibold text-gray-700 fs-16">Marechal Hermes </span>
+                    </div>
+                    <div class="col-auto">
+                      <span class="text-gray-700 fs-16">1.07%</span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="d-flex align-items-center p-3 p-md-4 border-top border-gray-200">
+                <a href="#" class="my-1 tiny font-weight-semibold mx-auto btn btn-link link-dark">Ver mais<svg class="ms-1" data-name="icons/tabler/chevron right" xmlns="http://www.w3.org/2000/svg" width="10" height="10" viewBox="0 0 16 16">
+                  <rect data-name="Icons/Tabler/Chevron Right background" width="16" height="16" fill="none"></rect>
+                  <path d="M.26.26A.889.889,0,0,1,1.418.174l.1.086L8.629,7.371a.889.889,0,0,1,.086,1.157l-.086.1L1.517,15.74A.889.889,0,0,1,.174,14.582l.086-.1L6.743,8,.26,1.517A.889.889,0,0,1,.174.36Z" transform="translate(4)" fill="#1e1e1e"></path>
+                </svg></a>
+              </div>
+            </div>
+          </div>
+        </div>
+        
+      </div>
+        <!-- <div class="col-12 col-xl-4 mb-4">
+          <div class="card h-100 rounded-12 shadow-dark-80">
+            <div class="card-body px-0">
+              <div class="d-flex align-items-center border-bottom border-gray-200 pb-3 mb-2 px-3 px-md-4">
+                <h5 class="card-header-title mb-0 font-weight-semibold ps-md-2">Refferals</h5>
+                <div class="ms-auto pe-md-2 dropdown">
+                  <a href="#" role="button" id="morebtn" data-bs-toggle="dropdown" aria-expanded="false" class="btn btn-dark-100 btn-icon btn-sm rounded-circle">
+                    <svg data-name="Icons/Tabler/Notification" xmlns="http://www.w3.org/2000/svg" width="13.419" height="13.419" viewBox="0 0 13.419 13.419">
+                      <rect data-name="Icons/Tabler/Dots background" width="13.419" height="13.419" fill="none"/>
+                      <path d="M0,10.4a1.342,1.342,0,1,1,1.342,1.342A1.344,1.344,0,0,1,0,10.4Zm1.15,0a.192.192,0,1,0,.192-.192A.192.192,0,0,0,1.15,10.4ZM0,5.871A1.342,1.342,0,1,1,1.342,7.213,1.344,1.344,0,0,1,0,5.871Zm1.15,0a.192.192,0,1,0,.192-.192A.192.192,0,0,0,1.15,5.871ZM0,1.342A1.342,1.342,0,1,1,1.342,2.684,1.344,1.344,0,0,1,0,1.342Zm1.15,0a.192.192,0,1,0,.192-.192A.192.192,0,0,0,1.15,1.342Z" transform="translate(5.368 0.839)" fill="#6c757d"/>
+                    </svg>
+                  </a>
+                  <ul class="dropdown-menu" aria-labelledby="morebtn">
+                    <li class="dropdown-sub-title">
+                      <span>Options</span>
+                    </li>
+                    <li><a class="dropdown-item" href="#"><svg data-name="Icons/Tabler/Share" xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16">
+                      <rect data-name="Icons/Tabler/Share background" width="16" height="16" fill="none"/>
+                      <path d="M9.846,12.923a3.07,3.07,0,0,1,.1-.768L5.516,9.874a3.077,3.077,0,1,1,0-3.748L9.943,3.845a3.084,3.084,0,1,1,.541,1.106L6.057,7.232a3.087,3.087,0,0,1,0,1.537l4.427,2.281a3.075,3.075,0,1,1-.638,1.874Zm1.231,0a1.846,1.846,0,1,0,.2-.84q-.011.028-.025.055l-.014.025A1.836,1.836,0,0,0,11.077,12.923ZM1.231,8a1.846,1.846,0,0,0,3.487.845.623.623,0,0,1,.027-.061l.017-.031a1.845,1.845,0,0,0,0-1.508l-.017-.031a.622.622,0,0,1-.027-.061A1.846,1.846,0,0,0,1.231,8ZM12.923,4.923a1.846,1.846,0,1,0-1.682-1.086l.013.024q.014.027.025.056A1.848,1.848,0,0,0,12.923,4.923Z" fill="#495057"/>
+                    </svg><span class="ms-2">Share Chart</span></a></li>
+                    <li><a class="dropdown-item" href="#"><svg data-name="Icons/Tabler/Share" xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16">
+                      <rect id="Icons_Tabler_Export_background" data-name="Icons/Tabler/Export background" width="16" height="16" fill="none"/>
+                      <path d="M10.318,15.828a.585.585,0,0,1-.042-.78L10.318,15l1.342-1.342H7.61a.585.585,0,0,1-.056-1.168l.056,0h4.05l-1.342-1.342a.583.583,0,0,1-.042-.78l.042-.048a.587.587,0,0,1,.734-.076l.047.034.048.042,2.367,2.369.034.042.021.031.024.042.027.059.022.067.01.049.006.053,0,.044v.04l-.006.054-.014.06-.019.058-.014.032a.625.625,0,0,1-.05.087l-.032.043-.035.039-2.342,2.341a.584.584,0,0,1-.828,0ZM2.147,15.22A2.14,2.14,0,0,1,0,13.166l0-.093V2.147A2.14,2.14,0,0,1,2.053,0l.094,0H7.708l.012,0h0l.01,0h0l.01,0h0l.012,0h0A.573.573,0,0,1,7.929.1l0,0h0a.589.589,0,0,1,.083.068l0,0,3.882,3.883a.583.583,0,0,1,.187.353v.017a.592.592,0,0,1,0,.064v3.9a.585.585,0,0,1-1.168.057l0-.057V5.073H8.39A1.367,1.367,0,0,1,7.026,3.785l0-.077V1.171H2.147a.978.978,0,0,0-.974.909l0,.067V13.073a.978.978,0,0,0,.909.973l.067,0H5.658a.585.585,0,0,1,.057,1.168l-.057,0ZM8.2,3.707a.2.2,0,0,0,.16.193l.034,0H10.1L8.2,2Z" transform="translate(1)" fill="#495057"/>
+                    </svg><span class="ms-2">Export</span></a></li>
+                    <li><a class="dropdown-item" href="#"><svg data-name="Icons/Tabler/Share" xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16">
+                      <rect data-name="Icons/Tabler/Bookmark background" width="16" height="16" fill="none"/>
+                      <path d="M.687,16a.686.686,0,0,1-.681-.595L0,15.314V2.514A2.516,2.516,0,0,1,2.361,0l.153,0H8a2.516,2.516,0,0,1,2.51,2.361l0,.153v12.8A.688.688,0,0,1,9.827,16a.671.671,0,0,1-.27-.057L9.475,15.9,5.257,13.37,1.039,15.9A.684.684,0,0,1,.687,16Zm4.57-4.115a.678.678,0,0,1,.256.05l.1.048L9.142,14.1V2.514A1.139,1.139,0,0,0,8.116,1.377L8,1.372H2.514L2.4,1.377A1.147,1.147,0,0,0,1.377,2.4l-.005.116V14.1L4.9,11.983A.687.687,0,0,1,5.257,11.885Z" transform="translate(3)" fill="#495057"/>
+                    </svg><span class="ms-2">Bookmark</span></a></li>
+                    <li><hr class="dropdown-divider"></li>
+                    <li><a class="dropdown-item" href="#"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16">
+                      <path data-name="Combined Shape" d="M6.027,14.449a.8.8,0,0,0-1.193-.494,2.025,2.025,0,0,1-1.063.31,2.086,2.086,0,0,1-1.779-1.069,1.961,1.961,0,0,1,.051-2.03.8.8,0,0,0-.493-1.193,2.03,2.03,0,0,1,0-3.945.8.8,0,0,0,.494-1.193,1.962,1.962,0,0,1-.052-2.03,2.086,2.086,0,0,1,1.78-1.071,2.022,2.022,0,0,1,1.062.31.8.8,0,0,0,1.193-.493,2.03,2.03,0,0,1,3.945,0,.808.808,0,0,0,.472.551.788.788,0,0,0,.305.06.8.8,0,0,0,.417-.117,2.024,2.024,0,0,1,1.062-.31,2.087,2.087,0,0,1,1.78,1.07,1.963,1.963,0,0,1-.052,2.03.8.8,0,0,0,.494,1.192,2.03,2.03,0,0,1,0,3.946.8.8,0,0,0-.494,1.193,1.962,1.962,0,0,1,.052,2.03,2.086,2.086,0,0,1-1.779,1.07,2.025,2.025,0,0,1-1.063-.31.8.8,0,0,0-.722-.056.8.8,0,0,0-.471.55,2.03,2.03,0,0,1-3.945,0Zm0-1.687a2.03,2.03,0,0,1,1.2,1.4.8.8,0,0,0,1.553,0A2.029,2.029,0,0,1,11.8,12.9l.077.042a.78.78,0,0,0,.341.08.822.822,0,0,0,.7-.421.773.773,0,0,0-.02-.8l-.078-.141a2.03,2.03,0,0,1,1.333-2.889.8.8,0,0,0,0-1.552A2.031,2.031,0,0,1,12.9,4.195l.042-.076a.768.768,0,0,0-.042-.757.813.813,0,0,0-.68-.387.793.793,0,0,0-.418.122l-.141.078a2.038,2.038,0,0,1-.916.219,2.02,2.02,0,0,1-.777-.155,2.039,2.039,0,0,1-1.2-1.4l-.029-.1a.8.8,0,0,0-1.524.1A2.027,2.027,0,0,1,4.195,3.1l-.076-.041a.78.78,0,0,0-.341-.08.822.822,0,0,0-.7.422.772.772,0,0,0,.021.8l.078.141A2.029,2.029,0,0,1,1.841,7.223a.8.8,0,0,0,0,1.553A2.029,2.029,0,0,1,3.1,11.8l-.041.077a.768.768,0,0,0,.042.757.815.815,0,0,0,.68.387.791.791,0,0,0,.418-.122l.141-.078a2.027,2.027,0,0,1,1.693-.064ZM4.923,8A3.077,3.077,0,1,1,8,11.077,3.081,3.081,0,0,1,4.923,8ZM6.154,8A1.846,1.846,0,1,0,8,6.154,1.848,1.848,0,0,0,6.154,8Z" fill="#495057"/>
+                    </svg><span class="ms-2">Settings</span></a></li>
+                  </ul>
+                </div>
+              </div>
+              <div class="d-flex justify-content-center mt-4">
+                <div id="MuzePieChartOne" style="height: 380px;"></div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div> -->
+
+      <!-- <div class="row">
+        <div class="col-12 mb-4">
+          <div class="card rounded-12 shadow-dark-80">
+            <div class="d-flex align-items-center px-3 px-md-4 py-3">
+              <h5 class="card-header-title mb-0 ps-md-2 font-weight-semibold">Sources</h5>
+              <div class="dropdown export-dropdown ms-auto pe-md-2">
+                <a href="#" role="button" id="Sources" data-bs-toggle="dropdown" aria-expanded="false" class="btn btn-outline-dark border-gray-700 text-gray-700 px-3"><span>Today </span> <svg class="ms-2" xmlns="http://www.w3.org/2000/svg" width="13" height="13" viewBox="0 0 13 13">
+                  <rect data-name="Icons/Tabler/Chevron Down background" width="13" height="13" fill="none"/>
+                  <path d="M.214.212a.738.738,0,0,1,.952-.07l.082.07L7.1,5.989a.716.716,0,0,1,.071.94L7.1,7.011l-5.85,5.778a.738.738,0,0,1-1.034,0,.716.716,0,0,1-.071-.94l.071-.081L5.547,6.5.214,1.233A.716.716,0,0,1,.143.293Z" transform="translate(13 3.25) rotate(90)" fill="#495057"/>
+                </svg>
+                </a>
+                <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="Sources">
+                  <li><a class="dropdown-item" href="#"><span>Today</span></a></li>
+                  <li><a class="dropdown-item" href="#"><span>Yesterday</span></a></li>
+                  <li><a class="dropdown-item" href="#"><span>Last 7 days</span></a></li>
+                  <li><a class="dropdown-item" href="#"><span>This month</span></a></li>
+                  <li><a class="dropdown-item" href="#"><span>Last month</span></a></li>
+                  <li><hr class="dropdown-divider"></li>
+                  <li><a class="dropdown-item" href="#"><svg data-name="icons/tabler/calendar" xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16">
+                    <rect data-name="Icons/Tabler/Calendar background" width="16" height="16" fill="none"/>
+                    <path d="M2.256,16A2.259,2.259,0,0,1,0,13.743V3.9A2.259,2.259,0,0,1,2.256,1.641H3.282V.616A.615.615,0,0,1,4.507.532l.005.084V1.641H9.846V.616A.615.615,0,0,1,11.071.532l.006.084V1.641H12.1A2.259,2.259,0,0,1,14.359,3.9v9.846A2.259,2.259,0,0,1,12.1,16ZM1.231,13.743a1.027,1.027,0,0,0,1.025,1.026H12.1a1.027,1.027,0,0,0,1.026-1.026V7.795H1.231Zm11.9-7.179V3.9A1.027,1.027,0,0,0,12.1,2.872H11.077V3.9a.616.616,0,0,1-1.226.084L9.846,3.9V2.872H4.513V3.9a.615.615,0,0,1-1.225.084L3.282,3.9V2.872H2.256A1.026,1.026,0,0,0,1.231,3.9V6.564Z" transform="translate(1)" fill="#495057"/>
+                  </svg><span class="ms-2">Custom</span></a></li>
+                </ul>
+              </div>
+            </div>
+            <div class="table-responsive mb-0">
+              <table class="table card-table table-nowrap overflow-hidden">
+                <thead>
+                  <tr>
+                    <th>Source</th>
+                    <th>Page Views</th>
+                    <th>Change</th>
+                    <th>Duration</th>
+                    <th>Bounce</th>
+                    <th></th>
+                  </tr>
+                </thead>
+                <tbody class="list">
+                  <tr>
+                    <td>
+                      <div class="d-flex align-items-center">
+                        <span class="avatar avatar-sm shadow-sm rounded-circle me-1 d-flex align-items-center justify-content-center bg-white"><img src="<?= $base;?>/assets/svg/icons/facebook2.svg" alt="Facebook"></span><span class="ps-2 font-weight-semibold text-gray-700">Facebook</span>
+                      </div>
+                    </td>
+                    <td>1,25,564</td>
+                    <td><span class="badge bg-teal-50 text-teal-500">+65.31%</span></td>
+                    <td>00:08:10</td>
+                    <td>21.32%</td>
+                    <td>
+                      <div class="dropdown text-end">
+                        <a href="#" class="btn btn-dark-100 btn-icon btn-sm rounded-circle" role="button" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                          <svg data-name="Icons/Tabler/Notification" xmlns="http://www.w3.org/2000/svg" width="13.419" height="13.419" viewBox="0 0 13.419 13.419">
+                            <rect data-name="Icons/Tabler/Dots background" width="13.419" height="13.419" fill="none"/>
+                            <path d="M0,10.4a1.342,1.342,0,1,1,1.342,1.342A1.344,1.344,0,0,1,0,10.4Zm1.15,0a.192.192,0,1,0,.192-.192A.192.192,0,0,0,1.15,10.4ZM0,5.871A1.342,1.342,0,1,1,1.342,7.213,1.344,1.344,0,0,1,0,5.871Zm1.15,0a.192.192,0,1,0,.192-.192A.192.192,0,0,0,1.15,5.871ZM0,1.342A1.342,1.342,0,1,1,1.342,2.684,1.344,1.344,0,0,1,0,1.342Zm1.15,0a.192.192,0,1,0,.192-.192A.192.192,0,0,0,1.15,1.342Z" transform="translate(5.368 0.839)" fill="#6c757d"/>
+                          </svg>
+                        </a>
+                        <div class="dropdown-menu dropdown-menu-end shadow-sm">
+                          <a href="#!" class="dropdown-item">
+                            Action
+                          </a>
+                          <a href="#!" class="dropdown-item">
+                            Another action
+                          </a>
+                          <a href="#!" class="dropdown-item">
+                            Something else here
+                          </a>
+                        </div>
+                      </div>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>
+                      <div class="d-flex align-items-center">
+                        <span class="avatar avatar-sm shadow-sm rounded-circle me-1 d-flex align-items-center justify-content-center bg-white"><img src="<?= $base;?>/assets/svg/icons/medium.svg" alt="Facebook"></span>
+                        <span class="ps-2 font-weight-semibold text-gray-700">Medium</span>
+                      </div>
+                    </td>
+                    <td>9,567</td>
+                    <td><span class="badge bg-teal-50 text-teal-500">+25.73%</span></td>
+                    <td>00:01:22</td>
+                    <td>68.18%</td>
+                    <td>
+                      <div class="dropdown text-end">
+                        <a href="#" class="btn btn-dark-100 btn-icon btn-sm rounded-circle" role="button" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                          <svg data-name="Icons/Tabler/Notification" xmlns="http://www.w3.org/2000/svg" width="13.419" height="13.419" viewBox="0 0 13.419 13.419">
+                            <rect data-name="Icons/Tabler/Dots background" width="13.419" height="13.419" fill="none"/>
+                            <path d="M0,10.4a1.342,1.342,0,1,1,1.342,1.342A1.344,1.344,0,0,1,0,10.4Zm1.15,0a.192.192,0,1,0,.192-.192A.192.192,0,0,0,1.15,10.4ZM0,5.871A1.342,1.342,0,1,1,1.342,7.213,1.344,1.344,0,0,1,0,5.871Zm1.15,0a.192.192,0,1,0,.192-.192A.192.192,0,0,0,1.15,5.871ZM0,1.342A1.342,1.342,0,1,1,1.342,2.684,1.344,1.344,0,0,1,0,1.342Zm1.15,0a.192.192,0,1,0,.192-.192A.192.192,0,0,0,1.15,1.342Z" transform="translate(5.368 0.839)" fill="#6c757d"/>
+                          </svg>
+                        </a>
+                        <div class="dropdown-menu dropdown-menu-end shadow-sm">
+                          <a href="#!" class="dropdown-item">
+                            Action
+                          </a>
+                          <a href="#!" class="dropdown-item">
+                            Another action
+                          </a>
+                          <a href="#!" class="dropdown-item">
+                            Something else here
+                          </a>
+                        </div>
+                      </div>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>
+                      <div class="d-flex align-items-center">
+                        <span class="avatar avatar-sm shadow-sm rounded-circle me-1 d-flex align-items-center justify-content-center bg-white"><img src="<?= $base;?>/assets/svg/icons/google-icon.svg" alt="Facebook"></span>
+                        <span class="ps-2 font-weight-semibold text-gray-700">Google</span>
+                      </div>
+                    </td>
+                    <td>5,440</td>
+                    <td><span class="badge bg-red-50 text-dnd">-12.56%</span></td>
+                    <td>00:03:32</td>
+                    <td>01/12/21</td>
+                    <td>
+                      <div class="dropdown text-end">
+                        <a href="#" class="btn btn-dark-100 btn-icon btn-sm rounded-circle" role="button" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                          <svg data-name="Icons/Tabler/Notification" xmlns="http://www.w3.org/2000/svg" width="13.419" height="13.419" viewBox="0 0 13.419 13.419">
+                            <rect data-name="Icons/Tabler/Dots background" width="13.419" height="13.419" fill="none"/>
+                            <path d="M0,10.4a1.342,1.342,0,1,1,1.342,1.342A1.344,1.344,0,0,1,0,10.4Zm1.15,0a.192.192,0,1,0,.192-.192A.192.192,0,0,0,1.15,10.4ZM0,5.871A1.342,1.342,0,1,1,1.342,7.213,1.344,1.344,0,0,1,0,5.871Zm1.15,0a.192.192,0,1,0,.192-.192A.192.192,0,0,0,1.15,5.871ZM0,1.342A1.342,1.342,0,1,1,1.342,2.684,1.344,1.344,0,0,1,0,1.342Zm1.15,0a.192.192,0,1,0,.192-.192A.192.192,0,0,0,1.15,1.342Z" transform="translate(5.368 0.839)" fill="#6c757d"/>
+                          </svg>
+                        </a>
+                        <div class="dropdown-menu dropdown-menu-end shadow-sm">
+                          <a href="#!" class="dropdown-item">
+                            Action
+                          </a>
+                          <a href="#!" class="dropdown-item">
+                            Another action
+                          </a>
+                          <a href="#!" class="dropdown-item">
+                            Something else here
+                          </a>
+                        </div>
+                      </div>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>
+                      <div class="d-flex align-items-center">
+                        <span class="avatar avatar-sm shadow-sm rounded-circle me-1 d-flex align-items-center justify-content-center bg-white"><img src="<?= $base;?>/assets/svg/icons/youtube.svg" alt="Facebook"></span>
+                        <span class="ps-2 font-weight-semibold text-gray-700">Youtube</span>
+                      </div>
+                    </td>
+                    <td>2,767</td>
+                    <td><span class="badge bg-teal-50 text-teal-500">+34.67%</span></td>
+                    <td>00:02:19</td>
+                    <td>01/12/21</td>
+                    <td>
+                      <div class="dropdown text-end">
+                        <a href="#" class="btn btn-dark-100 btn-icon btn-sm rounded-circle" role="button" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                          <svg data-name="Icons/Tabler/Notification" xmlns="http://www.w3.org/2000/svg" width="13.419" height="13.419" viewBox="0 0 13.419 13.419">
+                            <rect data-name="Icons/Tabler/Dots background" width="13.419" height="13.419" fill="none"/>
+                            <path d="M0,10.4a1.342,1.342,0,1,1,1.342,1.342A1.344,1.344,0,0,1,0,10.4Zm1.15,0a.192.192,0,1,0,.192-.192A.192.192,0,0,0,1.15,10.4ZM0,5.871A1.342,1.342,0,1,1,1.342,7.213,1.344,1.344,0,0,1,0,5.871Zm1.15,0a.192.192,0,1,0,.192-.192A.192.192,0,0,0,1.15,5.871ZM0,1.342A1.342,1.342,0,1,1,1.342,2.684,1.344,1.344,0,0,1,0,1.342Zm1.15,0a.192.192,0,1,0,.192-.192A.192.192,0,0,0,1.15,1.342Z" transform="translate(5.368 0.839)" fill="#6c757d"/>
+                          </svg>
+                        </a>
+                        <div class="dropdown-menu dropdown-menu-end shadow-sm">
+                          <a href="#!" class="dropdown-item">
+                            Action
+                          </a>
+                          <a href="#!" class="dropdown-item">
+                            Another action
+                          </a>
+                          <a href="#!" class="dropdown-item">
+                            Something else here
+                          </a>
+                        </div>
+                      </div>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>
+                      <div class="d-flex align-items-center">
+                        <span class="avatar avatar-sm shadow-sm rounded-circle me-1 d-flex align-items-center justify-content-center bg-white"><img src="<?= $base;?>/assets/svg/icons/bing.svg" alt="Facebook"></span>
+                        <span class="ps-2 font-weight-semibold text-gray-700">Bing</span>
+                      </div>
+                    </td>
+                    <td>1,443</td>
+                    <td><span class="badge bg-red-50 text-dnd">-54.79%</span></td>
+                    <td>00:00:56</td>
+                    <td>01/12/21</td>
+                    <td>
+                      <div class="dropdown text-end">
+                        <a href="#" class="btn btn-dark-100 btn-icon btn-sm rounded-circle" role="button" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                          <svg data-name="Icons/Tabler/Notification" xmlns="http://www.w3.org/2000/svg" width="13.419" height="13.419" viewBox="0 0 13.419 13.419">
+                            <rect data-name="Icons/Tabler/Dots background" width="13.419" height="13.419" fill="none"/>
+                            <path d="M0,10.4a1.342,1.342,0,1,1,1.342,1.342A1.344,1.344,0,0,1,0,10.4Zm1.15,0a.192.192,0,1,0,.192-.192A.192.192,0,0,0,1.15,10.4ZM0,5.871A1.342,1.342,0,1,1,1.342,7.213,1.344,1.344,0,0,1,0,5.871Zm1.15,0a.192.192,0,1,0,.192-.192A.192.192,0,0,0,1.15,5.871ZM0,1.342A1.342,1.342,0,1,1,1.342,2.684,1.344,1.344,0,0,1,0,1.342Zm1.15,0a.192.192,0,1,0,.192-.192A.192.192,0,0,0,1.15,1.342Z" transform="translate(5.368 0.839)" fill="#6c757d"/>
+                          </svg>
+                        </a>
+                        <div class="dropdown-menu dropdown-menu-end shadow-sm">
+                          <a href="#!" class="dropdown-item">
+                            Action
+                          </a>
+                          <a href="#!" class="dropdown-item">
+                            Another action
+                          </a>
+                          <a href="#!" class="dropdown-item">
+                            Something else here
+                          </a>
+                        </div>
+                      </div>
+                    </td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+            <div class="d-flex align-items-center p-3 p-md-4 border-top border-gray-200">
+              <a href="#" class="my-1 tiny font-weight-semibold mx-auto btn btn-link link-dark">View all<svg class="ms-1" data-name="icons/tabler/chevron right" xmlns="http://www.w3.org/2000/svg" width="10" height="10" viewBox="0 0 16 16">
+                <rect data-name="Icons/Tabler/Chevron Right background" width="16" height="16" fill="none"></rect>
+                <path d="M.26.26A.889.889,0,0,1,1.418.174l.1.086L8.629,7.371a.889.889,0,0,1,.086,1.157l-.086.1L1.517,15.74A.889.889,0,0,1,.174,14.582l.086-.1L6.743,8,.26,1.517A.889.889,0,0,1,.174.36Z" transform="translate(4)" fill="#1e1e1e"></path>
+              </svg></a>
+            </div>
+          </div>
+        </div>
+      </div> -->
+      <!-- <div class="row">
+        <div class="col-10 col-xxl-5 mb-4">
+          <div class="card rounded-12 shadow-dark-80">
+            <div class="card-body px-0 pb-0">
+              <div class="d-flex align-items-center border-bottom border-gray-200 pb-3 px-3 px-md-4">
+                <h5 class="card-header-title mb-0 font-weight-semibold ps-md-2">Top Countries</h5>
+                <div class="ms-auto pe-md-2 dropdown">
+                  <a href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false" class="btn btn-dark-100 btn-icon btn-sm rounded-circle">
+                    <svg data-name="Icons/Tabler/Notification" xmlns="http://www.w3.org/2000/svg" width="13.419" height="13.419" viewBox="0 0 13.419 13.419">
+                      <rect data-name="Icons/Tabler/Dots background" width="13.419" height="13.419" fill="none"/>
+                      <path d="M0,10.4a1.342,1.342,0,1,1,1.342,1.342A1.344,1.344,0,0,1,0,10.4Zm1.15,0a.192.192,0,1,0,.192-.192A.192.192,0,0,0,1.15,10.4ZM0,5.871A1.342,1.342,0,1,1,1.342,7.213,1.344,1.344,0,0,1,0,5.871Zm1.15,0a.192.192,0,1,0,.192-.192A.192.192,0,0,0,1.15,5.871ZM0,1.342A1.342,1.342,0,1,1,1.342,2.684,1.344,1.344,0,0,1,0,1.342Zm1.15,0a.192.192,0,1,0,.192-.192A.192.192,0,0,0,1.15,1.342Z" transform="translate(5.368 0.839)" fill="#6c757d"/>
+                    </svg>
+                  </a>
+                  <ul class="dropdown-menu">
+                    <li class="dropdown-sub-title">
+                      <span>EXPORT AS</span>
+                    </li>
+                    <li><a class="dropdown-item" href="#"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16">
+                      <g data-name="Icons/Tabler/Share" transform="translate(0)">
+                        <rect data-name="Icons/Tabler/Code background" width="16" height="16" fill="none"></rect>
+                        <path d="M6.21,13.982a.6.6,0,0,1-.463-.647l.014-.08L9.044.455A.617.617,0,0,1,9.79.018a.6.6,0,0,1,.463.647l-.014.08-3.282,12.8a.612.612,0,0,1-.6.455A.629.629,0,0,1,6.21,13.982Zm5.458-3.357a.588.588,0,0,1-.059-.781l.059-.067L14.514,7,11.668,4.225a.588.588,0,0,1-.059-.781l.059-.068a.627.627,0,0,1,.8-.059l.069.059,3.282,3.2a.59.59,0,0,1,.059.781l-.059.068-3.282,3.2a.627.627,0,0,1-.87,0Zm-8.136.058-.069-.058L.18,7.424a.589.589,0,0,1-.059-.781L.18,6.575l3.282-3.2a.627.627,0,0,1,.87,0,.588.588,0,0,1,.059.781l-.059.068L1.486,7,4.333,9.776a.588.588,0,0,1,.059.781l-.059.068a.627.627,0,0,1-.8.058Z" transform="translate(0 1)" fill="#495057"></path>
+                      </g>
+                    </svg><span class="ms-2">HTML</span></a></li>
+                    <li><a class="dropdown-item" href="#"><svg data-name="Icons/Tabler/Share" xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16">
+                      <rect data-name="Icons/Tabler/File background" width="16" height="16" fill="none"></rect>
+                      <path data-name="Combined Shape" d="M2.256,16A2.259,2.259,0,0,1,0,13.744V2.256A2.259,2.259,0,0,1,2.256,0H8a.613.613,0,0,1,.4.148l0,0L8.41.157l0,0,.005.005L8.425.17l0,0L8.435.18l4.1,4.1a.614.614,0,0,1,.185.44v9.026A2.259,2.259,0,0,1,10.462,16ZM1.231,2.256V13.744a1.026,1.026,0,0,0,1.025,1.025h8.205a1.027,1.027,0,0,0,1.026-1.025V5.333H8.821A1.436,1.436,0,0,1,7.387,3.979l0-.082V1.231H2.256A1.026,1.026,0,0,0,1.231,2.256ZM8.616,3.9a.206.206,0,0,0,.168.2l.037,0h1.8l-2-2ZM3.9,12.718a.615.615,0,0,1-.059-1.228l.059,0H8.821a.615.615,0,0,1,.059,1.228l-.059,0Zm0-3.282a.615.615,0,0,1-.059-1.228l.059,0H8.821a.615.615,0,0,1,.059,1.228l-.059,0Zm0-3.281a.616.616,0,0,1-.059-1.228l.059,0h.821a.615.615,0,0,1,.059,1.228l-.059,0Z" transform="translate(2)" fill="#495057"></path>
+                    </svg><span class="ms-2">XML</span></a></li>
+                    <li><a class="dropdown-item" href="#"><svg data-name="Icons/Tabler/Share" xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16">
+                      <rect data-name="Icons/Tabler/Code02 background" width="16" height="16" fill="none"></rect>
+                      <path data-name="Combined Shape" d="M2.256,16A2.259,2.259,0,0,1,0,13.744V2.256A2.259,2.259,0,0,1,2.256,0H8a.613.613,0,0,1,.4.148l0,0L8.41.157l0,0,.005.005L8.425.17l0,0L8.435.18l4.1,4.1a.614.614,0,0,1,.185.44v9.026A2.259,2.259,0,0,1,10.462,16ZM1.231,2.256V13.744a1.026,1.026,0,0,0,1.025,1.025h8.205a1.027,1.027,0,0,0,1.026-1.025V5.333H8.821A1.436,1.436,0,0,1,7.387,3.979l0-.082V1.231H2.256A1.026,1.026,0,0,0,1.231,2.256ZM8.616,3.9a.206.206,0,0,0,.168.2l.037,0h1.8l-2-2Zm-.891,8.756a.615.615,0,0,1-.3-.768l.025-.058.683-1.366L7.449,9.1A.616.616,0,0,1,7.67,8.3l.055-.031a.615.615,0,0,1,.795.22l.031.055.821,1.641a.617.617,0,0,1,.029.484l-.029.067L8.55,12.378a.614.614,0,0,1-.825.275ZM4.2,12.433l-.031-.055-.821-1.641a.617.617,0,0,1-.029-.484l.029-.067.821-1.641a.615.615,0,0,1,1.126.492L5.269,9.1l-.684,1.366.684,1.366a.615.615,0,0,1-.22.794l-.055.031a.615.615,0,0,1-.795-.22Z" transform="translate(2)" fill="#495057"></path>
+                    </svg><span class="ms-2">JSON</span></a></li>
+                    <li><hr class="dropdown-divider"></li>
+                    <li><a class="dropdown-item" href="#"><svg data-name="Icons/Tabler/Share" xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16">
+                      <rect data-name="Icons/Tabler/Share background" width="16" height="16" fill="none"></rect>
+                      <path d="M9.846,12.923a3.07,3.07,0,0,1,.1-.768L5.516,9.874a3.077,3.077,0,1,1,0-3.748L9.943,3.845a3.084,3.084,0,1,1,.541,1.106L6.057,7.232a3.087,3.087,0,0,1,0,1.537l4.427,2.281a3.075,3.075,0,1,1-.638,1.874Zm1.231,0a1.846,1.846,0,1,0,.2-.84q-.011.028-.025.055l-.014.025A1.836,1.836,0,0,0,11.077,12.923ZM1.231,8a1.846,1.846,0,0,0,3.487.845.623.623,0,0,1,.027-.061l.017-.031a1.845,1.845,0,0,0,0-1.508l-.017-.031a.622.622,0,0,1-.027-.061A1.846,1.846,0,0,0,1.231,8ZM12.923,4.923a1.846,1.846,0,1,0-1.682-1.086l.013.024q.014.027.025.056A1.848,1.848,0,0,0,12.923,4.923Z" fill="#495057"></path>
+                    </svg><span class="ms-2">Share</span></a></li>
+                  </ul>
+                </div>
+              </div>
+              <div class="list-group">
+                <div class="px-3 px-md-4 py-3 border-bottom border-gray-200">
+                  <div class="row px-md-2">
+                    <div class="col">
+                      <img src="<?= $base;?>/assets/svg/icons/germany@26.svg" class="avatar avatar-xs avatar-circle me-1" alt="Flag">
+                      <span class="ps-ms-2 font-weight-semibold text-gray-700 fs-16">Germany</span>
+                    </div>
+                    <div class="col-auto">
+                      <span class="text-gray-700 fs-16">67.43%</span>
+                    </div>
+                  </div>
+                </div>
+                <div class="px-3 px-md-4 py-3 border-bottom border-gray-200">
+                  <div class="row px-md-2">
+                    <div class="col">
+                      <img src="<?= $base;?>/assets/svg/icons/united-kingdom@26.svg" class="avatar avatar-xs avatar-circle me-1" alt="Flag">
+                      <span class="ps-ms-2 font-weight-semibold text-gray-700 fs-16">United Kingdom</span>
+                    </div>
+                    <div class="col-auto">
+                      <span class="text-gray-700 fs-16">20.11%</span>
+                    </div>
+                  </div>
+                </div>
+                <div class="px-3 px-md-4 py-3 border-bottom border-gray-200">
+                  <div class="row px-md-2">
+                    <div class="col">
+                      <img src="<?= $base;?>/assets/svg/icons/brazil@26.svg" class="avatar avatar-xs avatar-circle me-1" alt="Flag">
+                      <span class="ps-ms-2 font-weight-semibold text-gray-700 fs-16">Brazil</span>
+                    </div>
+                    <div class="col-auto">
+                      <span class="text-gray-700 fs-16">6.92%</span>
+                    </div>
+                  </div>
+                </div>
+                <div class="px-3 px-md-4 py-3 border-bottom border-gray-200">
+                  <div class="row px-md-2">
+                    <div class="col">
+                      <img src="<?= $base;?>/assets/svg/icons/united-states@26.svg" class="avatar avatar-xs avatar-circle me-1" alt="Flag">
+                      <span class="ps-ms-2 font-weight-semibold text-gray-700 fs-16">United State</span>
+                    </div>
+                    <div class="col-auto">
+                      <span class="text-gray-700 fs-16">3.56%</span>
+                    </div>
+                  </div>
+                </div>
+                <div class="px-3 px-md-4 py-3">
+                  <div class="row px-md-2">
+                    <div class="col">
+                      <img src="<?= $base;?>/assets/svg/icons/argentina@26.svg" class="avatar avatar-xs avatar-circle me-1" alt="Flag">
+                      <span class="ps-ms-2 font-weight-semibold text-gray-700 fs-16">Argentina</span>
+                    </div>
+                    <div class="col-auto">
+                      <span class="text-gray-700 fs-16">1.07%</span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="d-flex align-items-center p-3 p-md-4 border-top border-gray-200">
+                <a href="#" class="my-1 tiny font-weight-semibold mx-auto btn btn-link link-dark">See all data<svg class="ms-1" data-name="icons/tabler/chevron right" xmlns="http://www.w3.org/2000/svg" width="10" height="10" viewBox="0 0 16 16">
+                  <rect data-name="Icons/Tabler/Chevron Right background" width="16" height="16" fill="none"></rect>
+                  <path d="M.26.26A.889.889,0,0,1,1.418.174l.1.086L8.629,7.371a.889.889,0,0,1,.086,1.157l-.086.1L1.517,15.74A.889.889,0,0,1,.174,14.582l.086-.1L6.743,8,.26,1.517A.889.889,0,0,1,.174.36Z" transform="translate(4)" fill="#1e1e1e"></path>
+                </svg></a>
+              </div>
+            </div>
+          </div>
+        </div> -->
+        
+    <footer class="pt-xxl-5 mt-lg-2">
       <div class="container-fluid px-0 border-top border-gray-200 pt-2 pt-lg-3">
         <div class="row align-items-center">
           <div class="col-md-6">
-            <p class="fs-16 text-gray-600 my-2">2020 &copy; Fabrx Design - All rights reserved.</p>
+            <p class="fs-16 text-gray-600 my-2">2025 &copy; Quibble - Todos os direitos reservados.</p>
           </div>
           <div class="col-md-6">
             <ul class="nav navbar">
-              <li><a href="#0">About</a></li>
-              <li><a href="#0">Support</a></li>
-              <li><a href="#0">Contact</a></li>
+              <li><a href="#0">Sobre</a></li>
+              <li><a href="#0">Suporte</a></li>
+              <li><a href="#0">Contato</a></li>
             </ul>
           </div>
         </div>
@@ -1600,7 +2320,574 @@
 <!-- Muze Javascript Plugins -->
 <script src="<?= $base;?>/assets/vendor/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
 <script src="<?= $base;?>/assets/vendor/lodash/lodash.min.js"></script>
+<script src="<?= $base;?>/assets/vendor/highcharts/highmaps.js"></script>
+<script src="<?= $base;?>/assets/vendor/apexcharts/dist/apexcharts.min.js"></script>
 <script src="<?= $base;?>/assets/vendor/simplebar/dist/simplebar.min.js"></script>
 <script src="<?= $base;?>/assets/js/theme-custom.js"></script>
+<script>
+
+// Gráfico Fluxo de reclamações 
+Highcharts.chart('MuzeMultipleColumnsChartOne', {
+  chart: {
+    type: 'column',
+    backgroundColor: null,
+    height: 350,
+  },
+  title: {
+    text: '',
+  },
+  credits: {
+    enabled: false,
+  },
+  xAxis: {
+    lineWidth: 0,
+    categories: ['Jan', 'Feb', 'Mar', 'Apr', 'May', 'Jun', 'Jul', 'Aug', 'Sep', 'Oct', 'Nov', 'Dec'],
+    labels: {
+      style: {
+        color: '#6C757D',
+        fontSize: '12px',
+        fontFamily: "'Open Sans', sans-serif",
+      },
+    },
+  },
+  yAxis: {
+    gridLineColor: '#E9ECEF',
+    title: {
+      text: '',
+    },
+    lineWidth: 0,
+    lineColor: '#EAEAEA',
+    labels: {
+      style: {
+        color: '#6C757D',
+        fontSize: '13px',
+        fontFamily: "'Open Sans', sans-serif",
+      },
+    },
+  },
+  legend: {
+    align: 'left',
+    verticalAlign: 'top',
+    itemStyle: {
+      color: '#6C757D',
+      fontSize: '13px',
+      fontWeight: 'normal',
+      fontFamily: "'Open Sans', sans-serif",
+    },
+    margin: 50,
+    padding: 0,
+    symbolWidth: 12,
+    symbolHeight: 12,
+    itemDistance: 30,
+    symbolPadding: 8,
+  },
+  plotOptions: {
+    series: {
+      lineWidth: 1,
+    },
+    column: {
+      pointWidth: 12,
+      borderWidth: 0
+    },
+  },
+  series: [{
+    name: '2020',
+    color: '#0D6EFD',
+    data: [42, 82, 85, 70, 78, 48, 78, 48, 48, 46, 45, 48],
+  },
+  {
+    name: '2021',
+    color: '#A8CBFE',
+    data: [84, 70, 62, 50, 48, 65, 88, 68, 65, 63, 64, 65],
+  }]
+});
+
+
+
+//Muze Double Line Chart JavaScript
+var options = {
+  series: [{
+    name: '2021',
+    data: [31, 40, 28, 51, 42, 109, 100]
+  }, {
+    name: '2020',
+    data: [11, 32, 80, 45, 75, 80, 41]
+  }],
+  chart: {
+  type: 'line',
+  height: 90,
+  zoom: {
+    enabled: false
+  },
+  toolbar: {
+    show: false,
+  }
+},
+dataLabels: {
+  enabled: false
+},
+stroke: {
+  width: 3,
+  colors: ['#008FFB', '#A8CBFE'],
+  curve: 'smooth'
+},
+legend: {
+  show: false,
+},
+grid: {
+  show: false,
+  xaxis: {
+    lines: {
+      show: false
+    }
+  },
+  row: {
+    colors: undefined,
+    opacity: 0
+  },
+},
+tooltip: {
+  enabled: true,
+  marker: {
+    fillColors: ['#008FFB', '#A8CBFE'],
+  },
+  x: {
+    show: false
+  },
+},
+markers: {
+  colors: ['#008FFB', '#A8CBFE'],
+},
+yaxis: {
+  show: false,
+},
+xaxis: {
+  labels: {
+    show: false,
+  },
+  axisTicks: {
+    show: false,
+  },
+  axisBorder: {
+    show: false,
+  },
+  stroke: {
+    width: 0,
+  },
+  tooltip: {
+    enabled: false,
+  }
+}
+};
+
+var chart = new ApexCharts(document.querySelector("#MuzeDoubleLine"), options);
+chart.render();
+
+//Muze Single Line Chart JavaScript
+var options = {
+  series: [{
+    name: '2021',
+    data: [31, 50, 38, 51, 60, 109, 100]
+  }],
+  chart: {
+  type: 'line',
+  height: 90,
+  zoom: {
+    enabled: false
+  },
+  toolbar: {
+    show: false,
+  }
+},
+dataLabels: {
+  enabled: false
+},
+stroke: {
+  width: 3,
+  colors: ['#008FFB'],
+  curve: 'straight'
+},
+legend: {
+  show: false,
+},
+grid: {
+  show: false,
+  xaxis: {
+    lines: {
+      show: false
+    }
+  },
+  row: {
+    colors: undefined,
+    opacity: 0
+  },
+},
+tooltip: {
+  enabled: true,
+  x: {
+    show: false
+  },
+},
+yaxis: {
+  show: false,
+},
+xaxis: {
+  categories: ['Jan', 'Feb', 'Mar', 'Apr', 'May', 'Jun', 'Jul', 'Aug', 'Sep'],
+  labels: {
+    show: false,
+  },
+  stroke: {
+    width: 0,
+  },
+  axisTicks: {
+    show: false,
+  },
+  axisBorder: {
+    show: false,
+  },
+  tooltip: {
+    enabled: false,
+  }
+}
+};
+
+var chart = new ApexCharts(document.querySelector("#MuzeSingleLine"), options);
+chart.render();
+
+//Muze Simple Donut Chart JavaScript
+var options = {
+  series: [50, 50],
+  chart: {
+  type: 'donut',
+  height: 125,
+},
+dataLabels: {
+  enabled: false,
+},
+colors: ['#a8cbfe', '#008ffb'],
+stroke: {
+  width: 0
+},
+legend: {
+  show: false,
+},
+states: {
+  hover: {
+    filter: {
+      type: 'none',
+    }
+  },
+},
+plotOptions: {
+  donut: {
+    size: '65%',
+    background: 'transparent',
+  },
+  pie: {
+    offsetX: 25
+  }
+},
+grid: {
+  show: false,
+  xaxis: {
+    lines: {
+      show: false
+    }
+  },
+  row: {
+    colors: undefined,
+    opacity: 0
+  },
+},
+tooltip: {
+  enabled: false,
+},
+yaxis: {
+  show: false,
+}
+};
+
+var chart = new ApexCharts(document.querySelector("#MuzeSimpleDonut"), options);
+chart.render();
+
+//Muze Columns Chart JavaScript
+var options = {
+  series: [{
+  name: 'Net Profit',
+  data: [40, 40, 40, 40, 40]
+}, {
+  name: 'Free Cash Flow',
+  data: [70, 70, 70, 70, 70]
+}],
+  chart: {
+  type: 'bar',
+  height: 90,
+  zoom: {
+    enabled: false
+  },
+  toolbar: {
+    show: false,
+  }
+},
+plotOptions: {
+  bar: {
+    horizontal: false,
+    columnWidth: '50%',
+    endingShape: 'rounded'
+  },
+},
+dataLabels: {
+  enabled: false
+},
+legend: {
+  show: false,
+},
+grid: {
+  show: false,
+  xaxis: {
+    lines: {
+      show: false
+    }
+  },
+},
+colors: ['#008FFB', '#A8CBFE'],
+stroke: {
+  show: false,
+},
+xaxis: {
+  labels: {
+    show: false,
+  },
+  axisTicks: {
+    show: false,
+  },
+  axisBorder: {
+    show: false,
+  },
+  stroke: {
+    width: 0,
+  },
+  tooltip: {
+    enabled: false,
+  }
+},
+states: {
+  hover: {
+    filter: {
+      type: 'none',
+    }
+  },
+},
+yaxis: {
+  labels: {
+    show: false,
+  },
+},
+fill: {
+  opacity: 1
+},
+tooltip: {
+  enabled: false,
+}
+};
+
+var chart = new ApexCharts(document.querySelector("#MuzeColumnsChartTwo"), options);
+chart.render();
+
+//Muze Single Line Chart JavaScript
+var options = {
+  series: [{
+    name: '2020',
+    data: [20, 40, 28, 51, 42, 70, 75, 28, 51, 42, 70, 75]
+  }, {
+    name: '2021',
+    data: [0, 20, 36, 22, 24, 42, 35, 22, 24, 42, 35, 50]
+  }],
+  chart: {
+  type: 'line',
+  height: 380,
+  zoom: {
+    enabled: false
+  },
+  toolbar: {
+    show: false,
+  }
+},
+dataLabels: {
+  enabled: false,
+},
+stroke: {
+  width: 3,
+  colors: ['#008FFB', '#A8CBFE'],
+  curve: 'smooth'
+},
+legend: {
+  show: true,
+  position: 'top',
+  horizontalAlign: 'left',
+  fontSize: '13px',
+  fontFamily: 'Open Sans,sans-serif',
+  fontWeight: 400,
+  labels: {
+    colors: '#6C757D',
+  },
+  markers: {
+    width: 12,
+    height: 12,
+    strokeWidth: 0,
+    strokeColor: '#fff',
+    fillColors: ['#0D6EFD','#A8CBFE'],
+    radius: 12,
+  },
+},
+grid: {
+  show: true,
+  borderColor: '#E9ECEF',
+  xaxis: {
+    lines: {
+      show: false
+    }
+  },
+  row: {
+    colors: undefined,
+    opacity: 0
+  },
+},
+tooltip: {
+  enabled: true,
+  marker: {
+    fillColors: ['#008FFB', '#A8CBFE'],
+  },
+  x: {
+    show: false
+  },
+},
+markers: {
+  colors: ['#008FFB', '#A8CBFE'],
+},
+yaxis: {
+  show: true,
+  labels: {
+    style: {
+      colors: '#6C757D',
+      fontSize: '13px',
+      fontFamily: 'Open Sans,sans-serif',
+      fontWeight: 400,
+    }
+  },
+},
+xaxis: {
+  categories: ['Jan', 'Feb', 'Mar', 'Apr', 'May', 'Jun', 'Jul', 'Aug', 'Sep', 'Oct', 'Nov', 'Dec'],
+  labels: {
+    show: true,
+    style: {
+      colors: '#6C757D',
+      fontSize: '13px',
+      fontFamily: 'Open Sans,sans-serif',
+      fontWeight: 400,
+    }
+  },
+  axisTicks: {
+    show: false,
+  },
+  axisBorder: {
+    show: false,
+  },
+  stroke: {
+    width: 0,
+  },
+  tooltip: {
+    enabled: false,
+  }
+}
+};
+
+var chart = new ApexCharts(document.querySelector("#MuzeDoubleLineTwo"), options);
+chart.render();
+
+//Muze Pie Chart JavaScript
+Highcharts.chart('MuzePieChartOne', {
+  chart: {
+    type: 'pie',
+    backgroundColor: null,
+  },
+  title: {
+    text: '',
+  },
+  credits: {
+    enabled: false,
+  },
+  xAxis: {
+    lineColor: 'transparent',
+    tickLength: 0,
+    labels: {
+      enabled: false,
+    },
+  },
+  yAxis: {
+    gridLineColor: 'transparent',
+    title: {
+      text: '',
+    },
+    labels: {
+      enabled: false,
+    },
+  },
+  legend: {
+    itemStyle: {
+      color: '#6C757D',
+      fontSize: '12px',
+      fontWeight: '500',
+      fontFamily: "'Open Sans', sans-serif",
+    },
+    margin: 30,
+    padding: 0,
+    symbolWidth: 11,
+    symbolHeight: 11,
+    itemDistance: 30,
+    symbolPadding: 10,
+  },
+  plotOptions: {
+    pie: {
+      size: 230,
+      borderWidth: 0,
+      allowPointSelect: true,
+    },
+    series: {
+      lineWidth: 0,
+    },
+    column: {
+      pointPadding: 0,
+      borderWidth: 0,
+      pointWidth: 1,
+    },
+  },
+  accessibility: {
+    announceNewData: {
+      enabled: true,
+    },
+    point: {
+      valueSuffix: '%',
+    }
+  },
+  tooltip: {
+    headerFormat: '<span style="font-size:11px">{series.name}</span><br>',
+    pointFormat: '<span style="color:{point.color}">{point.name}</span>: <b>{point.y:.2f}%</b> of total<br/>'
+  },
+  series: [{
+    innerSize: '86%',
+    dataLabels: [{
+      enabled: false,
+    }],
+    name: 'Browsers',
+    showInLegend: true,
+    data: [
+      {name: 'Email', y: 20, color: '#E6F0FF',},
+      {name: 'Refferal', y: 15, color: '#81B4FE',},
+      {name: 'Social', y: 36, color: '#3485FD',}],
+    }
+  ],
+});
+</script>
+</html> 
 </body>
-</html>
