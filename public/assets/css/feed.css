@@ -672,6 +672,97 @@ main {
   margin-right: 8px;
 }
 
+/* COMENTÁRIOS NO FEED */
+.feed-card-comments {
+  margin-top: 16px;
+  padding: 12px;
+  background-color: var(--branco);
+  border-radius: 10px;
+  border: 1px solid var(--azul-primario-claromais);
+}
+
+.feed-card-comments .new-comment {
+  display: flex;
+  align-items: center;
+  margin-bottom: 12px;
+}
+
+.feed-card-comments .new-comment img {
+  width: 36px;
+  height: 36px;
+  border-radius: 50%;
+  margin-right: 10px;
+}
+
+.feed-card-comments .new-comment input {
+  flex: 1;
+  border: 1px solid var(--azul-primario-claro);
+  border-radius: 20px;
+  padding: 8px 12px;
+  font-size: 14px;
+  outline: none;
+}
+
+.feed-card-comments .new-comment button {
+  margin-left: 8px;
+  padding: 6px 14px;
+  border: none;
+  border-radius: 20px;
+  background-color: var(--azul-primario);
+  color: var(--branco);
+  font-weight: 600;
+  cursor: pointer;
+}
+
+.feed-card-comments .comment {
+  display: flex;
+  align-items: flex-start;
+  margin-bottom: 10px;
+}
+
+.feed-card-comments .comment img {
+  width: 32px;
+  height: 32px;
+  border-radius: 50%;
+  margin-right: 8px;
+}
+
+.feed-card-comments .comment-content {
+  background-color: var(--branco-claro);
+  border-radius: 10px;
+  padding: 8px 12px;
+  max-width: 85%;
+}
+
+.feed-card-comments .comment-content h6 {
+  font-size: 14px;
+  font-weight: 600;
+  margin-bottom: 4px;
+  color: var(--azul-primario-escuro);
+}
+
+.feed-card-comments .comment-content p {
+  font-size: 13px;
+  color: var(--preto);
+}
+
+/* Botão abrir/fechar comentários */
+.feed-card-comments .toggle-comments {
+  font-size: 14px;
+  font-weight: 600;
+  color: var(--azul-primario);
+  cursor: pointer;
+  margin-bottom: 8px;
+}
+
+/* Caixa que expande/fecha */
+.feed-card-comments .comments-box {
+  display: none; /* começa escondido */
+  margin-top: 10px;
+  padding-top: 10px;
+  border-top: 1px solid var(--azul-primario-claromais);
+}
+
 /* PARA A RESPONSIVIDADE */
 
 .header-content.mobile,

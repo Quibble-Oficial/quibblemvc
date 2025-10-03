@@ -75,6 +75,19 @@
   <script src="<?= $base; ?>/assets/js/upvotes.js"></script>
   <script src="<?= $base; ?>/assets/js/modal-nova-reclamacao.js"></script>
   <script src="<?= $base; ?>/assets/js/notificacoes.js"></script>
+  <script>
+    function toggleComments(button) {
+      let commentsBox = button.nextElementSibling;
+
+      if (commentsBox.style.display === "none" || commentsBox.style.display === "") {
+        commentsBox.style.display = "block";
+        button.innerHTML = "🔽 Ocultar comentários";
+      } else {
+        commentsBox.style.display = "none";
+        button.innerHTML = "💬 Ver comentários (3)";
+      }
+    }
+  </script>
 </body>
 
 </html>

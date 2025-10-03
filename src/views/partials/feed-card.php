@@ -43,5 +43,41 @@
                 Compartilhar
             </div>
         </div>
+
+        <div class="feed-card-comments">
+
+            <!-- Botão para abrir/fechar -->
+            <div class="toggle-comments" onclick="toggleComments(this)">
+                💬 Ver comentários (3)
+            </div>
+
+            <!-- Caixa de comentários (começa escondida) -->
+            <div class="comments-box">
+                <!-- Novo comentário -->
+                <div class="new-comment">
+                    <img src="<?= $base; ?>/assets/images/avatars/<?= $loggedUser->avatar ?>" alt="avatar">
+                    <input type="text" placeholder="Escreva um comentário..." />
+                    <button>Publicar</button>
+                </div>
+
+                <!-- Lista -->
+                <div class="comment">
+                    <img src="<?= $base; ?>/assets/images/avatars/user1.png" alt="avatar">
+                    <div class="comment-content">
+                        <h6>Maria Souza</h6>
+                        <p>Concordo muito com essa reclamação!</p>
+                    </div>
+                </div>
+
+                <div class="comment">
+                    <img src="<?= $base; ?>/assets/images/avatars/user2.png" alt="avatar">
+                    <div class="comment-content">
+                        <h6>João Pedro</h6>
+                        <p>Aconteceu comigo também na minha cidade.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
     </div>
 </div>
