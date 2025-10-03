@@ -6,8 +6,6 @@ use \src\models\Reclamacoe;
 use \src\models\Upvote;
 use ClanCats\Hydrahon\Query\Expression as Ex;
 
-use PDO;
-
 class ReclamacaoHandler
 {
 
@@ -73,16 +71,26 @@ class ReclamacaoHandler
             'localizacoes.logradouro as logradouro',
             'localizacoes.numero as numero',
             'localizacoes.cep as cep',
+            
             // Upvotes
-            new Ex('COUNT(upvotes.reclamacao_id) AS total_upvotes'),
-            new Ex('MAX(CASE WHEN upvotes.usuario_id = ' . $userId . ' THEN 1 ELSE 0 END) AS usuario_upvotou')
+            new Ex('COUNT(DISTINCT upvotes.reclamacao_id) AS total_upvotes'), // Usar DISTINCT aqui é mais seguro
+            new Ex('MAX(CASE WHEN upvotes.usuario_id = ' . $userId . ' THEN 1 ELSE 0 END) AS usuario_upvotou'),
+            
+            // NOVO: Contagem de Comentários
+            new Ex('COUNT(DISTINCT comentarios.comentario_id) AS total_comentarios') 
         ])
             ->join('usuarios', 'usuarios.usuario_id', '=', 'reclamacoes.usuario_id')
             ->join('categorias', 'categorias.categoria_id', '=', 'reclamacoes.categoria_id')
             ->leftJoin('instituicoes', 'instituicoes.instituicao_id', '=', 'reclamacoes.instituicao_id')
             ->leftJoin('comunidades', 'comunidades.comunidade_id', '=', 'reclamacoes.comunidade_id')
             ->leftJoin('localizacoes', 'localizacoes.localizacao_id', '=', 'reclamacoes.localizacao_id')
+            
+            // JOINs para Agregação
             ->leftJoin('upvotes', 'upvotes.reclamacao_id', '=', 'reclamacoes.reclamacao_id')
+            // NOVO: LEFT JOIN para Comentários
+            ->leftJoin('comentarios', 'comentarios.reclamacao_id', '=', 'reclamacoes.reclamacao_id')
+            
+            // O GROUP BY é essencial para que o COUNT e o MAX funcionem
             ->groupBy('reclamacoes.reclamacao_id')
             ->orderBy('reclamacoes.reclamacao_id', 'DESC');
 
@@ -97,6 +105,8 @@ class ReclamacaoHandler
         foreach ($reclamacoes as &$r) {
             $r['total_upvotes'] = intval($r['total_upvotes'] ?? 0);
             $r['usuario_upvotou'] = !empty($r['usuario_upvotou']);
+            // NOVO: Converte o campo de comentários para inteiro
+            $r['total_comentarios'] = intval($r['total_comentarios'] ?? 0); 
         }
 
         return $reclamacoes;

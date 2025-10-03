@@ -75,7 +75,7 @@
   <script src="<?= $base; ?>/assets/js/upvotes.js"></script>
   <script src="<?= $base; ?>/assets/js/modal-nova-reclamacao.js"></script>
   <script src="<?= $base; ?>/assets/js/notificacoes.js"></script>
-  <script>
+  <!-- <script>
     function toggleComments(button) {
       let commentsBox = button.nextElementSibling;
 
@@ -87,7 +87,8 @@
         button.innerHTML = "💬 Ver comentários (3)";
       }
     }
-  </script>
+  </script> -->
+  <script src="<?= $base; ?>/assets/js/comentarios.js"></script>
 </body>
 
 </html>

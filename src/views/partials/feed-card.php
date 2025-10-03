@@ -36,7 +36,7 @@
             </div>
             <div class="feedback-comment">
                 <img src="<?= $base; ?>/assets/images/comentario.svg" alt="" />
-                0
+                <span><?= $reclamacao['total_comentarios'] ?? 0; ?></span>
             </div>
             <div class="feedback-share">
                 <img src="<?= $base; ?>/assets/images/compartilhar.svg" alt="" />
@@ -46,36 +46,29 @@
 
         <div class="feed-card-comments">
 
-            <!-- Botão para abrir/fechar -->
-            <div class="toggle-comments" onclick="toggleComments(this)">
-                💬 Ver comentários (3)
+            <div class="toggle-comments" onclick="toggleComments(this, <?= $reclamacao['reclamacao_id']; ?>)">
+                💬 Ver comentários (<?= $reclamacao['total_comentarios']; ?>)
             </div>
 
-            <!-- Caixa de comentários (começa escondida) -->
-            <div class="comments-box">
-                <!-- Novo comentário -->
+            <div class="comments-box" style="display: none;" data-reclamacao-id="<?= $reclamacao['reclamacao_id']; ?>">
+
                 <div class="new-comment">
-                    <img src="<?= $base; ?>/assets/images/avatars/<?= $loggedUser->avatar ?>" alt="avatar">
-                    <input type="text" placeholder="Escreva um comentário..." />
-                    <button>Publicar</button>
+                    <img src="<?= $base; ?>/assets/images/avatars/<?= $loggedUser->foto_perfil ?? 'default.png' ?>" alt="avatar">
+
+                    <input
+                        type="text"
+                        class="comment-input"
+                        data-reclamacao-id="<?= $reclamacao['reclamacao_id']; ?>"
+                        placeholder="Escreva um comentário..." />
+
+                    <button class="post-comment-btn" data-reclamacao-id="<?= $reclamacao['reclamacao_id']; ?>">
+                        Publicar
+                    </button>
                 </div>
 
-                <!-- Lista -->
-                <div class="comment">
-                    <img src="<?= $base; ?>/assets/images/avatars/user1.png" alt="avatar">
-                    <div class="comment-content">
-                        <h6>Maria Souza</h6>
-                        <p>Concordo muito com essa reclamação!</p>
-                    </div>
+                <div class="comments-list">
                 </div>
 
-                <div class="comment">
-                    <img src="<?= $base; ?>/assets/images/avatars/user2.png" alt="avatar">
-                    <div class="comment-content">
-                        <h6>João Pedro</h6>
-                        <p>Aconteceu comigo também na minha cidade.</p>
-                    </div>
-                </div>
             </div>
         </div>
 
