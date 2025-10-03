@@ -24,13 +24,17 @@ class HomeController extends Controller
 
     public function index()
     {
-        $reclamacoes = ReclamacaoHandler::getAll($this->loggedUser); // pega todas as reclamações
+
+        $filtroCategoria = filter_input(INPUT_GET, 'categoria'); // pega do select enviado no GET
+
+        $reclamacoes = ReclamacaoHandler::getAll($this->loggedUser, $filtroCategoria);
         $categorias = CategoriaHandler::getAll();
 
         $this->render('feed', [
             'loggedUser' => $this->loggedUser,
             'categorias' => $categorias,
-            'reclamacoes' => $reclamacoes
+            'reclamacoes' => $reclamacoes,
+            'filtroCategoria' => $filtroCategoria
         ]);
     }
 
@@ -92,7 +96,7 @@ class HomeController extends Controller
         $this->render('comunidade', ['loggedUser' => $this->loggedUser]);
     }
 
-     public function visaoGeral()
+    public function visaoGeral()
     {
         $this->render('dashboard/visao-geral', ['loggedUser' => $this->loggedUser]);
     }
