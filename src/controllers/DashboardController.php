@@ -22,10 +22,16 @@ class DashboardController extends Controller
         }
     }
 
+    public function visaoGeral()
+    {
+       $this->render('dashboard/visao-geral', ['loggedUser' => $this->loggedUser]);
+    }
+
     public function reclamacoes()
     {
        $this->render('dashboard/reclamacoes', ['loggedUser' => $this->loggedUser]);
     }
+    
 
     public function apiKeys()
     {
@@ -72,4 +78,19 @@ class DashboardController extends Controller
     {
         $this->render('dashboard/new-project', ['loggedUser' => $this->loggedUser]);
     }
+    
+     public function gastosDetalhados()
+    {   
+        $this->render('dashboard/gastosdetalhados', ['loggedUser' => $this->loggedUser]);
+    }
+     public function relatoriosDown()
+    {   
+        $this->render('dashboard/relatoriosdown', ['loggedUser' => $this->loggedUser]);
+    }
+     public function duvidasFiscalizacao()
+    {   
+        $this->render('dashboard/duvidasficalizacao', ['loggedUser' => $this->loggedUser]);
+    }
+
+    
 }

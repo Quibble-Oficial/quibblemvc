@@ -22,6 +22,9 @@ $router->get('/file-manager', 'DashboardController@fileManager');
 $router->get('/help-center', 'DashboardController@helpCenter');
 $router->get('/invoice', 'DashboardController@invoice');
 $router->get('/new-project', 'DashboardController@newProject');
+$router->get('/gastosdetalhados', 'DashboardController@gastosDetalhados');
+$router->get('/relatoriosdown', 'DashboardController@relatoriosDown');
+$router->get('/duvidasfiscalizacao', 'DashboardController@duvidasFiscalizacao');
 
 
 $router->get('/login', 'AuthController@login');

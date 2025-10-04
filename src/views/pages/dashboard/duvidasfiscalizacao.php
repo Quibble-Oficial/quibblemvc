@@ -2,21 +2,21 @@
 <!DOCTYPE html>
 <html dir="ltr" lang="en">
 <head>
-<title>Buy Muze Bootstrap 5 Analytics Page</title>
+<title>Buy Muze Bootstrap 5 Simple Chat Page</title>
 <meta charset="UTF-8">
-<meta name="description" content="Presenting Muze, All-in-one Bootstrap 5 Analytics Admin Dashboard, 30+ premium HTML pages, 500+ components, dark mode, RTL. Starts @ Only $35">
-<meta name="title" content="Muze Bootstrap 5 Analytics Templates, Pages & Dashboard, analytics chart, chart design, chart template">
-<meta name="keywords" content="bootstrap analytics dashboard page, bootstrap analytics dashboard template">
+<meta name="description" content="Presenting Muze, All-in-one Bootstrap 5 Chat Admin Dashboard, 30+ Premium HTML Pages, 500+ components, dark mode, RTL. Starts @ Only $35">
+<meta name="title" content="Muze Bootstrap 5 Chat Templates, Themes, & Dashboard">
+<meta name="keywords" content="simple bootstrap chat template, bootstrap 5 chat template, chat template bootstrap 5, chat library">
 <meta name="author" content="Muze Dashboard">
 <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
 <!-- Muze Favicon -->
-<link href="<?= $base;?>/assets/favicon.ico" rel="shortcut icon" type="image/x-icon">
+<link href="/favicon.ico" rel="shortcut icon" type="image/x-icon">
 <!-- Muze Plugins CSS -->
 <link href="<?= $base;?>/assets/vendor/simplebar/dist/simplebar.min.css" rel="stylesheet" type="text/css" media="all">
 <!-- Muze Theme CSS -->
 <link href="<?= $base;?>/assets/css/theme.min.css" rel="stylesheet" type="text/css" media="all">
 </head>
-<body class="bg-gray-100 analytics-template">
+<body class="bg-gray-100 chat-template">
 
 <!-- Muze Customize Sidebar -->
 <!-- <div class="customize-sidebar">
@@ -30,7 +30,7 @@
       </a>
     </div>
     <div class="px-2 px-md-4">
-  <h3 class="mb-0"><img src="<?= $base;?>/assets/svg/icons/tio-tune2.svg" alt="Tio Tune"> Customize</h3>
+      <h3 class="mb-0"><img src="/assets/svg/icons/tio-tune2.svg" alt="Tio Tune"> Customize</h3>
       <p class="text-gray-700 mb-0 lh-lg">Choose your style and settings</p>
     </div>
   </div>
@@ -91,21 +91,21 @@
         <div class="me-3 sidebar-style">
           <div class="form-check form-check-sm me-0">
             <input class="form-check-input" type="radio" name="SidebarStyles" id="SidebarDefault" value="default-sidebar" checked="checked">
-            <label class="form-check-label" for="SidebarDefault"><img src="<?= $base;?>/assets/images/sidebar-default.svg" alt="Sidebar Default" class="rounded mb-2 border-gray-400 border"><span>Default</span></label>
+            <label class="form-check-label" for="SidebarDefault"><img src="/assets/img/sidebar-default.svg" alt="Sidebar Default" class="rounded mb-2 border-gray-400 border"><span>Default</span></label>
           </div>
         </div>
         <div class="me-3 sidebar-style">
           
           <div class="form-check form-check-sm me-0">
             <input class="form-check-input" type="radio" name="SidebarStyles" id="SidebarCompact" value="sidebar-compact">
-            <label class="form-check-label" for="SidebarCompact"><img src="<?= $base;?>/assets/images/sidebar-compact.svg" alt="Sidebar Compact" class="rounded mb-2 border-gray-400 border"><span>Compact</span></label>
+            <label class="form-check-label" for="SidebarCompact"><img src="/assets/img/sidebar-compact.svg" alt="Sidebar Compact" class="rounded mb-2 border-gray-400 border"><span>Compact</span></label>
           </div>
         </div>
         <div class="me-3 sidebar-style">
           
           <div class="form-check form-check-sm me-0">
             <input class="form-check-input" type="radio" name="SidebarStyles" id="SidebarIcons" value="sidebar-icons">
-            <label class="form-check-label" for="SidebarIcons"><img src="<?= $base;?>/assets/images/sidebar-icons.svg" alt="Sidebar Icons" class="rounded mb-2 border-gray-400 border"><span>Icons</span></label>
+            <label class="form-check-label" for="SidebarIcons"><img src="/assets/img/sidebar-icons.svg" alt="Sidebar Icons" class="rounded mb-2 border-gray-400 border"><span>Icons</span></label>
           </div>
         </div>
       </div>
@@ -121,20 +121,20 @@
       </div>
     </div>
   </div>
-</div>
+</div> -->
 
-<!-- Muze Default Sidebar, Muze Navbar, Muze Navbar Vertical, Muze Navbar Expand Lg, Muze Navbar Light 
-<nav class="navbar navbar-vertical navbar-expand-lg navbar-light">
-  <a class="navbar-brand mx-auto d-none d-lg-block my-0 my-lg-4" href="#">
-  <img src="/assets/svg/brand/logo.svg" alt="Muze">
-  <img src="/assets/svg/brand/logo-white.svg" alt="Muze" class="white-logo2">
-  <img src="/assets/svg/brand/muze-icon.svg" class="muze-icon" alt="Muze">
-  <img src="/assets/svg/brand/muze-icon-white.svg" class="muze-icon-white" alt="Muze">
+<!-- Muze Default Sidebar, Muze Navbar, Muze Navbar Vertical, Muze Navbar Expand Lg, Muze Navbar Light -->
+<!-- <nav class="navbar navbar-vertical navbar-expand-lg navbar-light">
+  <a class="navbar-brand mx-auto d-none d-lg-block my-0 my-lg-4" href="#0">
+    <img src="/assets/svg/brand/logo.svg" alt="Muze">
+    <img src="/assets/svg/brand/logo-white.svg" alt="Muze" class="white-logo2">
+    <img src="/assets/svg/brand/muze-icon.svg" class="muze-icon" alt="Muze">
+    <img src="/assets/svg/brand/muze-icon-white.svg" class="muze-icon-white" alt="Muze">
   </a>
   <div class="navbar-collapse">
     <ul class="navbar-nav mb-2" id="accordionExample" data-simplebar>
       <li class="nav-item">
-        <a class="nav-link collapsed" href="#sidebarDashboards" data-bs-toggle="collapse" role="button" aria-expanded="true" aria-controls="sidebarDashboards">
+        <a class="nav-link collapsed" href="#sidebarDashboards" data-bs-toggle="collapse" role="button" aria-expanded="false" aria-controls="sidebarDashboards">
           <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16">
             <g data-name="icons/tabler/chart" transform="translate(0)">
               <rect data-name="Icons/Tabler/Chart background" width="16" height="16" fill="none"/>
@@ -142,10 +142,10 @@
             </g>
           </svg> &nbsp;<span class="ms-2">Dashboards</span>
         </a>
-        <div class="collapse collapse-box show" id="sidebarDashboards" data-bs-parent="#accordionExample">
+        <div class="collapse collapse-box" id="sidebarDashboards" data-bs-parent="#accordionExample">
           <ul class="nav nav-sm flex-column">
             <li class="nav-item">
-              <a href="analytics.html" class="nav-link active">Analytics</a>
+              <a href="analytics.html" class="nav-link">Analytics</a>
             </li>
             <li class="nav-item">
               <a href="project-management.html" class="nav-link">Project management</a>
@@ -308,7 +308,7 @@
         </div>
       </li>
       <li class="nav-item">
-        <a class="nav-link collapsed" href="#sidebarApps" data-bs-toggle="collapse" role="button" aria-expanded="false" aria-controls="sidebarApps">
+        <a class="nav-link collapsed" href="#sidebarApps" data-bs-toggle="collapse" role="button" aria-expanded="true" aria-controls="sidebarApps">
           <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16">
             <g data-name="Icons/Tabler/Paperclip" transform="translate(0 0)">
               <rect data-name="Icons/Tabler/apps background" width="16" height="16" fill="none"/>
@@ -316,13 +316,13 @@
             </g>
           </svg> &nbsp;<span class="ms-2 position-relative">Apps <sup class="status bg-warning ms-2 position-absolute">&nbsp;</sup></span>
         </a>
-        <div class="collapse collapse-box" id="sidebarApps" data-bs-parent="#accordionExample">
+        <div class="collapse collapse-box show" id="sidebarApps" data-bs-parent="#accordionExample">
           <ul class="nav nav-sm flex-column">
             <li class="nav-item">
               <a href="file-manager.html" class="nav-link">File manager</a>
             </li>
             <li class="nav-item">
-              <a href="chat.html" class="nav-link">Chat</a>
+              <a href="chat.html" class="nav-link active">Chat</a>
             </li>
             <li class="nav-item">
               <a href="calendar.html" class="nav-link">Calendar</a>
@@ -334,7 +334,7 @@
         <hr class="my-0 bg-gray-50 opacity-100">
       </li>
       <li class="nav-item">
-        <a class="nav-link" href="../documentation/index.html" target="_blank">
+        <a class="nav-link" href="/documentation/index.html" target="_blank">
           <svg data-name="Icons/Tabler/Paperclip" xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16">
             <rect data-name="Icons/Tabler/Paperclip background" width="16" height="16" fill="none"/>
             <path d="M6.766,1.178A4.018,4.018,0,0,1,12.591,6.71l-.147.155-5.1,5.11A2.352,2.352,0,0,1,3.9,8.77l.114-.123,5.1-5.11a.685.685,0,0,1,1.035.893l-.066.077-5.1,5.11a.981.981,0,0,0,1.3,1.465l.086-.076,5.1-5.11A2.648,2.648,0,0,0,7.861,2.028l-.127.119-5.1,5.11a4.315,4.315,0,0,0,5.941,6.255l.156-.149,5.1-5.11a.685.685,0,0,1,1.035.893l-.066.077-5.1,5.11A5.685,5.685,0,0,1,1.5,6.457l.162-.169Z" transform="translate(1)" fill="#1e1e1e"/>
@@ -343,7 +343,7 @@
       </li>
     </ul>
     <div class="mt-3 mt-md-auto mb-3 signout d-grid">
-      <a href="javascript:void(0);" class="btn btn-dark btn-lg customize-btn"><img src="../assets/svg/icons/dark-mode@24.svg" alt="Customize"><span class="ps-2">Customize</span></a>
+      <a href="javascript:void(0);" class="btn btn-dark btn-lg customize-btn"><img src="/assets/svg/icons/dark-mode@24.svg" alt="Customize"><span class="ps-2">Customize</span></a>
     </div>
     <div class="navbar-vertical-footer border-top border-gray-50">
       <ul class="navbar-vertical-footer-list">
@@ -362,26 +362,26 @@
           </svg></a>
         </li>
         <li class="dropup">
-          <a href="#" role="button" id="dropdownMenuLink" data-bs-toggle="dropdown" aria-expanded="false"><img src="../assets/svg/icons/united-states.svg" alt="United States" class="avatar avatar-xss avatar-circle"></a>
+          <a href="#" role="button" id="dropdownMenuLink" data-bs-toggle="dropdown" aria-expanded="false"><img src="/assets/svg/icons/united-states.svg" alt="United States" class="avatar avatar-xss avatar-circle"></a>
           <ul class="dropdown-menu dropdown-menu-end" id="dropdown-menu" aria-labelledby="dropdownMenuLink">
             <li class="dropdown-sub-title">
               <span>Language</span>
             </li>
             <li>
               <a class="dropdown-item" href="#">
-                <img class="avatar avatar-xss avatar-circle me-2" src="../assets/svg/icons/united-states.svg" alt="Flag">
+                <img class="avatar avatar-xss avatar-circle me-2" src="/assets/svg/icons/united-states.svg" alt="Flag">
                 <span class="text-truncate" title="English">English</span>
               </a>
             </li>
             <li>
               <a class="dropdown-item" href="#">
-                <img class="avatar avatar-xss avatar-circle me-2" src="../assets/svg/icons/dutch.svg" alt="Flag">
+                <img class="avatar avatar-xss avatar-circle me-2" src="/assets/svg/icons/dutch.svg" alt="Flag">
                 <span class="text-truncate" title="English">Dutch</span>
               </a>
             </li>
             <li>
               <a class="dropdown-item" href="#">
-                <img class="avatar avatar-xss avatar-circle me-2" src="../assets/svg/icons/latin.svg" alt="Flag">
+                <img class="avatar avatar-xss avatar-circle me-2" src="/assets/svg/icons/latin.svg" alt="Flag">
                 <span class="text-truncate" title="Latin">Latin</span>
               </a>
             </li>
@@ -390,7 +390,6 @@
       </ul>
     </div>
   </div>
-  
 </nav> -->
 
 <?php $render("aside-dashboard-dark", ['usuario' => $loggedUser]); ?>
@@ -446,7 +445,7 @@
                     <div class="collapse collapse-box" id="sidebarDashboards2" data-bs-parent="#accordionExample2">
                       <ul class="nav nav-sm flex-column">
                         <li class="nav-item">
-                          <a href="analytics.html" class="nav-link active">Analytics</a>
+                          <a href="analytics.html" class="nav-link">Analytics</a>
                         </li>
                         <li class="nav-item">
                           <a href="project-management.html" class="nav-link">Project management</a>
@@ -620,7 +619,7 @@
                           <a href="file-manager.html" class="nav-link">File manager</a>
                         </li>
                         <li class="nav-item">
-                          <a href="chat.html" class="nav-link">Chat</a>
+                          <a href="chat.html" class="nav-link active">Chat</a>
                         </li>
                         <li class="nav-item">
                           <a href="calendar.html" class="nav-link">Calendar</a>
@@ -629,7 +628,7 @@
                     </div>
                   </li>
                   <li class="nav-item">
-                    <a class="nav-link" href="../documentation/index.html" target="_blank">
+                    <a class="nav-link" href="/documentation/index.html" target="_blank">
                       <svg data-name="Icons/Tabler/Paperclip" xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16">
                         <rect data-name="Icons/Tabler/Paperclip background" width="16" height="16" fill="none"/>
                         <path d="M6.766,1.178A4.018,4.018,0,0,1,12.591,6.71l-.147.155-5.1,5.11A2.352,2.352,0,0,1,3.9,8.77l.114-.123,5.1-5.11a.685.685,0,0,1,1.035.893l-.066.077-5.1,5.11a.981.981,0,0,0,1.3,1.465l.086-.076,5.1-5.11A2.648,2.648,0,0,0,7.861,2.028l-.127.119-5.1,5.11a4.315,4.315,0,0,0,5.941,6.255l.156-.149,5.1-5.11a.685.685,0,0,1,1.035.893l-.066.077-5.1,5.11A5.685,5.685,0,0,1,1.5,6.457l.162-.169Z" transform="translate(1)" fill="#1e1e1e"/>
@@ -1138,7 +1137,7 @@
                 <div class="collapse collapse-box" id="sidebarDashboards3" data-bs-parent="#accordionExample3">
                   <ul class="nav nav-sm flex-column">
                     <li class="nav-item">
-                      <a href="analytics.html" class="nav-link active">Analytics</a>
+                      <a href="analytics.html" class="nav-link">Analytics</a>
                     </li>
                     <li class="nav-item">
                       <a href="project-management.html" class="nav-link">Project management</a>
@@ -1312,7 +1311,7 @@
                       <a href="file-manager.html" class="nav-link">File manager</a>
                     </li>
                     <li class="nav-item">
-                      <a href="chat.html" class="nav-link">Chat</a>
+                      <a href="chat.html" class="nav-link active">Chat</a>
                     </li>
                     <li class="nav-item">
                       <a href="calendar.html" class="nav-link">Calendar</a>
@@ -1321,7 +1320,7 @@
                 </div>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="../documentation/index.html" target="_blank">
+                <a class="nav-link" href="/documentation/index.html" target="_blank">
                   <svg data-name="Icons/Tabler/Paperclip" xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16">
                     <rect data-name="Icons/Tabler/Paperclip background" width="16" height="16" fill="none"/>
                     <path d="M6.766,1.178A4.018,4.018,0,0,1,12.591,6.71l-.147.155-5.1,5.11A2.352,2.352,0,0,1,3.9,8.77l.114-.123,5.1-5.11a.685.685,0,0,1,1.035.893l-.066.077-5.1,5.11a.981.981,0,0,0,1.3,1.465l.086-.076,5.1-5.11A2.648,2.648,0,0,0,7.861,2.028l-.127.119-5.1,5.11a4.315,4.315,0,0,0,5.941,6.255l.156-.149,5.1-5.11a.685.685,0,0,1,1.035.893l-.066.077-5.1,5.11A5.685,5.685,0,0,1,1.5,6.457l.162-.169Z" transform="translate(1)" fill="#1e1e1e"/>
@@ -1334,1023 +1333,468 @@
       </div>
     </div>
   </div>
-  <div class="px-3 px-xxl-5 py-3 py-lg-4 border-bottom border-gray-200 after-header">
-    <div class="container-fluid px-0">
-      <div class="row align-items-center">
-        <div class="col">
-          <h1 class="h2 mb-0">Obras</h1>
+  <div class="container-fluid bg-white px-0 muze-chats">
+    <div class="row g-0">
+      <div class="has-xxl-4">
+        <div class="p-3 p-md-3 px-xxl-4 py-xl-4 border-bottom border-gray-200 border-end">
+          <ul class="nav nav-segment nav-pills px-xxl-3 py-1" role="tablist">
+            <li class="nav-item">
+              <a class="nav-link active" data-bs-toggle="pill" href="#Inprogress" role="tab" aria-selected="true">All</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" data-bs-toggle="pill" href="#Incoming" role="tab" aria-selected="false">Unread</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" data-bs-toggle="pill" href="#Completed" role="tab" aria-selected="false">Archived</a>
+            </li>
+          </ul>
         </div>
-        <div class="col-auto d-flex align-items-center my-2 my-sm-0">
-          <a href="#" class="btn btn-lg btn-outline-dark px-3 me-2 me-md-3"><span class="ps-1">Encaminhar Demanda</span> <svg class="ms-4" xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 14 14">
-            <rect data-name="Icons/Tabler/Add background" width="14" height="14" fill="none"/>
-            <path d="M6.329,13.414l-.006-.091V7.677H.677A.677.677,0,0,1,.585,6.329l.092-.006H6.323V.677A.677.677,0,0,1,7.671.585l.006.092V6.323h5.646a.677.677,0,0,1,.091,1.348l-.091.006H7.677v5.646a.677.677,0,0,1-1.348.091Z" fill="#1e1e1e"/>
-          </svg>
+        <div class="border-end border-gray-200 mb-0 chat-list" data-simplebar>
+          <a href="#0">
+            <div class="media">
+              <span class="avatar rounded-circle me-md-2 me-xl-3">
+                <img src="<?= $base;?>/assets/images/avatar58.png" alt="Avatar">
+                <span class="avatar-status avatar-success bottom-0 end-0">&nbsp;</span>
+              </span>
+              <div class="media-body">
+                <div class="d-flex align-items-center">
+                  <h6>John Wick</h6>
+                  <span class="font-weight-semibold small text-muted ms-auto text-nowrap">10:03 PM</span>
+                </div>
+                <p>Hi Bruce, what do you think of the logo I…</p>
+              </div>
+            </div>
           </a>
-          <div class="dropdown export-dropdown">
-            <a href="#" role="button" id="Exportbtn" data-bs-toggle="dropdown" aria-expanded="false" class="btn btn-lg btn-warning ms-1 px-3"><span class="ps-1">Gerar Relatório</span> <svg class="ms-4" xmlns="http://www.w3.org/2000/svg" width="14" height="7.875" viewBox="0 0 14 7.875">
-              <path d="M.231.228A.8.8,0,0,1,1.256.152l.088.075,6.3,6.222a.771.771,0,0,1,.076,1.013l-.076.087-6.3,6.222a.794.794,0,0,1-1.114,0,.771.771,0,0,1-.076-1.013l.076-.087L5.973,7,.231,1.328A.771.771,0,0,1,.154.315Z" transform="translate(14) rotate(90)" fill="#1e1e1e"/>
-            </svg>
-            </a>
-            <ul class="dropdown-menu" aria-labelledby="Exportbtn">
-              <li class="dropdown-sub-title">
-                <span>EXPORT AS</span>
-              </li>
-              <li><a class="dropdown-item" href="#"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16">
-                <g data-name="Icons/Tabler/Share" transform="translate(0)">
-                  <rect data-name="Icons/Tabler/Code background" width="16" height="16" fill="none"/>
-                  <path d="M6.21,13.982a.6.6,0,0,1-.463-.647l.014-.08L9.044.455A.617.617,0,0,1,9.79.018a.6.6,0,0,1,.463.647l-.014.08-3.282,12.8a.612.612,0,0,1-.6.455A.629.629,0,0,1,6.21,13.982Zm5.458-3.357a.588.588,0,0,1-.059-.781l.059-.067L14.514,7,11.668,4.225a.588.588,0,0,1-.059-.781l.059-.068a.627.627,0,0,1,.8-.059l.069.059,3.282,3.2a.59.59,0,0,1,.059.781l-.059.068-3.282,3.2a.627.627,0,0,1-.87,0Zm-8.136.058-.069-.058L.18,7.424a.589.589,0,0,1-.059-.781L.18,6.575l3.282-3.2a.627.627,0,0,1,.87,0,.588.588,0,0,1,.059.781l-.059.068L1.486,7,4.333,9.776a.588.588,0,0,1,.059.781l-.059.068a.627.627,0,0,1-.8.058Z" transform="translate(0 1)" fill="#495057"/>
+          <a href="#0">
+            <div class="media">
+              <span class="avatar rounded-circle me-md-2 me-xl-3">
+                <img src="<?= $base;?>/assets/images/avatar59.png" alt="Avatar">
+                <span class="avatar-status avatar-success bottom-0 end-0">&nbsp;</span>
+              </span>
+              <div class="media-body">
+                <div class="d-flex align-items-center">
+                  <h6>Prescott MacCaffery</h6>
+                  <span class="font-weight-semibold small text-muted ms-auto text-nowrap">10:03 PM</span>
+                </div>
+                <p>Hi Bruce, what do you think of the logo I…</p>
+              </div>
+            </div>
+          </a>
+          <a href="#0" class="active">
+            <div class="media">
+              <span class="avatar rounded-circle me-md-2 me-xl-3">
+                <img src="<?= $base;?>/assets/images/avatar60.png" alt="Avatar">
+                <span class="avatar-status avatar-danger bottom-0 end-0">&nbsp;</span>
+              </span>
+              <div class="media-body">
+                <div class="d-flex align-items-center">
+                  <h6>Sashi Hendriks</h6>
+                  <span class="font-weight-semibold small text-muted ms-auto text-nowrap">10:03 PM</span>
+                </div>
+                <p>Hi Bruce, what do you think of the logo I…</p>
+              </div>
+            </div>
+          </a>
+          <a href="#0">
+            <div class="media">
+              <span class="avatar rounded-circle me-md-2 me-xl-3">
+                <img src="<?= $base;?>/assets/images/avatar61.png" alt="Avatar">
+                <span class="avatar-status avatar-success bottom-0 end-0">&nbsp;</span>
+              </span>
+              <div class="media-body">
+                <div class="d-flex align-items-center">
+                  <h6>Ekene Obasey</h6>
+                  <span class="font-weight-semibold small text-muted ms-auto text-nowrap">10:03 PM</span>
+                </div>
+                <p>Hi Bruce, what do you think of the logo I…</p>
+              </div>
+            </div>
+          </a>
+          <a href="#0" class="unread">
+            <div class="media">
+              <span class="avatar rounded-circle me-md-2 me-xl-3">
+                <img src="<?= $base;?>/assets/images/avatar62.png" alt="Avatar">
+                <span class="avatar-status avatar-success bottom-0 end-0">&nbsp;</span>
+              </span>
+              <div class="media-body">
+                <div class="d-flex align-items-center">
+                  <h6>Lucas Pacheco</h6>
+                  <span class="font-weight-semibold small text-muted ms-auto text-nowrap">10:03 PM</span>
+                </div>
+                <p>Hi Bruce, what do you think of the logo I…</p>
+                <span class="avatar-status avatar-primary avatar-sm-status unread-status">&nbsp;</span>
+              </div>
+            </div>
+          </a>
+          <a href="#0">
+            <div class="media">
+              <span class="avatar rounded-circle me-md-2 me-xl-3">
+                <img src="<?= $base;?>/assets/images/avatar63.png" alt="Avatar">
+                <span class="avatar-status avatar-success bottom-0 end-0">&nbsp;</span>
+              </span>
+              <div class="media-body">
+                <div class="d-flex align-items-center">
+                  <h6>Mónica Ribeiro</h6>
+                  <span class="font-weight-semibold small text-muted ms-auto text-nowrap">10:03 PM</span>
+                </div>
+                <p>Hi Bruce, what do you think of the logo I…</p>
+              </div>
+            </div>
+          </a>
+          <a href="#0">
+            <div class="media">
+              <span class="avatar rounded-circle me-md-2 me-xl-3">
+                <img src="<?= $base;?>/assets/images/avatar64.png" alt="Avatar">
+                <span class="avatar-status avatar-success bottom-0 end-0">&nbsp;</span>
+              </span>
+              <div class="media-body">
+                <div class="d-flex align-items-center">
+                  <h6>Chigusa Kisa</h6>
+                  <span class="font-weight-semibold small text-muted ms-auto text-nowrap">10:03 PM</span>
+                </div>
+                <p>Hi Bruce, what do you think of the logo I…</p>
+              </div>
+            </div>
+          </a>
+          <a href="#0" class="unread">
+            <div class="media">
+              <span class="avatar rounded-circle me-md-2 me-xl-3">
+                <img src="<?= $base;?>/assets/images/avatar65.png" alt="Avatar">
+                <span class="avatar-status avatar-success bottom-0 end-0">&nbsp;</span>
+              </span>
+              <div class="media-body">
+                <div class="d-flex align-items-center">
+                  <h6>Clarke Gillebert</h6>
+                  <span class="font-weight-semibold small text-muted ms-auto text-nowrap">10:03 PM</span>
+                </div>
+                <p>Hi Bruce, what do you think of the logo I…</p>
+                <span class="avatar-status avatar-primary avatar-sm-status unread-status">&nbsp;</span>
+              </div>
+            </div>
+          </a>
+          <a href="#0">
+            <div class="media">
+              <span class="avatar rounded-circle me-md-2 me-xl-3">
+                <img src="<?= $base;?>/assets/images/avatar66.png" alt="Avatar">
+                <span class="avatar-status avatar-success bottom-0 end-0">&nbsp;</span>
+              </span>
+              <div class="media-body">
+                <div class="d-flex align-items-center">
+                  <h6>Naseema Al Morad</h6>
+                  <span class="font-weight-semibold small text-muted ms-auto text-nowrap">10:03 PM</span>
+                </div>
+                <p>Hi Bruce, what do you think of the logo I…</p>
+              </div>
+            </div>
+          </a>
+          <a href="#0" class="unread">
+            <div class="media">
+              <span class="avatar rounded-circle me-md-2 me-xl-3">
+                <img src="<?= $base;?>/assets/images/avatar67.png" alt="Avatar">
+                <span class="avatar-status avatar-success bottom-0 end-0">&nbsp;</span>
+              </span>
+              <div class="media-body">
+                <div class="d-flex align-items-center">
+                  <h6>Tamaki Ryushi</h6>
+                  <span class="font-weight-semibold small text-muted ms-auto text-nowrap">10:03 PM</span>
+                </div>
+                <p>Hi Bruce, what do you think of the logo I…</p>
+                <span class="avatar-status avatar-primary avatar-sm-status unread-status">&nbsp;</span>
+              </div>
+            </div>
+          </a>
+          <a href="#0">
+            <div class="media">
+              <span class="avatar rounded-circle me-md-2 me-xl-3">
+                <img src="<?= $base;?>/assets/images/avatar68.png" alt="Avatar">
+                <span class="avatar-status avatar-success bottom-0 end-0">&nbsp;</span>
+              </span>
+              <div class="media-body">
+                <div class="d-flex align-items-center">
+                  <h6>Sunstra Maneerattana</h6>
+                  <span class="font-weight-semibold small text-muted ms-auto text-nowrap">10:03 PM</span>
+                </div>
+                <p>Hi Bruce, what do you think of the logo I…</p>
+              </div>
+            </div>
+          </a>
+          <a href="#0">
+            <div class="media">
+              <span class="avatar rounded-circle me-md-2 me-xl-3">
+                <img src="<?= $base;?>/assets/images/avatar69.png" alt="Avatar">
+                <span class="avatar-status avatar-success bottom-0 end-0">&nbsp;</span>
+              </span>
+              <div class="media-body">
+                <div class="d-flex align-items-center">
+                  <h6>William Diwedi</h6>
+                  <span class="font-weight-semibold small text-muted ms-auto text-nowrap">10:03 PM</span>
+                </div>
+                <p>Hi Bruce, what do you think of the logo I…</p>
+              </div>
+            </div>
+          </a>
+          <a href="#0">
+            <div class="media">
+              <span class="avatar rounded-circle me-md-2 me-xl-3">
+                <img src="<?= $base;?>/assets/images/avatar70.png" alt="Avatar">
+                <span class="avatar-status avatar-success bottom-0 end-0">&nbsp;</span>
+              </span>
+              <div class="media-body">
+                <div class="d-flex align-items-center">
+                  <h6>Ashish Asharaful</h6>
+                  <span class="font-weight-semibold small text-muted ms-auto text-nowrap">10:03 PM</span>
+                </div>
+                <p>Hi Bruce, what do you think of the logo I…</p>
+              </div>
+            </div>
+          </a>
+          <a href="#0">
+            <div class="media">
+              <span class="avatar rounded-circle me-md-2 me-xl-3">
+                <img src="<?= $base;?>/assets/images/avatar71.png" alt="Avatar">
+                <span class="avatar-status avatar-success bottom-0 end-0">&nbsp;</span>
+              </span>
+              <div class="media-body">
+                <div class="d-flex align-items-center">
+                  <h6>Kimmy McIlmorie</h6>
+                  <span class="font-weight-semibold small text-muted ms-auto text-nowrap">10:03 PM</span>
+                </div>
+                <p>Hi Bruce, what do you think of the logo I…</p>
+              </div>
+            </div>
+          </a>
+          <a href="#0">
+            <div class="media">
+              <span class="avatar rounded-circle me-md-2 me-xl-3">
+                <img src="<?= $base;?>/assets/images/avatar71.png" alt="Avatar">
+                <span class="avatar-status avatar-success bottom-0 end-0">&nbsp;</span>
+              </span>
+              <div class="media-body">
+                <div class="d-flex align-items-center">
+                  <h6>Kimmy McIlmorie</h6>
+                  <span class="font-weight-semibold small text-muted ms-auto text-nowrap">10:03 PM</span>
+                </div>
+                <p>Hi Bruce, what do you think of the logo I…</p>
+              </div>
+            </div>
+          </a>
+        </div>
+      </div>
+      <div class="has-xxl-8">
+        <div class="py-2 py-md-1 py-xl-3 px-3 px-xxl-5 border-bottom border-gray-200 chat-header">
+          <div class="row align-items-center">
+            <div class="col-6 col-sm-8">
+              <h4 class="mb-0 mt-1 text-truncate">Sashi Hendriks</h4>
+              <span class="small text-gray-600 d-block mb-1 text-truncate">sashi@hendriksfabrx.co</span>
+            </div>
+            <div class="col-6 col-sm-4">
+              <div class="d-flex align-items-center justify-content-end">
+                <a href="#0" class="circle circle-lg">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="20.001" height="20" viewBox="0 0 20.001 20">
+                    <rect data-name="Icons/Tabler/Call background" width="20" height="20" fill="none"/>
+                    <path d="M16.982,20h0A18.076,18.076,0,0,1,5.272,14.723,18.172,18.172,0,0,1,0,2.973,2.966,2.966,0,0,1,2.844,0l.129,0H7.3a.81.81,0,0,1,.719.435L8.05.51l2.162,5.406a.811.811,0,0,1-.27.953l-.065.044L7.837,8.136l.018.033A11.113,11.113,0,0,0,11.6,12.006l.264.159,1.225-2.041a.811.811,0,0,1,.922-.361l.074.026,5.406,2.162a.8.8,0,0,1,.505.67l0,.082v4.325a2.935,2.935,0,0,1-.876,2.1A3.025,3.025,0,0,1,16.982,20ZM2.973,1.622a1.349,1.349,0,0,0-1.353,1.3A16.481,16.481,0,0,0,17.028,18.38a1.354,1.354,0,0,0,1.349-1.259l0-.093V13.253l-4.254-1.7-1.267,2.111a.81.81,0,0,1-.978.343l-.076-.033A12.768,12.768,0,0,1,6.03,8.2.809.809,0,0,1,6.271,7.19l.07-.047L8.451,5.876l-1.7-4.254Z" transform="translate(0 0)" fill="#495057"/>
+                  </svg>
+                </a>
+                <a href="#0" class="circle circle-lg ms-2 ms-xxl-4">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20">
+                    <rect data-name="Icons/Tabler/Video background" width="20" height="20" fill="none"/>
+                    <path d="M2.82,13.847A2.824,2.824,0,0,1,0,11.026V2.82A2.824,2.824,0,0,1,2.82,0h8.206a2.824,2.824,0,0,1,2.82,2.82v.807L17.4,1.85A1.8,1.8,0,0,1,20,3.455v6.938a1.795,1.795,0,0,1-1.794,1.793A1.805,1.805,0,0,1,17.4,12l-3.556-1.778v.807a2.824,2.824,0,0,1-2.82,2.82ZM1.539,2.82v8.206A1.283,1.283,0,0,0,2.82,12.308h8.206a1.283,1.283,0,0,0,1.281-1.281V2.82a1.283,1.283,0,0,0-1.281-1.281H2.82A1.283,1.283,0,0,0,1.539,2.82Zm16.551,7.8a.271.271,0,0,0,.115.026.257.257,0,0,0,.088-.015l.047-.023a.259.259,0,0,0,.122-.217V3.455a.253.253,0,0,0-.122-.217A.249.249,0,0,0,18.2,3.2a.258.258,0,0,0-.115.028L13.847,5.347V8.5Z" transform="translate(0 2.5)" fill="#495057"/>
+                  </svg>                
+                </a>
+                <div class="dropdown">
+                  <a href="#" class="circle circle-lg ms-2 ms-xxl-4" role="button" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
+                    <svg data-name="icons/tabler/dots" xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 16 16">
+                      <rect data-name="Icons/Tabler/Dots background" width="16" height="16" fill="none"/>
+                      <path d="M0,12.4A1.6,1.6,0,1,1,1.6,14,1.6,1.6,0,0,1,0,12.4Zm1.372,0a.229.229,0,1,0,.229-.229A.229.229,0,0,0,1.372,12.4ZM0,7A1.6,1.6,0,1,1,1.6,8.6,1.6,1.6,0,0,1,0,7ZM1.372,7A.229.229,0,1,0,1.6,6.772.229.229,0,0,0,1.372,7ZM0,1.6A1.6,1.6,0,1,1,1.6,3.2,1.6,1.6,0,0,1,0,1.6Zm1.372,0A.229.229,0,1,0,1.6,1.372.229.229,0,0,0,1.372,1.6Z" transform="translate(6 1)" fill="#495057"/>
+                    </svg>
+                  </a>
+                  <div class="dropdown-menu">
+                    <a href="#!" class="dropdown-item">
+                      Action
+                    </a>
+                    <a href="#!" class="dropdown-item">
+                      Another action
+                    </a>
+                    <a href="#!" class="dropdown-item">
+                      Something else here
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="py-md-4 p-3 px-xxl-5 chat-items" data-simplebar>
+          <div class="text-center py-2 pt-md-3 pb-md-4">
+            <a href="#0" class="btn btn-lg btn-link"><svg class="me-2" xmlns="http://www.w3.org/2000/svg" width="16.027" height="16" viewBox="0 0 16.027 16">
+              <g data-name="Icons/Tabler/Refresh" transform="translate(0 0)">
+                <rect data-name="Icons/Tabler/Refresh background" width="16" height="16" fill="none"/>
+                <path d="M7,15.933A8.105,8.105,0,0,1,.006,9.011a.687.687,0,0,1,1.361-.19A6.731,6.731,0,0,0,13.76,11.435H11.677a.687.687,0,0,1-.684-.621l0-.066a.687.687,0,0,1,.621-.684l.066,0H15.34a.687.687,0,0,1,.684.621l0,.067v3.663a.686.686,0,0,1-1.37.066l0-.066V12.573A8.1,8.1,0,0,1,7,15.933Zm7.662-8.754A6.731,6.731,0,0,0,2.267,4.565H4.351a.687.687,0,0,1,.683.621l0,.066a.687.687,0,0,1-.621.684l-.066,0H.687A.686.686,0,0,1,0,5.319l0-.067V1.589a.687.687,0,0,1,1.371-.067l0,.067V3.426A8.105,8.105,0,0,1,16.02,6.989a.687.687,0,1,1-1.361.189Z" fill="#0d6efd"/>
+              </g>
+            </svg><span>Load earlier messages</span></a>
+          </div>
+          <div class="position-relative my-4">
+            <hr class="bg-gray-200 opacity-1">
+            <span class="text-gray-600 small position-absolute top-0 start-50 translate-middle bg-white px-4">Today</span>
+          </div>
+          <div class="chat-item">
+            <div class="chat-item-inner">
+              <div class="avatar rounded-circle mb-4">
+                <img src="<?= $base;?>/assets/images/avatar@68.png" alt="Avatar">
+                <span class="avatar-status avatar-success bottom-0 end-0">&nbsp;</span>
+              </div>
+              <div class="chat-message">
+                <div class="message-box">
+                  <p>Hi Sashi, hope all is well, I was wondering if you can help me out with a task I’m working on. Nancy told me you have a copy of the the 2021 document as well as the images used. Would really help if you could share. 🙏</p>
+                </div>
+                <div class="px-3 py-2 d-flex align-items-center small text-gray-600 justify-content-end">
+                  <span>10:03 AM</span>
+                  <span class="ms-3"><svg class="me-1" data-name="icons/tabler/check-heavy" xmlns="http://www.w3.org/2000/svg" width="12" height="12" viewBox="0 0 16 16">
+                    <rect data-name="Icons/Tabler/Check Heavy background" width="16" height="16" fill="none"/>
+                    <path d="M5.434,11.7.234,6.5a.8.8,0,0,1,0-1.131L1.366,4.234a.8.8,0,0,1,1.131,0L6,7.737l7.5-7.5a.8.8,0,0,1,1.131,0l1.131,1.131a.8.8,0,0,1,0,1.131l-9.2,9.2a.8.8,0,0,1-1.131,0Z" transform="translate(0 2.003)" fill="#0D6EFD"/>
+                  </svg>Seen</span>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="chat-item message-sender">
+            <div class="chat-item-inner">
+              <div class="avatar rounded-circle mb-4">
+                <img src="<?= $base;?>/assets/images/avatar60.png" alt="Avatar">
+                <span class="avatar-status avatar-danger bottom-0 end-0">&nbsp;</span>
+              </div>
+              <div class="chat-message">
+                <div class="message-box">
+                  <p>Hey Bruce, sure thing! Here is the Roadmap document.</p>
+                </div>
+                <div class="px-3 py-2 d-flex align-items-center small text-gray-600 justify-content-end">
+                  <span>7:03 AM</span>
+                </div>
+              </div>
+            </div>
+            <div class="message-files">
+              <a href="#0" class="rounded-pill attachment"><svg class="me-2" xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16">
+                <g id="Icon" transform="translate(0)">
+                  <rect id="Icons_Tabler_Link_background" data-name="Icons/Tabler/Link background" width="16" height="16" fill="none"/>
+                  <path id="Color" d="M1.143,14.857a3.9,3.9,0,0,1-.1-5.421l.1-.1L4.781,5.7a3.87,3.87,0,0,1,5.528,0,.683.683,0,1,1-.976.956,2.5,2.5,0,0,0-3.491-.083l-.091.088L2.109,10.3a2.537,2.537,0,0,0,3.5,3.672l.089-.085.455-.455a.683.683,0,0,1,1.015.91l-.049.056-.455.455a3.9,3.9,0,0,1-5.519,0ZM5.691,10.3a.683.683,0,1,1,.976-.956,2.5,2.5,0,0,0,3.491.084l.092-.088L13.892,5.7a2.537,2.537,0,0,0-3.5-3.672l-.089.085-.455.455a.683.683,0,0,1-1.015-.911l.05-.055.455-.455a3.9,3.9,0,0,1,5.614,5.42l-.1.1L11.219,10.3a3.869,3.869,0,0,1-5.529,0Z" fill="#495057"/>
                 </g>
-              </svg><span class="ms-2">HTML</span></a></li>
-              <li><a class="dropdown-item" href="#"><svg data-name="Icons/Tabler/Share" xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16">
-                <rect data-name="Icons/Tabler/File background" width="16" height="16" fill="none"/>
-                <path data-name="Combined Shape" d="M2.256,16A2.259,2.259,0,0,1,0,13.744V2.256A2.259,2.259,0,0,1,2.256,0H8a.613.613,0,0,1,.4.148l0,0L8.41.157l0,0,.005.005L8.425.17l0,0L8.435.18l4.1,4.1a.614.614,0,0,1,.185.44v9.026A2.259,2.259,0,0,1,10.462,16ZM1.231,2.256V13.744a1.026,1.026,0,0,0,1.025,1.025h8.205a1.027,1.027,0,0,0,1.026-1.025V5.333H8.821A1.436,1.436,0,0,1,7.387,3.979l0-.082V1.231H2.256A1.026,1.026,0,0,0,1.231,2.256ZM8.616,3.9a.206.206,0,0,0,.168.2l.037,0h1.8l-2-2ZM3.9,12.718a.615.615,0,0,1-.059-1.228l.059,0H8.821a.615.615,0,0,1,.059,1.228l-.059,0Zm0-3.282a.615.615,0,0,1-.059-1.228l.059,0H8.821a.615.615,0,0,1,.059,1.228l-.059,0Zm0-3.281a.616.616,0,0,1-.059-1.228l.059,0h.821a.615.615,0,0,1,.059,1.228l-.059,0Z" transform="translate(2)" fill="#495057"/>
-              </svg><span class="ms-2">XML</span></a></li>
-              <li><a class="dropdown-item" href="#"><svg data-name="Icons/Tabler/Share" xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16">
-                <rect data-name="Icons/Tabler/Code02 background" width="16" height="16" fill="none"/>
-                <path data-name="Combined Shape" d="M2.256,16A2.259,2.259,0,0,1,0,13.744V2.256A2.259,2.259,0,0,1,2.256,0H8a.613.613,0,0,1,.4.148l0,0L8.41.157l0,0,.005.005L8.425.17l0,0L8.435.18l4.1,4.1a.614.614,0,0,1,.185.44v9.026A2.259,2.259,0,0,1,10.462,16ZM1.231,2.256V13.744a1.026,1.026,0,0,0,1.025,1.025h8.205a1.027,1.027,0,0,0,1.026-1.025V5.333H8.821A1.436,1.436,0,0,1,7.387,3.979l0-.082V1.231H2.256A1.026,1.026,0,0,0,1.231,2.256ZM8.616,3.9a.206.206,0,0,0,.168.2l.037,0h1.8l-2-2Zm-.891,8.756a.615.615,0,0,1-.3-.768l.025-.058.683-1.366L7.449,9.1A.616.616,0,0,1,7.67,8.3l.055-.031a.615.615,0,0,1,.795.22l.031.055.821,1.641a.617.617,0,0,1,.029.484l-.029.067L8.55,12.378a.614.614,0,0,1-.825.275ZM4.2,12.433l-.031-.055-.821-1.641a.617.617,0,0,1-.029-.484l.029-.067.821-1.641a.615.615,0,0,1,1.126.492L5.269,9.1l-.684,1.366.684,1.366a.615.615,0,0,1-.22.794l-.055.031a.615.615,0,0,1-.795-.22Z" transform="translate(2)" fill="#495057"/>
-              </svg><span class="ms-2">JSON</span></a></li>
-              <li><hr class="dropdown-divider"></li>
-              <li><a class="dropdown-item" href="#"><svg data-name="Icons/Tabler/Share" xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16">
-                <rect data-name="Icons/Tabler/Share background" width="16" height="16" fill="none"/>
-                <path d="M9.846,12.923a3.07,3.07,0,0,1,.1-.768L5.516,9.874a3.077,3.077,0,1,1,0-3.748L9.943,3.845a3.084,3.084,0,1,1,.541,1.106L6.057,7.232a3.087,3.087,0,0,1,0,1.537l4.427,2.281a3.075,3.075,0,1,1-.638,1.874Zm1.231,0a1.846,1.846,0,1,0,.2-.84q-.011.028-.025.055l-.014.025A1.836,1.836,0,0,0,11.077,12.923ZM1.231,8a1.846,1.846,0,0,0,3.487.845.623.623,0,0,1,.027-.061l.017-.031a1.845,1.845,0,0,0,0-1.508l-.017-.031a.622.622,0,0,1-.027-.061A1.846,1.846,0,0,0,1.231,8ZM12.923,4.923a1.846,1.846,0,1,0-1.682-1.086l.013.024q.014.027.025.056A1.848,1.848,0,0,0,12.923,4.923Z" fill="#495057"/>
-              </svg><span class="ms-2">Share</span></a></li>
-            </ul>
+              </svg> Roadmap.doc</a>
+            </div>
+          </div>
+          <div class="chat-item message-sender">
+            <div class="chat-item-inner">
+              <div class="avatar rounded-circle mb-4">
+                <img src="<?= $base;?>/assets/images/avatar60.png" alt="Avatar">
+                <span class="avatar-status avatar-danger bottom-0 end-0">&nbsp;</span>
+              </div>
+              <div class="chat-message">
+                <div class="message-box">
+                  <p>And ther images too ⚡️</p>
+                </div>
+                <div class="px-3 py-2 d-flex align-items-center small text-gray-600 justify-content-end">
+                  <span>7:04 AM</span>
+                </div>
+              </div>
+            </div>
+            <div class="message-files">
+              <ul>
+                <li>
+                  <a href="#0"><img src="<?= $base;?>/assets/images/placeholder29.jpg" alt="Placeholder" class="rounded-12"></a>
+                </li>
+                <li>
+                  <a href="#0"><img src="<?= $base;?>/assets/images/placeholder30.jpg" alt="Placeholder" class="rounded-12"></a>
+                </li>
+                <li>
+                  <a href="#0"><img src="<?= $base;?>/assets/images/placeholder31.jpg" alt="Placeholder" class="rounded-12"></a>
+                </li>
+              </ul>
+            </div>
+          </div>
+          <div class="chat-item">
+            <div class="chat-item-inner">
+              <div class="avatar rounded-circle mb-4">
+                <img src="<?= $base;?>/assets/images/avatar60.png" alt="Avatar">
+                <span class="avatar-status avatar-success bottom-0 end-0">&nbsp;</span>
+              </div>
+              <div class="chat-message">
+                <div class="message-box">
+                  <p>Thank you!, that helps a lot.</p>
+                </div>
+                <div class="px-3 py-2 d-flex align-items-center small text-gray-600 justify-content-end">
+                  <span>7:12 AM</span>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="chat-item message-sender">
+            <div class="chat-item-inner">
+              <div class="avatar rounded-circle mb-4">
+                <img src="<?= $base;?>/assets/images/avatar60.png" alt="Avatar">
+                <span class="avatar-status avatar-danger bottom-0 end-0">&nbsp;</span>
+              </div>
+              <div class="chat-message">
+                <div class="message-box">
+                  <p>Anytime, see you Thursday 🙏</p>
+                </div>
+                <div class="px-3 py-2 d-flex align-items-center small text-gray-600 justify-content-end">
+                  <span>7:32 AM</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="message-footer border-top border-gray-200">
+          <div class="pt-2 pt-xxl-4 px-3 px-xxl-5">
+            <textarea rows="2" class="form-control" placeholder="Reply to this conversation.."></textarea>
+          </div>
+          <div class="py-2 px-3 px-xxl-5 border-top border-gray-200">
+            <div class="row align-items-center">
+              <div class="col">
+                <div class="d-flex">
+                  <a href="#0">
+                    <svg data-name="Icons/Tabler/Emoji" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
+                      <rect data-name="Icons/Tabler/Emoji background" width="24" height="24" fill="none"/>
+                      <path data-name="Combined Shape" d="M0,12A12,12,0,1,1,12,24,12.014,12.014,0,0,1,0,12Zm1.847,0A10.153,10.153,0,1,0,12,1.847,10.165,10.165,0,0,0,1.847,12Zm6.417,4.338a.923.923,0,0,1,1.319-1.292,3.384,3.384,0,0,0,4.836,0,.923.923,0,0,1,1.318,1.292,5.23,5.23,0,0,1-7.472,0Zm6.506-6.8A.923.923,0,0,1,15.6,8.62l.1,0a.923.923,0,0,1,.089,1.841l-.1,0A.923.923,0,0,1,14.769,9.539Zm-7.385,0a.923.923,0,0,1,.834-.919l.1,0a.923.923,0,0,1,.089,1.841l-.1,0A.923.923,0,0,1,7.385,9.539Z" fill="#495057"/>
+                    </svg>
+                  </a>
+                  <a href="#0">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 16 16">
+                      <g transform="translate(0)">
+                        <rect data-name="Icons/Tabler/Link background" width="16" height="16" fill="none"/>
+                        <path d="M1.143,14.857a3.9,3.9,0,0,1-.1-5.421l.1-.1L4.781,5.7a3.87,3.87,0,0,1,5.528,0,.683.683,0,1,1-.976.956,2.5,2.5,0,0,0-3.491-.083l-.091.088L2.109,10.3a2.537,2.537,0,0,0,3.5,3.672l.089-.085.455-.455a.683.683,0,0,1,1.015.91l-.049.056-.455.455a3.9,3.9,0,0,1-5.519,0ZM5.691,10.3a.683.683,0,1,1,.976-.956,2.5,2.5,0,0,0,3.491.084l.092-.088L13.892,5.7a2.537,2.537,0,0,0-3.5-3.672l-.089.085-.455.455a.683.683,0,0,1-1.015-.911l.05-.055.455-.455a3.9,3.9,0,0,1,5.614,5.42l-.1.1L11.219,10.3a3.869,3.869,0,0,1-5.529,0Z" fill="#495057"/>
+                      </g>
+                    </svg>                    
+                  </a>
+                  <a href="#0">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
+                      <g data-name="Icons/Tabler/Photo" transform="translate(0)">
+                        <rect data-name="Icons/Tabler/Photo background" width="24" height="24" fill="none"/>
+                        <path data-name="Combined Shape" d="M5.144,24A5.149,5.149,0,0,1,0,18.857v-2.73c0-.008,0-.016,0-.024V5.144A5.149,5.149,0,0,1,5.144,0H18.857A5.149,5.149,0,0,1,24,5.144V18.857A5.149,5.149,0,0,1,18.857,24ZM2.057,18.857a3.09,3.09,0,0,0,3.086,3.086H18.857a3.09,3.09,0,0,0,3.086-3.086V16.54l-2.427-2.427A1.722,1.722,0,0,0,16.949,14l-.108.1-.644.643,2.016,2.016a1.029,1.029,0,0,1-1.372,1.53l-.082-.076L14.016,15.47l-4.1-4.1a1.724,1.724,0,0,0-2.566-.113l-.108.1L2.057,16.54Zm18.757-6.344.142.131.987.987V5.144a3.09,3.09,0,0,0-3.086-3.086H5.144A3.09,3.09,0,0,0,2.057,5.144v8.487L5.8,9.887a3.774,3.774,0,0,1,5.414-.117l.142.131,3.387,3.387.658-.658a3.773,3.773,0,0,1,5.414-.117Zm-5.728-6a1.028,1.028,0,0,1,.929-1.023l.113-.005a1.029,1.029,0,0,1,.1,2.053l-.112,0A1.028,1.028,0,0,1,15.086,6.514Z" transform="translate(0)" fill="#495057"/>
+                      </g>
+                    </svg>                                        
+                  </a>
+                </div>
+              </div>
+              <div class="col-auto">
+                <button type="button" class="btn btn-xl btn-primary fs-16 px-md-4"><svg class="me-2" xmlns="http://www.w3.org/2000/svg" width="14.001" height="14.001" viewBox="0 0 14.001 14.001">
+                  <g transform="translate(0 0)">
+                    <rect data-name="Icons/Tabler/Send background" width="14" height="14" fill="none"/>
+                    <path d="M7.728,13.537,5.306,8.694.535,6.309A.919.919,0,0,1,0,5.541l0-.067a.918.918,0,0,1,.476-.8l.06-.03.041-.017L13.291.031l.026-.009.012,0,.032-.008L13.4.005H13.4l.03,0h.076l.03,0h.008l.009,0a.531.531,0,0,1,.089.022h0l0,0a.528.528,0,0,1,.316.316h0a.53.53,0,0,1,.025.1v0h0A.534.534,0,0,1,14,.529c0,.01,0,.019,0,.029v0q0,.02,0,.039v0c0,.017-.006.035-.01.053v0a.53.53,0,0,1-.017.055L9.378,13.424l-.017.041a.919.919,0,0,1-1.633.072Zm.776-.814L12.165,2.585,6.345,8.4ZM1.278,5.5,5.6,7.655l5.819-5.82Z" transform="translate(0 0)" fill="#fff"/>
+                  </g>
+                </svg><span>Reply</span></button>
+              </div>
+            </div>
           </div>
         </div>
       </div>
     </div>
-  </div>
-  <div class="p-3 p-xxl-5">
-    <div class="container-fluid px-0">
-      <div class="row">
-        <div class="col-md-6 col-lg-12 col-xl-6 col-xxl-3">
-          <div class="card mb-4 rounded-12 shadow">
-            <div class="card-body p-3 p-xl-3 p-xxl-4">
-              <div class="row align-items-center">
-                <div class="col-5 col-xxl-6">
-                  <span class="caption text-gray-600 d-block mb-1">Orçamento Utilizado</span>
-                  <span class="h3 mb-0">79%</span>
-                  <span class="d-block fs-11 mt-2 font-weight-semibold"><svg class="me-1" xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 16 16">
-                    <g data-name="icons/tabler/trend-up" transform="translate(0)">
-                      <rect data-name="Icons/Tabler/Trend background" width="16" height="16" fill="none"/>
-                      <path d="M.249,9.315.18,9.256a.616.616,0,0,1-.059-.8L.18,8.385,5.1,3.462A.616.616,0,0,1,5.9,3.4l.068.059L8.821,6.309,13.9,1.231H9.641A.616.616,0,0,1,9.031.7L9.025.616a.617.617,0,0,1,.532-.61L9.641,0h5.728a.614.614,0,0,1,.569.346h0l0,.008,0,.008h0a.613.613,0,0,1,.048.168V.541A.621.621,0,0,1,16,.61V6.359a.616.616,0,0,1-1.226.083l-.005-.083V2.1L9.256,7.615a.616.616,0,0,1-.8.059l-.069-.059L5.539,4.768,1.05,9.256a.615.615,0,0,1-.8.059Z" transform="translate(0 3)" fill="#20C997"/>
-                    </g>
-                  </svg> 12.54</span>
-                </div>
-                <div class="col-7 col-xxl-6 px-xxl-0">
-                  <div id="MuzeDoubleLine"></div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div class="col-md-6 col-lg-12 col-xl-6 col-xxl-3">
-          <div class="card mb-4 rounded-12 shadow">
-            <div class="card-body p-3 p-xl-3 p-xxl-4">
-              <div class="row align-items-center">
-                <div class="col-5 col-xxl-6">
-                  <span class="caption text-gray-600 d-block mb-1">Obras Entregues</span>
-                  <span class="h3 mb-0">443</span>
-                  <span class="d-block fs-11 mt-2 font-weight-semibold"><svg class="me-1" xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 14 14">
-                    <g data-name="Icons/Tabler/Trend down" transform="translate(0)">
-                      <rect data-name="Icons/Tabler/Trend down background" width="14" height="14" fill="none"/>
-                      <path d="M.218.106.158.158a.539.539,0,0,0-.052.7L.158.919,4.465,5.227a.539.539,0,0,0,.7.052l.06-.052L7.718,2.736l4.443,4.443H8.436a.539.539,0,0,0-.533.465L7.9,7.718a.54.54,0,0,0,.465.534l.073,0h5.012a.537.537,0,0,0,.5-.3h0l0-.007,0-.007h0A.537.537,0,0,0,14,7.791V7.783a.544.544,0,0,0,0-.06V2.692a.539.539,0,0,0-1.073-.072l0,.072V6.418L8.1,1.593a.539.539,0,0,0-.7-.052l-.061.052L4.846,4.084.919.158a.538.538,0,0,0-.7-.052Z" transform="translate(0 2.625)" fill="#e25563"/>
-                    </g>
-                  </svg> -10.45</span>
-                </div>
-                <div class="col-7 col-xxl-6 pe-xxl-0">
-                  <div id="MuzeSingleLine"></div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-
-        <div class="col-md-6 col-lg-12 col-xl-6 col-xxl-3">
-          <div class="card mb-4 rounded-12 shadow">
-            <div class="card-body p-3 p-xl-3 p-xxl-4">
-              <div class="row align-items-center">
-                <div class="col-5 col-xxl-6">
-                  <span class="caption text-gray-600 d-block mb-1">Tempo Médio de Execução</span>
-                  <span class="h3 mb-0">14 dias</span>
-                  <span class="d-block fs-11 mt-2 font-weight-semibold"><svg class="me-1" xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 16 16">
-                    <g data-name="icons/tabler/trend-up" transform="translate(0)">
-                      <rect data-name="Icons/Tabler/Trend background" width="16" height="16" fill="none"/>
-                      <path d="M.249,9.315.18,9.256a.616.616,0,0,1-.059-.8L.18,8.385,5.1,3.462A.616.616,0,0,1,5.9,3.4l.068.059L8.821,6.309,13.9,1.231H9.641A.616.616,0,0,1,9.031.7L9.025.616a.617.617,0,0,1,.532-.61L9.641,0h5.728a.614.614,0,0,1,.569.346h0l0,.008,0,.008h0a.613.613,0,0,1,.048.168V.541A.621.621,0,0,1,16,.61V6.359a.616.616,0,0,1-1.226.083l-.005-.083V2.1L9.256,7.615a.616.616,0,0,1-.8.059l-.069-.059L5.539,4.768,1.05,9.256a.615.615,0,0,1-.8.059Z" transform="translate(0 3)" fill="#20C997"/>
-                    </g>
-                  </svg> 2.7%</span>
-                </div>
-                <div class="col-7 col-xxl-6 pe-xxl-0">
-                  <div id="MuzeSimpleDonut"></div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-
-        <div class="col-md-6 col-lg-12 col-xl-6 col-xxl-3">
-          <div class="card mb-4 rounded-12 shadow">
-            <div class="card-body p-3 p-xl-3 p-xxl-4">
-              <div class="row align-items-center">
-                <div class="col-5 col-xxl-7">
-                  <span class="caption text-gray-600 d-block mb-1">Comunidade Mais Beneficiada</span>
-                  <span class="h3 mb-0" >Nilópolis</span>
-                  <span class="d-block fs-11 mt-2 font-weight-semibold"><svg class="me-1" xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 16 16">
-                    <g data-name="icons/tabler/trend-up" transform="translate(0)">
-                      <rect data-name="Icons/Tabler/Trend background" width="16" height="16" fill="none"/>
-                      <path d="M.249,9.315.18,9.256a.616.616,0,0,1-.059-.8L.18,8.385,5.1,3.462A.616.616,0,0,1,5.9,3.4l.068.059L8.821,6.309,13.9,1.231H9.641A.616.616,0,0,1,9.031.7L9.025.616a.617.617,0,0,1,.532-.61L9.641,0h5.728a.614.614,0,0,1,.569.346h0l0,.008,0,.008h0a.613.613,0,0,1,.048.168V.541A.621.621,0,0,1,16,.61V6.359a.616.616,0,0,1-1.226.083l-.005-.083V2.1L9.256,7.615a.616.616,0,0,1-.8.059l-.069-.059L5.539,4.768,1.05,9.256a.615.615,0,0,1-.8.059Z" transform="translate(0 3)" fill="#20C997"/>
-                    </g>
-                  </svg> </span>
-                </div>
-                <div class="col-7 col-xxl-5 pe-xxl-0">
-                  <div id="MuzeSimpleDonut2"></div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      
-    
-        
-<div class="categorias">
-  <a href="/quibblemvc/public/gastosdetalhados" class="<?= ($active ?? '') === 'gastos' ? 'active' : '' ?>">Gastos Detalhados</a>
-  <a href="/quibblemvc/public/festive" class="<?= ($active ?? '') === 'festive' ? 'active' : '' ?>">Obras em Andamento</a>
-  <a href="/quibblemvc/public/relatoriosdown" class="<?= ($active ?? '') === 'relatorios' ? 'active' : '' ?>">Relatórios para Download</a>
-  <a href="/quibblemvc/public/duvidasfiscalizacao" class="<?= ($active ?? '') === 'duvidas' ? 'active' : '' ?>">Canal de Dúvidas e Fiscalização</a>
-</div>
-
-
-<hr class="separador">
-
-<style>
-  .categorias {
-    display: flex;
-    justify-content: space-around;
-    margin-top: 20px;
-    margin-bottom: 10px;
-  }
-
-  .categorias a {
-  text-decoration: none;
-  color: black;
-  transition: all 0.3s ease;
-  position: relative; /* necessário pro efeito da borda */
-  font-family: 'Montserrat', sans-serif;
-  font-size: 20px ;
-}
-
-.categorias a::after {
-  content: "";
-  position: absolute;
-  left: 0;
-  bottom: -2px; /* distância da borda em relação ao texto */
-  width: 0;
-  height: 2px;
-  background-color: black;
-  transition: width 0.3s ease;
-}
-
-.categorias a:hover {
-  
-  transform: scale(1.1);
-}
-
-.categorias a:hover::after {
-  width: 100%; /* a borda cresce suavemente */
-}
-
-
-  .separador {
-    width: 100%;
-    border: 2px solid #000;
-    height: 5px;
-    background-color: #000;
-    
-  }
-</style>
-
-<div class="px-3 px-xxl-5 py-3 py-lg-4 border-bottom border-gray-200 after-header">
-        <div class="container-fluid px-0">
-        <div class="row align-items-center"> <!-- mantém os dois elementos na mesma linha -->
-          
-          <!-- Input de pesquisa -->
-          <div class="col-3">
-            <form>
-              <div class="input-group input-group-xl bg-white border border-gray-300 rounded px-3 me-2 me-xl-4">
-                <button type="button" class="border-0 bg-transparent p-1">
-                  <img src="<?= $base;?>/assets/svg/icons/search@14.svg" alt="Search">
-                </button>
-                <input type="search" class="form-control border-0 bg-transparent" placeholder="Procurar">
-              </div>
-            </form>
-          </div>
-        
-          <!-- Botão Exportar -->
-          <div class="col-auto d-flex align-items-center">
-            <div class="dropdown export-dropdown">
-              <a href="#" role="button" id="Exportbtn" data-bs-toggle="dropdown" aria-expanded="false" class="btn btn-lg btn-warning ms-1 px-3">
-                <span class="ps-1">Exportar</span> 
-                <svg class="ms-4" xmlns="http://www.w3.org/2000/svg" width="14" height="7.875" viewBox="0 0 14 7.875">
-                  <path d="M.231.228A.8.8,0,0,1,1.256.152l.088.075,6.3,6.222a.771.771,0,0,1,.076,1.013l-.076.087-6.3,6.222a.794.794,0,0,1-1.114,0,.771.771,0,0,1-.076-1.013l.076-.087L5.973,7,.231,1.328A.771.771,0,0,1,.154.315Z" transform="translate(14) rotate(90)" fill="#1e1e1e"/>
-                </svg>
-              </a>
-              <ul class="dropdown-menu" aria-labelledby="Exportbtn">
-                
-                <!-- seus itens do dropdown -->
-              </ul>
-            </div>
-          </div>
-        
-        </div>
-        </div>
-        </div>
-
-       <div class="row">
-        <div class="col-12 mb-4">
-          <div class="card rounded-12 shadow-dark-80">
-            <div class="d-flex align-items-center px-3 px-md-4 py-3">
-              <h5 class="card-header-title mb-0 ps-md-2 font-weight-semibold">Obras</h5>
-              <div class="dropdown export-dropdown ms-auto pe-md-2">
-                
-                  <path d="M.214.212a.738.738,0,0,1,.952-.07l.082.07L7.1,5.989a.716.716,0,0,1,.071.94L7.1,7.011l-5.85,5.778a.738.738,0,0,1-1.034,0,.716.716,0,0,1-.071-.94l.071-.081L5.547,6.5.214,1.233A.716.716,0,0,1,.143.293Z" transform="translate(13 3.25) rotate(90)" fill="#495057"/>
-                </svg>
-                </a>
-                <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="Sources">
-                  <li><a class="dropdown-item" href="#"><span>Today</span></a></li>
-                  <li><a class="dropdown-item" href="#"><span>Yesterday</span></a></li>
-                  <li><a class="dropdown-item" href="#"><span>Last 7 days</span></a></li>
-                  <li><a class="dropdown-item" href="#"><span>This month</span></a></li>
-                  <li><a class="dropdown-item" href="#"><span>Last month</span></a></li>
-                  <li><hr class="dropdown-divider"></li>
-                  <li><a class="dropdown-item" href="#"><svg data-name="icons/tabler/calendar" xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16">
-                    <rect data-name="Icons/Tabler/Calendar background" width="16" height="16" fill="none"/>
-                    <path d="M2.256,16A2.259,2.259,0,0,1,0,13.743V3.9A2.259,2.259,0,0,1,2.256,1.641H3.282V.616A.615.615,0,0,1,4.507.532l.005.084V1.641H9.846V.616A.615.615,0,0,1,11.071.532l.006.084V1.641H12.1A2.259,2.259,0,0,1,14.359,3.9v9.846A2.259,2.259,0,0,1,12.1,16ZM1.231,13.743a1.027,1.027,0,0,0,1.025,1.026H12.1a1.027,1.027,0,0,0,1.026-1.026V7.795H1.231Zm11.9-7.179V3.9A1.027,1.027,0,0,0,12.1,2.872H11.077V3.9a.616.616,0,0,1-1.226.084L9.846,3.9V2.872H4.513V3.9a.615.615,0,0,1-1.225.084L3.282,3.9V2.872H2.256A1.026,1.026,0,0,0,1.231,3.9V6.564Z" transform="translate(1)" fill="#495057"/>
-                  </svg><span class="ms-2">Custom</span></a></li>
-                </ul>
-              </div>
-            </div>
-            <div class="table-responsive mb-0">
-              <table class="table card-table table-nowrap overflow-hidden">
-                <thead>
-                  <tr>
-                    
-                    <th>Equipe</th>
-                    <th>STATUS</th> 
-                    <th>CATEGORIA</th>
-                    <th>Prazo</th>
-                    <th>Comunidade</th>
-                    <th></th>
-                  </tr>
-                </thead>
-                <tbody class="list">
-                  <tr>
-                    <td>
-                      <div class="d-flex align-items-center">
-                        <span class="ps-2 font-weight-semibold text-gray-700">João Silva</span>
-                      </div>
-                    </td>
-                    <td>Pendente</td>
-                    <td><span class="badge bg-teal-50 text-teal-500">Infraestrutura</span></td>
-                    <td>02/09/2025</td>
-                    <td>Anchieta</td>
-                    <td>
-                      <div class="dropdown text-end">
-                        <a href="#" class="btn btn-dark-100 btn-icon btn-sm rounded-circle" role="button" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                          <svg data-name="Icons/Tabler/Notification" xmlns="http://www.w3.org/2000/svg" width="13.419" height="13.419" viewBox="0 0 13.419 13.419">
-                            <rect data-name="Icons/Tabler/Dots background" width="13.419" height="13.419" fill="none"/>
-                            <path d="M0,10.4a1.342,1.342,0,1,1,1.342,1.342A1.344,1.344,0,0,1,0,10.4Zm1.15,0a.192.192,0,1,0,.192-.192A.192.192,0,0,0,1.15,10.4ZM0,5.871A1.342,1.342,0,1,1,1.342,7.213,1.344,1.344,0,0,1,0,5.871Zm1.15,0a.192.192,0,1,0,.192-.192A.192.192,0,0,0,1.15,5.871ZM0,1.342A1.342,1.342,0,1,1,1.342,2.684,1.344,1.344,0,0,1,0,1.342Zm1.15,0a.192.192,0,1,0,.192-.192A.192.192,0,0,0,1.15,1.342Z" transform="translate(5.368 0.839)" fill="#6c757d"/>
-                          </svg>
-                        </a>
-                        <div class="dropdown-menu dropdown-menu-end shadow-sm">
-                          <a href="#!" class="dropdown-item">
-                            Action
-                          </a>
-                          <a href="#!" class="dropdown-item">
-                            Another action
-                          </a>
-                          <a href="#!" class="dropdown-item">
-                            Something else here
-                          </a>
-                        </div>
-                      </div>
-                    </td>
-                  </tr>
-                  <tr>
-                    <td>
-                      <div class="d-flex align-items-center">
-                        
-                        <span class="ps-2 font-weight-semibold text-gray-700">Bernardo Cota</span>
-                      </div>
-                    </td>
-                    <td>Em Andamento</td>
-                    <td><span class="badge bg-teal-50 text-teal-500">Infraestrutura</span></td>
-                    <td>17/10/2025</td>
-                    <td>Realengo</td>
-                    <td>
-                      <div class="dropdown text-end">
-                        <a href="#" class="btn btn-dark-100 btn-icon btn-sm rounded-circle" role="button" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                          <svg data-name="Icons/Tabler/Notification" xmlns="http://www.w3.org/2000/svg" width="13.419" height="13.419" viewBox="0 0 13.419 13.419">
-                            <rect data-name="Icons/Tabler/Dots background" width="13.419" height="13.419" fill="none"/>
-                            <path d="M0,10.4a1.342,1.342,0,1,1,1.342,1.342A1.344,1.344,0,0,1,0,10.4Zm1.15,0a.192.192,0,1,0,.192-.192A.192.192,0,0,0,1.15,10.4ZM0,5.871A1.342,1.342,0,1,1,1.342,7.213,1.344,1.344,0,0,1,0,5.871Zm1.15,0a.192.192,0,1,0,.192-.192A.192.192,0,0,0,1.15,5.871ZM0,1.342A1.342,1.342,0,1,1,1.342,2.684,1.344,1.344,0,0,1,0,1.342Zm1.15,0a.192.192,0,1,0,.192-.192A.192.192,0,0,0,1.15,1.342Z" transform="translate(5.368 0.839)" fill="#6c757d"/>
-                          </svg>
-                        </a>
-                        <div class="dropdown-menu dropdown-menu-end shadow-sm">
-                          <a href="#!" class="dropdown-item">
-                            Action
-                          </a>
-                          <a href="#!" class="dropdown-item">
-                            Another action
-                          </a>
-                          <a href="#!" class="dropdown-item">
-                            Something else here
-                          </a>
-                        </div>
-                      </div>
-                    </td>
-                  </tr>
-                  <tr>
-                    <td>
-                      <div class="d-flex align-items-center">
-                        
-                        <span class="ps-2 font-weight-semibold text-gray-700">Gabriel Sousa</span>
-                      </div>
-                    </td>
-                    <td>Concluido</td>
-                    <td><span class="badge bg-red-50 text-dnd">Mobilidade</span></td>
-                    <td>01/05/2025</td>
-                    <td>Nova Iguaçu</td>
-                    <td>
-                      <div class="dropdown text-end">
-                        <a href="#" class="btn btn-dark-100 btn-icon btn-sm rounded-circle" role="button" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                          <svg data-name="Icons/Tabler/Notification" xmlns="http://www.w3.org/2000/svg" width="13.419" height="13.419" viewBox="0 0 13.419 13.419">
-                            <rect data-name="Icons/Tabler/Dots background" width="13.419" height="13.419" fill="none"/>
-                            <path d="M0,10.4a1.342,1.342,0,1,1,1.342,1.342A1.344,1.344,0,0,1,0,10.4Zm1.15,0a.192.192,0,1,0,.192-.192A.192.192,0,0,0,1.15,10.4ZM0,5.871A1.342,1.342,0,1,1,1.342,7.213,1.344,1.344,0,0,1,0,5.871Zm1.15,0a.192.192,0,1,0,.192-.192A.192.192,0,0,0,1.15,5.871ZM0,1.342A1.342,1.342,0,1,1,1.342,2.684,1.344,1.344,0,0,1,0,1.342Zm1.15,0a.192.192,0,1,0,.192-.192A.192.192,0,0,0,1.15,1.342Z" transform="translate(5.368 0.839)" fill="#6c757d"/>
-                          </svg>
-                        </a>
-                        <div class="dropdown-menu dropdown-menu-end shadow-sm">
-                          <a href="#!" class="dropdown-item">
-                            Action
-                          </a>
-                          <a href="#!" class="dropdown-item">
-                            Another action
-                          </a>
-                          <a href="#!" class="dropdown-item">
-                            Something else here
-                          </a>
-                        </div>
-                      </div>
-                    </td>
-                  </tr>
-                  <tr>
-                    <td>
-                      <div class="d-flex align-items-center">
-                     
-                        <span class="ps-2 font-weight-semibold text-gray-700">Fernanda Leal</span>
-                      </div>
-                    </td>
-                    <td>Concluido</td>
-                    <td><span class="badge bg-teal-50 text-teal-500">Infraestrutura</span></td>
-                    <td>20/04/2025</td>
-                    <td>Nilópolis</td>
-                    <td>
-                      <div class="dropdown text-end">
-                        <a href="#" class="btn btn-dark-100 btn-icon btn-sm rounded-circle" role="button" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                          <svg data-name="Icons/Tabler/Notification" xmlns="http://www.w3.org/2000/svg" width="13.419" height="13.419" viewBox="0 0 13.419 13.419">
-                            <rect data-name="Icons/Tabler/Dots background" width="13.419" height="13.419" fill="none"/>
-                            <path d="M0,10.4a1.342,1.342,0,1,1,1.342,1.342A1.344,1.344,0,0,1,0,10.4Zm1.15,0a.192.192,0,1,0,.192-.192A.192.192,0,0,0,1.15,10.4ZM0,5.871A1.342,1.342,0,1,1,1.342,7.213,1.344,1.344,0,0,1,0,5.871Zm1.15,0a.192.192,0,1,0,.192-.192A.192.192,0,0,0,1.15,5.871ZM0,1.342A1.342,1.342,0,1,1,1.342,2.684,1.344,1.344,0,0,1,0,1.342Zm1.15,0a.192.192,0,1,0,.192-.192A.192.192,0,0,0,1.15,1.342Z" transform="translate(5.368 0.839)" fill="#6c757d"/>
-                          </svg>
-                        </a>
-                        <div class="dropdown-menu dropdown-menu-end shadow-sm">
-                          <a href="#!" class="dropdown-item">
-                            Action
-                          </a>
-                          <a href="#!" class="dropdown-item">
-                            Another action
-                          </a>
-                          <a href="#!" class="dropdown-item">
-                            Something else here
-                          </a>
-                        </div>
-                      </div>
-                    </td>
-                  </tr>
-                  <tr>
-                    <td>
-                      <div class="d-flex align-items-center">
-                        
-                        <span class="ps-2 font-weight-semibold text-gray-700">Gabriel Figueiredo</span>
-                      </div>
-                    </td>
-                    <td>Pendente</td>
-                    <td><span class="badge bg-red-50 text-dnd">Infraestrutura</span></td>
-                    <td><a href="<?= $base;?>/assets/images/avatar-sm2.png"></a>15/06/2025</td>
-                    <td>Marechal Hermes</td>
-                    <td>
-                      <div class="dropdown text-end">
-                        <a href="#" class="btn btn-dark-100 btn-icon btn-sm rounded-circle" role="button" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                          <svg data-name="Icons/Tabler/Notification" xmlns="http://www.w3.org/2000/svg" width="13.419" height="13.419" viewBox="0 0 13.419 13.419">
-                            <rect data-name="Icons/Tabler/Dots background" width="13.419" height="13.419" fill="none"/>
-                            <path d="M0,10.4a1.342,1.342,0,1,1,1.342,1.342A1.344,1.344,0,0,1,0,10.4Zm1.15,0a.192.192,0,1,0,.192-.192A.192.192,0,0,0,1.15,10.4ZM0,5.871A1.342,1.342,0,1,1,1.342,7.213,1.344,1.344,0,0,1,0,5.871Zm1.15,0a.192.192,0,1,0,.192-.192A.192.192,0,0,0,1.15,5.871ZM0,1.342A1.342,1.342,0,1,1,1.342,2.684,1.344,1.344,0,0,1,0,1.342Zm1.15,0a.192.192,0,1,0,.192-.192A.192.192,0,0,0,1.15,1.342Z" transform="translate(5.368 0.839)" fill="#6c757d"/>
-                          </svg>
-                        </a>
-                        <div class="dropdown-menu dropdown-menu-end shadow-sm">
-                          <a href="#!" class="dropdown-item">
-                            Action
-                          </a>
-                          <a href="#!" class="dropdown-item">
-                            Another action
-                          </a>
-                          <a href="#!" class="dropdown-item">
-                            Something else here
-                          </a>
-                        </div>
-                      </div>
-                    </td>
-                  </tr>
-                </tbody>
-              </table>
-            </div>
-            <div class="d-flex align-items-center p-3 p-md-4 border-top border-gray-200">
-              <a href="#" class="my-1 tiny font-weight-semibold mx-auto btn btn-link link-dark">Ver Mais<svg class="ms-1" data-name="icons/tabler/chevron right" xmlns="http://www.w3.org/2000/svg" width="10" height="10" viewBox="0 0 16 16">
-                <rect data-name="Icons/Tabler/Chevron Right background" width="16" height="16" fill="none"></rect>
-                <path d="M.26.26A.889.889,0,0,1,1.418.174l.1.086L8.629,7.371a.889.889,0,0,1,.086,1.157l-.086.1L1.517,15.74A.889.889,0,0,1,.174,14.582l.086-.1L6.743,8,.26,1.517A.889.889,0,0,1,.174.36Z" transform="translate(4)" fill="#1e1e1e"></path>
-              </svg></a>
-            </div>
-          </div>
-        </div>
-      </div>
-      
-              
-              
-    <footer class="pt-xxl-5 mt-lg-2">
-      <div class="container-fluid px-0 border-top border-gray-200 pt-2 pt-lg-3">
-        <div class="row align-items-center">
-          <div class="col-md-6">
-            <p class="fs-16 text-gray-600 my-2">2025 © Quibble - Todos os direitos reservados.</p>
-          </div>
-          <div class="col-md-6">
-            <ul class="nav navbar">
-              <li><a href="#0">Sobre</a></li>
-              <li><a href="#0">Suporte</a></li>
-              <li><a href="#0">Contato</a></li>
-            </ul>
-          </div>
-        </div>
-      </div>
-    </footer>
   </div>
 </div>
 
 <!-- Muze Javascript Plugins -->
 <script src="<?= $base;?>/assets/vendor/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
 <script src="<?= $base;?>/assets/vendor/lodash/lodash.min.js"></script>
-<script src="<?= $base;?>/assets/vendor/highcharts/highmaps.js"></script>
-<script src="<?= $base;?>/assets/vendor/apexcharts/dist/apexcharts.min.js"></script>
 <script src="<?= $base;?>/assets/vendor/simplebar/dist/simplebar.min.js"></script>
 <script src="<?= $base;?>/assets/js/theme-custom.js"></script>
-<script>
-//Muze Double Line Chart JavaScript
-var options = {
-  series: [{
-    name: '2024',
-    data: [31, 40, 28, 51, 42, 109, 100]
-  }, {
-    name: '2025',
-    data: [11, 32, 80, 45, 75, 80, 41]
-  }],
-  chart: {
-  type: 'line',
-  height: 90,
-  zoom: {
-    enabled: false
-  },
-  toolbar: {
-    show: false,
-  }
-},
-dataLabels: {
-  enabled: false
-},
-stroke: {
-  width: 3,
-  colors: ['#008FFB', '#A8CBFE'],
-  curve: 'smooth'
-},
-legend: {
-  show: false,
-},
-grid: {
-  show: false,
-  xaxis: {
-    lines: {
-      show: false
-    }
-  },
-  row: {
-    colors: undefined,
-    opacity: 0
-  },
-},
-tooltip: {
-  enabled: true,
-  marker: {
-    fillColors: ['#008FFB', '#A8CBFE'],
-  },
-  x: {
-    show: false
-  },
-},
-markers: {
-  colors: ['#008FFB', '#A8CBFE'],
-},
-yaxis: {
-  show: false,
-},
-xaxis: {
-  labels: {
-    show: false,
-  },
-  axisTicks: {
-    show: false,
-  },
-  axisBorder: {
-    show: false,
-  },
-  stroke: {
-    width: 0,
-  },
-  tooltip: {
-    enabled: false,
-  }
-}
-};
-
-var chart = new ApexCharts(document.querySelector("#MuzeDoubleLine"), options);
-chart.render();
-
-//Muze Single Line Chart JavaScript
-var options = {
-  series: [{
-    name: '2021',
-    data: [31, 50, 38, 51, 60, 109, 100]
-  }],
-  chart: {
-  type: 'line',
-  height: 90,
-  zoom: {
-    enabled: false
-  },
-  toolbar: {
-    show: false,
-  }
-},
-dataLabels: {
-  enabled: false
-},
-stroke: {
-  width: 3,
-  colors: ['#008FFB'],
-  curve: 'straight'
-},
-legend: {
-  show: false,
-},
-grid: {
-  show: false,
-  xaxis: {
-    lines: {
-      show: false
-    }
-  },
-  row: {
-    colors: undefined,
-    opacity: 0
-  },
-},
-tooltip: {
-  enabled: true,
-  x: {
-    show: false
-  },
-},
-yaxis: {
-  show: false,
-},
-xaxis: {
-  categories: ['Jan', 'Feb', 'Mar', 'Apr', 'May', 'Jun', 'Jul', 'Aug', 'Sep'],
-  labels: {
-    show: false,
-  },
-  stroke: {
-    width: 0,
-  },
-  axisTicks: {
-    show: false,
-  },
-  axisBorder: {
-    show: false,
-  },
-  tooltip: {
-    enabled: false,
-  }
-}
-};
-
-var chart = new ApexCharts(document.querySelector("#MuzeSingleLine"), options);
-chart.render();
-
-//Muze Simple Donut Chart JavaScript
-var options = {
-  series: [50, 50],
-  chart: {
-  type: 'donut',
-  height: 125,
-},
-dataLabels: {
-  enabled: false,
-},
-colors: ['#a8cbfe', '#008ffb'],
-stroke: {
-  width: 0
-},
-legend: {
-  show: false,
-},
-states: {
-  hover: {
-    filter: {
-      type: 'none',
-    }
-  },
-},
-plotOptions: {
-  donut: {
-    size: '65%',
-    background: 'transparent',
-  },
-  pie: {
-    offsetX: 25
-  }
-},
-grid: {
-  show: false,
-  xaxis: {
-    lines: {
-      show: false
-    }
-  },
-  row: {
-    colors: undefined,
-    opacity: 0
-  },
-},
-tooltip: {
-  enabled: false,
-},
-yaxis: {
-  show: false,
-}
-};
-
-var chart = new ApexCharts(document.querySelector("#MuzeSimpleDonut"), options);
-chart.render();
-
-// Muze Simple Donut Chart JavaScript: Segundo gráfico Chart
-
-
-var options = {
-  series: [50, 50],
-  chart: {
-  type: 'donut',
-  height: 125,
-},
-dataLabels: {
-  enabled: false,
-},
-colors: ['#a8cbfe', '#008ffb'],
-stroke: {
-  width: 0
-},
-legend: {
-  show: false,
-},
-states: {
-  hover: {
-    filter: {
-      type: 'none',
-    }
-  },
-},
-plotOptions: {
-  donut: {
-    size: '65%',
-    background: 'transparent',
-  },
-  pie: {
-    offsetX: 25
-  }
-},
-grid: {
-  show: false,
-  xaxis: {
-    lines: {
-      show: false
-    }
-  },
-  row: {
-    colors: undefined,
-    opacity: 0
-  },
-},
-tooltip: {
-  enabled: false,
-},
-yaxis: {
-  show: false,
-}
-};
-
-var chart = new ApexCharts(document.querySelector("#MuzeSimpleDonut2"), options);
-chart.render();
-
-//Muze Columns Chart JavaScript
-var options = {
-  series: [{
-  name: 'Net Profit',
-  data: [40, 40, 40, 40, 40]
-}, {
-  name: 'Free Cash Flow',
-  data: [70, 70, 70, 70, 70]
-}],
-  chart: {
-  type: 'bar',
-  height: 90,
-  zoom: {
-    enabled: false
-  },
-  toolbar: {
-    show: false,
-  }
-},
-plotOptions: {
-  bar: {
-    horizontal: false,
-    columnWidth: '50%',
-    endingShape: 'rounded'
-  },
-},
-dataLabels: {
-  enabled: false
-},
-legend: {
-  show: false,
-},
-grid: {
-  show: false,
-  xaxis: {
-    lines: {
-      show: false
-    }
-  },
-},
-colors: ['#008FFB', '#A8CBFE'],
-stroke: {
-  show: false,
-},
-xaxis: {
-  labels: {
-    show: false,
-  },
-  axisTicks: {
-    show: false,
-  },
-  axisBorder: {
-    show: false,
-  },
-  stroke: {
-    width: 0,
-  },
-  tooltip: {
-    enabled: false,
-  }
-},
-states: {
-  hover: {
-    filter: {
-      type: 'none',
-    }
-  },
-},
-yaxis: {
-  labels: {
-    show: false,
-  },
-},
-fill: {
-  opacity: 1
-},
-tooltip: {
-  enabled: false,
-}
-};
-
-var chart = new ApexCharts(document.querySelector("#MuzeColumnsChartTwo"), options);
-chart.render();
-
-//Muze Single Line Chart JavaScript
-var options = {
-  series: [{
-    name: '2024',
-    data: [20, 40, 28, 51, 42, 70, 75, 28, 51, 42, 70, 75]
-  }, {
-    name: '2025',
-    data: [0, 20, 36, 22, 24, 42, 35, 22, 24, 42, 35, 50]
-  }],
-  chart: {
-  type: 'line',
-  height: 380,
-  zoom: {
-    enabled: false
-  },
-  toolbar: {
-    show: false,
-  }
-},
-dataLabels: {
-  enabled: false,
-},
-stroke: {
-  width: 3,
-  colors: ['#008FFB', '#A8CBFE'],
-  curve: 'smooth'
-},
-legend: {
-  show: true,
-  position: 'top',
-  horizontalAlign: 'left',
-  fontSize: '13px',
-  fontFamily: 'Open Sans,sans-serif',
-  fontWeight: 400,
-  labels: {
-    colors: '#6C757D',
-  },
-  markers: {
-    width: 12,
-    height: 12,
-    strokeWidth: 0,
-    strokeColor: '#fff',
-    fillColors: ['#0D6EFD','#A8CBFE'],
-    radius: 12,
-  },
-},
-grid: {
-  show: true,
-  borderColor: '#E9ECEF',
-  xaxis: {
-    lines: {
-      show: false
-    }
-  },
-  row: {
-    colors: undefined,
-    opacity: 0
-  },
-},
-tooltip: {
-  enabled: true,
-  marker: {
-    fillColors: ['#008FFB', '#A8CBFE'],
-  },
-  x: {
-    show: false
-  },
-},
-markers: {
-  colors: ['#008FFB', '#A8CBFE'],
-},
-yaxis: {
-  show: true,
-  labels: {
-    style: {
-      colors: '#6C757D',
-      fontSize: '13px',
-      fontFamily: 'Open Sans,sans-serif',
-      fontWeight: 400,
-    }
-  },
-},
-xaxis: {
-  categories: ['Jan', 'Feb', 'Mar', 'Apr', 'May', 'Jun', 'Jul', 'Aug', 'Sep', 'Oct', 'Nov', 'Dec'],
-  labels: {
-    show: true,
-    style: {
-      colors: '#6C757D',
-      fontSize: '13px',
-      fontFamily: 'Open Sans,sans-serif',
-      fontWeight: 400,
-    }
-  },
-  axisTicks: {
-    show: false,
-  },
-  axisBorder: {
-    show: false,
-  },
-  stroke: {
-    width: 0,
-  },
-  tooltip: {
-    enabled: false,
-  }
-}
-};
-
-var chart = new ApexCharts(document.querySelector("#MuzeDoubleLineTwo"), options);
-chart.render();
-
-//Muze Pie Chart JavaScript
-Highcharts.chart('MuzePieChartOne', {
-  chart: {
-    type: 'pie',
-    backgroundColor: null,
-  },
-  title: {
-    text: '',
-  },
-  credits: {
-    enabled: false,
-  },
-  xAxis: {
-    lineColor: 'transparent',
-    tickLength: 0,
-    labels: {
-      enabled: false,
-    },
-  },
-  yAxis: {
-    gridLineColor: 'transparent',
-    title: {
-      text: '',
-    },
-    labels: {
-      enabled: false,
-    },
-  },
-  legend: {
-    itemStyle: {
-      color: '#6C757D',
-      fontSize: '12px',
-      fontWeight: '500',
-      fontFamily: "'Open Sans', sans-serif",
-    },
-    margin: 30,
-    padding: 0,
-    symbolWidth: 11,
-    symbolHeight: 11,
-    itemDistance: 30,
-    symbolPadding: 10,
-  },
-  plotOptions: {
-    pie: {
-      size: 230,
-      borderWidth: 0,
-      allowPointSelect: true,
-    },
-    series: {
-      lineWidth: 0,
-    },
-    column: {
-      pointPadding: 0,
-      borderWidth: 0,
-      pointWidth: 1,
-    },
-  },
-  accessibility: {
-    announceNewData: {
-      enabled: true,
-    },
-    point: {
-      valueSuffix: '%',
-    }
-  },
-  tooltip: {
-    headerFormat: '<span style="font-size:11px">{series.name}</span><br>',
-    pointFormat: '<span style="color:{point.color}">{point.name}</span>: <b>{point.y:.2f}%</b> of total<br/>'
-  },
-  series: [{
-    innerSize: '86%',
-    dataLabels: [{
-      enabled: false,
-    }],
-    name: 'Browsers',
-    showInLegend: true,
-    data: [
-      {name: 'Saúde', y: 20, color: '#127d1b',},
-      {name: 'Mobilidade', y: 15, color: '#81B4FE',},
-      {name: 'Infrestrutura', y: 36, color: '#3485FD',}],
-    }
-  ],
-});
-</script>
 </body>
 </html>
