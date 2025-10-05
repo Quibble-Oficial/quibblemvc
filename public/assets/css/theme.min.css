@@ -115,8 +115,9 @@ aside nav ul li a img {
     display: flex;
     justify-content: center;
     align-items: center;
-    margin-top: 360px ;
+    /* margin-top: 360px ; */
     margin-bottom: 30px;
+    height: 80vh;
 }
 
 aside #div-btn a img {
@@ -136,6 +137,7 @@ aside hr {
     font-weight: 600;
     display: flex;
     align-items: center;
+    height: 60vh;
 }
 
 .config {
@@ -12672,8 +12674,8 @@ select::-ms-expand {
 }
 
 .btn-dark {
-    background-color: #1e1e1e !important;
-    border-color: #1e1e1e !important
+    background-color: #2B72DF !important;
+    border-color: #2B72DF !important
 }
 
 .btn-dark:hover {

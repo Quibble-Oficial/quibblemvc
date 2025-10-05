@@ -1629,6 +1629,7 @@
                     <th>Em Andamento</th>
                     <th>Obras Ativas</th>
                     <th>Satisfação</th>
+                    <th></th>
                   </tr>
                 </thead>
                 <tbody class="list">

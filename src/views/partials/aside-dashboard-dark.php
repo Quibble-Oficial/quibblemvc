@@ -1,151 +1,101 @@
-<aside>
-        <h1>Quibble</h1>
-        <div class="aside-content">
-            <nav>
-                <ul>
-                    <li>
-                        <a href="<?=$base;?>/visao-geral">
-                            <img src="<?=$base;?>/assets/images/visao_geral_dashboard.svg" alt="">
-                            Visão Geral
-                        </a>
-                    </li>
-                    <li>
-                        <a href="<?=$base;?>/reclamacoes">
-                            <img src="<?=$base;?>/assets/images/reclamacoes_dashboard.svg" alt="">
-                            Reclamações
-                        </a>
-                    </li>
-                    <li>
-                        <a href="<?=$base;?>/api-keys">
-                            <img src="<?=$base;?>/assets/images/mapa_dashboard.svg" alt="">
-                            Mapa
-                        </a>
-                    </li>
-                    <li>
-                        <a href="<?=$base;?>/billing">
-                            <img src="<?=$base;?>/assets/images/comunidades_dashboard.svg" alt="">
-                            Comunidades
-                        </a>
-                    </li>
-                    <li>
-                        <a href="<?=$base;?>/calendar">
-                            <img src="<?=$base;?>/assets/images/relatorios_dashboard.svg" alt="">
-                            Relatórios
-                        </a>
-                    </li>
-                    <li>
-                        <a href="<?=$base;?>/chat">
-                            <img src="<?=$base;?>/assets/images/gestao_interna_dashboard.svg" alt="">
-                            Gestão Interna
-                        </a>
-                    </li>
-                    <li>
-                        <a href="<?=$base;?>/empty-state">
-                            <img src="<?=$base;?>/assets/images/comunicacao_dashboard.svg" alt="">
-                            Comunicação
-                        </a>
-                    </li>
-                    <li>
-                        <a href="<?=$base;?>/festive">
-                            <img src="<?=$base;?>/assets/images/transparencia_dashboard.svg" alt="">
-                            Transparência
-                        </a>
-                    </li>
-                    <li>
-                        <a href="<?=$base;?>/file-manager">
-                            <img src="<?=$base;?>/assets/images/financeiro_dashboard.svg" alt="">
-                            Financeiro
-                        </a>
-                    </li>
-                    
-                    <!-- <li>
-                        <a href="<?=$base;?>/help-center">
-                            <img src="<?=$base;?>/assets/images/financeiro_dashboard.svg" alt="">
-                            Help Center
-                        </a>
-                    </li>
-                    <li>
-                        <a href="<?=$base;?>/invoice">
-                            <img src="<?=$base;?>/assets/images/financeiro_dashboard.svg" alt="">
-                            Invoice
-                        </a>
-                    </li>
-                    <li>
-                        <a href="<?=$base;?>/new-project">
-                            <img src="<?=$base;?>/assets/images/financeiro_dashboard.svg" alt="">
-                            New Project
-                        </a>
-                    </li>
-                    <li>
-                        <a href="<?=$base;?>/404">
-                            <img src="<?=$base;?>/assets/images/financeiro_dashboard.svg" alt="">
-                            404
-                        </a>
-                    </li>
-                    <li>
-                        <a href="<?=$base;?>/comunidade">
-                            <img src="<?=$base;?>/assets/images/financeiro_dashboard.svg" alt="">
-                            Comunidades
-                        </a>
-                    </li>
-                    <li>
-                        <a href="<?=$base;?>/feed">
-                            <img src="<?=$base;?>/assets/images/financeiro_dashboard.svg" alt="">
-                            Feed
-                        </a>
-                    </li>
-                    <li>
-                        <a href="<?=$base;?>/notificacoes">
-                            <img src="<?=$base;?>/assets/images/financeiro_dashboard.svg" alt="">
-                            Notificações
-                        </a>
-                    </li>
-                    <li>
-                        <a href="<?=$base;?>/prefeito">
-                            <img src="<?=$base;?>/assets/images/financeiro_dashboard.svg" alt="">
-                            Prefeito
-                        </a>
-                    </li>
-                    <li>
-                        <a href="<?=$base;?>/sobre">
-                            <img src="<?=$base;?>/assets/images/financeiro_dashboard.svg" alt="">
-                            Sobre
-                        </a>
-                    </li>
-                    <li>
-                        <a href="<?=$base;?>/usuario">
-                            <img src="<?=$base;?>/assets/images/financeiro_dashboard.svg" alt="">
-                            Usuario
-                        </a>
-                    </li>
-                </ul> -->
-            </nav>
+<nav class="navbar navbar-vertical navbar-expand-lg navbar-light">
+  <a class="navbar-brand mx-auto d-none d-lg-block my-0 my-lg-4" href="#">
+  <img src="<?= $base;?>/assets/images/Quibble_claro.png" alt="Muze">
+  <img src="<?= $base;?>/assets/images/Quibble.png" alt="Muze" class="white-logo2">
+  <img src="<?= $base;?>/assets/svg/brand/muze-icon.svg" class="muze-icon" alt="Muze">
+  <img src="<?= $base;?>/assets/svg/brand/muze-icon-white.svg" class="muze-icon-white" alt="Muze">
+  </a>
+  <div class="navbar-collapse">
+    <ul class="navbar-nav mb-2" id="accordionExample" data-simplebar>
+       <li class="nav-item">
+        <a class="nav-link" href="<?=$base;?>/visao-geral">
+           <img src="<?=$base;?>/assets/images/visao_geral_dashboard.svg" alt=""> &nbsp;<span class="ms-2">Visão Geral</span>
+        </a>
+      </li>
+       <li class="nav-item">
+        <a class="nav-link" href="<?=$base;?>/reclamacoes" >
+         <img src="<?=$base;?>/assets/images/reclamacoes_dashboard.svg" alt=""> &nbsp;<span class="ms-2">Reclamações</span>
+        </a>
+      </li>
+       <li class="nav-item">
+        <a class="nav-link" href="href="<?=$base;?>/mapa" >
+          <img src="<?=$base;?>/assets/images/mapa_dashboard.svg" alt=""> &nbsp;<span class="ms-2">Mapa</span>
+        </a>
+      </li>
+       <li class="nav-item">
+        <a class="nav-link" href="href="<?=$base;?>/comunidades" >
+          <img src="<?=$base;?>/assets/images/comunidades_dashboard.svg" alt=""> &nbsp;<span class="ms-2">Comunidades</span>
+        </a>
+      </li>
+       <li class="nav-item">
+        <a class="nav-link" href="href="<?=$base;?>/relatorios" >
+          <img src="<?=$base;?>/assets/images/relatorios_dashboard.svg" alt=""> &nbsp;<span class="ms-2">Relatórios</span>
+        </a>
+      </li>
+       <li class="nav-item">
+        <a class="nav-link" href="href="<?=$base;?>/gestao_interna" >
+          <img src="<?=$base;?>/assets/images/gestao_interna_dashboard.svg" alt=""> &nbsp;<span class="ms-2">Gestão Interna</span>
+        </a>
+      </li>
+       <li class="nav-item">
+        <a class="nav-link" href="href="<?=$base;?>/comunicacao" >
+          <img src="<?=$base;?>/assets/images/comunicacao_dashboard.svg" alt=""> &nbsp;<span class="ms-2">Comunicação</span>
+        </a>
+      </li>
+       <li class="nav-item">
+        <a class="nav-link" href="href="<?=$base;?>/transparencia" >
+          <img src="<?=$base;?>/assets/images/transparencia_dashboard.svg" alt=""> &nbsp;<span class="ms-2">Transparência</span>
+        </a>
+      </li>
 
-            <div id="div-btn">
-                <a href="">
-                    <img src="<?=$base;?>/assets/images/tema_dashboard.svg" alt="">
-                    Customisar
-                </a>
-            </div>
-            <hr>
-            <div class="config">
-                <div class="links">
-                    <div>
-                        <a href="">
-                            <img src="<?=$base;?>/assets/images/config_dashboard.svg" alt="">
-                        </a>
-                    </div>
-                    <div>
-                        <a href="">
-                            <img src="<?=$base;?>/assets/images/raio_dashboard.svg" alt="">
-                        </a>
-                    </div>
-                    <div>
-                        <a href="">
-                            <img src="<?=$base;?>/assets/images/idioma_dashboard.svg" alt="">
-                        </a>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </aside>
+    </ul>
+    <div class="mt-3 mt-md-auto mb-3 signout d-grid">
+      <a href="javascript:void(0);" class="btn btn-dark btn-lg customize-btn"><img src="<?= $base;?>/assets/svg/icons/dark-mode@24.svg" alt="Customize"><span class="ps-2">Customizar</span></a>
+    </div>
+    <div class="navbar-vertical-footer border-top border-gray-50">
+      <ul class="navbar-vertical-footer-list">
+        <li>
+          <a href="javascript:void(0);"><svg xmlns="http://www.w3.org/2000/svg" width="18.047" height="18.047" viewBox="0 0 18.047 18.047">
+            <g data-name="Icons/Tabler/Paperclip Copy" transform="translate(0.047 0.047)">
+              <rect data-name="Icons/Tabler/Adjustments background" width="18" height="18" fill="none"/>
+              <path d="M14.4,17.3l0-.074V6.579a2.829,2.829,0,0,1,0-5.443V.772A.772.772,0,0,1,15.94.7l0,.074v.364a2.829,2.829,0,0,1,0,5.443v10.65A.771.771,0,0,1,14.4,17.3ZM13.885,3.858a1.285,1.285,0,1,0,1.286-1.286A1.287,1.287,0,0,0,13.885,3.858ZM8.232,17.3l0-.074V15.836a2.829,2.829,0,0,1,0-5.443V.772A.771.771,0,0,1,9.768.7l0,.074v9.621a2.829,2.829,0,0,1,0,5.443v1.393a.772.772,0,0,1-1.54.074Zm-.517-4.188A1.285,1.285,0,1,0,9,11.829,1.287,1.287,0,0,0,7.714,13.115ZM2.06,17.3l0-.074V9.664a2.829,2.829,0,0,1,0-5.443V.772A.771.771,0,0,1,3.6.7l0,.074V4.221a2.829,2.829,0,0,1,0,5.443v7.565a.772.772,0,0,1-1.54.074ZM1.543,6.943A1.285,1.285,0,1,0,2.829,5.657,1.287,1.287,0,0,0,1.543,6.943Z" transform="translate(-0.047 -0.047)" fill="#6c757d"/>
+            </g>
+          </svg></a>
+        </li>
+        <li>
+          <a href="javascript:void(0);"><svg data-name="Icons/Tabler/Paperclip Copy 2" xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 18 18">
+            <rect data-name="Icons/Tabler/Bolt background" width="18" height="18" fill="none"/>
+            <path d="M6.377,18a.7.7,0,0,1-.709-.6l-.006-.1V11.537H.709A.7.7,0,0,1,.1,11.193a.673.673,0,0,1-.014-.672l.054-.083L7.693.274,7.755.2,7.828.141,7.913.087,7.981.055l.087-.03L8.16.006,8.256,0h.037l.059.005.04.007.052.011.045.014.043.016.052.023.089.055.016.011A.765.765,0,0,1,8.756.2L8.82.273l.055.083.033.067.03.085L8.957.6l.007.094V6.461h4.952a.7.7,0,0,1,.613.345.672.672,0,0,1,.013.672l-.053.082L6.942,17.714A.691.691,0,0,1,6.377,18ZM7.548,2.821,2.1,10.153H6.369a.7.7,0,0,1,.7.6l.006.093v4.331l5.449-7.331H8.256a.7.7,0,0,1-.7-.6l-.007-.094Z" transform="translate(2.25 0)" fill="#6c757d"/>
+          </svg></a>
+        </li>
+        <li class="dropup">
+          <a href="#" role="button" id="dropdownMenuLink" data-bs-toggle="dropdown" aria-expanded="false"><img src="<?= $base;?>/assets/svg/icons/united-states.svg" alt="United States" class="avatar avatar-xss avatar-circle"></a>
+          <ul class="dropdown-menu dropdown-menu-end" id="dropdown-menu" aria-labelledby="dropdownMenuLink">
+            <li class="dropdown-sub-title">
+              <span>Language</span>
+            </li>
+            <li>
+              <a class="dropdown-item" href="#">
+                <img class="avatar avatar-xss avatar-circle me-2" src="<?= $base;?>/assets/svg/icons/united-states.svg" alt="Flag">
+                <span class="text-truncate" title="English">English</span>
+              </a>
+            </li>
+            <li>
+              <a class="dropdown-item" href="#">
+                <img class="avatar avatar-xss avatar-circle me-2" src="<?= $base;?>/assets/svg/icons/dutch.svg" alt="Flag">
+                <span class="text-truncate" title="English">Dutch</span>
+              </a>
+            </li>
+            <li>
+              <a class="dropdown-item" href="#">
+                <img class="avatar avatar-xss avatar-circle me-2" src="<?= $base;?>/assets/svg/icons/latin.svg" alt="Flag">
+                <span class="text-truncate" title="Latin">Latin</span>
+              </a>
+            </li>
+          </ul>
+        </li>
+      </ul>
+    </div>
+  </div>
+  
+</nav>
