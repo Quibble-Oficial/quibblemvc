@@ -231,6 +231,17 @@ CREATE TABLE upvotes (
     FOREIGN KEY (reclamacao_id) REFERENCES reclamacoes(reclamacao_id) ON DELETE CASCADE
 ) ENGINE=InnoDB;
 
+CREATE TABLE comentarios (
+    comentario_id INT UNSIGNED AUTO_INCREMENT PRIMARY KEY,
+    reclamacao_id INT UNSIGNED NOT NULL,
+    usuario_id INT UNSIGNED NOT NULL,
+    comentario TEXT NOT NULL,
+    criado_em TIMESTAMP NULL DEFAULT CURRENT_TIMESTAMP,
+    atualizado_em TIMESTAMP NULL DEFAULT CURRENT_TIMESTAMP ON UPDATE CURRENT_TIMESTAMP,
+    FOREIGN KEY (reclamacao_id) REFERENCES reclamacoes(reclamacao_id) ON DELETE CASCADE,
+    FOREIGN KEY (usuario_id) REFERENCES usuarios(usuario_id) ON DELETE CASCADE
+) ENGINE=InnoDB;
+
 INSERT INTO categorias (nome) VALUES
 ('Mobilidade Urbana'),
 ('Educação'),

@@ -41,3 +41,7 @@ $router->post('/reclamacao/{id}/upvote', 'UpvoteController@alternar');
 
 $router->post('/usuario/seguir', 'SeguidorController@seguir');
 $router->post('/usuario/deixar-seguir', 'SeguidorController@deixarSeguir');
+
+$router->post('/comentario/novo', 'ComentarioController@novo');
+
+$router->get('/comentario/{id}', 'ComentarioController@buscar');

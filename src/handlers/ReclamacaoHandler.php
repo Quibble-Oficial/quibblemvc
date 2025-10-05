@@ -4,8 +4,7 @@ namespace src\handlers;
 
 use \src\models\Reclamacoe;
 use \src\models\Upvote;
-
-use PDO;
+use ClanCats\Hydrahon\Query\Expression as Ex;
 
 class ReclamacaoHandler
 {
@@ -52,54 +51,64 @@ class ReclamacaoHandler
         return $ultima ? $ultima['reclamacao_id'] : false;
     }
 
-    public static function getAll($usuario = null)
+    public static function getAll($loggedUser = null, $categoriaId = null)
     {
-        $userId = $usuario ? $usuario->usuario_id : 0;
+        $userId = $loggedUser ? $loggedUser->usuario_id : 0;
 
-        $sql = "
-        SELECT 
-            r.reclamacao_id,
-            r.usuario_id,
-            r.titulo,
-            r.descricao,
-            r.midia,
-            r.status,
-            r.criado_em,
-            u.nome AS usuario_nome,
-            u.foto_perfil AS usuario_foto,
-            c.nome AS categoria_nome,
-            i.nome AS instituicao_nome,
-            com.nome AS comunidade_nome,
-            l.logradouro,
-            l.numero,
-            l.cep,
-            COUNT(up.reclamacao_id) AS total_upvotes,
-            SUM(CASE WHEN up.usuario_id = :userId THEN 1 ELSE 0 END) AS usuario_upvotou
-        FROM reclamacoes r
-        JOIN usuarios u ON u.usuario_id = r.usuario_id
-        JOIN categorias c ON c.categoria_id = r.categoria_id
-        LEFT JOIN instituicoes i ON i.instituicao_id = r.instituicao_id
-        LEFT JOIN comunidades com ON com.comunidade_id = r.comunidade_id
-        LEFT JOIN localizacoes l ON l.localizacao_id = r.localizacao_id
-        LEFT JOIN upvotes up ON up.reclamacao_id = r.reclamacao_id
-        GROUP BY r.reclamacao_id
-        ORDER BY r.reclamacao_id DESC
-    ";
+        $query = Reclamacoe::select([
+            'reclamacoes.reclamacao_id',
+            'reclamacoes.usuario_id',
+            'reclamacoes.titulo',
+            'reclamacoes.descricao',
+            'reclamacoes.midia',
+            'reclamacoes.status',
+            'reclamacoes.criado_em',
+            'usuarios.nome as usuario_nome',
+            'usuarios.foto_perfil as usuario_foto',
+            'categorias.nome as categoria_nome',
+            'instituicoes.nome as instituicao_nome',
+            'comunidades.nome as comunidade_nome',
+            'localizacoes.logradouro as logradouro',
+            'localizacoes.numero as numero',
+            'localizacoes.cep as cep',
+            
+            // Upvotes
+            new Ex('COUNT(DISTINCT upvotes.reclamacao_id) AS total_upvotes'), // Usar DISTINCT aqui é mais seguro
+            new Ex('MAX(CASE WHEN upvotes.usuario_id = ' . $userId . ' THEN 1 ELSE 0 END) AS usuario_upvotou'),
+            
+            // NOVO: Contagem de Comentários
+            new Ex('COUNT(DISTINCT comentarios.comentario_id) AS total_comentarios') 
+        ])
+            ->join('usuarios', 'usuarios.usuario_id', '=', 'reclamacoes.usuario_id')
+            ->join('categorias', 'categorias.categoria_id', '=', 'reclamacoes.categoria_id')
+            ->leftJoin('instituicoes', 'instituicoes.instituicao_id', '=', 'reclamacoes.instituicao_id')
+            ->leftJoin('comunidades', 'comunidades.comunidade_id', '=', 'reclamacoes.comunidade_id')
+            ->leftJoin('localizacoes', 'localizacoes.localizacao_id', '=', 'reclamacoes.localizacao_id')
+            
+            // JOINs para Agregação
+            ->leftJoin('upvotes', 'upvotes.reclamacao_id', '=', 'reclamacoes.reclamacao_id')
+            // NOVO: LEFT JOIN para Comentários
+            ->leftJoin('comentarios', 'comentarios.reclamacao_id', '=', 'reclamacoes.reclamacao_id')
+            
+            // O GROUP BY é essencial para que o COUNT e o MAX funcionem
+            ->groupBy('reclamacoes.reclamacao_id')
+            ->orderBy('reclamacoes.reclamacao_id', 'DESC');
 
-        $stmt = self::getPDO()->prepare($sql);
-        $stmt->execute(['userId' => $userId]);
-
-        return $stmt->fetchAll(PDO::FETCH_ASSOC);
-    }
-
-    // Método para pegar a instância PDO
-    private static function getPDO()
-    {
-        static $pdo = null;
-        if (!$pdo) {
-            $pdo = new PDO('mysql:host=localhost;dbname=quibble;charset=utf8mb4', 'root', '');
-            $pdo->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
+        // Aplica filtro se tiver categoria selecionada
+        if ($categoriaId) {
+            $query->where('reclamacoes.categoria_id', $categoriaId);
         }
-        return $pdo;
+
+        $reclamacoes = $query->get();
+
+        // converte tipos
+        foreach ($reclamacoes as &$r) {
+            $r['total_upvotes'] = intval($r['total_upvotes'] ?? 0);
+            $r['usuario_upvotou'] = !empty($r['usuario_upvotou']);
+            // NOVO: Converte o campo de comentários para inteiro
+            $r['total_comentarios'] = intval($r['total_comentarios'] ?? 0); 
+        }
+
+        return $reclamacoes;
     }
 }
