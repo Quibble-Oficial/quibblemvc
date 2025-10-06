@@ -19,7 +19,7 @@
 <body class="bg-gray-100 analytics-template">
 
 <!-- Muze Customize Sidebar -->
-<!-- <div class="customize-sidebar">
+<div class="customize-sidebar">
   <div class="border-bottom border-gray-200 p-3 p-md-4">
     <div class="text-end">
       <a href="javascript:void(0);" class="btn btn-light btn-icon rounded-pill customize-close">
@@ -123,227 +123,60 @@
   </div>
 </div>
 
-<!-- Muze Default Sidebar, Muze Navbar, Muze Navbar Vertical, Muze Navbar Expand Lg, Muze Navbar Light 
+<!-- Muze Default Sidebar, Muze Navbar, Muze Navbar Vertical, Muze Navbar Expand Lg, Muze Navbar Light  -->
 <nav class="navbar navbar-vertical navbar-expand-lg navbar-light">
   <a class="navbar-brand mx-auto d-none d-lg-block my-0 my-lg-4" href="#">
-  <img src="/assets/svg/brand/logo.svg" alt="Muze">
-  <img src="/assets/svg/brand/logo-white.svg" alt="Muze" class="white-logo2">
-  <img src="/assets/svg/brand/muze-icon.svg" class="muze-icon" alt="Muze">
-  <img src="/assets/svg/brand/muze-icon-white.svg" class="muze-icon-white" alt="Muze">
+  <img src="<?= $base;?>/assets/images/Quibble_claro.png" alt="Muze">
+  <img src="<?= $base;?>/assets/images/Quibble.png" alt="Muze" class="white-logo2">
+  <img src="<?= $base;?>/assets/svg/brand/muze-icon.svg" class="muze-icon" alt="Muze">
+  <img src="<?= $base;?>/assets/svg/brand/muze-icon-white.svg" class="muze-icon-white" alt="Muze">
   </a>
   <div class="navbar-collapse">
     <ul class="navbar-nav mb-2" id="accordionExample" data-simplebar>
-      <li class="nav-item">
-        <a class="nav-link collapsed" href="#sidebarDashboards" data-bs-toggle="collapse" role="button" aria-expanded="true" aria-controls="sidebarDashboards">
-          <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16">
-            <g data-name="icons/tabler/chart" transform="translate(0)">
-              <rect data-name="Icons/Tabler/Chart background" width="16" height="16" fill="none"/>
-              <path d="M.686,13.257a.686.686,0,0,1-.093-1.365l.093-.006H15.314a.686.686,0,0,1,.093,1.365l-.093.006ZM.394,9.535l-.089-.05a.688.688,0,0,1-.24-.863l.05-.088L3.773,3.048a.684.684,0,0,1,.782-.272l.095.039L7.811,4.4,11.121.257a.687.687,0,0,1,.945-.122L12.142.2,15.8,3.858a.686.686,0,0,1-.893,1.036l-.077-.067L11.713,1.712,8.536,5.685a.684.684,0,0,1-.743.225l-.1-.04L4.578,4.313,1.256,9.294a.684.684,0,0,1-.862.24Z" transform="translate(0 1)" fill="#1e1e1e"/>
-            </g>
-          </svg> &nbsp;<span class="ms-2">Dashboards</span>
-        </a>
-        <div class="collapse collapse-box show" id="sidebarDashboards" data-bs-parent="#accordionExample">
-          <ul class="nav nav-sm flex-column">
-            <li class="nav-item">
-              <a href="analytics.html" class="nav-link active">Analytics</a>
-            </li>
-            <li class="nav-item">
-              <a href="project-management.html" class="nav-link">Project management</a>
-            </li>
-            <li class="nav-item">
-              <a href="festive.html" class="nav-link">Festive</a>
-            </li>
-          </ul>
-        </div>
-      </li>
-      <li class="nav-item nav-subtitle">
-        <small>Pages</small>
-      </li>
-      <li class="nav-item">
-        <a class="nav-link collapsed" href="#sidebarPages" data-bs-toggle="collapse" role="button" aria-expanded="false" aria-controls="sidebarPages">
-          <svg data-name="Icons/Tabler/Bolt" xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16">
-            <rect data-name="Icons/Tabler/Page background" width="16" height="16" fill="none"/>
-            <path d="M1.975,14A1.977,1.977,0,0,1,0,12.026V1.975A1.977,1.977,0,0,1,1.975,0h5.04a.535.535,0,0,1,.249.069l.007,0h0a.534.534,0,0,1,.109.084l3.574,3.575a.536.536,0,0,1,.163.289h0l0,.013h0l0,.013v0l0,.011v.053s0,.009,0,.014v7.9A1.977,1.977,0,0,1,9.154,14Zm-.9-12.026V12.026a.9.9,0,0,0,.9.9H9.154a.9.9,0,0,0,.9-.9V4.667H7.718a1.255,1.255,0,0,1-1.248-1.12L6.461,3.41V1.077H1.975A.9.9,0,0,0,1.077,1.975ZM7.538,3.41a.179.179,0,0,0,.122.17l.057.01H9.29L7.538,1.838Z" transform="translate(2 1)" fill="#1e1e1e"/>
-          </svg> &nbsp;<span class="ms-2">Pages</span>
-        </a>
-        <div class="collapse collapse-box" id="sidebarPages" data-bs-parent="#accordionExample">
-          <ul class="nav nav-sm flex-column" id="submenu">
-            <li class="nav-item">
-              <a class="nav-link collapsed" href="#AccountPage" data-bs-toggle="collapse" role="button" aria-expanded="false" aria-controls="AccountPage">Account</a>
-              <div class="collapse collapse-box" id="AccountPage" data-bs-parent="#submenu">
-                <ul class="nav nav-sm flex-column">
-                  <li class="nav-item">
-                    <a href="settings.html" class="nav-link">Settings</a>
-                  </li>
-                  <li class="nav-item">
-                    <a href="billing.html" class="nav-link">Billing</a>
-                  </li>
-                  <li class="nav-item">
-                    <a href="invoice.html" class="nav-link">Invoice</a>
-                  </li>
-                  <li class="nav-item">
-                    <a href="api-keys.html" class="nav-link">API keys</a>
-                  </li>
-                </ul>
-              </div>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link collapsed" href="#UserProfile" data-bs-toggle="collapse" role="button" aria-expanded="false" aria-controls="UserProfile">User Profile</a>
-              <div class="collapse collapse-box" id="UserProfile" data-bs-parent="#submenu">
-                <ul class="nav nav-sm flex-column">
-                  <li class="nav-item">
-                    <a href="user-profile-general.html" class="nav-link">General</a>
-                  </li>
-                  <li class="nav-item">
-                    <a href="user-profile-activity.html" class="nav-link">Activity</a>
-                  </li>
-                  <li class="nav-item">
-                    <a href="user-profile-friends.html" class="nav-link">Friends</a>
-                  </li>
-                  <li class="nav-item">
-                    <a href="user-profile-groups.html" class="nav-link">Groups</a>
-                  </li>
-                </ul>
-              </div>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link collapsed" href="#Projectspage" data-bs-toggle="collapse" role="button" aria-expanded="false" aria-controls="Projectspage">Projects</a>
-              <div class="collapse collapse-box" id="Projectspage" data-bs-parent="#submenu">
-                <ul class="nav nav-sm flex-column">
-                  <li class="nav-item">
-                    <a href="all-projects.html" class="nav-link">All projects</a>
-                  </li>
-                  <li class="nav-item">
-                    <a href="new-project.html" class="nav-link">New project</a>
-                  </li>
-                  <li class="nav-item">
-                    <a href="project-details.html" class="nav-link">Project detail</a>
-                  </li>
-                  <li class="nav-item">
-                    <a href="teams.html" class="nav-link">Teams</a>
-                  </li>
-                </ul>
-              </div>
-            </li>
-            <li class="nav-item">
-              <a href="pricing.html" class="nav-link">Pricing</a>
-            </li>
-            <li class="nav-item">
-              <a href="help-center.html" class="nav-link">Help page</a>
-            </li>
-            <li class="nav-item">
-              <a href="empty-state.html" class="nav-link">Empty State</a>
-            </li>
-          </ul>
-        </div>
-      </li>
-      <li class="nav-item">
-        <a class="nav-link collapsed" href="#sidebarAuthentication" data-bs-toggle="collapse" role="button" aria-expanded="false" aria-controls="sidebarAuthentication">
-          <svg data-name="Icons/Tabler/Paperclip" xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16">
-            <rect data-name="Icons/Tabler/Plug background" width="16" height="16" fill="none"/>
-            <path d="M6.7,16a2.378,2.378,0,0,1-2.373-2.234l0-.145V12.541H3.244A3.241,3.241,0,0,1,0,9.47L0,9.3V4.109a.649.649,0,0,1,.561-.643L.649,3.46H1.73V.649A.649.649,0,0,1,3.021.561l.005.088V3.46H6.919V.649A.649.649,0,0,1,8.211.561l.005.088V3.46H9.3a.649.649,0,0,1,.643.561l.006.088V9.3a3.241,3.241,0,0,1-3.071,3.239l-.173,0H5.621v1.081A1.081,1.081,0,0,0,6.593,14.7l.11.005H9.3a.649.649,0,0,1,.088,1.292L9.3,16Zm0-4.757A1.951,1.951,0,0,0,8.644,9.431l0-.134V4.757H1.3V9.3A1.951,1.951,0,0,0,3.11,11.239l.133,0H6.7Z" transform="translate(3)" fill="#1e1e1e"/>
-          </svg> &nbsp;<span class="ms-2">Authentication</span>
-        </a>
-        <div class="collapse collapse-box" id="sidebarAuthentication" data-bs-parent="#accordionExample">
-          <ul class="nav nav-sm flex-column" id="submenu2">
-            <li class="nav-item">
-              <a class="nav-link collapsed" href="#Signinpage" data-bs-toggle="collapse" role="button" aria-expanded="false" aria-controls="Signinpage">Sign in</a>
-              <div class="collapse collapse-box" id="Signinpage" data-bs-parent="#submenu2">
-                <ul class="nav nav-sm flex-column">
-                  <li class="nav-item">
-                    <a href="signin-simple.html" class="nav-link">Simple</a>
-                  </li>
-                  <li class="nav-item">
-                    <a href="signin-cover.html" class="nav-link">Cover</a>
-                  </li>
-                </ul>
-              </div>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link collapsed" href="#Signuppage" data-bs-toggle="collapse" role="button" aria-expanded="false" aria-controls="Signuppage">Sign up</a>
-              <div class="collapse collapse-box" id="Signuppage" data-bs-parent="#submenu2">
-                <ul class="nav nav-sm flex-column">
-                  <li class="nav-item">
-                    <a href="signup-simple.html" class="nav-link">Simple</a>
-                  </li>
-                  <li class="nav-item">
-                    <a href="signup-cover.html" class="nav-link">Cover</a>
-                  </li>
-                </ul>
-              </div>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link collapsed" href="#Resetpassword" data-bs-toggle="collapse" role="button" aria-expanded="false" aria-controls="Resetpassword">Reset password</a>
-              <div class="collapse collapse-box" id="Resetpassword" data-bs-parent="#submenu2">
-                <ul class="nav nav-sm flex-column">
-                  <li class="nav-item">
-                    <a href="reset-password-simple.html" class="nav-link">Simple</a>
-                  </li>
-                  <li class="nav-item">
-                    <a href="reset-password-cover.html" class="nav-link">Cover</a>
-                  </li>
-                </ul>
-              </div>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link collapsed" href="#Emailverification" data-bs-toggle="collapse" role="button" aria-expanded="false" aria-controls="Emailverification">Email verification</a>
-              <div class="collapse collapse-box" id="Emailverification" data-bs-parent="#submenu2">
-                <ul class="nav nav-sm flex-column">
-                  <li class="nav-item">
-                    <a href="verify-email-simple.html" class="nav-link">Simple</a>
-                  </li>
-                  <li class="nav-item">
-                    <a href="verify-email-cover.html" class="nav-link">Cover</a>
-                  </li>
-                </ul>
-              </div>
-            </li>
-            <li class="nav-item">
-              <a href="404-error.html" class="nav-link">Error 404</a>
-            </li>
-            <li class="nav-item">
-              <a href="500-error.html" class="nav-link">Error 500</a>
-            </li>
-          </ul>
-        </div>
-      </li>
-      <li class="nav-item">
-        <a class="nav-link collapsed" href="#sidebarApps" data-bs-toggle="collapse" role="button" aria-expanded="false" aria-controls="sidebarApps">
-          <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16">
-            <g data-name="Icons/Tabler/Paperclip" transform="translate(0 0)">
-              <rect data-name="Icons/Tabler/apps background" width="16" height="16" fill="none"/>
-              <path d="M10.743,16a1.6,1.6,0,0,1-1.6-1.6V10.743a1.6,1.6,0,0,1,1.6-1.6H14.4a1.6,1.6,0,0,1,1.6,1.6V14.4A1.6,1.6,0,0,1,14.4,16Zm-.229-5.257V14.4a.229.229,0,0,0,.229.229H14.4a.229.229,0,0,0,.229-.229V10.743a.229.229,0,0,0-.229-.229H10.743A.229.229,0,0,0,10.515,10.743ZM1.6,16A1.6,1.6,0,0,1,0,14.4V10.743a1.6,1.6,0,0,1,1.6-1.6H5.257a1.6,1.6,0,0,1,1.6,1.6V14.4a1.6,1.6,0,0,1-1.6,1.6Zm-.229-5.257V14.4a.229.229,0,0,0,.229.229H5.257a.229.229,0,0,0,.229-.229V10.743a.229.229,0,0,0-.229-.229H1.6A.229.229,0,0,0,1.372,10.743Zm9.372-3.886a1.6,1.6,0,0,1-1.6-1.6V1.6a1.6,1.6,0,0,1,1.6-1.6H14.4A1.6,1.6,0,0,1,16,1.6V5.257a1.6,1.6,0,0,1-1.6,1.6ZM10.515,1.6V5.257a.229.229,0,0,0,.229.229H14.4a.229.229,0,0,0,.229-.229V1.6a.229.229,0,0,0-.229-.229H10.743A.229.229,0,0,0,10.515,1.6ZM1.6,6.857A1.6,1.6,0,0,1,0,5.257V1.6A1.6,1.6,0,0,1,1.6,0H5.257a1.6,1.6,0,0,1,1.6,1.6V5.257a1.6,1.6,0,0,1-1.6,1.6ZM1.372,1.6V5.257a.229.229,0,0,0,.229.229H5.257a.229.229,0,0,0,.229-.229V1.6a.229.229,0,0,0-.229-.229H1.6A.229.229,0,0,0,1.372,1.6Z" transform="translate(0 0)" fill="#1e1e1e"/>
-            </g>
-          </svg> &nbsp;<span class="ms-2 position-relative">Apps <sup class="status bg-warning ms-2 position-absolute">&nbsp;</sup></span>
-        </a>
-        <div class="collapse collapse-box" id="sidebarApps" data-bs-parent="#accordionExample">
-          <ul class="nav nav-sm flex-column">
-            <li class="nav-item">
-              <a href="file-manager.html" class="nav-link">File manager</a>
-            </li>
-            <li class="nav-item">
-              <a href="chat.html" class="nav-link">Chat</a>
-            </li>
-            <li class="nav-item">
-              <a href="calendar.html" class="nav-link">Calendar</a>
-            </li>
-          </ul>
-        </div>
-      </li>
-      <li class="nav-item">
-        <hr class="my-0 bg-gray-50 opacity-100">
-      </li>
-      <li class="nav-item">
-        <a class="nav-link" href="../documentation/index.html" target="_blank">
-          <svg data-name="Icons/Tabler/Paperclip" xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16">
-            <rect data-name="Icons/Tabler/Paperclip background" width="16" height="16" fill="none"/>
-            <path d="M6.766,1.178A4.018,4.018,0,0,1,12.591,6.71l-.147.155-5.1,5.11A2.352,2.352,0,0,1,3.9,8.77l.114-.123,5.1-5.11a.685.685,0,0,1,1.035.893l-.066.077-5.1,5.11a.981.981,0,0,0,1.3,1.465l.086-.076,5.1-5.11A2.648,2.648,0,0,0,7.861,2.028l-.127.119-5.1,5.11a4.315,4.315,0,0,0,5.941,6.255l.156-.149,5.1-5.11a.685.685,0,0,1,1.035.893l-.066.077-5.1,5.11A5.685,5.685,0,0,1,1.5,6.457l.162-.169Z" transform="translate(1)" fill="#1e1e1e"/>
-          </svg> &nbsp;<span class="ms-2">Docs</span> <span class="docs-version">v1.0</span>
+       <li class="nav-item">
+        <a class="nav-link" href="<?=$base;?>/visao-geral">
+           <img src="<?=$base;?>/assets/images/visao_geral_dashboard.svg" alt=""> &nbsp;<span class="ms-2">Visão Geral</span>
         </a>
       </li>
+       <li class="nav-item">
+        <a class="nav-link" href="<?=$base;?>/reclamacoes" >
+         <img src="<?=$base;?>/assets/images/reclamacoes_dashboard.svg" alt=""> &nbsp;<span class="ms-2">Reclamações</span>
+        </a>
+      </li>
+       <li class="nav-item">
+        <a class="nav-link" href="../documentation/index.html" >
+          <img src="<?=$base;?>/assets/images/mapa_dashboard.svg" alt=""> &nbsp;<span class="ms-2">Mapa</span>
+        </a>
+      </li>
+       <li class="nav-item">
+        <a class="nav-link" href="../documentation/index.html" >
+          <img src="<?=$base;?>/assets/images/comunidades_dashboard.svg" alt=""> &nbsp;<span class="ms-2">Comunidades</span>
+        </a>
+      </li>
+       <li class="nav-item">
+        <a class="nav-link" href="../documentation/index.html" >
+          <img src="<?=$base;?>/assets/images/relatorios_dashboard.svg" alt=""> &nbsp;<span class="ms-2">Relatórios</span>
+        </a>
+      </li>
+       <li class="nav-item">
+        <a class="nav-link" href="../documentation/index.html" >
+          <img src="<?=$base;?>/assets/images/gestao_interna_dashboard.svg" alt=""> &nbsp;<span class="ms-2">Gestão Interna</span>
+        </a>
+      </li>
+       <li class="nav-item">
+        <a class="nav-link" href="../documentation/index.html" >
+          <img src="<?=$base;?>/assets/images/comunicacao_dashboard.svg" alt=""> &nbsp;<span class="ms-2">Comunicação</span>
+        </a>
+      </li>
+       <li class="nav-item">
+        <a class="nav-link" href="../documentation/index.html" >
+          <img src="<?=$base;?>/assets/images/transparencia_dashboard.svg" alt=""> &nbsp;<span class="ms-2">Transparência</span>
+        </a>
+      </li>
+
     </ul>
     <div class="mt-3 mt-md-auto mb-3 signout d-grid">
-      <a href="javascript:void(0);" class="btn btn-dark btn-lg customize-btn"><img src="../assets/svg/icons/dark-mode@24.svg" alt="Customize"><span class="ps-2">Customize</span></a>
+      <a href="javascript:void(0);" class="btn btn-dark btn-lg customize-btn"><img src="<?= $base;?>/assets/svg/icons/dark-mode@24.svg" alt="Customize"><span class="ps-2">Customizar</span></a>
     </div>
     <div class="navbar-vertical-footer border-top border-gray-50">
       <ul class="navbar-vertical-footer-list">
@@ -362,26 +195,26 @@
           </svg></a>
         </li>
         <li class="dropup">
-          <a href="#" role="button" id="dropdownMenuLink" data-bs-toggle="dropdown" aria-expanded="false"><img src="../assets/svg/icons/united-states.svg" alt="United States" class="avatar avatar-xss avatar-circle"></a>
+          <a href="#" role="button" id="dropdownMenuLink" data-bs-toggle="dropdown" aria-expanded="false"><img src="<?= $base;?>/assets/svg/icons/united-states.svg" alt="United States" class="avatar avatar-xss avatar-circle"></a>
           <ul class="dropdown-menu dropdown-menu-end" id="dropdown-menu" aria-labelledby="dropdownMenuLink">
             <li class="dropdown-sub-title">
               <span>Language</span>
             </li>
             <li>
               <a class="dropdown-item" href="#">
-                <img class="avatar avatar-xss avatar-circle me-2" src="../assets/svg/icons/united-states.svg" alt="Flag">
+                <img class="avatar avatar-xss avatar-circle me-2" src="<?= $base;?>/assets/svg/icons/united-states.svg" alt="Flag">
                 <span class="text-truncate" title="English">English</span>
               </a>
             </li>
             <li>
               <a class="dropdown-item" href="#">
-                <img class="avatar avatar-xss avatar-circle me-2" src="../assets/svg/icons/dutch.svg" alt="Flag">
+                <img class="avatar avatar-xss avatar-circle me-2" src="<?= $base;?>/assets/svg/icons/dutch.svg" alt="Flag">
                 <span class="text-truncate" title="English">Dutch</span>
               </a>
             </li>
             <li>
               <a class="dropdown-item" href="#">
-                <img class="avatar avatar-xss avatar-circle me-2" src="../assets/svg/icons/latin.svg" alt="Flag">
+                <img class="avatar avatar-xss avatar-circle me-2" src="<?= $base;?>/assets/svg/icons/latin.svg" alt="Flag">
                 <span class="text-truncate" title="Latin">Latin</span>
               </a>
             </li>
@@ -391,9 +224,9 @@
     </div>
   </div>
   
-</nav> -->
+</nav>
 
-<?php $render("aside-dashboard-dark", ['usuario' => $loggedUser]); ?>
+
 
 <!-- Muze Main Content -->
 <div class="main-content">
@@ -421,7 +254,7 @@
               <form>
                 <div class="input-group bg-white border border-gray-300 rounded py-1 px-3">
                   <img src="<?= $base;?>/assets/svg/icons/search@14.svg" alt="Search">
-                  <input type="search" class="form-control border-0" placeholder="Search...">
+                  <input type="search" class="form-control border-0" placeholder="Pesquisar...">
                 </div>
               </form>
               <span class="muze-search d-lg-none ms-3">
@@ -1453,8 +1286,8 @@
             <div class="card-body p-3 p-xl-3 p-xxl-4">
               <div class="row align-items-center">
                 <div class="col-5 col-xxl-7">
-                  <span class="caption text-gray-600 d-block mb-1">Execução Ornamentário</span>
-                  <span class="h3 mb-0" >12M de 20M</span>
+                  <span class="caption text-gray-600 d-block mb-1">Ex. Ornamentária</span>
+                  <span class="h3 mb-0" >12M/20M</span>
                   <span class="d-block fs-11 mt-2 font-weight-semibold"><svg class="me-1" xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 16 16">
                     <g data-name="icons/tabler/trend-up" transform="translate(0)">
                       <rect data-name="Icons/Tabler/Trend background" width="16" height="16" fill="none"/>
