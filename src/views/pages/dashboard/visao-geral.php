@@ -19,7 +19,7 @@
 <body class="bg-gray-100 analytics-template">
 
 <!-- Muze Customize Sidebar -->
-<div class="customize-sidebar">
+<!-- <div class="customize-sidebar">
   <div class="border-bottom border-gray-200 p-3 p-md-4">
     <div class="text-end">
       <a href="javascript:void(0);" class="btn btn-light btn-icon rounded-pill customize-close">
@@ -121,7 +121,7 @@
       </div>
     </div>
   </div>
-</div>
+</div> -->
 
 <!-- Muze Default Sidebar, Muze Navbar, Muze Navbar Vertical, Muze Navbar Expand Lg, Muze Navbar Light  -->
 <!-- <nav class="navbar navbar-vertical navbar-expand-lg navbar-light">
