@@ -1338,7 +1338,7 @@
     <div class="container-fluid px-0">
       <div class="row align-items-center">
         <div class="col">
-          <h1 class="h2 mb-0">Obras</h1>
+          <h1 class="h2 mb-0">Transparência</h1>
         </div>
         <div class="col-auto d-flex align-items-center my-2 my-sm-0">
           <a href="#" class="btn btn-lg btn-outline-dark px-3 me-2 me-md-3"><span class="ps-1">Encaminhar Demanda</span> <svg class="ms-4" xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 14 14">
@@ -1472,11 +1472,11 @@
       
     
         
-<div class="categorias">
+  <div class="categorias">
   <a href="/quibblemvc/public/gastosdetalhados" class="<?= ($active ?? '') === 'gastos' ? 'active' : '' ?>">Gastos Detalhados</a>
   <a href="/quibblemvc/public/festive" class="<?= ($active ?? '') === 'festive' ? 'active' : '' ?>">Obras em Andamento</a>
-  <a href="/quibblemvc/public/relatoriosdown" class="<?= ($active ?? '') === 'relatorios' ? 'active' : '' ?>">Relatórios para Download</a>
-  <a href="/quibblemvc/public/duvidasfiscalizacao" class="<?= ($active ?? '') === 'duvidas' ? 'active' : '' ?>">Canal de Dúvidas e Fiscalização</a>
+  <a href="dashboard/relatoriosdown" class="<?= ($active ?? '') === 'relatorios' ? 'active' : '' ?>">Relatórios para Download</a>
+  <a href="dashboard/duvidasfiscalizacao" class="<?= ($active ?? '') === 'duvidas' ? 'active' : '' ?>">Canal de Dúvidas e Fiscalização</a>
 </div>
 
 
