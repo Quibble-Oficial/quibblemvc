@@ -124,7 +124,7 @@
 </div>
 
 <!-- Muze Default Sidebar, Muze Navbar, Muze Navbar Vertical, Muze Navbar Expand Lg, Muze Navbar Light  -->
-<nav class="navbar navbar-vertical navbar-expand-lg navbar-light">
+<!-- <nav class="navbar navbar-vertical navbar-expand-lg navbar-light">
   <a class="navbar-brand mx-auto d-none d-lg-block my-0 my-lg-4" href="#">
   <img src="<?= $base;?>/assets/images/Quibble_claro.png" alt="Muze">
   <img src="<?= $base;?>/assets/images/Quibble.png" alt="Muze" class="white-logo2">
@@ -224,7 +224,9 @@
     </div>
   </div>
   
-</nav>
+</nav> -->
+
+<?php $render("aside-dashboard-dark", ['usuario' => $loggedUser]); ?>
 
 
 

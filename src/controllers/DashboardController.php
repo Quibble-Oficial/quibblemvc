@@ -32,14 +32,14 @@ class DashboardController extends Controller
         $this->render('dashboard/api-keys', ['loggedUser' => $this->loggedUser]);
     }
 
-    public function billing()
+    public function comunidades()
     {
-        $this->render('dashboard/billing', ['loggedUser' => $this->loggedUser]);
+        $this->render('dashboard/comunidades', ['loggedUser' => $this->loggedUser]);
     }
 
-    public function calendar()
+    public function relatorios()
     {
-      $this->render('dashboard/calendar', ['loggedUser' => $this->loggedUser]);
+      $this->render('dashboard/relatorios', ['loggedUser' => $this->loggedUser]);
     }
 
     public function chat()

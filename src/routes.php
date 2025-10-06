@@ -13,8 +13,8 @@ $router->get('/visao-geral', 'HomeController@visaoGeral');
 
 $router->get('/reclamacoes', 'DashboardController@reclamacoes');
 $router->get('/api-keys', 'DashboardController@apiKeys');
-$router->get('/billing', 'DashboardController@billing');
-$router->get('/calendar', 'DashboardController@calendar');
+$router->get('/comunidades', 'DashboardController@comunidades');
+$router->get('/relatorios', 'DashboardController@relatorios');
 $router->get('/chat', 'DashboardController@chat');
 $router->get('/empty-state', 'DashboardController@emptyState');
 $router->get('/festive', 'DashboardController@festive');

@@ -18,32 +18,32 @@
         </a>
       </li>
        <li class="nav-item">
-        <a class="nav-link" href="href="<?=$base;?>/mapa" >
+        <a class="nav-link" href="<?=$base;?>/mapa" >
           <img src="<?=$base;?>/assets/images/mapa_dashboard.svg" alt=""> &nbsp;<span class="ms-2">Mapa</span>
         </a>
       </li>
        <li class="nav-item">
-        <a class="nav-link" href="href="<?=$base;?>/comunidades" >
+        <a class="nav-link" href="<?=$base;?>/comunidades" >
           <img src="<?=$base;?>/assets/images/comunidades_dashboard.svg" alt=""> &nbsp;<span class="ms-2">Comunidades</span>
         </a>
       </li>
        <li class="nav-item">
-        <a class="nav-link" href="href="<?=$base;?>/relatorios" >
+        <a class="nav-link" href="<?=$base;?>/relatorios" >
           <img src="<?=$base;?>/assets/images/relatorios_dashboard.svg" alt=""> &nbsp;<span class="ms-2">Relatórios</span>
         </a>
       </li>
        <li class="nav-item">
-        <a class="nav-link" href="href="<?=$base;?>/gestao_interna" >
+        <a class="nav-link" href="<?=$base;?>/gestao_interna" >
           <img src="<?=$base;?>/assets/images/gestao_interna_dashboard.svg" alt=""> &nbsp;<span class="ms-2">Gestão Interna</span>
         </a>
       </li>
        <li class="nav-item">
-        <a class="nav-link" href="href="<?=$base;?>/comunicacao" >
+        <a class="nav-link" href="<?=$base;?>/comunicacao" >
           <img src="<?=$base;?>/assets/images/comunicacao_dashboard.svg" alt=""> &nbsp;<span class="ms-2">Comunicação</span>
         </a>
       </li>
        <li class="nav-item">
-        <a class="nav-link" href="href="<?=$base;?>/transparencia" >
+        <a class="nav-link" href="<?=$base;?>/transparencia" >
           <img src="<?=$base;?>/assets/images/transparencia_dashboard.svg" alt=""> &nbsp;<span class="ms-2">Transparência</span>
         </a>
       </li>
