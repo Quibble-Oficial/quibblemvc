@@ -57,14 +57,6 @@
         <input class="form-check-input" type="radio" name="HeaderStyles" id="HeaderVertical" value="default-header" checked="checked">
         <label class="form-check-label" for="HeaderVertical">Vertical (Padrão) </label>
       </div>
-      <div class="form-check form-check-sm form-check-inline mb-0">
-        <input class="form-check-input" type="radio" name="HeaderStyles" id="HeaderTop" value="top-header">
-        <label class="form-check-label" for="HeaderTop">No Topo</label>
-      </div>
-      <div class="form-check form-check-sm form-check-inline mb-0">
-        <input class="form-check-input" type="radio" name="HeaderStyles" id="HeaderDouble" value="double-header">
-        <label class="form-check-label" for="HeaderDouble">Duplo</label>
-      </div>
     </div>
     <div class="p-4 px-lg-5">
       <h6 class="font-weight-semibold pb-3">Estilo do Menu Lateral</h6>
@@ -213,5 +205,5 @@
       </ul>
     </div>
   </div>
-  
+
 </nav>

@@ -232,16 +232,17 @@
 
 <!-- Muze Main Content -->
 <div class="main-content">
-  <div class="header border-bottom border-gray-200 header-fixed">
+  <?php $render("header-dashboard", ['usuario' => $loggedUser]); ?>
+  <!-- <div class="header border-bottom border-gray-200 header-fixed">
     <div class="container-fluid px-0">
-      <div class="header-body px-3 px-xxl-5 py-3 py-lg-4">
+      <div class="header-body-lizzzzzzzzzzzz px-3 px-xxl-5 py-3 py-lg-4">
         <div class="row align-items-center">
           <a href="javascript:void(0);" class="muze-hamburger d-block d-lg-none col-auto">
             <img src="<?= $base;?>/assets/svg/icons/hamburger1.svg" alt="img">
             <img src="<?= $base;?>/assets/svg/icons/close1.svg" style="width:20px;" class="menu-close" alt="img">
           </a>
           <a class="navbar-brand mx-auto d-lg-none col-auto px-0" href="#">
-            <img src="<?= $base;?>/assets/svg/brand/logo.svg" alt="Muze">
+            <img src="<?= $base;?>/assets/images/Quibble_claro.png" alt="Muze">
             <img src="<?= $base;?>/assets/svg/brand/logo-white.svg" alt="Muze" class="white-logo">
           </a>
           <div class="col d-flex align-items-center">
@@ -683,7 +684,7 @@
               </a>
               <div class="dropdown-menu dropdown-menu-end py-0" aria-labelledby="chat">
                 <div class="dropdown-header d-flex align-items-center px-4 py-2">
-                  <span class="fs-16 Montserrat-font font-weight-semibold text-black-600">Notification</span>
+                  <span class="fs-16 Montserrat-font font-weight-semibold text-black-600">Notificações</span>
                   <div class="dropdown ms-auto">
                     <a href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false" id="morebtn3" class="btn btn-dark-100 btn-icon btn-sm rounded-circle my-1">
                       <svg data-name="Icons/Tabler/Notification" xmlns="http://www.w3.org/2000/svg" width="13.419" height="13.419" viewBox="0 0 13.419 13.419">
@@ -908,6 +909,7 @@
                 </div>
               </div>
             </div>
+
             <div class="dropdown profile-dropdown">
               <a href="#" class="avatar avatar-sm avatar-circle ms-4 ms-xxl-5" data-bs-toggle="dropdown" aria-expanded="false" id="dropdownMenuButton">
                 <img class="avatar-img" src="<?= $base;?>/assets/images/avatar1.png" alt="Avatar">
@@ -915,8 +917,8 @@
               </a>
               <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="dropdownMenuButton">
                 <li class="pt-2 px-4">
-                  <span class="fs-16 font-weight-bold text-black-600 Montserrat-font me-2">Bruce Lee</span><img src="<?= $base;?>/assets/svg/icons/fill-check.svg" alt="icon">
-                  <small class="text-gray-600 pb-3 d-block">lee@bruce.com</small>
+                  <span class="fs-16 font-weight-bold text-black-600 Montserrat-font me-2">Dom Orani</span><img src="<?= $base;?>/assets/svg/icons/fill-check.svg" alt="icon">
+                  <small class="text-gray-600 pb-3 d-block">gabinetearcebispo@arqrio.org.br</small>
                 </li>
                 <li class="dropdown">
                   <a class="dropdown-item" role="button" data-bs-toggle="dropdown" aria-expanded="false" id="Status" href="#"><svg data-name="Icons/Tabler/Share" xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16">
@@ -924,9 +926,9 @@
                     <path id="Oval" d="M6,12a6,6,0,1,1,6-6A6.007,6.007,0,0,1,6,12ZM6,1.384A4.616,4.616,0,1,0,10.616,6,4.621,4.621,0,0,0,6,1.384Z" transform="translate(2 2)" fill="#495057"/>
                   </svg><span class="ms-2">Status</span><img src="<?= $base;?>/assets/svg/icons/right-arrow@10.svg" alt="Right Arrow" class="ms-auto"></a>
                   <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="Status">
-                    <li><a class="dropdown-item" href="#"><span class="status online"></span><span class="ms-2">Available</span></a></li>
-                    <li><a class="dropdown-item" href="#"><span class="status dnd"></span><span class="ms-2">Busy</span></a></li>
-                    <li><a class="dropdown-item" href="#"><span class="status away"></span><span class="ms-2">Away</span></a></li>
+                    <li><a class="dropdown-item" href="#"><span class="status online"></span><span class="ms-2">Disponível</span></a></li>
+                    <li><a class="dropdown-item" href="#"><span class="status dnd"></span><span class="ms-2">Ocupado</span></a></li>
+                    <li><a class="dropdown-item" href="#"><span class="status away"></span><span class="ms-2">Ausente</span></a></li>
                     <li><a class="dropdown-item" href="#"><span class="status offline"></span><span class="ms-2">Offline</span></a></li>
                   </ul>
                 </li>
@@ -934,29 +936,30 @@
                   <a class="dropdown-item" href="#"><svg data-name="Icons/Tabler/Share" xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16">
                     <rect id="Icons_Tabler_User_background" data-name="Icons/Tabler/User background" width="16" height="16" fill="none"/>
                     <path d="M11.334,16H.667a.665.665,0,0,1-.661-.568L0,15.343v-1.75A4.179,4.179,0,0,1,4.029,9.44l.193,0H7.778A4.186,4.186,0,0,1,12,13.4l0,.191v1.75a.661.661,0,0,1-.576.651ZM4.222,10.749a2.869,2.869,0,0,0-2.884,2.683l-.005.162v1.094h9.334V13.594A2.857,2.857,0,0,0,8.1,10.767l-.162-.013-.164,0ZM6,8.314A4.2,4.2,0,0,1,1.778,4.157a4.223,4.223,0,0,1,8.445,0A4.2,4.2,0,0,1,6,8.314Zm0-7A2.87,2.87,0,0,0,3.111,4.157a2.889,2.889,0,0,0,5.778,0A2.87,2.87,0,0,0,6,1.313Z" transform="translate(2)" fill="#495057"/>
-                  </svg><span class="ms-2">Profile</span></a>
+                  </svg><span class="ms-2">Perfil</span></a>
                 </li>
                 <li>
                   <a class="dropdown-item" href="#"><svg data-name="Icons/Tabler/Share" xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16">
                     <rect data-name="Icons/Tabler/Bookmark background" width="16" height="16" fill="none"/>
                     <path d="M.687,16a.686.686,0,0,1-.681-.595L0,15.314V2.514A2.516,2.516,0,0,1,2.361,0l.153,0H8a2.516,2.516,0,0,1,2.51,2.361l0,.153v12.8A.688.688,0,0,1,9.827,16a.671.671,0,0,1-.27-.057L9.475,15.9,5.257,13.37,1.039,15.9A.684.684,0,0,1,.687,16Zm4.57-4.115a.678.678,0,0,1,.256.05l.1.048L9.142,14.1V2.514A1.139,1.139,0,0,0,8.116,1.377L8,1.372H2.514L2.4,1.377A1.147,1.147,0,0,0,1.377,2.4l-.005.116V14.1L4.9,11.983A.687.687,0,0,1,5.257,11.885Z" transform="translate(3)" fill="#495057"/>
-                  </svg><span class="ms-2">Bookmarks</span></a>
+                  </svg><span class="ms-2">Favoritos</span></a>
                 </li>
                 <li><hr class="dropdown-divider"></li>
                 <li>
                     <a class="dropdown-item" href="#"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16">
                     <path data-name="Combined Shape" d="M6.027,14.449a.8.8,0,0,0-1.193-.494,2.025,2.025,0,0,1-1.063.31,2.086,2.086,0,0,1-1.779-1.069,1.961,1.961,0,0,1,.051-2.03.8.8,0,0,0-.493-1.193,2.03,2.03,0,0,1,0-3.945.8.8,0,0,0,.494-1.193,1.962,1.962,0,0,1-.052-2.03,2.086,2.086,0,0,1,1.78-1.071,2.022,2.022,0,0,1,1.062.31.8.8,0,0,0,1.193-.493,2.03,2.03,0,0,1,3.945,0,.808.808,0,0,0,.472.551.788.788,0,0,0,.305.06.8.8,0,0,0,.417-.117,2.024,2.024,0,0,1,1.062-.31,2.087,2.087,0,0,1,1.78,1.07,1.963,1.963,0,0,1-.052,2.03.8.8,0,0,0,.494,1.192,2.03,2.03,0,0,1,0,3.946.8.8,0,0,0-.494,1.193,1.962,1.962,0,0,1,.052,2.03,2.086,2.086,0,0,1-1.779,1.07,2.025,2.025,0,0,1-1.063-.31.8.8,0,0,0-.722-.056.8.8,0,0,0-.471.55,2.03,2.03,0,0,1-3.945,0Zm0-1.687a2.03,2.03,0,0,1,1.2,1.4.8.8,0,0,0,1.553,0A2.029,2.029,0,0,1,11.8,12.9l.077.042a.78.78,0,0,0,.341.08.822.822,0,0,0,.7-.421.773.773,0,0,0-.02-.8l-.078-.141a2.03,2.03,0,0,1,1.333-2.889.8.8,0,0,0,0-1.552A2.031,2.031,0,0,1,12.9,4.195l.042-.076a.768.768,0,0,0-.042-.757.813.813,0,0,0-.68-.387.793.793,0,0,0-.418.122l-.141.078a2.038,2.038,0,0,1-.916.219,2.02,2.02,0,0,1-.777-.155,2.039,2.039,0,0,1-1.2-1.4l-.029-.1a.8.8,0,0,0-1.524.1A2.027,2.027,0,0,1,4.195,3.1l-.076-.041a.78.78,0,0,0-.341-.08.822.822,0,0,0-.7.422.772.772,0,0,0,.021.8l.078.141A2.029,2.029,0,0,1,1.841,7.223a.8.8,0,0,0,0,1.553A2.029,2.029,0,0,1,3.1,11.8l-.041.077a.768.768,0,0,0,.042.757.815.815,0,0,0,.68.387.791.791,0,0,0,.418-.122l.141-.078a2.027,2.027,0,0,1,1.693-.064ZM4.923,8A3.077,3.077,0,1,1,8,11.077,3.081,3.081,0,0,1,4.923,8ZM6.154,8A1.846,1.846,0,1,0,8,6.154,1.848,1.848,0,0,0,6.154,8Z" fill="#495057"/>
-                  </svg><span class="ms-2">Settings</span></a>
+                  </svg><span class="ms-2">Configurações</span></a>
                 </li>
               </ul>
             </div>
             <a href="javascript:void(0);" class="btn btn-dark btn-lg customize-btn ms-4 ms-xxl-5"><svg data-name="Icons/Tabler/Notification" xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24">
               <rect data-name="Icons/Tabler/Contrast background" width="24" height="24" fill="none"/>
               <path d="M0,12A12,12,0,1,1,12,24,12.014,12.014,0,0,1,0,12Zm1.847,0A10.153,10.153,0,1,0,12,1.847,10.165,10.165,0,0,0,1.847,12Zm9.234,6.242,0-.089V5.845A.923.923,0,0,1,12,4.923a7.077,7.077,0,0,1,0,14.153A.923.923,0,0,1,11.081,18.243Z" fill="#fff"/>
-            </svg><span class="ps-2">Customize</span></a>
+            </svg><span class="ps-2">Customizar</span></a>
           </div>
         </div>
       </div>
+
       <div class="double-header-nav">
         <nav class="navbar navbar-expand-lg navbar-light">
           <div class="navbar-collapse">
@@ -1168,12 +1171,12 @@
         </nav>
       </div>
     </div>
-  </div>
+  </div> -->
   <div class="px-3 px-xxl-5 py-3 py-lg-4 border-bottom border-gray-200 after-header">
     <div class="container-fluid px-0">
       <div class="row align-items-center">
         <div class="col">
-          <h1 class="h2 mb-0">Olá X</h1>
+          <h1 class="h2 mb-0">Olá, X!</h1>
         </div>
         <div class="col-auto d-flex align-items-center my-2 my-sm-0">
           <a href="#" class="btn btn-lg btn-outline-dark px-3 me-2 me-md-3"><span class="ps-1">Encaminhar Demanda</span> <svg class="ms-4" xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 14 14">
