@@ -33,9 +33,9 @@ class DashboardController extends Controller
     }
     
 
-    public function apiKeys()
+    public function mapa()
     {
-        $this->render('dashboard/api-keys', ['loggedUser' => $this->loggedUser]);
+        $this->render('dashboard/mapa', ['loggedUser' => $this->loggedUser]);
     }
 
     public function comunidades()
@@ -58,25 +58,9 @@ class DashboardController extends Controller
         $this->render('dashboard/empty-state', ['loggedUser' => $this->loggedUser]);
     }
 
-     public function festive()
+     public function transparencia()
     {
-        $this->render('dashboard/festive', ['loggedUser' => $this->loggedUser]);
-    }
-     public function fileManager()
-    {
-        $this->render('dashboard/file-manager', ['loggedUser' => $this->loggedUser]);
-    }
-     public function helpCenter()
-    {
-        $this->render('dashboard/help-center', ['loggedUser' => $this->loggedUser]);
-    }
-     public function invoice()
-    {
-        $this->render('dashboard/invoice', ['loggedUser' => $this->loggedUser]);
-    }
-     public function newProject()
-    {
-        $this->render('dashboard/new-project', ['loggedUser' => $this->loggedUser]);
+        $this->render('dashboard/transparencia', ['loggedUser' => $this->loggedUser]);
     }
     
      public function gastosDetalhados()
@@ -89,8 +73,27 @@ class DashboardController extends Controller
     }
      public function duvidasFiscalizacao()
     {   
-        $this->render('dashboard/duvidasficalizacao', ['loggedUser' => $this->loggedUser]);
+        $this->render('dashboard/duvidasfiscalizacao', ['loggedUser' => $this->loggedUser]);
     }
 
+     public function comunicacao()
+    {   
+        $this->render('dashboard/comunicacao', ['loggedUser' => $this->loggedUser]);
+    }
+
+    public function comunicadosOficiais()
+    {
+        $this->render('dashboard/empty-state', ['loggedUser' => $this->loggedUser]);
+    }
+
+    public function responderCidadao()
+    {
+        $this->render('dashboard/respondercidadao', ['loggedUser' => $this->loggedUser]);
+    }
+
+  
+
+    
+   
     
 }

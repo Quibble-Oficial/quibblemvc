@@ -12,19 +12,18 @@ $router->get('/comunidade', 'HomeController@comunidade');
 $router->get('/visao-geral', 'HomeController@visaoGeral');
 
 $router->get('/reclamacoes', 'DashboardController@reclamacoes');
-$router->get('/api-keys', 'DashboardController@apiKeys');
+$router->get('/mapa', 'DashboardController@mapa');
 $router->get('/comunidades', 'DashboardController@comunidades');
 $router->get('/relatorios', 'DashboardController@relatorios');
 $router->get('/chat', 'DashboardController@chat');
 $router->get('/empty-state', 'DashboardController@emptyState');
-$router->get('/festive', 'DashboardController@festive');
-$router->get('/file-manager', 'DashboardController@fileManager');
-$router->get('/help-center', 'DashboardController@helpCenter');
-$router->get('/invoice', 'DashboardController@invoice');
-$router->get('/new-project', 'DashboardController@newProject');
+$router->get('/transparencia', 'DashboardController@transparencia');
 $router->get('/gastosdetalhados', 'DashboardController@gastosDetalhados');
 $router->get('/relatoriosdown', 'DashboardController@relatoriosDown');
 $router->get('/duvidasfiscalizacao', 'DashboardController@duvidasFiscalizacao');
+$router->get('/comunicacao', 'DashboardController@comunicacao');
+$router->get('/respondercidadao', 'DashboardController@responderCidadao');
+$router->get('/canal-direto', 'DashboardController@canalDireto');
 
 
 $router->get('/login', 'AuthController@login');

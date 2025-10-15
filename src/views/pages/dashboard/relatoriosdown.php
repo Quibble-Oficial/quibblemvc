@@ -494,7 +494,7 @@
         
  <div class="categorias">
   <a href="/quibblemvc/public/gastosdetalhados" class="<?= ($active ?? '') === 'gastos' ? 'active' : '' ?>">Gastos Detalhados</a>
-  <a href="/quibblemvc/public/festive" class="<?= ($active ?? '') === 'festive' ? 'active' : '' ?>">Obras em Andamento</a>
+  <a href="/quibblemvc/public/transparencia" class="<?= ($active ?? '') === 'transparencia' ? 'active' : '' ?>">Obras em Andamento</a>
   <a href="dashboard/relatoriosdown" class="<?= ($active ?? '') === 'relatorios' ? 'active' : '' ?>">Relatórios para Download</a>
   <a href="dashboard/duvidasfiscalizacao" class="<?= ($active ?? '') === 'duvidas' ? 'active' : '' ?>">Canal de Dúvidas e Fiscalização</a>
 </div>
