@@ -16,7 +16,7 @@
 <!-- Muze Theme CSS -->
 <link href="<?= $base;?>/assets/css/theme.min.css" rel="stylesheet" type="text/css" media="all">
 </head>
-<body class="bg-gray-100 analytics-template">
+<body class="bg-gray-100 all-projects-template analytics-template">
 
 <!-- Muze Customize Sidebar -->
 <!-- <div class="customize-sidebar">
