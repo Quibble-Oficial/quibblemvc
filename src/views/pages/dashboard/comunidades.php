@@ -2,7 +2,7 @@
 <!DOCTYPE html>
 <html dir="ltr" lang="en">
 <head>
-<title>Buy Muze Bootstrap 5 Analytics Page</title>
+<title>Comunidades</title>
 <meta charset="UTF-8">
 <meta name="description" content="Presenting Muze, All-in-one Bootstrap 5 Analytics Admin Dashboard, 30+ premium HTML pages, 500+ components, dark mode, RTL. Starts @ Only $35">
 <meta name="title" content="Muze Bootstrap 5 Analytics Templates, Pages & Dashboard, analytics chart, chart design, chart template">
@@ -501,7 +501,7 @@
                   <h6 class="font-weight-semibold title-box mb-0">Reclamações: 30</h6>
                   <h6 class="font-weight-semibold title-box mb-0">Resolvidas: 16</h6>
                   <div class="pt-4 pb-4">
-                    <span class="small font-weight-semibold mb-2 d-block">Progress</span>
+                    <span class="small font-weight-semibold mb-2 d-block">Progresso</span>
                     <div class="progress rounded-pill" style="height: 5px;width: 100%;">
                       <div class="progress-bar bg-teal-500" role="progressbar" style="width: 75%;" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100"></div>
                     </div>
@@ -510,16 +510,16 @@
                   <div class="d-flex align-items-center">
                     <div class="avatar-group">
                       <span class="avatar avatar-xs avatar-circle">
-                        <img class="avatar-img" src="<?= $base;?>/assets/img/avatar2.png" alt="Avatar">
+                        <img class="avatar-img" src="<?= $base;?>/assets/images/avatar2.png" alt="Avatar">
                       </span>
                       <span class="avatar avatar-xs avatar-circle">
-                        <img class="avatar-img" src="<?= $base;?>/assets/img/avatar3.png" alt="Avatar">
+                        <img class="avatar-img" src="<?= $base;?>/assets/images/avatar3.png" alt="Avatar">
                       </span>
                       <span class="avatar avatar-xs avatar-circle">
-                        <img class="avatar-img" src="<?= $base;?>/assets/img/avatar4.png" alt="Avatar">
+                        <img class="avatar-img" src="<?= $base;?>/assets/images/avatar4.png" alt="Avatar">
                       </span>
                     </div>
-                    <span class="badge bg-teal-50 text-teal-500 p-2 ms-auto">3 days left</span>
+                    <span class="badge bg-teal-50 text-teal-500 p-2 ms-auto">3 dias atrás</span>
                   </div>
                 </div>
               </div>
@@ -575,7 +575,7 @@
                   <h6 class="font-weight-semibold title-box mb-0">Resolvidas: 16</h6>
 
                   <div class="pt-4 pb-4">
-                    <span class="small font-weight-semibold mb-2 d-block">Progress</span>
+                    <span class="small font-weight-semibold mb-2 d-block">Progresso</span>
                     <div class="progress rounded-pill" style="height: 5px;width: 100%;">
                       <div class="progress-bar bg-away" role="progressbar" style="width: 50%;" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100"></div>
                     </div>
@@ -590,7 +590,7 @@
                         <img class="avatar-img" src="<?= $base;?>/assets/images/avatar3.png" alt="Avatar">
                       </span>
                     </div>
-                    <span class="badge bg-ornage-150 text-orange-500 p-2 ms-auto">3 days left</span>
+                    <span class="badge bg-ornage-150 text-orange-500 p-2 ms-auto">3 dias atrás</span>
                   </div>
                 </div>
               </div>
@@ -646,7 +646,7 @@
                   <h6 class="font-weight-semibold title-box mb-0">Resolvidas: 16</h6>
 
                   <div class="pt-4 pb-4">
-                    <span class="small font-weight-semibold mb-2 d-block">Progress</span>
+                    <span class="small font-weight-semibold mb-2 d-block">Progresso</span>
                     <div class="progress rounded-pill" style="height: 5px;width: 100%;">
                       <div class="progress-bar bg-dnd" role="progressbar" style="width: 25%;" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
                     </div>
@@ -661,7 +661,7 @@
                         <img class="avatar-img" src="<?= $base;?>/assets/images/avatar3.png" alt="Avatar">
                       </span>
                     </div>
-                    <span class="badge bg-red-50 text-dnd p-2 ms-auto">3 days left</span>
+                    <span class="badge bg-red-50 text-dnd p-2 ms-auto">3 dias atrás</span>
                   </div>
                 </div>
               </div>

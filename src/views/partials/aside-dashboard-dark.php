@@ -110,8 +110,8 @@
   <a class="navbar-brand mx-auto d-none d-lg-block my-0 my-lg-4" href="#">
   <img src="<?= $base;?>/assets/images/Quibble_claro.png" alt="Muze">
   <img src="<?= $base;?>/assets/images/Quibble.png" alt="Muze" class="white-logo2">
-  <img src="<?= $base;?>/assets/svg/brand/muze-icon.svg" class="muze-icon" alt="Muze">
-  <img src="<?= $base;?>/assets/svg/brand/muze-icon-white.svg" class="muze-icon-white" alt="Muze">
+  <img src="<?= $base;?>/assets/images/LogoQuibble.svg" width="32px" class="muze-icon" alt="Muze">
+  <img src="<?= $base;?>/assets/images/LogoQuibbleBranca.svg" width="32px" class="muze-icon-white" alt="Muze">
   </a>
   <div class="navbar-collapse">
     <ul class="navbar-nav mb-2" id="accordionExample" data-simplebar>
