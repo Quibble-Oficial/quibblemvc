@@ -20,7 +20,7 @@
 
 <!-- Muze Customize Sidebar -->
 <!-- <div class="customize-sidebar">
-  <div class="border-bottom border-gray-200 p-3 p-md-4">
+  // ...existing code...
     <div class="text-end">
       <a href="javascript:void(0);" class="btn btn-light btn-icon rounded-pill customize-close">
         <svg data-name="icons/tabler/close" xmlns="http://www.w3.org/2000/svg" width="15" height="15" viewBox="0 0 16 16">
@@ -395,11 +395,9 @@
 
 <?php $render("aside-dashboard-dark", ['usuario' => $loggedUser]); ?>
 
+
 <!-- Muze Main Content -->
 <div class="main-content">
-
-
-
   <div class="header border-bottom border-gray-200 header-fixed">
     <div class="container-fluid px-0">
       <div class="header-body px-3 px-xxl-5 py-3 py-lg-4">
@@ -1341,9 +1339,41 @@
     <div class="container-fluid px-0">
       <div class="row align-items-center">
         <div class="col">
-          <h1 class="h2 mb-0">Comunicação - Obras e Infraestrutura</h1>
+          <h1 class="h2 mb-0">Reclamações</h1>
         </div>
-        
+        <div class="col-auto d-flex align-items-center my-2 my-sm-0">
+          
+          <div class="dropdown export-dropdown">
+            <a href="#" role="button" id="Exportbtn" data-bs-toggle="dropdown" aria-expanded="false" class="btn btn-lg btn-warning ms-1 px-3"><span class="ps-1">Gerar Relatório</span> <svg class="ms-4" xmlns="http://www.w3.org/2000/svg" width="14" height="7.875" viewBox="0 0 14 7.875">
+              <path d="M.231.228A.8.8,0,0,1,1.256.152l.088.075,6.3,6.222a.771.771,0,0,1,.076,1.013l-.076.087-6.3,6.222a.794.794,0,0,1-1.114,0,.771.771,0,0,1-.076-1.013l.076-.087L5.973,7,.231,1.328A.771.771,0,0,1,.154.315Z" transform="translate(14) rotate(90)" fill="#1e1e1e"/>
+            </svg>
+            </a>
+            <ul class="dropdown-menu" aria-labelledby="Exportbtn">
+              <li class="dropdown-sub-title">
+                <span>EXPORT AS</span>
+              </li>
+              <li><a class="dropdown-item" href="#"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16">
+                <g data-name="Icons/Tabler/Share" transform="translate(0)">
+                  <rect data-name="Icons/Tabler/Code background" width="16" height="16" fill="none"/>
+                  <path d="M6.21,13.982a.6.6,0,0,1-.463-.647l.014-.08L9.044.455A.617.617,0,0,1,9.79.018a.6.6,0,0,1,.463.647l-.014.08-3.282,12.8a.612.612,0,0,1-.6.455A.629.629,0,0,1,6.21,13.982Zm5.458-3.357a.588.588,0,0,1-.059-.781l.059-.067L14.514,7,11.668,4.225a.588.588,0,0,1-.059-.781l.059-.068a.627.627,0,0,1,.8-.059l.069.059,3.282,3.2a.59.59,0,0,1,.059.781l-.059.068-3.282,3.2a.627.627,0,0,1-.87,0Zm-8.136.058-.069-.058L.18,7.424a.589.589,0,0,1-.059-.781L.18,6.575l3.282-3.2a.627.627,0,0,1,.87,0,.588.588,0,0,1,.059.781l-.059.068L1.486,7,4.333,9.776a.588.588,0,0,1,.059.781l-.059.068a.627.627,0,0,1-.8.058Z" transform="translate(0 1)" fill="#495057"/>
+                </g>
+              </svg><span class="ms-2">HTML</span></a></li>
+              <li><a class="dropdown-item" href="#"><svg data-name="Icons/Tabler/Share" xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16">
+                <rect data-name="Icons/Tabler/File background" width="16" height="16" fill="none"/>
+                <path data-name="Combined Shape" d="M2.256,16A2.259,2.259,0,0,1,0,13.744V2.256A2.259,2.259,0,0,1,2.256,0H8a.613.613,0,0,1,.4.148l0,0L8.41.157l0,0,.005.005L8.425.17l0,0L8.435.18l4.1,4.1a.614.614,0,0,1,.185.44v9.026A2.259,2.259,0,0,1,10.462,16ZM1.231,2.256V13.744a1.026,1.026,0,0,0,1.025,1.025h8.205a1.027,1.027,0,0,0,1.026-1.025V5.333H8.821A1.436,1.436,0,0,1,7.387,3.979l0-.082V1.231H2.256A1.026,1.026,0,0,0,1.231,2.256ZM8.616,3.9a.206.206,0,0,0,.168.2l.037,0h1.8l-2-2ZM3.9,12.718a.615.615,0,0,1-.059-1.228l.059,0H8.821a.615.615,0,0,1,.059,1.228l-.059,0Zm0-3.282a.615.615,0,0,1-.059-1.228l.059,0H8.821a.615.615,0,0,1,.059,1.228l-.059,0Zm0-3.281a.616.616,0,0,1-.059-1.228l.059,0h.821a.615.615,0,0,1,.059,1.228l-.059,0Z" transform="translate(2)" fill="#495057"/>
+              </svg><span class="ms-2">XML</span></a></li>
+              <li><a class="dropdown-item" href="#"><svg data-name="Icons/Tabler/Share" xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16">
+                <rect data-name="Icons/Tabler/Code02 background" width="16" height="16" fill="none"/>
+                <path data-name="Combined Shape" d="M2.256,16A2.259,2.259,0,0,1,0,13.744V2.256A2.259,2.259,0,0,1,2.256,0H8a.613.613,0,0,1,.4.148l0,0L8.41.157l0,0,.005.005L8.425.17l0,0L8.435.18l4.1,4.1a.614.614,0,0,1,.185.44v9.026A2.259,2.259,0,0,1,10.462,16ZM1.231,2.256V13.744a1.026,1.026,0,0,0,1.025,1.025h8.205a1.027,1.027,0,0,0,1.026-1.025V5.333H8.821A1.436,1.436,0,0,1,7.387,3.979l0-.082V1.231H2.256A1.026,1.026,0,0,0,1.231,2.256ZM8.616,3.9a.206.206,0,0,0,.168.2l.037,0h1.8l-2-2Zm-.891,8.756a.615.615,0,0,1-.3-.768l.025-.058.683-1.366L7.449,9.1A.616.616,0,0,1,7.67,8.3l.055-.031a.615.615,0,0,1,.795.22l.031.055.821,1.641a.617.617,0,0,1,.029.484l-.029.067L8.55,12.378a.614.614,0,0,1-.825.275ZM4.2,12.433l-.031-.055-.821-1.641a.617.617,0,0,1-.029-.484l.029-.067.821-1.641a.615.615,0,0,1,1.126.492L5.269,9.1l-.684,1.366.684,1.366a.615.615,0,0,1-.22.794l-.055.031a.615.615,0,0,1-.795-.22Z" transform="translate(2)" fill="#495057"/>
+              </svg><span class="ms-2">JSON</span></a></li>
+              <li><hr class="dropdown-divider"></li>
+              <li><a class="dropdown-item" href="#"><svg data-name="Icons/Tabler/Share" xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16">
+                <rect data-name="Icons/Tabler/Share background" width="16" height="16" fill="none"/>
+                <path d="M9.846,12.923a3.07,3.07,0,0,1,.1-.768L5.516,9.874a3.077,3.077,0,1,1,0-3.748L9.943,3.845a3.084,3.084,0,1,1,.541,1.106L6.057,7.232a3.087,3.087,0,0,1,0,1.537l4.427,2.281a3.075,3.075,0,1,1-.638,1.874Zm1.231,0a1.846,1.846,0,1,0,.2-.84q-.011.028-.025.055l-.014.025A1.836,1.836,0,0,0,11.077,12.923ZM1.231,8a1.846,1.846,0,0,0,3.487.845.623.623,0,0,1,.027-.061l.017-.031a1.845,1.845,0,0,0,0-1.508l-.017-.031a.622.622,0,0,1-.027-.061A1.846,1.846,0,0,0,1.231,8ZM12.923,4.923a1.846,1.846,0,1,0-1.682-1.086l.013.024q.014.027.025.056A1.848,1.848,0,0,0,12.923,4.923Z" fill="#495057"/>
+              </svg><span class="ms-2">Share</span></a></li>
+            </ul>
+          </div>
+        </div>
       </div>
     </div>
   </div>
@@ -1355,8 +1385,8 @@
             <div class="card-body p-3 p-xl-3 p-xxl-4">
               <div class="row align-items-center">
                 <div class="col-5 col-xxl-6">
-                  <span class="caption text-gray-600 d-block mb-1">Taxa de Resposta aos Cidadãos</span>
-                  <span class="h3 mb-0">13%</span>
+                  <span class="caption text-gray-600 d-block mb-1">Total de Reclamações</span>
+                  <span class="h3 mb-0">37,543</span>
                   <span class="d-block fs-11 mt-2 font-weight-semibold"><svg class="me-1" xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 16 16">
                     <g data-name="icons/tabler/trend-up" transform="translate(0)">
                       <rect data-name="Icons/Tabler/Trend background" width="16" height="16" fill="none"/>
@@ -1376,7 +1406,7 @@
             <div class="card-body p-3 p-xl-3 p-xxl-4">
               <div class="row align-items-center">
                 <div class="col-5 col-xxl-6">
-                  <span class="caption text-gray-600 d-block mb-1">Tempo Médio para Envio de Comunicados</span>
+                  <span class="caption text-gray-600 d-block mb-1">Pendentes</span>
                   <span class="h3 mb-0">6,443</span>
                   <span class="d-block fs-11 mt-2 font-weight-semibold"><svg class="me-1" xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 14 14">
                     <g data-name="Icons/Tabler/Trend down" transform="translate(0)">
@@ -1398,8 +1428,8 @@
             <div class="card-body p-3 p-xl-3 p-xxl-4">
               <div class="row align-items-center">
                 <div class="col-5 col-xxl-6">
-                  <span class="caption text-gray-600 d-block mb-1">Comunidade mais Ativa em Interações</span>
-                  <span class="h3 mb-0">Anchieta</span>
+                  <span class="caption text-gray-600 d-block mb-1">Em Andamento</span>
+                  <span class="h3 mb-0">501</span>
                   <span class="d-block fs-11 mt-2 font-weight-semibold"><svg class="me-1" xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 16 16">
                     <g data-name="icons/tabler/trend-up" transform="translate(0)">
                       <rect data-name="Icons/Tabler/Trend background" width="16" height="16" fill="none"/>
@@ -1407,7 +1437,9 @@
                     </g>
                   </svg> 2.7%</span>
                 </div>
-               
+                <div class="col-7 col-xxl-6 pe-xxl-0">
+                  <div id="MuzeSimpleDonut"></div>
+                </div>
               </div>
             </div>
           </div>
@@ -1418,8 +1450,8 @@
             <div class="card-body p-3 p-xl-3 p-xxl-4">
               <div class="row align-items-center">
                 <div class="col-5 col-xxl-6">
-                  <span class="caption text-gray-600 d-block mb-1">Comunicações Pendentes</span>
-                  <span class="h3 mb-0" >42 mensagens</span>
+                  <span class="caption text-gray-600 d-block mb-1">Comunidade mais Crítica</span>
+                  <span class="h3 mb-0" >Nilópolis</span>
                   <span class="d-block fs-11 mt-2 font-weight-semibold"><svg class="me-1" xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 16 16">
                     <g data-name="icons/tabler/trend-up" transform="translate(0)">
                       <rect data-name="Icons/Tabler/Trend background" width="16" height="16" fill="none"/>
@@ -1427,524 +1459,78 @@
                     </g>
                   </svg> -14%</span>
                 </div>
-                </div>
-
-              </div>
-            </div>
-          </div>
-        </div>
-
-         <nav class="menu">
-        <ul>
-            <li class="active"><a href="<?= $base; ?>/dashboard/empty-state">Comunicados Oficiais</a></li>
-            <li><a href="<?= $base; ?>/dashboard/respondercidadao">Responder Cidadão</a></li>
-            <li><a href="<?= $base; ?>/dashboard/mapa">Canal Direto</a></li>
-        </ul>
-    </nav>
-      
-      <div class="row">
-        <div class="col-12 col-xl-8 mb-4">
-          <div class="card rounded-12 shadow-dark-80">
-            
-          </div>
-        </div>
-        <div class="col-12 col-xl-4 mb-4">
-          <div class="card h-100 rounded-12 shadow-dark-80">
-      
-          </div>
-        </div>
-      </div>
-       <div class="row">
-      
-      </div>
-
-     <!--! area editavel  -->
-      <div>
-
-              <div class="row group-cards pt-2">
-        <div class="col-xxl-12 mb-4">
-          <div class="card rounded-12 shadow-dark-80 border border-gray-200 h-100">
-           
-          </div>
-        </div>
-      </div>
-
-      </div>
-
-      <!--!  area editavel 2 -->
-
-              <div class="container-fluid bg-white px-0 muze-chats">
-    <div class="row g-0">
-      <div class="has-xxl-4">
-        <div class="p-3 p-md-3 px-xxl-4 py-xl-4 border-bottom border-gray-200 border-end">
-          <ul class="nav nav-segment nav-pills px-xxl-3 py-1" role="tablist">
-            <li class="nav-item">
-              <a class="nav-link active" data-bs-toggle="pill" href="#Inprogress" role="tab" aria-selected="true">All</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" data-bs-toggle="pill" href="#Incoming" role="tab" aria-selected="false">Unread</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" data-bs-toggle="pill" href="#Completed" role="tab" aria-selected="false">Archived</a>
-            </li>
-          </ul>
-        </div>
-        <div class="border-end border-gray-200 mb-0 chat-list" data-simplebar="init"><div class="simplebar-wrapper" style="margin: 0px;"><div class="simplebar-height-auto-observer-wrapper"><div class="simplebar-height-auto-observer"></div></div><div class="simplebar-mask"><div class="simplebar-offset" style="right: 0px; bottom: 0px;"><div class="simplebar-content-wrapper" style="height: 100%; overflow: hidden scroll;"><div class="simplebar-content" style="padding: 0px;">
-          <a href="#0">
-            <div class="media">
-              <span class="avatar rounded-circle me-md-2 me-xl-3">
-                <img src="http://localhost/quibblemvc/public/assets/images/avatar58.png" alt="Avatar">
-                <span class="avatar-status avatar-success bottom-0 end-0">&nbsp;</span>
-              </span>
-              <div class="media-body">
-                <div class="d-flex align-items-center">
-                  <h6>John Wick</h6>
-                  <span class="font-weight-semibold small text-muted ms-auto text-nowrap">10:03 PM</span>
-                </div>
-                <p>Hi Bruce, what do you think of the logo I…</p>
-              </div>
-            </div>
-          </a>
-          <a href="#0">
-            <div class="media">
-              <span class="avatar rounded-circle me-md-2 me-xl-3">
-                <img src="http://localhost/quibblemvc/public/assets/images/avatar59.png" alt="Avatar">
-                <span class="avatar-status avatar-success bottom-0 end-0">&nbsp;</span>
-              </span>
-              <div class="media-body">
-                <div class="d-flex align-items-center">
-                  <h6>Prescott MacCaffery</h6>
-                  <span class="font-weight-semibold small text-muted ms-auto text-nowrap">10:03 PM</span>
-                </div>
-                <p>Hi Bruce, what do you think of the logo I…</p>
-              </div>
-            </div>
-          </a>
-          <a href="#0" class="active">
-            <div class="media">
-              <span class="avatar rounded-circle me-md-2 me-xl-3">
-                <img src="http://localhost/quibblemvc/public/assets/images/avatar60.png" alt="Avatar">
-                <span class="avatar-status avatar-danger bottom-0 end-0">&nbsp;</span>
-              </span>
-              <div class="media-body">
-                <div class="d-flex align-items-center">
-                  <h6>Sashi Hendriks</h6>
-                  <span class="font-weight-semibold small text-muted ms-auto text-nowrap">10:03 PM</span>
-                </div>
-                <p>Hi Bruce, what do you think of the logo I…</p>
-              </div>
-            </div>
-          </a>
-          <a href="#0">
-            <div class="media">
-              <span class="avatar rounded-circle me-md-2 me-xl-3">
-                <img src="http://localhost/quibblemvc/public/assets/images/avatar61.png" alt="Avatar">
-                <span class="avatar-status avatar-success bottom-0 end-0">&nbsp;</span>
-              </span>
-              <div class="media-body">
-                <div class="d-flex align-items-center">
-                  <h6>Ekene Obasey</h6>
-                  <span class="font-weight-semibold small text-muted ms-auto text-nowrap">10:03 PM</span>
-                </div>
-                <p>Hi Bruce, what do you think of the logo I…</p>
-              </div>
-            </div>
-          </a>
-          <a href="#0" class="unread">
-            <div class="media">
-              <span class="avatar rounded-circle me-md-2 me-xl-3">
-                <img src="http://localhost/quibblemvc/public/assets/images/avatar62.png" alt="Avatar">
-                <span class="avatar-status avatar-success bottom-0 end-0">&nbsp;</span>
-              </span>
-              <div class="media-body">
-                <div class="d-flex align-items-center">
-                  <h6>Lucas Pacheco</h6>
-                  <span class="font-weight-semibold small text-muted ms-auto text-nowrap">10:03 PM</span>
-                </div>
-                <p>Hi Bruce, what do you think of the logo I…</p>
-                <span class="avatar-status avatar-primary avatar-sm-status unread-status">&nbsp;</span>
-              </div>
-            </div>
-          </a>
-          <a href="#0">
-            <div class="media">
-              <span class="avatar rounded-circle me-md-2 me-xl-3">
-                <img src="http://localhost/quibblemvc/public/assets/images/avatar63.png" alt="Avatar">
-                <span class="avatar-status avatar-success bottom-0 end-0">&nbsp;</span>
-              </span>
-              <div class="media-body">
-                <div class="d-flex align-items-center">
-                  <h6>Mónica Ribeiro</h6>
-                  <span class="font-weight-semibold small text-muted ms-auto text-nowrap">10:03 PM</span>
-                </div>
-                <p>Hi Bruce, what do you think of the logo I…</p>
-              </div>
-            </div>
-          </a>
-          <a href="#0">
-            <div class="media">
-              <span class="avatar rounded-circle me-md-2 me-xl-3">
-                <img src="http://localhost/quibblemvc/public/assets/images/avatar64.png" alt="Avatar">
-                <span class="avatar-status avatar-success bottom-0 end-0">&nbsp;</span>
-              </span>
-              <div class="media-body">
-                <div class="d-flex align-items-center">
-                  <h6>Chigusa Kisa</h6>
-                  <span class="font-weight-semibold small text-muted ms-auto text-nowrap">10:03 PM</span>
-                </div>
-                <p>Hi Bruce, what do you think of the logo I…</p>
-              </div>
-            </div>
-          </a>
-          <a href="#0" class="unread">
-            <div class="media">
-              <span class="avatar rounded-circle me-md-2 me-xl-3">
-                <img src="http://localhost/quibblemvc/public/assets/images/avatar65.png" alt="Avatar">
-                <span class="avatar-status avatar-success bottom-0 end-0">&nbsp;</span>
-              </span>
-              <div class="media-body">
-                <div class="d-flex align-items-center">
-                  <h6>Clarke Gillebert</h6>
-                  <span class="font-weight-semibold small text-muted ms-auto text-nowrap">10:03 PM</span>
-                </div>
-                <p>Hi Bruce, what do you think of the logo I…</p>
-                <span class="avatar-status avatar-primary avatar-sm-status unread-status">&nbsp;</span>
-              </div>
-            </div>
-          </a>
-          <a href="#0">
-            <div class="media">
-              <span class="avatar rounded-circle me-md-2 me-xl-3">
-                <img src="http://localhost/quibblemvc/public/assets/images/avatar66.png" alt="Avatar">
-                <span class="avatar-status avatar-success bottom-0 end-0">&nbsp;</span>
-              </span>
-              <div class="media-body">
-                <div class="d-flex align-items-center">
-                  <h6>Naseema Al Morad</h6>
-                  <span class="font-weight-semibold small text-muted ms-auto text-nowrap">10:03 PM</span>
-                </div>
-                <p>Hi Bruce, what do you think of the logo I…</p>
-              </div>
-            </div>
-          </a>
-          <a href="#0" class="unread">
-            <div class="media">
-              <span class="avatar rounded-circle me-md-2 me-xl-3">
-                <img src="http://localhost/quibblemvc/public/assets/images/avatar67.png" alt="Avatar">
-                <span class="avatar-status avatar-success bottom-0 end-0">&nbsp;</span>
-              </span>
-              <div class="media-body">
-                <div class="d-flex align-items-center">
-                  <h6>Tamaki Ryushi</h6>
-                  <span class="font-weight-semibold small text-muted ms-auto text-nowrap">10:03 PM</span>
-                </div>
-                <p>Hi Bruce, what do you think of the logo I…</p>
-                <span class="avatar-status avatar-primary avatar-sm-status unread-status">&nbsp;</span>
-              </div>
-            </div>
-          </a>
-          <a href="#0">
-            <div class="media">
-              <span class="avatar rounded-circle me-md-2 me-xl-3">
-                <img src="http://localhost/quibblemvc/public/assets/images/avatar68.png" alt="Avatar">
-                <span class="avatar-status avatar-success bottom-0 end-0">&nbsp;</span>
-              </span>
-              <div class="media-body">
-                <div class="d-flex align-items-center">
-                  <h6>Sunstra Maneerattana</h6>
-                  <span class="font-weight-semibold small text-muted ms-auto text-nowrap">10:03 PM</span>
-                </div>
-                <p>Hi Bruce, what do you think of the logo I…</p>
-              </div>
-            </div>
-          </a>
-          <a href="#0">
-            <div class="media">
-              <span class="avatar rounded-circle me-md-2 me-xl-3">
-                <img src="http://localhost/quibblemvc/public/assets/images/avatar69.png" alt="Avatar">
-                <span class="avatar-status avatar-success bottom-0 end-0">&nbsp;</span>
-              </span>
-              <div class="media-body">
-                <div class="d-flex align-items-center">
-                  <h6>William Diwedi</h6>
-                  <span class="font-weight-semibold small text-muted ms-auto text-nowrap">10:03 PM</span>
-                </div>
-                <p>Hi Bruce, what do you think of the logo I…</p>
-              </div>
-            </div>
-          </a>
-          <a href="#0">
-            <div class="media">
-              <span class="avatar rounded-circle me-md-2 me-xl-3">
-                <img src="http://localhost/quibblemvc/public/assets/images/avatar70.png" alt="Avatar">
-                <span class="avatar-status avatar-success bottom-0 end-0">&nbsp;</span>
-              </span>
-              <div class="media-body">
-                <div class="d-flex align-items-center">
-                  <h6>Ashish Asharaful</h6>
-                  <span class="font-weight-semibold small text-muted ms-auto text-nowrap">10:03 PM</span>
-                </div>
-                <p>Hi Bruce, what do you think of the logo I…</p>
-              </div>
-            </div>
-          </a>
-          <a href="#0">
-            <div class="media">
-              <span class="avatar rounded-circle me-md-2 me-xl-3">
-                <img src="http://localhost/quibblemvc/public/assets/images/avatar71.png" alt="Avatar">
-                <span class="avatar-status avatar-success bottom-0 end-0">&nbsp;</span>
-              </span>
-              <div class="media-body">
-                <div class="d-flex align-items-center">
-                  <h6>Kimmy McIlmorie</h6>
-                  <span class="font-weight-semibold small text-muted ms-auto text-nowrap">10:03 PM</span>
-                </div>
-                <p>Hi Bruce, what do you think of the logo I…</p>
-              </div>
-            </div>
-          </a>
-          <a href="#0">
-            <div class="media">
-              <span class="avatar rounded-circle me-md-2 me-xl-3">
-                <img src="http://localhost/quibblemvc/public/assets/images/avatar71.png" alt="Avatar">
-                <span class="avatar-status avatar-success bottom-0 end-0">&nbsp;</span>
-              </span>
-              <div class="media-body">
-                <div class="d-flex align-items-center">
-                  <h6>Kimmy McIlmorie</h6>
-                  <span class="font-weight-semibold small text-muted ms-auto text-nowrap">10:03 PM</span>
-                </div>
-                <p>Hi Bruce, what do you think of the logo I…</p>
-              </div>
-            </div>
-          </a>
-        </div></div></div></div><div class="simplebar-placeholder" style="width: auto; height: 1548px;"></div></div><div class="simplebar-track simplebar-horizontal" style="visibility: hidden;"><div class="simplebar-scrollbar" style="width: 0px; display: none;"></div></div><div class="simplebar-track simplebar-vertical" style="visibility: visible;"><div class="simplebar-scrollbar" style="height: 432px; transform: translate3d(0px, 0px, 0px); display: block;"></div></div></div>
-      </div>
-      <div class="has-xxl-8">
-        <div class="py-2 py-md-1 py-xl-3 px-3 px-xxl-5 border-bottom border-gray-200 chat-header">
-          <div class="row align-items-center">
-            <div class="col-6 col-sm-8">
-              <h4 class="mb-0 mt-1 text-truncate">Sashi Hendriks</h4>
-              <span class="small text-gray-600 d-block mb-1 text-truncate">sashi@hendriksfabrx.co</span>
-            </div>
-            <div class="col-6 col-sm-4">
-              <div class="d-flex align-items-center justify-content-end">
-                <a href="#0" class="circle circle-lg">
-                  <svg xmlns="http://www.w3.org/2000/svg" width="20.001" height="20" viewBox="0 0 20.001 20">
-                    <rect data-name="Icons/Tabler/Call background" width="20" height="20" fill="none"></rect>
-                    <path d="M16.982,20h0A18.076,18.076,0,0,1,5.272,14.723,18.172,18.172,0,0,1,0,2.973,2.966,2.966,0,0,1,2.844,0l.129,0H7.3a.81.81,0,0,1,.719.435L8.05.51l2.162,5.406a.811.811,0,0,1-.27.953l-.065.044L7.837,8.136l.018.033A11.113,11.113,0,0,0,11.6,12.006l.264.159,1.225-2.041a.811.811,0,0,1,.922-.361l.074.026,5.406,2.162a.8.8,0,0,1,.505.67l0,.082v4.325a2.935,2.935,0,0,1-.876,2.1A3.025,3.025,0,0,1,16.982,20ZM2.973,1.622a1.349,1.349,0,0,0-1.353,1.3A16.481,16.481,0,0,0,17.028,18.38a1.354,1.354,0,0,0,1.349-1.259l0-.093V13.253l-4.254-1.7-1.267,2.111a.81.81,0,0,1-.978.343l-.076-.033A12.768,12.768,0,0,1,6.03,8.2.809.809,0,0,1,6.271,7.19l.07-.047L8.451,5.876l-1.7-4.254Z" transform="translate(0 0)" fill="#495057"></path>
-                  </svg>
-                </a>
-                <a href="#0" class="circle circle-lg ms-2 ms-xxl-4">
-                  <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20">
-                    <rect data-name="Icons/Tabler/Video background" width="20" height="20" fill="none"></rect>
-                    <path d="M2.82,13.847A2.824,2.824,0,0,1,0,11.026V2.82A2.824,2.824,0,0,1,2.82,0h8.206a2.824,2.824,0,0,1,2.82,2.82v.807L17.4,1.85A1.8,1.8,0,0,1,20,3.455v6.938a1.795,1.795,0,0,1-1.794,1.793A1.805,1.805,0,0,1,17.4,12l-3.556-1.778v.807a2.824,2.824,0,0,1-2.82,2.82ZM1.539,2.82v8.206A1.283,1.283,0,0,0,2.82,12.308h8.206a1.283,1.283,0,0,0,1.281-1.281V2.82a1.283,1.283,0,0,0-1.281-1.281H2.82A1.283,1.283,0,0,0,1.539,2.82Zm16.551,7.8a.271.271,0,0,0,.115.026.257.257,0,0,0,.088-.015l.047-.023a.259.259,0,0,0,.122-.217V3.455a.253.253,0,0,0-.122-.217A.249.249,0,0,0,18.2,3.2a.258.258,0,0,0-.115.028L13.847,5.347V8.5Z" transform="translate(0 2.5)" fill="#495057"></path>
-                  </svg>                
-                </a>
-                <div class="dropdown">
-                  <a href="#" class="circle circle-lg ms-2 ms-xxl-4" role="button" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
-                    <svg data-name="icons/tabler/dots" xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 16 16">
-                      <rect data-name="Icons/Tabler/Dots background" width="16" height="16" fill="none"></rect>
-                      <path d="M0,12.4A1.6,1.6,0,1,1,1.6,14,1.6,1.6,0,0,1,0,12.4Zm1.372,0a.229.229,0,1,0,.229-.229A.229.229,0,0,0,1.372,12.4ZM0,7A1.6,1.6,0,1,1,1.6,8.6,1.6,1.6,0,0,1,0,7ZM1.372,7A.229.229,0,1,0,1.6,6.772.229.229,0,0,0,1.372,7ZM0,1.6A1.6,1.6,0,1,1,1.6,3.2,1.6,1.6,0,0,1,0,1.6Zm1.372,0A.229.229,0,1,0,1.6,1.372.229.229,0,0,0,1.372,1.6Z" transform="translate(6 1)" fill="#495057"></path>
-                    </svg>
-                  </a>
-                  <div class="dropdown-menu">
-                    <a href="#!" class="dropdown-item">
-                      Action
-                    </a>
-                    <a href="#!" class="dropdown-item">
-                      Another action
-                    </a>
-                    <a href="#!" class="dropdown-item">
-                      Something else here
-                    </a>
-                  </div>
+               <div class="col-7 col-xxl-5 pe-xxl-0">
+                  <div id="MuzeColumnsChartTwo"></div>
                 </div>
               </div>
             </div>
           </div>
         </div>
-        <div class="py-md-4 p-3 px-xxl-5 chat-items" data-simplebar="init"><div class="simplebar-wrapper" style="margin: -24px -48px;"><div class="simplebar-height-auto-observer-wrapper"><div class="simplebar-height-auto-observer"></div></div><div class="simplebar-mask"><div class="simplebar-offset" style="right: 0px; bottom: 0px;"><div class="simplebar-content-wrapper" style="height: 100%; overflow: hidden scroll;"><div class="simplebar-content" style="padding: 24px 48px;">
-          <div class="text-center py-2 pt-md-3 pb-md-4">
-            <a href="#0" class="btn btn-lg btn-link"><svg class="me-2" xmlns="http://www.w3.org/2000/svg" width="16.027" height="16" viewBox="0 0 16.027 16">
-              <g data-name="Icons/Tabler/Refresh" transform="translate(0 0)">
-                <rect data-name="Icons/Tabler/Refresh background" width="16" height="16" fill="none"></rect>
-                <path d="M7,15.933A8.105,8.105,0,0,1,.006,9.011a.687.687,0,0,1,1.361-.19A6.731,6.731,0,0,0,13.76,11.435H11.677a.687.687,0,0,1-.684-.621l0-.066a.687.687,0,0,1,.621-.684l.066,0H15.34a.687.687,0,0,1,.684.621l0,.067v3.663a.686.686,0,0,1-1.37.066l0-.066V12.573A8.1,8.1,0,0,1,7,15.933Zm7.662-8.754A6.731,6.731,0,0,0,2.267,4.565H4.351a.687.687,0,0,1,.683.621l0,.066a.687.687,0,0,1-.621.684l-.066,0H.687A.686.686,0,0,1,0,5.319l0-.067V1.589a.687.687,0,0,1,1.371-.067l0,.067V3.426A8.105,8.105,0,0,1,16.02,6.989a.687.687,0,1,1-1.361.189Z" fill="#0d6efd"></path>
-              </g>
-            </svg><span>Load earlier messages</span></a>
-          </div>
-          <div class="position-relative my-4">
-            <hr class="bg-gray-200 opacity-1">
-            <span class="text-gray-600 small position-absolute top-0 start-50 translate-middle bg-white px-4">Today</span>
-          </div>
-          <div class="chat-item">
-            <div class="chat-item-inner">
-              <div class="avatar rounded-circle mb-4">
-                <img src="http://localhost/quibblemvc/public/assets/images/avatar@68.png" alt="Avatar">
-                <span class="avatar-status avatar-success bottom-0 end-0">&nbsp;</span>
-              </div>
-              <div class="chat-message">
-                <div class="message-box">
-                  <p>Hi Sashi, hope all is well, I was wondering if you can help me out with a task I’m working on. Nancy told me you have a copy of the the 2021 document as well as the images used. Would really help if you could share. 🙏</p>
-                </div>
-                <div class="px-3 py-2 d-flex align-items-center small text-gray-600 justify-content-end">
-                  <span>10:03 AM</span>
-                  <span class="ms-3"><svg class="me-1" data-name="icons/tabler/check-heavy" xmlns="http://www.w3.org/2000/svg" width="12" height="12" viewBox="0 0 16 16">
-                    <rect data-name="Icons/Tabler/Check Heavy background" width="16" height="16" fill="none"></rect>
-                    <path d="M5.434,11.7.234,6.5a.8.8,0,0,1,0-1.131L1.366,4.234a.8.8,0,0,1,1.131,0L6,7.737l7.5-7.5a.8.8,0,0,1,1.131,0l1.131,1.131a.8.8,0,0,1,0,1.131l-9.2,9.2a.8.8,0,0,1-1.131,0Z" transform="translate(0 2.003)" fill="#0D6EFD"></path>
-                  </svg>Seen</span>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="chat-item message-sender">
-            <div class="chat-item-inner">
-              <div class="avatar rounded-circle mb-4">
-                <img src="http://localhost/quibblemvc/public/assets/images/avatar60.png" alt="Avatar">
-                <span class="avatar-status avatar-danger bottom-0 end-0">&nbsp;</span>
-              </div>
-              <div class="chat-message">
-                <div class="message-box">
-                  <p>Hey Bruce, sure thing! Here is the Roadmap document.</p>
-                </div>
-                <div class="px-3 py-2 d-flex align-items-center small text-gray-600 justify-content-end">
-                  <span>7:03 AM</span>
-                </div>
-              </div>
-            </div>
-            <div class="message-files">
-              <a href="#0" class="rounded-pill attachment"><svg class="me-2" xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16">
-                <g id="Icon" transform="translate(0)">
-                  <rect id="Icons_Tabler_Link_background" data-name="Icons/Tabler/Link background" width="16" height="16" fill="none"></rect>
-                  <path id="Color" d="M1.143,14.857a3.9,3.9,0,0,1-.1-5.421l.1-.1L4.781,5.7a3.87,3.87,0,0,1,5.528,0,.683.683,0,1,1-.976.956,2.5,2.5,0,0,0-3.491-.083l-.091.088L2.109,10.3a2.537,2.537,0,0,0,3.5,3.672l.089-.085.455-.455a.683.683,0,0,1,1.015.91l-.049.056-.455.455a3.9,3.9,0,0,1-5.519,0ZM5.691,10.3a.683.683,0,1,1,.976-.956,2.5,2.5,0,0,0,3.491.084l.092-.088L13.892,5.7a2.537,2.537,0,0,0-3.5-3.672l-.089.085-.455.455a.683.683,0,0,1-1.015-.911l.05-.055.455-.455a3.9,3.9,0,0,1,5.614,5.42l-.1.1L11.219,10.3a3.869,3.869,0,0,1-5.529,0Z" fill="#495057"></path>
-                </g>
-              </svg> Roadmap.doc</a>
-            </div>
-          </div>
-          <div class="chat-item message-sender">
-            <div class="chat-item-inner">
-              <div class="avatar rounded-circle mb-4">
-                <img src="http://localhost/quibblemvc/public/assets/images/avatar60.png" alt="Avatar">
-                <span class="avatar-status avatar-danger bottom-0 end-0">&nbsp;</span>
-              </div>
-              <div class="chat-message">
-                <div class="message-box">
-                  <p>And ther images too ⚡️</p>
-                </div>
-                <div class="px-3 py-2 d-flex align-items-center small text-gray-600 justify-content-end">
-                  <span>7:04 AM</span>
-                </div>
-              </div>
-            </div>
-            <div class="message-files">
-              <ul>
-                <li>
-                  <a href="#0"><img src="http://localhost/quibblemvc/public/assets/images/placeholder29.jpg" alt="Placeholder" class="rounded-12"></a>
-                </li>
-                <li>
-                  <a href="#0"><img src="http://localhost/quibblemvc/public/assets/images/placeholder30.jpg" alt="Placeholder" class="rounded-12"></a>
-                </li>
-                <li>
-                  <a href="#0"><img src="http://localhost/quibblemvc/public/assets/images/placeholder31.jpg" alt="Placeholder" class="rounded-12"></a>
-                </li>
-              </ul>
-            </div>
-          </div>
-          <div class="chat-item">
-            <div class="chat-item-inner">
-              <div class="avatar rounded-circle mb-4">
-                <img src="http://localhost/quibblemvc/public/assets/images/avatar60.png" alt="Avatar">
-                <span class="avatar-status avatar-success bottom-0 end-0">&nbsp;</span>
-              </div>
-              <div class="chat-message">
-                <div class="message-box">
-                  <p>Thank you!, that helps a lot.</p>
-                </div>
-                <div class="px-3 py-2 d-flex align-items-center small text-gray-600 justify-content-end">
-                  <span>7:12 AM</span>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="chat-item message-sender">
-            <div class="chat-item-inner">
-              <div class="avatar rounded-circle mb-4">
-                <img src="http://localhost/quibblemvc/public/assets/images/avatar60.png" alt="Avatar">
-                <span class="avatar-status avatar-danger bottom-0 end-0">&nbsp;</span>
-              </div>
-              <div class="chat-message">
-                <div class="message-box">
-                  <p>Anytime, see you Thursday 🙏</p>
-                </div>
-                <div class="px-3 py-2 d-flex align-items-center small text-gray-600 justify-content-end">
-                  <span>7:32 AM</span>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div></div></div></div><div class="simplebar-placeholder" style="width: auto; height: 1212px;"></div></div><div class="simplebar-track simplebar-horizontal" style="visibility: hidden;"><div class="simplebar-scrollbar" style="width: 0px; display: none;"></div></div><div class="simplebar-track simplebar-vertical" style="visibility: visible;"><div class="simplebar-scrollbar" style="height: 355px; transform: translate3d(0px, 223px, 0px); display: block;"></div></div></div>
-        <div class="message-footer border-top border-gray-200">
-          <div class="pt-2 pt-xxl-4 px-3 px-xxl-5">
-            <textarea rows="2" class="form-control" placeholder="Reply to this conversation.."></textarea>
-          </div>
-          <div class="py-2 px-3 px-xxl-5 border-top border-gray-200">
-            <div class="row align-items-center">
-              <div class="col">
-                <div class="d-flex">
-                  <a href="#0">
-                    <svg data-name="Icons/Tabler/Emoji" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
-                      <rect data-name="Icons/Tabler/Emoji background" width="24" height="24" fill="none"></rect>
-                      <path data-name="Combined Shape" d="M0,12A12,12,0,1,1,12,24,12.014,12.014,0,0,1,0,12Zm1.847,0A10.153,10.153,0,1,0,12,1.847,10.165,10.165,0,0,0,1.847,12Zm6.417,4.338a.923.923,0,0,1,1.319-1.292,3.384,3.384,0,0,0,4.836,0,.923.923,0,0,1,1.318,1.292,5.23,5.23,0,0,1-7.472,0Zm6.506-6.8A.923.923,0,0,1,15.6,8.62l.1,0a.923.923,0,0,1,.089,1.841l-.1,0A.923.923,0,0,1,14.769,9.539Zm-7.385,0a.923.923,0,0,1,.834-.919l.1,0a.923.923,0,0,1,.089,1.841l-.1,0A.923.923,0,0,1,7.385,9.539Z" fill="#495057"></path>
-                    </svg>
-                  </a>
-                  <a href="#0">
-                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 16 16">
-                      <g transform="translate(0)">
-                        <rect data-name="Icons/Tabler/Link background" width="16" height="16" fill="none"></rect>
-                        <path d="M1.143,14.857a3.9,3.9,0,0,1-.1-5.421l.1-.1L4.781,5.7a3.87,3.87,0,0,1,5.528,0,.683.683,0,1,1-.976.956,2.5,2.5,0,0,0-3.491-.083l-.091.088L2.109,10.3a2.537,2.537,0,0,0,3.5,3.672l.089-.085.455-.455a.683.683,0,0,1,1.015.91l-.049.056-.455.455a3.9,3.9,0,0,1-5.519,0ZM5.691,10.3a.683.683,0,1,1,.976-.956,2.5,2.5,0,0,0,3.491.084l.092-.088L13.892,5.7a2.537,2.537,0,0,0-3.5-3.672l-.089.085-.455.455a.683.683,0,0,1-1.015-.911l.05-.055.455-.455a3.9,3.9,0,0,1,5.614,5.42l-.1.1L11.219,10.3a3.869,3.869,0,0,1-5.529,0Z" fill="#495057"></path>
-                      </g>
-                    </svg>                    
-                  </a>
-                  <a href="#0">
-                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
-                      <g data-name="Icons/Tabler/Photo" transform="translate(0)">
-                        <rect data-name="Icons/Tabler/Photo background" width="24" height="24" fill="none"></rect>
-                        <path data-name="Combined Shape" d="M5.144,24A5.149,5.149,0,0,1,0,18.857v-2.73c0-.008,0-.016,0-.024V5.144A5.149,5.149,0,0,1,5.144,0H18.857A5.149,5.149,0,0,1,24,5.144V18.857A5.149,5.149,0,0,1,18.857,24ZM2.057,18.857a3.09,3.09,0,0,0,3.086,3.086H18.857a3.09,3.09,0,0,0,3.086-3.086V16.54l-2.427-2.427A1.722,1.722,0,0,0,16.949,14l-.108.1-.644.643,2.016,2.016a1.029,1.029,0,0,1-1.372,1.53l-.082-.076L14.016,15.47l-4.1-4.1a1.724,1.724,0,0,0-2.566-.113l-.108.1L2.057,16.54Zm18.757-6.344.142.131.987.987V5.144a3.09,3.09,0,0,0-3.086-3.086H5.144A3.09,3.09,0,0,0,2.057,5.144v8.487L5.8,9.887a3.774,3.774,0,0,1,5.414-.117l.142.131,3.387,3.387.658-.658a3.773,3.773,0,0,1,5.414-.117Zm-5.728-6a1.028,1.028,0,0,1,.929-1.023l.113-.005a1.029,1.029,0,0,1,.1,2.053l-.112,0A1.028,1.028,0,0,1,15.086,6.514Z" transform="translate(0)" fill="#495057"></path>
-                      </g>
-                    </svg>                                        
-                  </a>
-                </div>
-              </div>
-              <div class="col-auto">
-                <button type="button" class="btn btn-xl btn-primary fs-16 px-md-4"><svg class="me-2" xmlns="http://www.w3.org/2000/svg" width="14.001" height="14.001" viewBox="0 0 14.001 14.001">
-                  <g transform="translate(0 0)">
-                    <rect data-name="Icons/Tabler/Send background" width="14" height="14" fill="none"></rect>
-                    <path d="M7.728,13.537,5.306,8.694.535,6.309A.919.919,0,0,1,0,5.541l0-.067a.918.918,0,0,1,.476-.8l.06-.03.041-.017L13.291.031l.026-.009.012,0,.032-.008L13.4.005H13.4l.03,0h.076l.03,0h.008l.009,0a.531.531,0,0,1,.089.022h0l0,0a.528.528,0,0,1,.316.316h0a.53.53,0,0,1,.025.1v0h0A.534.534,0,0,1,14,.529c0,.01,0,.019,0,.029v0q0,.02,0,.039v0c0,.017-.006.035-.01.053v0a.53.53,0,0,1-.017.055L9.378,13.424l-.017.041a.919.919,0,0,1-1.633.072Zm.776-.814L12.165,2.585,6.345,8.4ZM1.278,5.5,5.6,7.655l5.819-5.82Z" transform="translate(0 0)" fill="#fff"></path>
-                  </g>
-                </svg><span>Reply</span></button>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
-    
-          
-        </div>
-            </div>
-          </div>
-        </div>
-
 
         
+        <div class="row">
+          
+          <di v class="ps-3 header-search">
+               <form>
+                 <div class="input-group bg-white border border-gray-300 rounded py-1 px-5">
+                   <img src="<?= $base;?>/assets/svg/icons/search@14.svg" alt="Search">
+                   <input type="search" class="form-control border-0" placeholder="Search...">
+                 </div>
+               </form>
+               <span class="muze-search d-lg-none ms-3">
+                 <svg id="icons_tabler_close" data-name="icons/tabler/close" xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 16 16">
+                   <rect data-name="Icons/Tabler/Close background" width="16" height="16" fill="none"/>
+                   <path d="M.82.1l.058.05L6,5.272,11.122.151A.514.514,0,0,1,11.9.82l-.05.058L6.728,6l5.122,5.122a.514.514,0,0,1-.67.777l-.058-.05L6,6.728.878,11.849A.514.514,0,0,1,.1,11.18l.05-.058L5.272,6,.151.878A.514.514,0,0,1,.75.057Z" transform="translate(2 2)" fill="#1e1e1e"/>
+                 </svg>
+               </span>
+       
+               
+              <div class="row mapa" style="background: linear-gradient(135deg, #f8f9fa 0%, #e3eafc 100%); border-radius: 16px; box-shadow: 0 2px 16px rgba(0,0,0,0.08); padding: 24px;">
+                <div id="heatmap" style="height: 500px; width: 100%; border-radius: 12px; box-shadow: 0 1px 8px rgba(52,133,253,0.08);"></div>
+                <link rel="stylesheet" href="https://unpkg.com/leaflet/dist/leaflet.css" />
+                <script src="https://unpkg.com/leaflet/dist/leaflet.js"></script>
+                <script src="https://unpkg.com/leaflet.heat/dist/leaflet-heat.js"></script>
+                <script>
+                  // Inicializa o mapa
+                  var map = L.map('heatmap').setView([-22.877, -43.415], 11);
 
+                  // Camada azulada moderna
+                  L.tileLayer('https://tiles.stadiamaps.com/tiles/alidade_smooth/{z}/{x}/{y}{r}.png', {
+                    attribution: '© OpenStreetMap contributors, Stadia Maps',
+                    minZoom: 10,
+                    maxZoom: 17
+                  }).addTo(map);
 
-         
-
+                  // Exemplo de chamada para API fictícia que retorna pontos de calor
+                  fetch('https://api.quibble.com/heatmap')
+                    .then(response => response.json())
+                    .then(data => {
+                      // Espera-se que data seja um array de [lat, lng, intensidade]
+                      var heatData = data.map(function(item) {
+                        return [item.lat, item.lng, item.intensity];
+                      });
+                      L.heatLayer(heatData, {radius: 25, blur: 15, maxZoom: 17}).addTo(map);
+                    })
+                    .catch(() => {
+                      // fallback para dados de exemplo
+                      var heatData = [
+                        [-22.877, -43.415, 0.8],
+                        [-22.800, -43.400, 0.5],
+                        [-22.900, -43.420, 0.7],
+                        [-22.850, -43.410, 0.9],
+                        [-22.870, -43.430, 0.6],
+                        [-22.880, -43.440, 0.4]
+                      ];
+                      L.heatLayer(heatData, {radius: 25, blur: 15, maxZoom: 17}).addTo(map);
+                    });
+                </script>
+              </div>
       
-
-        <!-- Footer -->
+                  
+         
+          </script>
+          </div>
+    </div>
       
               
               
@@ -1967,138 +1553,6 @@
   </div>
 </div>
 
-<style>
-
-   .filtro-container {
-            background: #fff;
-            color: #222;
-            border-radius: 20px;
-            margin: 40px auto 0 auto;
-            max-width: 95vw;
-            box-shadow: 0 4px 24px rgba(0,0,0,0.10);
-            padding: 32px 32px 24px 32px;
-        }
-        .filtro-container h2 {
-            font-size: 2rem;
-            font-weight: 700;
-            margin-bottom: 24px;
-            color: #222;
-        }
-        .filtro-form {
-            width: 100%;
-        }
-        .filtro-group {
-            display: flex;
-            gap: 32px;
-            flex-wrap: wrap;
-            align-items: flex-end;
-        }
-        .filtro-item {
-            display: flex;
-            align-items: center;
-            background: transparent;
-            border: 2px solid #bdbdbd;
-            border-radius: 12px;
-            padding: 8px 24px;
-            min-width: 220px;
-            height: 56px;
-            position: relative;
-        }
-        .filtro-item .icon {
-            margin-right: 10px;
-            display: flex;
-            align-items: center;
-        }
-        .filtro-item select, .filtro-item input {
-            background: transparent;
-            border: none;
-            color: #222;
-            font-size: 1.1rem;
-            outline: none;
-            width: 100%;
-        }
-        .filtro-item select {
-            appearance: none;
-            padding-right: 24px;
-        }
-        .filtro-item input[type="text"] {
-            padding-right: 24px;
-        }
-        .filtrar {
-            background: #f6ecd3;
-            color: #2976f6;
-            border: none;
-            border-radius: 12px;
-            font-size: 1.1rem;
-            font-weight: 600;
-            padding: 8px 40px;
-            margin-left: 16px;
-            cursor: pointer;
-            height: 56px;
-            box-shadow: 0 2px 8px rgba(0,0,0,0.04);
-            transition: background 0.2s;
-        }
-        .filtrar:hover {
-            background: #fbeec1;
-        }
-        .limpar {
-            background: transparent;
-            color: #222;
-            border: 2px solid #bdbdbd;
-            border-radius: 12px;
-            font-size: 1.1rem;
-            font-weight: 600;
-            padding: 8px 40px;
-            margin-left: 16px;
-            cursor: pointer;
-            height: 56px;
-            transition: background 0.2s, color 0.2s;
-        }
-        .limpar:hover {
-            background: #bdbdbd;
-            color: #222;
-        }
-        body {
-            background: #fff;
-            color: #222;
-            font-family: 'Montserrat', Arial, sans-serif;
-        }
-        .menu {
-            background: #fff;
-            padding: 0 0 0 10px;
-            box-shadow: 0 2px 4px rgba(0,0,0,0.03);
-        }
-        .menu ul {
-            display: flex;
-            list-style: none;
-            margin: 0;
-            padding: 0;
-        }
-        .menu li {
-            padding: 16px 20px 8px 0;
-            color: #555;
-            font-size: 18px;
-            cursor: pointer;
-            position: relative;
-            transition: color 0.2s;
-        }
-        .menu li.active {
-            color: #222;
-            font-weight: 600;
-        }
-        .menu li.active::after {
-            content: '';
-            display: block;
-            height: 3px;
-            width: 80%;
-            background: #2976f6;
-            position: absolute;
-            left: 0;
-            bottom: -2px;
-            border-radius: 2px;
-        }
-</style>
-
 <!-- Muze Javascript Plugins -->
 <script src="<?= $base;?>/assets/vendor/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
 <script src="<?= $base;?>/assets/vendor/lodash/lodash.min.js"></script>
@@ -2107,21 +1561,6 @@
 <script src="<?= $base;?>/assets/vendor/simplebar/dist/simplebar.min.js"></script>
 <script src="<?= $base;?>/assets/js/theme-custom.js"></script>
 <script>
-
-
-
-var toolbarOptions = [
-['bold', 'italic', 'link', { 'list': 'ordered'}, { 'list': 'bullet' }, 'image', 'blockquote'],
-];
-  var quill = new Quill('#editor', {
-    theme: 'snow',
-    placeholder: 'Start typing...',
-    modules: {
-      toolbar: toolbarOptions
-    },
-  });
-
-  
 //Muze Double Line Chart JavaScript
 var options = {
   series: [{
@@ -2268,8 +1707,6 @@ xaxis: {
   }
 }
 };
-
-
 
 var chart = new ApexCharts(document.querySelector("#MuzeSingleLine"), options);
 chart.render();
@@ -2667,7 +2104,5 @@ Highcharts.chart('MuzePieChartOne', {
   ],
 });
 </script>
-
-
 </body>
 </html>

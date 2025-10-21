@@ -1464,7 +1464,51 @@
               <div class="row group-cards pt-2">
         <div class="col-xxl-12 mb-4">
           <div class="card rounded-12 shadow-dark-80 border border-gray-200 h-100">
-           
+            <div class="card-body pb-0 px-3 pt-3">
+              <div class="pb-3 p-xl-5">
+                <form>
+                  <div class="mb-4 mb-xl-5">
+                    <label class="form-label form-label-lg mb-3 mb-md-4">Titulo</label>
+                    <div class="d-flex align-items-center">
+                      <a href="#0" class="circle circle-xl border border-gray-300">
+                        <img src="<?= $base;?>/assets/img/project-logo.svg" alt="Project Logo">
+                      </a>
+                      <div class="ps-2 ps-md-3">
+                        <label class="text-primary font-weight-semibold d-block mb-1 mb-md-2">Upload logo</label>
+                        <a href="#0" class="text-gray-700 font-weight-semibold"><svg class="me-1" data-name="Icons/Tabler/Edit" xmlns="http://www.w3.org/2000/svg" width="12.003" height="12" viewBox="0 0 12.003 12">
+                          <rect data-name="Icons/Tabler/Edit background" width="12" height="12" fill="none"/>
+                          <path d="M.535,12A.532.532,0,0,1,0,11.517l0-.052V8.613A.538.538,0,0,1,.116,8.28l.041-.045L7.644.747a2.552,2.552,0,0,1,3.678,3.536l-.069.072-.713.713L3.765,11.844A.538.538,0,0,1,3.447,12l-.06,0ZM1.07,8.834v2.1h2.1L9.405,4.691l-2.1-2.1Zm9.092-4.9L10.5,3.6a1.482,1.482,0,0,0,.058-2.035L10.5,1.5a1.483,1.483,0,0,0-2.035-.058L8.4,1.5l-.335.335Z" fill="#495057"/>
+                        </svg> Edit</a>
+                      </div>
+                    </div>
+
+
+                    <!-- malta -->
+
+                    
+
+
+                  </div>
+                  <div class="mb-4 mb-xl-5">
+                    <label class="form-label form-label-lg" for="ProjectName">Descrição</label>
+                    <input type="text" placeholder="Escreva aqui... id="ProjectName" class="form-control form-control-xl">
+                  </div>
+                  <div class="mb-4 mb-xl-5">
+                    <label class="form-label form-label-lg">Description</label>
+                    <div id="editor"></div>
+                  </div>
+                  <div class="mb-4 mb-xl-5">
+                    <label class="form-label form-label-lg" for="AddTeammates">Add teammates</label>
+                    <input type="text" placeholder="@username" id="AddTeammates" class="form-control form-control-xl">
+                  </div>
+                  <div class="pt-xl-2 text-end">
+                    <span class="text-muted font-weight-semibold me-md-4 pe-sm-3 d-block d-sm-inline-block pb-2 pb-sm-0">STEP 2 OF 3</span>
+                    <a href="#0" class="btn btn-xl btn-outline-dark text-gray-700 border-gray-700 me-2 me-md-4">Limpar</a>
+                    <button type="button" class="btn btn-xl btn-primary">Enviar</button>
+                  </div>
+                </form>
+              </div>
+            </div>
           </div>
         </div>
       </div>
@@ -1473,465 +1517,349 @@
 
       <!--!  area editavel 2 -->
 
-              <div class="container-fluid bg-white px-0 muze-chats">
-    <div class="row g-0">
-      <div class="has-xxl-4">
-        <div class="p-3 p-md-3 px-xxl-4 py-xl-4 border-bottom border-gray-200 border-end">
-          <ul class="nav nav-segment nav-pills px-xxl-3 py-1" role="tablist">
-            <li class="nav-item">
-              <a class="nav-link active" data-bs-toggle="pill" href="#Inprogress" role="tab" aria-selected="true">All</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" data-bs-toggle="pill" href="#Incoming" role="tab" aria-selected="false">Unread</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" data-bs-toggle="pill" href="#Completed" role="tab" aria-selected="false">Archived</a>
-            </li>
-          </ul>
-        </div>
-        <div class="border-end border-gray-200 mb-0 chat-list" data-simplebar="init"><div class="simplebar-wrapper" style="margin: 0px;"><div class="simplebar-height-auto-observer-wrapper"><div class="simplebar-height-auto-observer"></div></div><div class="simplebar-mask"><div class="simplebar-offset" style="right: 0px; bottom: 0px;"><div class="simplebar-content-wrapper" style="height: 100%; overflow: hidden scroll;"><div class="simplebar-content" style="padding: 0px;">
-          <a href="#0">
-            <div class="media">
-              <span class="avatar rounded-circle me-md-2 me-xl-3">
-                <img src="http://localhost/quibblemvc/public/assets/images/avatar58.png" alt="Avatar">
-                <span class="avatar-status avatar-success bottom-0 end-0">&nbsp;</span>
-              </span>
-              <div class="media-body">
-                <div class="d-flex align-items-center">
-                  <h6>John Wick</h6>
-                  <span class="font-weight-semibold small text-muted ms-auto text-nowrap">10:03 PM</span>
-                </div>
-                <p>Hi Bruce, what do you think of the logo I…</p>
+
+              <div class="col-xl-7 col-xxl-12">
+          <div class="card rounded-12 shadow-dark-80 border border-gray-50 mb-4">
+            <div class="d-flex flex-wrap align-items-center px-3 px-md-4 py-3 border-bottom border-gray-200">
+              <div class="col">
+                <h5 class="card-header-title mb-0 my-md-2 ps-md-3 font-weight-semibold">Atividade Recente</h5>
               </div>
-            </div>
-          </a>
-          <a href="#0">
-            <div class="media">
-              <span class="avatar rounded-circle me-md-2 me-xl-3">
-                <img src="http://localhost/quibblemvc/public/assets/images/avatar59.png" alt="Avatar">
-                <span class="avatar-status avatar-success bottom-0 end-0">&nbsp;</span>
-              </span>
-              <div class="media-body">
-                <div class="d-flex align-items-center">
-                  <h6>Prescott MacCaffery</h6>
-                  <span class="font-weight-semibold small text-muted ms-auto text-nowrap">10:03 PM</span>
-                </div>
-                <p>Hi Bruce, what do you think of the logo I…</p>
-              </div>
-            </div>
-          </a>
-          <a href="#0" class="active">
-            <div class="media">
-              <span class="avatar rounded-circle me-md-2 me-xl-3">
-                <img src="http://localhost/quibblemvc/public/assets/images/avatar60.png" alt="Avatar">
-                <span class="avatar-status avatar-danger bottom-0 end-0">&nbsp;</span>
-              </span>
-              <div class="media-body">
-                <div class="d-flex align-items-center">
-                  <h6>Sashi Hendriks</h6>
-                  <span class="font-weight-semibold small text-muted ms-auto text-nowrap">10:03 PM</span>
-                </div>
-                <p>Hi Bruce, what do you think of the logo I…</p>
-              </div>
-            </div>
-          </a>
-          <a href="#0">
-            <div class="media">
-              <span class="avatar rounded-circle me-md-2 me-xl-3">
-                <img src="http://localhost/quibblemvc/public/assets/images/avatar61.png" alt="Avatar">
-                <span class="avatar-status avatar-success bottom-0 end-0">&nbsp;</span>
-              </span>
-              <div class="media-body">
-                <div class="d-flex align-items-center">
-                  <h6>Ekene Obasey</h6>
-                  <span class="font-weight-semibold small text-muted ms-auto text-nowrap">10:03 PM</span>
-                </div>
-                <p>Hi Bruce, what do you think of the logo I…</p>
-              </div>
-            </div>
-          </a>
-          <a href="#0" class="unread">
-            <div class="media">
-              <span class="avatar rounded-circle me-md-2 me-xl-3">
-                <img src="http://localhost/quibblemvc/public/assets/images/avatar62.png" alt="Avatar">
-                <span class="avatar-status avatar-success bottom-0 end-0">&nbsp;</span>
-              </span>
-              <div class="media-body">
-                <div class="d-flex align-items-center">
-                  <h6>Lucas Pacheco</h6>
-                  <span class="font-weight-semibold small text-muted ms-auto text-nowrap">10:03 PM</span>
-                </div>
-                <p>Hi Bruce, what do you think of the logo I…</p>
-                <span class="avatar-status avatar-primary avatar-sm-status unread-status">&nbsp;</span>
-              </div>
-            </div>
-          </a>
-          <a href="#0">
-            <div class="media">
-              <span class="avatar rounded-circle me-md-2 me-xl-3">
-                <img src="http://localhost/quibblemvc/public/assets/images/avatar63.png" alt="Avatar">
-                <span class="avatar-status avatar-success bottom-0 end-0">&nbsp;</span>
-              </span>
-              <div class="media-body">
-                <div class="d-flex align-items-center">
-                  <h6>Mónica Ribeiro</h6>
-                  <span class="font-weight-semibold small text-muted ms-auto text-nowrap">10:03 PM</span>
-                </div>
-                <p>Hi Bruce, what do you think of the logo I…</p>
-              </div>
-            </div>
-          </a>
-          <a href="#0">
-            <div class="media">
-              <span class="avatar rounded-circle me-md-2 me-xl-3">
-                <img src="http://localhost/quibblemvc/public/assets/images/avatar64.png" alt="Avatar">
-                <span class="avatar-status avatar-success bottom-0 end-0">&nbsp;</span>
-              </span>
-              <div class="media-body">
-                <div class="d-flex align-items-center">
-                  <h6>Chigusa Kisa</h6>
-                  <span class="font-weight-semibold small text-muted ms-auto text-nowrap">10:03 PM</span>
-                </div>
-                <p>Hi Bruce, what do you think of the logo I…</p>
-              </div>
-            </div>
-          </a>
-          <a href="#0" class="unread">
-            <div class="media">
-              <span class="avatar rounded-circle me-md-2 me-xl-3">
-                <img src="http://localhost/quibblemvc/public/assets/images/avatar65.png" alt="Avatar">
-                <span class="avatar-status avatar-success bottom-0 end-0">&nbsp;</span>
-              </span>
-              <div class="media-body">
-                <div class="d-flex align-items-center">
-                  <h6>Clarke Gillebert</h6>
-                  <span class="font-weight-semibold small text-muted ms-auto text-nowrap">10:03 PM</span>
-                </div>
-                <p>Hi Bruce, what do you think of the logo I…</p>
-                <span class="avatar-status avatar-primary avatar-sm-status unread-status">&nbsp;</span>
-              </div>
-            </div>
-          </a>
-          <a href="#0">
-            <div class="media">
-              <span class="avatar rounded-circle me-md-2 me-xl-3">
-                <img src="http://localhost/quibblemvc/public/assets/images/avatar66.png" alt="Avatar">
-                <span class="avatar-status avatar-success bottom-0 end-0">&nbsp;</span>
-              </span>
-              <div class="media-body">
-                <div class="d-flex align-items-center">
-                  <h6>Naseema Al Morad</h6>
-                  <span class="font-weight-semibold small text-muted ms-auto text-nowrap">10:03 PM</span>
-                </div>
-                <p>Hi Bruce, what do you think of the logo I…</p>
-              </div>
-            </div>
-          </a>
-          <a href="#0" class="unread">
-            <div class="media">
-              <span class="avatar rounded-circle me-md-2 me-xl-3">
-                <img src="http://localhost/quibblemvc/public/assets/images/avatar67.png" alt="Avatar">
-                <span class="avatar-status avatar-success bottom-0 end-0">&nbsp;</span>
-              </span>
-              <div class="media-body">
-                <div class="d-flex align-items-center">
-                  <h6>Tamaki Ryushi</h6>
-                  <span class="font-weight-semibold small text-muted ms-auto text-nowrap">10:03 PM</span>
-                </div>
-                <p>Hi Bruce, what do you think of the logo I…</p>
-                <span class="avatar-status avatar-primary avatar-sm-status unread-status">&nbsp;</span>
-              </div>
-            </div>
-          </a>
-          <a href="#0">
-            <div class="media">
-              <span class="avatar rounded-circle me-md-2 me-xl-3">
-                <img src="http://localhost/quibblemvc/public/assets/images/avatar68.png" alt="Avatar">
-                <span class="avatar-status avatar-success bottom-0 end-0">&nbsp;</span>
-              </span>
-              <div class="media-body">
-                <div class="d-flex align-items-center">
-                  <h6>Sunstra Maneerattana</h6>
-                  <span class="font-weight-semibold small text-muted ms-auto text-nowrap">10:03 PM</span>
-                </div>
-                <p>Hi Bruce, what do you think of the logo I…</p>
-              </div>
-            </div>
-          </a>
-          <a href="#0">
-            <div class="media">
-              <span class="avatar rounded-circle me-md-2 me-xl-3">
-                <img src="http://localhost/quibblemvc/public/assets/images/avatar69.png" alt="Avatar">
-                <span class="avatar-status avatar-success bottom-0 end-0">&nbsp;</span>
-              </span>
-              <div class="media-body">
-                <div class="d-flex align-items-center">
-                  <h6>William Diwedi</h6>
-                  <span class="font-weight-semibold small text-muted ms-auto text-nowrap">10:03 PM</span>
-                </div>
-                <p>Hi Bruce, what do you think of the logo I…</p>
-              </div>
-            </div>
-          </a>
-          <a href="#0">
-            <div class="media">
-              <span class="avatar rounded-circle me-md-2 me-xl-3">
-                <img src="http://localhost/quibblemvc/public/assets/images/avatar70.png" alt="Avatar">
-                <span class="avatar-status avatar-success bottom-0 end-0">&nbsp;</span>
-              </span>
-              <div class="media-body">
-                <div class="d-flex align-items-center">
-                  <h6>Ashish Asharaful</h6>
-                  <span class="font-weight-semibold small text-muted ms-auto text-nowrap">10:03 PM</span>
-                </div>
-                <p>Hi Bruce, what do you think of the logo I…</p>
-              </div>
-            </div>
-          </a>
-          <a href="#0">
-            <div class="media">
-              <span class="avatar rounded-circle me-md-2 me-xl-3">
-                <img src="http://localhost/quibblemvc/public/assets/images/avatar71.png" alt="Avatar">
-                <span class="avatar-status avatar-success bottom-0 end-0">&nbsp;</span>
-              </span>
-              <div class="media-body">
-                <div class="d-flex align-items-center">
-                  <h6>Kimmy McIlmorie</h6>
-                  <span class="font-weight-semibold small text-muted ms-auto text-nowrap">10:03 PM</span>
-                </div>
-                <p>Hi Bruce, what do you think of the logo I…</p>
-              </div>
-            </div>
-          </a>
-          <a href="#0">
-            <div class="media">
-              <span class="avatar rounded-circle me-md-2 me-xl-3">
-                <img src="http://localhost/quibblemvc/public/assets/images/avatar71.png" alt="Avatar">
-                <span class="avatar-status avatar-success bottom-0 end-0">&nbsp;</span>
-              </span>
-              <div class="media-body">
-                <div class="d-flex align-items-center">
-                  <h6>Kimmy McIlmorie</h6>
-                  <span class="font-weight-semibold small text-muted ms-auto text-nowrap">10:03 PM</span>
-                </div>
-                <p>Hi Bruce, what do you think of the logo I…</p>
-              </div>
-            </div>
-          </a>
-        </div></div></div></div><div class="simplebar-placeholder" style="width: auto; height: 1548px;"></div></div><div class="simplebar-track simplebar-horizontal" style="visibility: hidden;"><div class="simplebar-scrollbar" style="width: 0px; display: none;"></div></div><div class="simplebar-track simplebar-vertical" style="visibility: visible;"><div class="simplebar-scrollbar" style="height: 432px; transform: translate3d(0px, 0px, 0px); display: block;"></div></div></div>
-      </div>
-      <div class="has-xxl-8">
-        <div class="py-2 py-md-1 py-xl-3 px-3 px-xxl-5 border-bottom border-gray-200 chat-header">
-          <div class="row align-items-center">
-            <div class="col-6 col-sm-8">
-              <h4 class="mb-0 mt-1 text-truncate">Sashi Hendriks</h4>
-              <span class="small text-gray-600 d-block mb-1 text-truncate">sashi@hendriksfabrx.co</span>
-            </div>
-            <div class="col-6 col-sm-4">
-              <div class="d-flex align-items-center justify-content-end">
-                <a href="#0" class="circle circle-lg">
-                  <svg xmlns="http://www.w3.org/2000/svg" width="20.001" height="20" viewBox="0 0 20.001 20">
-                    <rect data-name="Icons/Tabler/Call background" width="20" height="20" fill="none"></rect>
-                    <path d="M16.982,20h0A18.076,18.076,0,0,1,5.272,14.723,18.172,18.172,0,0,1,0,2.973,2.966,2.966,0,0,1,2.844,0l.129,0H7.3a.81.81,0,0,1,.719.435L8.05.51l2.162,5.406a.811.811,0,0,1-.27.953l-.065.044L7.837,8.136l.018.033A11.113,11.113,0,0,0,11.6,12.006l.264.159,1.225-2.041a.811.811,0,0,1,.922-.361l.074.026,5.406,2.162a.8.8,0,0,1,.505.67l0,.082v4.325a2.935,2.935,0,0,1-.876,2.1A3.025,3.025,0,0,1,16.982,20ZM2.973,1.622a1.349,1.349,0,0,0-1.353,1.3A16.481,16.481,0,0,0,17.028,18.38a1.354,1.354,0,0,0,1.349-1.259l0-.093V13.253l-4.254-1.7-1.267,2.111a.81.81,0,0,1-.978.343l-.076-.033A12.768,12.768,0,0,1,6.03,8.2.809.809,0,0,1,6.271,7.19l.07-.047L8.451,5.876l-1.7-4.254Z" transform="translate(0 0)" fill="#495057"></path>
+              <div class="col-auto">
+                <div class="dropdown export-dropdown my-1 me-md-3">
+                  <a href="#" role="button" id="UserOverview" data-bs-toggle="dropdown" aria-expanded="false" class="btn btn-outline-dark border-gray-600 text-gray-600"><span>Essa semana </span> <svg class="ms-2" xmlns="http://www.w3.org/2000/svg" width="13" height="13" viewBox="0 0 13 13">
+                    <rect data-name="Icons/Tabler/Chevron Down background" width="13" height="13" fill="none"></rect>
+                    <path d="M.214.212a.738.738,0,0,1,.952-.07l.082.07L7.1,5.989a.716.716,0,0,1,.071.94L7.1,7.011l-5.85,5.778a.738.738,0,0,1-1.034,0,.716.716,0,0,1-.071-.94l.071-.081L5.547,6.5.214,1.233A.716.716,0,0,1,.143.293Z" transform="translate(13 3.25) rotate(90)" fill="#6c757d"></path>
                   </svg>
-                </a>
-                <a href="#0" class="circle circle-lg ms-2 ms-xxl-4">
-                  <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20">
-                    <rect data-name="Icons/Tabler/Video background" width="20" height="20" fill="none"></rect>
-                    <path d="M2.82,13.847A2.824,2.824,0,0,1,0,11.026V2.82A2.824,2.824,0,0,1,2.82,0h8.206a2.824,2.824,0,0,1,2.82,2.82v.807L17.4,1.85A1.8,1.8,0,0,1,20,3.455v6.938a1.795,1.795,0,0,1-1.794,1.793A1.805,1.805,0,0,1,17.4,12l-3.556-1.778v.807a2.824,2.824,0,0,1-2.82,2.82ZM1.539,2.82v8.206A1.283,1.283,0,0,0,2.82,12.308h8.206a1.283,1.283,0,0,0,1.281-1.281V2.82a1.283,1.283,0,0,0-1.281-1.281H2.82A1.283,1.283,0,0,0,1.539,2.82Zm16.551,7.8a.271.271,0,0,0,.115.026.257.257,0,0,0,.088-.015l.047-.023a.259.259,0,0,0,.122-.217V3.455a.253.253,0,0,0-.122-.217A.249.249,0,0,0,18.2,3.2a.258.258,0,0,0-.115.028L13.847,5.347V8.5Z" transform="translate(0 2.5)" fill="#495057"></path>
-                  </svg>                
-                </a>
-                <div class="dropdown">
-                  <a href="#" class="circle circle-lg ms-2 ms-xxl-4" role="button" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
-                    <svg data-name="icons/tabler/dots" xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 16 16">
-                      <rect data-name="Icons/Tabler/Dots background" width="16" height="16" fill="none"></rect>
-                      <path d="M0,12.4A1.6,1.6,0,1,1,1.6,14,1.6,1.6,0,0,1,0,12.4Zm1.372,0a.229.229,0,1,0,.229-.229A.229.229,0,0,0,1.372,12.4ZM0,7A1.6,1.6,0,1,1,1.6,8.6,1.6,1.6,0,0,1,0,7ZM1.372,7A.229.229,0,1,0,1.6,6.772.229.229,0,0,0,1.372,7ZM0,1.6A1.6,1.6,0,1,1,1.6,3.2,1.6,1.6,0,0,1,0,1.6Zm1.372,0A.229.229,0,1,0,1.6,1.372.229.229,0,0,0,1.372,1.6Z" transform="translate(6 1)" fill="#495057"></path>
-                    </svg>
                   </a>
-                  <div class="dropdown-menu">
-                    <a href="#!" class="dropdown-item">
-                      Action
-                    </a>
-                    <a href="#!" class="dropdown-item">
-                      Another action
-                    </a>
-                    <a href="#!" class="dropdown-item">
-                      Something else here
-                    </a>
+                  <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="UserOverview" style="margin: 0px;">
+                    <li><a class="dropdown-item" href="#"><span>Hoje</span></a></li>
+                    <li><a class="dropdown-item" href="#"><span>Ontem</span></a></li>
+                    <li><a class="dropdown-item" href="#"><span>Últimos 7 dias</span></a></li>
+                    <li><a class="dropdown-item" href="#"><span>Este mês</span></a></li>
+                    <li><a class="dropdown-item" href="#"><span>Último mês</span></a></li>
+                    <li><hr class="dropdown-divider"></li>
+                    <li><a class="dropdown-item" href="#"><svg data-name="icons/tabler/calendar" xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16">
+                      <rect data-name="Icons/Tabler/Calendar background" width="16" height="16" fill="none"></rect>
+                      <path d="M2.256,16A2.259,2.259,0,0,1,0,13.743V3.9A2.259,2.259,0,0,1,2.256,1.641H3.282V.616A.615.615,0,0,1,4.507.532l.005.084V1.641H9.846V.616A.615.615,0,0,1,11.071.532l.006.084V1.641H12.1A2.259,2.259,0,0,1,14.359,3.9v9.846A2.259,2.259,0,0,1,12.1,16ZM1.231,13.743a1.027,1.027,0,0,0,1.025,1.026H12.1a1.027,1.027,0,0,0,1.026-1.026V7.795H1.231Zm11.9-7.179V3.9A1.027,1.027,0,0,0,12.1,2.872H11.077V3.9a.616.616,0,0,1-1.226.084L9.846,3.9V2.872H4.513V3.9a.615.615,0,0,1-1.225.084L3.282,3.9V2.872H2.256A1.026,1.026,0,0,0,1.231,3.9V6.564Z" transform="translate(1)" fill="#495057"></path>
+                    </svg><span class="ms-2">Custom</span></a></li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+            <div class="card-body p-0">
+              <div class="list-group list-group-flush">
+                <div class="list-group-item px-md-4">
+                  <div class="row px-3">
+                    <div class="col-auto">
+                      <span class="avatar avatar-xs avatar-circle">
+                       
+                      </span>
+                    </div>
+                    <div class="col ps-0">
+                      <span class="mb-2 d-block text-gray-800">
+                        <strong class="text-black-600">Laquita Elliott</strong> upvoted and followed <strong class="text-black-600">Michael Jackson</strong>
+                      </span>
+                      <p class="card-text text-gray-600 lh-sm">Just now</p>
+                    </div>
+                    <div class="col-auto">
+                      <div class="dropdown ">
+                        <a href="#" class="btn btn-dark-100 btn-icon btn-sm rounded-circle" role="button" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                          <svg data-name="Icons/Tabler/Notification" xmlns="http://www.w3.org/2000/svg" width="13.419" height="13.419" viewBox="0 0 13.419 13.419">
+                            <rect data-name="Icons/Tabler/Dots background" width="13.419" height="13.419" fill="none"></rect>
+                            <path d="M0,10.4a1.342,1.342,0,1,1,1.342,1.342A1.344,1.344,0,0,1,0,10.4Zm1.15,0a.192.192,0,1,0,.192-.192A.192.192,0,0,0,1.15,10.4ZM0,5.871A1.342,1.342,0,1,1,1.342,7.213,1.344,1.344,0,0,1,0,5.871Zm1.15,0a.192.192,0,1,0,.192-.192A.192.192,0,0,0,1.15,5.871ZM0,1.342A1.342,1.342,0,1,1,1.342,2.684,1.344,1.344,0,0,1,0,1.342Zm1.15,0a.192.192,0,1,0,.192-.192A.192.192,0,0,0,1.15,1.342Z" transform="translate(5.368 0.839)" fill="#6c757d"></path>
+                          </svg>
+                        </a>
+                        <div class="dropdown-menu dropdown-menu-end">
+                          <a href="#!" class="dropdown-item">
+                            Action
+                          </a>
+                          <a href="#!" class="dropdown-item">
+                            Another action
+                          </a>
+                          <a href="#!" class="dropdown-item">
+                            Something else here
+                          </a>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="list-group-item px-md-4">
+                  <div class="row px-3">
+                    <div class="col-auto">
+                      <span class="avatar avatar-xs avatar-circle">
+                       
+                      </span>
+                    </div>
+                    <div class="col ps-0">
+                      <span class="mb-2 d-block text-gray-800">A new login from iPhone 13 Pro mobile phone - New York, USA</span>
+                      <p class="card-text text-gray-600 lh-sm">1 Jan, 2022</p>
+                    </div>
+                    <div class="col-auto">
+                      <div class="dropdown ">
+                        <a href="#" class="btn btn-dark-100 btn-icon btn-sm rounded-circle" role="button" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                          <svg data-name="Icons/Tabler/Notification" xmlns="http://www.w3.org/2000/svg" width="13.419" height="13.419" viewBox="0 0 13.419 13.419">
+                            <rect data-name="Icons/Tabler/Dots background" width="13.419" height="13.419" fill="none"></rect>
+                            <path d="M0,10.4a1.342,1.342,0,1,1,1.342,1.342A1.344,1.344,0,0,1,0,10.4Zm1.15,0a.192.192,0,1,0,.192-.192A.192.192,0,0,0,1.15,10.4ZM0,5.871A1.342,1.342,0,1,1,1.342,7.213,1.344,1.344,0,0,1,0,5.871Zm1.15,0a.192.192,0,1,0,.192-.192A.192.192,0,0,0,1.15,5.871ZM0,1.342A1.342,1.342,0,1,1,1.342,2.684,1.344,1.344,0,0,1,0,1.342Zm1.15,0a.192.192,0,1,0,.192-.192A.192.192,0,0,0,1.15,1.342Z" transform="translate(5.368 0.839)" fill="#6c757d"></path>
+                          </svg>
+                        </a>
+                        <div class="dropdown-menu dropdown-menu-end">
+                          <a href="#!" class="dropdown-item">
+                            Action
+                          </a>
+                          <a href="#!" class="dropdown-item">
+                            Another action
+                          </a>
+                          <a href="#!" class="dropdown-item">
+                            Something else here
+                          </a>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="list-group-item px-md-4">
+                  <div class="row px-3">
+                    <div class="col-auto">
+                      <span class="avatar avatar-xs avatar-circle">
+                      
+                      </span>
+                    </div>
+                    <div class="col ps-0">
+                      <span class="mb-2 d-block text-gray-800">You uploaded the file <a href="#0" class="link-primary font-weight-semibold">designsystem.sketch</a> to the Design Team group</span>
+                      <p class="card-text text-gray-600 lh-sm">24 December, 2021  -  12:45pm</p>
+                    </div>
+                    <div class="col-auto">
+                      <div class="dropdown ">
+                        <a href="#" class="btn btn-dark-100 btn-icon btn-sm rounded-circle" role="button" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                          <svg data-name="Icons/Tabler/Notification" xmlns="http://www.w3.org/2000/svg" width="13.419" height="13.419" viewBox="0 0 13.419 13.419">
+                            <rect data-name="Icons/Tabler/Dots background" width="13.419" height="13.419" fill="none"></rect>
+                            <path d="M0,10.4a1.342,1.342,0,1,1,1.342,1.342A1.344,1.344,0,0,1,0,10.4Zm1.15,0a.192.192,0,1,0,.192-.192A.192.192,0,0,0,1.15,10.4ZM0,5.871A1.342,1.342,0,1,1,1.342,7.213,1.344,1.344,0,0,1,0,5.871Zm1.15,0a.192.192,0,1,0,.192-.192A.192.192,0,0,0,1.15,5.871ZM0,1.342A1.342,1.342,0,1,1,1.342,2.684,1.344,1.344,0,0,1,0,1.342Zm1.15,0a.192.192,0,1,0,.192-.192A.192.192,0,0,0,1.15,1.342Z" transform="translate(5.368 0.839)" fill="#6c757d"></path>
+                          </svg>
+                        </a>
+                        <div class="dropdown-menu dropdown-menu-end">
+                          <a href="#!" class="dropdown-item">
+                            Action
+                          </a>
+                          <a href="#!" class="dropdown-item">
+                            Another action
+                          </a>
+                          <a href="#!" class="dropdown-item">
+                            Something else here
+                          </a>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="list-group-item px-md-4">
+                  <div class="row px-3">
+                    <div class="col-auto">
+                      <span class="avatar avatar-xs avatar-circle">
+                      
+                      </span>
+                    </div>
+                    <div class="col ps-0">
+                      <span class="mb-2 d-block text-gray-800">You generated a new <strong class="font-weight-semibold">invoice</strong> to Fabrx Design for the amount of $7,500</span>
+                      <p class="card-text text-gray-600 lh-sm">24 December, 2021  -  12:45pm</p>
+                    </div>
+                    <div class="col-auto">
+                      <div class="dropdown ">
+                        <a href="#" class="btn btn-dark-100 btn-icon btn-sm rounded-circle" role="button" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                          <svg data-name="Icons/Tabler/Notification" xmlns="http://www.w3.org/2000/svg" width="13.419" height="13.419" viewBox="0 0 13.419 13.419">
+                            <rect data-name="Icons/Tabler/Dots background" width="13.419" height="13.419" fill="none"></rect>
+                            <path d="M0,10.4a1.342,1.342,0,1,1,1.342,1.342A1.344,1.344,0,0,1,0,10.4Zm1.15,0a.192.192,0,1,0,.192-.192A.192.192,0,0,0,1.15,10.4ZM0,5.871A1.342,1.342,0,1,1,1.342,7.213,1.344,1.344,0,0,1,0,5.871Zm1.15,0a.192.192,0,1,0,.192-.192A.192.192,0,0,0,1.15,5.871ZM0,1.342A1.342,1.342,0,1,1,1.342,2.684,1.344,1.344,0,0,1,0,1.342Zm1.15,0a.192.192,0,1,0,.192-.192A.192.192,0,0,0,1.15,1.342Z" transform="translate(5.368 0.839)" fill="#6c757d"></path>
+                          </svg>
+                        </a>
+                        <div class="dropdown-menu dropdown-menu-end">
+                          <a href="#!" class="dropdown-item">
+                            Action
+                          </a>
+                          <a href="#!" class="dropdown-item">
+                            Another action
+                          </a>
+                          <a href="#!" class="dropdown-item">
+                            Something else here
+                          </a>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="list-group-item px-md-4">
+                  <div class="row px-3">
+                    <div class="col-auto">
+                      <span class="avatar avatar-xs avatar-circle">
+                       
+                      </span>
+                    </div>
+                    <div class="col ps-0">
+                      <span class="mb-2 d-block text-gray-800">You changed your username to “Bruce227”</span>
+                      <p class="card-text text-gray-600 lh-sm">24 December, 2021  -  12:45pm</p>
+                    </div>
+                    <div class="col-auto">
+                      <div class="dropdown ">
+                        <a href="#" class="btn btn-dark-100 btn-icon btn-sm rounded-circle" role="button" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                          <svg data-name="Icons/Tabler/Notification" xmlns="http://www.w3.org/2000/svg" width="13.419" height="13.419" viewBox="0 0 13.419 13.419">
+                            <rect data-name="Icons/Tabler/Dots background" width="13.419" height="13.419" fill="none"></rect>
+                            <path d="M0,10.4a1.342,1.342,0,1,1,1.342,1.342A1.344,1.344,0,0,1,0,10.4Zm1.15,0a.192.192,0,1,0,.192-.192A.192.192,0,0,0,1.15,10.4ZM0,5.871A1.342,1.342,0,1,1,1.342,7.213,1.344,1.344,0,0,1,0,5.871Zm1.15,0a.192.192,0,1,0,.192-.192A.192.192,0,0,0,1.15,5.871ZM0,1.342A1.342,1.342,0,1,1,1.342,2.684,1.344,1.344,0,0,1,0,1.342Zm1.15,0a.192.192,0,1,0,.192-.192A.192.192,0,0,0,1.15,1.342Z" transform="translate(5.368 0.839)" fill="#6c757d"></path>
+                          </svg>
+                        </a>
+                        <div class="dropdown-menu dropdown-menu-end">
+                          <a href="#!" class="dropdown-item">
+                            Action
+                          </a>
+                          <a href="#!" class="dropdown-item">
+                            Another action
+                          </a>
+                          <a href="#!" class="dropdown-item">
+                            Something else here
+                          </a>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="list-group-item px-md-4">
+                  <div class="row px-3">
+                    <div class="col-auto">
+                      <span class="avatar avatar-xs avatar-circle">
+                       
+                      </span>
+                    </div>
+                    <div class="col ps-0">
+                      <span class="mb-2 d-block text-gray-800">You susseccfully submitted <strong class="font-weight-semibold">W8BEN-E</strong> tax form</span>
+                      <p class="card-text text-gray-600 lh-sm">1 Jan, 2022</p>
+                    </div>
+                    <div class="col-auto">
+                      <div class="dropdown ">
+                        <a href="#" class="btn btn-dark-100 btn-icon btn-sm rounded-circle" role="button" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                          <svg data-name="Icons/Tabler/Notification" xmlns="http://www.w3.org/2000/svg" width="13.419" height="13.419" viewBox="0 0 13.419 13.419">
+                            <rect data-name="Icons/Tabler/Dots background" width="13.419" height="13.419" fill="none"></rect>
+                            <path d="M0,10.4a1.342,1.342,0,1,1,1.342,1.342A1.344,1.344,0,0,1,0,10.4Zm1.15,0a.192.192,0,1,0,.192-.192A.192.192,0,0,0,1.15,10.4ZM0,5.871A1.342,1.342,0,1,1,1.342,7.213,1.344,1.344,0,0,1,0,5.871Zm1.15,0a.192.192,0,1,0,.192-.192A.192.192,0,0,0,1.15,5.871ZM0,1.342A1.342,1.342,0,1,1,1.342,2.684,1.344,1.344,0,0,1,0,1.342Zm1.15,0a.192.192,0,1,0,.192-.192A.192.192,0,0,0,1.15,1.342Z" transform="translate(5.368 0.839)" fill="#6c757d"></path>
+                          </svg>
+                        </a>
+                        <div class="dropdown-menu dropdown-menu-end">
+                          <a href="#!" class="dropdown-item">
+                            Action
+                          </a>
+                          <a href="#!" class="dropdown-item">
+                            Another action
+                          </a>
+                          <a href="#!" class="dropdown-item">
+                            Something else here
+                          </a>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="list-group-item px-md-4">
+                  <div class="row px-3">
+                    <div class="col-auto">
+                      <span class="avatar avatar-xs avatar-circle">
+                        
+                      </span>
+                    </div>
+                    <div class="col ps-0">
+                      <span class="mb-2 d-block text-gray-800"><strong class="font-weight-semibold">File Stack</strong> was granted access to your account billing infromation</span>
+                      <p class="card-text text-gray-600 lh-sm">1 Jan, 2022</p>
+                    </div>
+                    <div class="col-auto">
+                      <div class="dropdown ">
+                        <a href="#" class="btn btn-dark-100 btn-icon btn-sm rounded-circle" role="button" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                          <svg data-name="Icons/Tabler/Notification" xmlns="http://www.w3.org/2000/svg" width="13.419" height="13.419" viewBox="0 0 13.419 13.419">
+                            <rect data-name="Icons/Tabler/Dots background" width="13.419" height="13.419" fill="none"></rect>
+                            <path d="M0,10.4a1.342,1.342,0,1,1,1.342,1.342A1.344,1.344,0,0,1,0,10.4Zm1.15,0a.192.192,0,1,0,.192-.192A.192.192,0,0,0,1.15,10.4ZM0,5.871A1.342,1.342,0,1,1,1.342,7.213,1.344,1.344,0,0,1,0,5.871Zm1.15,0a.192.192,0,1,0,.192-.192A.192.192,0,0,0,1.15,5.871ZM0,1.342A1.342,1.342,0,1,1,1.342,2.684,1.344,1.344,0,0,1,0,1.342Zm1.15,0a.192.192,0,1,0,.192-.192A.192.192,0,0,0,1.15,1.342Z" transform="translate(5.368 0.839)" fill="#6c757d"></path>
+                          </svg>
+                        </a>
+                        <div class="dropdown-menu dropdown-menu-end">
+                          <a href="#!" class="dropdown-item">
+                            Action
+                          </a>
+                          <a href="#!" class="dropdown-item">
+                            Another action
+                          </a>
+                          <a href="#!" class="dropdown-item">
+                            Something else here
+                          </a>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="list-group-item px-md-4">
+                  <div class="row px-3">
+                    <div class="col-auto">
+                      <span class="avatar avatar-xs avatar-circle">
+                       
+                      </span>
+                    </div>
+                    <div class="col ps-0">
+                      <span class="mb-2 d-block text-gray-800">You uploaded the file <a href="#0" class="link-primary">helloworld.html</a> to the Dev Ops group</span>
+                      <p class="card-text text-gray-600 lh-sm">24 December, 2021  -  12:45pm</p>
+                    </div>
+                    <div class="col-auto">
+                      <div class="dropdown ">
+                        <a href="#" class="btn btn-dark-100 btn-icon btn-sm rounded-circle" role="button" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                          <svg data-name="Icons/Tabler/Notification" xmlns="http://www.w3.org/2000/svg" width="13.419" height="13.419" viewBox="0 0 13.419 13.419">
+                            <rect data-name="Icons/Tabler/Dots background" width="13.419" height="13.419" fill="none"></rect>
+                            <path d="M0,10.4a1.342,1.342,0,1,1,1.342,1.342A1.344,1.344,0,0,1,0,10.4Zm1.15,0a.192.192,0,1,0,.192-.192A.192.192,0,0,0,1.15,10.4ZM0,5.871A1.342,1.342,0,1,1,1.342,7.213,1.344,1.344,0,0,1,0,5.871Zm1.15,0a.192.192,0,1,0,.192-.192A.192.192,0,0,0,1.15,5.871ZM0,1.342A1.342,1.342,0,1,1,1.342,2.684,1.344,1.344,0,0,1,0,1.342Zm1.15,0a.192.192,0,1,0,.192-.192A.192.192,0,0,0,1.15,1.342Z" transform="translate(5.368 0.839)" fill="#6c757d"></path>
+                          </svg>
+                        </a>
+                        <div class="dropdown-menu dropdown-menu-end">
+                          <a href="#!" class="dropdown-item">
+                            Action
+                          </a>
+                          <a href="#!" class="dropdown-item">
+                            Another action
+                          </a>
+                          <a href="#!" class="dropdown-item">
+                            Something else here
+                          </a>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="list-group-item px-md-4">
+                  <div class="row px-3">
+                    <div class="col-auto">
+                      <span class="avatar avatar-xs avatar-circle">
+                     
+                      </span>
+                    </div>
+                    <div class="col ps-0">
+                      <span class="mb-2 d-block text-gray-800">You left <strong class="font-weight-semibold">Public Announcement</strong> group</span>
+                      <p class="card-text text-gray-600 lh-sm">24 December, 2021  -  12:45pm</p>
+                    </div>
+                    <div class="col-auto">
+                      <div class="dropdown ">
+                        <a href="#" class="btn btn-dark-100 btn-icon btn-sm rounded-circle" role="button" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                          <svg data-name="Icons/Tabler/Notification" xmlns="http://www.w3.org/2000/svg" width="13.419" height="13.419" viewBox="0 0 13.419 13.419">
+                            <rect data-name="Icons/Tabler/Dots background" width="13.419" height="13.419" fill="none"></rect>
+                            <path d="M0,10.4a1.342,1.342,0,1,1,1.342,1.342A1.344,1.344,0,0,1,0,10.4Zm1.15,0a.192.192,0,1,0,.192-.192A.192.192,0,0,0,1.15,10.4ZM0,5.871A1.342,1.342,0,1,1,1.342,7.213,1.344,1.344,0,0,1,0,5.871Zm1.15,0a.192.192,0,1,0,.192-.192A.192.192,0,0,0,1.15,5.871ZM0,1.342A1.342,1.342,0,1,1,1.342,2.684,1.344,1.344,0,0,1,0,1.342Zm1.15,0a.192.192,0,1,0,.192-.192A.192.192,0,0,0,1.15,1.342Z" transform="translate(5.368 0.839)" fill="#6c757d"></path>
+                          </svg>
+                        </a>
+                        <div class="dropdown-menu dropdown-menu-end">
+                          <a href="#!" class="dropdown-item">
+                            Action
+                          </a>
+                          <a href="#!" class="dropdown-item">
+                            Another action
+                          </a>
+                          <a href="#!" class="dropdown-item">
+                            Something else here
+                          </a>
+                        </div>
+                      </div>
+                    </div>
                   </div>
                 </div>
               </div>
-            </div>
-          </div>
-        </div>
-        <div class="py-md-4 p-3 px-xxl-5 chat-items" data-simplebar="init"><div class="simplebar-wrapper" style="margin: -24px -48px;"><div class="simplebar-height-auto-observer-wrapper"><div class="simplebar-height-auto-observer"></div></div><div class="simplebar-mask"><div class="simplebar-offset" style="right: 0px; bottom: 0px;"><div class="simplebar-content-wrapper" style="height: 100%; overflow: hidden scroll;"><div class="simplebar-content" style="padding: 24px 48px;">
-          <div class="text-center py-2 pt-md-3 pb-md-4">
-            <a href="#0" class="btn btn-lg btn-link"><svg class="me-2" xmlns="http://www.w3.org/2000/svg" width="16.027" height="16" viewBox="0 0 16.027 16">
-              <g data-name="Icons/Tabler/Refresh" transform="translate(0 0)">
-                <rect data-name="Icons/Tabler/Refresh background" width="16" height="16" fill="none"></rect>
-                <path d="M7,15.933A8.105,8.105,0,0,1,.006,9.011a.687.687,0,0,1,1.361-.19A6.731,6.731,0,0,0,13.76,11.435H11.677a.687.687,0,0,1-.684-.621l0-.066a.687.687,0,0,1,.621-.684l.066,0H15.34a.687.687,0,0,1,.684.621l0,.067v3.663a.686.686,0,0,1-1.37.066l0-.066V12.573A8.1,8.1,0,0,1,7,15.933Zm7.662-8.754A6.731,6.731,0,0,0,2.267,4.565H4.351a.687.687,0,0,1,.683.621l0,.066a.687.687,0,0,1-.621.684l-.066,0H.687A.686.686,0,0,1,0,5.319l0-.067V1.589a.687.687,0,0,1,1.371-.067l0,.067V3.426A8.105,8.105,0,0,1,16.02,6.989a.687.687,0,1,1-1.361.189Z" fill="#0d6efd"></path>
-              </g>
-            </svg><span>Load earlier messages</span></a>
-          </div>
-          <div class="position-relative my-4">
-            <hr class="bg-gray-200 opacity-1">
-            <span class="text-gray-600 small position-absolute top-0 start-50 translate-middle bg-white px-4">Today</span>
-          </div>
-          <div class="chat-item">
-            <div class="chat-item-inner">
-              <div class="avatar rounded-circle mb-4">
-                <img src="http://localhost/quibblemvc/public/assets/images/avatar@68.png" alt="Avatar">
-                <span class="avatar-status avatar-success bottom-0 end-0">&nbsp;</span>
+              <div class="d-grid border-top border-gray-200 p-3 p-md-4">
+                <a href="#0" class="btn btn-xl btn-outline-dark border-gray-700 text-gray-700 m-md-3">Load more</a>
               </div>
-              <div class="chat-message">
-                <div class="message-box">
-                  <p>Hi Sashi, hope all is well, I was wondering if you can help me out with a task I’m working on. Nancy told me you have a copy of the the 2021 document as well as the images used. Would really help if you could share. 🙏</p>
-                </div>
-                <div class="px-3 py-2 d-flex align-items-center small text-gray-600 justify-content-end">
-                  <span>10:03 AM</span>
-                  <span class="ms-3"><svg class="me-1" data-name="icons/tabler/check-heavy" xmlns="http://www.w3.org/2000/svg" width="12" height="12" viewBox="0 0 16 16">
-                    <rect data-name="Icons/Tabler/Check Heavy background" width="16" height="16" fill="none"></rect>
-                    <path d="M5.434,11.7.234,6.5a.8.8,0,0,1,0-1.131L1.366,4.234a.8.8,0,0,1,1.131,0L6,7.737l7.5-7.5a.8.8,0,0,1,1.131,0l1.131,1.131a.8.8,0,0,1,0,1.131l-9.2,9.2a.8.8,0,0,1-1.131,0Z" transform="translate(0 2.003)" fill="#0D6EFD"></path>
-                  </svg>Seen</span>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="chat-item message-sender">
-            <div class="chat-item-inner">
-              <div class="avatar rounded-circle mb-4">
-                <img src="http://localhost/quibblemvc/public/assets/images/avatar60.png" alt="Avatar">
-                <span class="avatar-status avatar-danger bottom-0 end-0">&nbsp;</span>
-              </div>
-              <div class="chat-message">
-                <div class="message-box">
-                  <p>Hey Bruce, sure thing! Here is the Roadmap document.</p>
-                </div>
-                <div class="px-3 py-2 d-flex align-items-center small text-gray-600 justify-content-end">
-                  <span>7:03 AM</span>
-                </div>
-              </div>
-            </div>
-            <div class="message-files">
-              <a href="#0" class="rounded-pill attachment"><svg class="me-2" xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16">
-                <g id="Icon" transform="translate(0)">
-                  <rect id="Icons_Tabler_Link_background" data-name="Icons/Tabler/Link background" width="16" height="16" fill="none"></rect>
-                  <path id="Color" d="M1.143,14.857a3.9,3.9,0,0,1-.1-5.421l.1-.1L4.781,5.7a3.87,3.87,0,0,1,5.528,0,.683.683,0,1,1-.976.956,2.5,2.5,0,0,0-3.491-.083l-.091.088L2.109,10.3a2.537,2.537,0,0,0,3.5,3.672l.089-.085.455-.455a.683.683,0,0,1,1.015.91l-.049.056-.455.455a3.9,3.9,0,0,1-5.519,0ZM5.691,10.3a.683.683,0,1,1,.976-.956,2.5,2.5,0,0,0,3.491.084l.092-.088L13.892,5.7a2.537,2.537,0,0,0-3.5-3.672l-.089.085-.455.455a.683.683,0,0,1-1.015-.911l.05-.055.455-.455a3.9,3.9,0,0,1,5.614,5.42l-.1.1L11.219,10.3a3.869,3.869,0,0,1-5.529,0Z" fill="#495057"></path>
-                </g>
-              </svg> Roadmap.doc</a>
-            </div>
-          </div>
-          <div class="chat-item message-sender">
-            <div class="chat-item-inner">
-              <div class="avatar rounded-circle mb-4">
-                <img src="http://localhost/quibblemvc/public/assets/images/avatar60.png" alt="Avatar">
-                <span class="avatar-status avatar-danger bottom-0 end-0">&nbsp;</span>
-              </div>
-              <div class="chat-message">
-                <div class="message-box">
-                  <p>And ther images too ⚡️</p>
-                </div>
-                <div class="px-3 py-2 d-flex align-items-center small text-gray-600 justify-content-end">
-                  <span>7:04 AM</span>
-                </div>
-              </div>
-            </div>
-            <div class="message-files">
-              <ul>
-                <li>
-                  <a href="#0"><img src="http://localhost/quibblemvc/public/assets/images/placeholder29.jpg" alt="Placeholder" class="rounded-12"></a>
-                </li>
-                <li>
-                  <a href="#0"><img src="http://localhost/quibblemvc/public/assets/images/placeholder30.jpg" alt="Placeholder" class="rounded-12"></a>
-                </li>
-                <li>
-                  <a href="#0"><img src="http://localhost/quibblemvc/public/assets/images/placeholder31.jpg" alt="Placeholder" class="rounded-12"></a>
-                </li>
-              </ul>
-            </div>
-          </div>
-          <div class="chat-item">
-            <div class="chat-item-inner">
-              <div class="avatar rounded-circle mb-4">
-                <img src="http://localhost/quibblemvc/public/assets/images/avatar60.png" alt="Avatar">
-                <span class="avatar-status avatar-success bottom-0 end-0">&nbsp;</span>
-              </div>
-              <div class="chat-message">
-                <div class="message-box">
-                  <p>Thank you!, that helps a lot.</p>
-                </div>
-                <div class="px-3 py-2 d-flex align-items-center small text-gray-600 justify-content-end">
-                  <span>7:12 AM</span>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="chat-item message-sender">
-            <div class="chat-item-inner">
-              <div class="avatar rounded-circle mb-4">
-                <img src="http://localhost/quibblemvc/public/assets/images/avatar60.png" alt="Avatar">
-                <span class="avatar-status avatar-danger bottom-0 end-0">&nbsp;</span>
-              </div>
-              <div class="chat-message">
-                <div class="message-box">
-                  <p>Anytime, see you Thursday 🙏</p>
-                </div>
-                <div class="px-3 py-2 d-flex align-items-center small text-gray-600 justify-content-end">
-                  <span>7:32 AM</span>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div></div></div></div><div class="simplebar-placeholder" style="width: auto; height: 1212px;"></div></div><div class="simplebar-track simplebar-horizontal" style="visibility: hidden;"><div class="simplebar-scrollbar" style="width: 0px; display: none;"></div></div><div class="simplebar-track simplebar-vertical" style="visibility: visible;"><div class="simplebar-scrollbar" style="height: 355px; transform: translate3d(0px, 223px, 0px); display: block;"></div></div></div>
-        <div class="message-footer border-top border-gray-200">
-          <div class="pt-2 pt-xxl-4 px-3 px-xxl-5">
-            <textarea rows="2" class="form-control" placeholder="Reply to this conversation.."></textarea>
-          </div>
-          <div class="py-2 px-3 px-xxl-5 border-top border-gray-200">
-            <div class="row align-items-center">
-              <div class="col">
-                <div class="d-flex">
-                  <a href="#0">
-                    <svg data-name="Icons/Tabler/Emoji" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
-                      <rect data-name="Icons/Tabler/Emoji background" width="24" height="24" fill="none"></rect>
-                      <path data-name="Combined Shape" d="M0,12A12,12,0,1,1,12,24,12.014,12.014,0,0,1,0,12Zm1.847,0A10.153,10.153,0,1,0,12,1.847,10.165,10.165,0,0,0,1.847,12Zm6.417,4.338a.923.923,0,0,1,1.319-1.292,3.384,3.384,0,0,0,4.836,0,.923.923,0,0,1,1.318,1.292,5.23,5.23,0,0,1-7.472,0Zm6.506-6.8A.923.923,0,0,1,15.6,8.62l.1,0a.923.923,0,0,1,.089,1.841l-.1,0A.923.923,0,0,1,14.769,9.539Zm-7.385,0a.923.923,0,0,1,.834-.919l.1,0a.923.923,0,0,1,.089,1.841l-.1,0A.923.923,0,0,1,7.385,9.539Z" fill="#495057"></path>
-                    </svg>
-                  </a>
-                  <a href="#0">
-                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 16 16">
-                      <g transform="translate(0)">
-                        <rect data-name="Icons/Tabler/Link background" width="16" height="16" fill="none"></rect>
-                        <path d="M1.143,14.857a3.9,3.9,0,0,1-.1-5.421l.1-.1L4.781,5.7a3.87,3.87,0,0,1,5.528,0,.683.683,0,1,1-.976.956,2.5,2.5,0,0,0-3.491-.083l-.091.088L2.109,10.3a2.537,2.537,0,0,0,3.5,3.672l.089-.085.455-.455a.683.683,0,0,1,1.015.91l-.049.056-.455.455a3.9,3.9,0,0,1-5.519,0ZM5.691,10.3a.683.683,0,1,1,.976-.956,2.5,2.5,0,0,0,3.491.084l.092-.088L13.892,5.7a2.537,2.537,0,0,0-3.5-3.672l-.089.085-.455.455a.683.683,0,0,1-1.015-.911l.05-.055.455-.455a3.9,3.9,0,0,1,5.614,5.42l-.1.1L11.219,10.3a3.869,3.869,0,0,1-5.529,0Z" fill="#495057"></path>
-                      </g>
-                    </svg>                    
-                  </a>
-                  <a href="#0">
-                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
-                      <g data-name="Icons/Tabler/Photo" transform="translate(0)">
-                        <rect data-name="Icons/Tabler/Photo background" width="24" height="24" fill="none"></rect>
-                        <path data-name="Combined Shape" d="M5.144,24A5.149,5.149,0,0,1,0,18.857v-2.73c0-.008,0-.016,0-.024V5.144A5.149,5.149,0,0,1,5.144,0H18.857A5.149,5.149,0,0,1,24,5.144V18.857A5.149,5.149,0,0,1,18.857,24ZM2.057,18.857a3.09,3.09,0,0,0,3.086,3.086H18.857a3.09,3.09,0,0,0,3.086-3.086V16.54l-2.427-2.427A1.722,1.722,0,0,0,16.949,14l-.108.1-.644.643,2.016,2.016a1.029,1.029,0,0,1-1.372,1.53l-.082-.076L14.016,15.47l-4.1-4.1a1.724,1.724,0,0,0-2.566-.113l-.108.1L2.057,16.54Zm18.757-6.344.142.131.987.987V5.144a3.09,3.09,0,0,0-3.086-3.086H5.144A3.09,3.09,0,0,0,2.057,5.144v8.487L5.8,9.887a3.774,3.774,0,0,1,5.414-.117l.142.131,3.387,3.387.658-.658a3.773,3.773,0,0,1,5.414-.117Zm-5.728-6a1.028,1.028,0,0,1,.929-1.023l.113-.005a1.029,1.029,0,0,1,.1,2.053l-.112,0A1.028,1.028,0,0,1,15.086,6.514Z" transform="translate(0)" fill="#495057"></path>
-                      </g>
-                    </svg>                                        
-                  </a>
-                </div>
-              </div>
-              <div class="col-auto">
-                <button type="button" class="btn btn-xl btn-primary fs-16 px-md-4"><svg class="me-2" xmlns="http://www.w3.org/2000/svg" width="14.001" height="14.001" viewBox="0 0 14.001 14.001">
-                  <g transform="translate(0 0)">
-                    <rect data-name="Icons/Tabler/Send background" width="14" height="14" fill="none"></rect>
-                    <path d="M7.728,13.537,5.306,8.694.535,6.309A.919.919,0,0,1,0,5.541l0-.067a.918.918,0,0,1,.476-.8l.06-.03.041-.017L13.291.031l.026-.009.012,0,.032-.008L13.4.005H13.4l.03,0h.076l.03,0h.008l.009,0a.531.531,0,0,1,.089.022h0l0,0a.528.528,0,0,1,.316.316h0a.53.53,0,0,1,.025.1v0h0A.534.534,0,0,1,14,.529c0,.01,0,.019,0,.029v0q0,.02,0,.039v0c0,.017-.006.035-.01.053v0a.53.53,0,0,1-.017.055L9.378,13.424l-.017.041a.919.919,0,0,1-1.633.072Zm.776-.814L12.165,2.585,6.345,8.4ZM1.278,5.5,5.6,7.655l5.819-5.82Z" transform="translate(0 0)" fill="#fff"></path>
-                  </g>
-                </svg><span>Reply</span></button>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
-    
-          
-        </div>
             </div>
           </div>
         </div>
