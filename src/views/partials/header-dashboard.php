@@ -432,7 +432,7 @@
                   </div>
                 </div>
                 <div class="dropdown-footer text-center py-2 border-top border-gray-50">
-                  <a href="#" class="btn btn-link link-dark my-2">View all<svg class="ms-2" data-name="Icons/Tabler/Chevron Down" xmlns="http://www.w3.org/2000/svg" width="10" height="10" viewBox="0 0 10 10">
+                  <a href="#" class="btn btn-link link-dark my-2">Ver todas<svg class="ms-2" data-name="Icons/Tabler/Chevron Down" xmlns="http://www.w3.org/2000/svg" width="10" height="10" viewBox="0 0 10 10">
                     <rect data-name="Icons/Tabler/Chevron Right background" width="10" height="10" fill="none"/>
                     <path d="M.163.163A.556.556,0,0,1,.886.109L.948.163,5.393,4.607a.556.556,0,0,1,.054.723l-.054.062L.948,9.837a.556.556,0,0,1-.839-.723l.054-.062L4.214,5,.163.948A.556.556,0,0,1,.109.225Z" transform="translate(2.5)" fill="#1E1E1E"/>
                   </svg>

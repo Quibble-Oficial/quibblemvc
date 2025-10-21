@@ -2,7 +2,7 @@
 <!DOCTYPE html>
 <html dir="ltr" lang="en">
 <head>
-<title>Buy Muze Bootstrap 5 Analytics Page</title>
+<title>Comunidades</title>
 <meta charset="UTF-8">
 <meta name="description" content="Presenting Muze, All-in-one Bootstrap 5 Analytics Admin Dashboard, 30+ premium HTML pages, 500+ components, dark mode, RTL. Starts @ Only $35">
 <meta name="title" content="Muze Bootstrap 5 Analytics Templates, Pages & Dashboard, analytics chart, chart design, chart template">
@@ -501,7 +501,7 @@
                   <h6 class="font-weight-semibold title-box mb-0">Reclamações: 30</h6>
                   <h6 class="font-weight-semibold title-box mb-0">Resolvidas: 16</h6>
                   <div class="pt-4 pb-4">
-                    <span class="small font-weight-semibold mb-2 d-block">Progress</span>
+                    <span class="small font-weight-semibold mb-2 d-block">Progresso</span>
                     <div class="progress rounded-pill" style="height: 5px;width: 100%;">
                       <div class="progress-bar bg-teal-500" role="progressbar" style="width: 75%;" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100"></div>
                     </div>
@@ -510,16 +510,16 @@
                   <div class="d-flex align-items-center">
                     <div class="avatar-group">
                       <span class="avatar avatar-xs avatar-circle">
-                        <img class="avatar-img" src="<?= $base;?>/assets/img/avatar2.png" alt="Avatar">
+                        <img class="avatar-img" src="<?= $base;?>/assets/images/avatar2.png" alt="Avatar">
                       </span>
                       <span class="avatar avatar-xs avatar-circle">
-                        <img class="avatar-img" src="<?= $base;?>/assets/img/avatar3.png" alt="Avatar">
+                        <img class="avatar-img" src="<?= $base;?>/assets/images/avatar3.png" alt="Avatar">
                       </span>
                       <span class="avatar avatar-xs avatar-circle">
-                        <img class="avatar-img" src="<?= $base;?>/assets/img/avatar4.png" alt="Avatar">
+                        <img class="avatar-img" src="<?= $base;?>/assets/images/avatar4.png" alt="Avatar">
                       </span>
                     </div>
-                    <span class="badge bg-teal-50 text-teal-500 p-2 ms-auto">3 days left</span>
+                    <span class="badge bg-teal-50 text-teal-500 p-2 ms-auto">3 dias atrás</span>
                   </div>
                 </div>
               </div>
@@ -575,7 +575,7 @@
                   <h6 class="font-weight-semibold title-box mb-0">Resolvidas: 16</h6>
 
                   <div class="pt-4 pb-4">
-                    <span class="small font-weight-semibold mb-2 d-block">Progress</span>
+                    <span class="small font-weight-semibold mb-2 d-block">Progresso</span>
                     <div class="progress rounded-pill" style="height: 5px;width: 100%;">
                       <div class="progress-bar bg-away" role="progressbar" style="width: 50%;" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100"></div>
                     </div>
@@ -590,7 +590,7 @@
                         <img class="avatar-img" src="<?= $base;?>/assets/images/avatar3.png" alt="Avatar">
                       </span>
                     </div>
-                    <span class="badge bg-ornage-150 text-orange-500 p-2 ms-auto">3 days left</span>
+                    <span class="badge bg-ornage-150 text-orange-500 p-2 ms-auto">3 dias atrás</span>
                   </div>
                 </div>
               </div>
@@ -646,7 +646,7 @@
                   <h6 class="font-weight-semibold title-box mb-0">Resolvidas: 16</h6>
 
                   <div class="pt-4 pb-4">
-                    <span class="small font-weight-semibold mb-2 d-block">Progress</span>
+                    <span class="small font-weight-semibold mb-2 d-block">Progresso</span>
                     <div class="progress rounded-pill" style="height: 5px;width: 100%;">
                       <div class="progress-bar bg-dnd" role="progressbar" style="width: 25%;" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
                     </div>
@@ -661,7 +661,7 @@
                         <img class="avatar-img" src="<?= $base;?>/assets/images/avatar3.png" alt="Avatar">
                       </span>
                     </div>
-                    <span class="badge bg-red-50 text-dnd p-2 ms-auto">3 days left</span>
+                    <span class="badge bg-red-50 text-dnd p-2 ms-auto">3 dias atrás</span>
                   </div>
                 </div>
               </div>
@@ -682,7 +682,18 @@
                   <path d="M.214.212a.738.738,0,0,1,.952-.07l.082.07L7.1,5.989a.716.716,0,0,1,.071.94L7.1,7.011l-5.85,5.778a.738.738,0,0,1-1.034,0,.716.716,0,0,1-.071-.94l.071-.081L5.547,6.5.214,1.233A.716.716,0,0,1,.143.293Z" transform="translate(13 3.25) rotate(90)" fill="#495057"/>
                 </svg>
                 </a>
-    
+                <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="Sources">
+                      <li><a class="dropdown-item" href="#"><span>Hoje</span></a></li>
+                      <li><a class="dropdown-item" href="#"><span>Ontem</span></a></li>
+                      <li><a class="dropdown-item" href="#"><span>Há 7 dias</span></a></li>
+                      <li><a class="dropdown-item" href="#"><span>Há 1 mês</span></a></li>
+                      <li><a class="dropdown-item" href="#"><span>Último mês</span></a></li>
+                      <li><hr class="dropdown-divider"></li>
+                      <li><a class="dropdown-item" href="#"><svg data-name="icons/tabler/calendar" xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16">
+                        <rect data-name="Icons/Tabler/Calendar background" width="16" height="16" fill="none"/>
+                        <path d="M2.256,16A2.259,2.259,0,0,1,0,13.743V3.9A2.259,2.259,0,0,1,2.256,1.641H3.282V.616A.615.615,0,0,1,4.507.532l.005.084V1.641H9.846V.616A.615.615,0,0,1,11.071.532l.006.084V1.641H12.1A2.259,2.259,0,0,1,14.359,3.9v9.846A2.259,2.259,0,0,1,12.1,16ZM1.231,13.743a1.027,1.027,0,0,0,1.025,1.026H12.1a1.027,1.027,0,0,0,1.026-1.026V7.795H1.231Zm11.9-7.179V3.9A1.027,1.027,0,0,0,12.1,2.872H11.077V3.9a.616.616,0,0,1-1.226.084L9.846,3.9V2.872H4.513V3.9a.615.615,0,0,1-1.225.084L3.282,3.9V2.872H2.256A1.026,1.026,0,0,0,1.231,3.9V6.564Z" transform="translate(1)" fill="#495057"/>
+                      </svg><span class="ms-2">Custom</span></a></li>
+                    </ul>
               </div>
             </div>
             <div class="table-responsive mb-0">

@@ -2,7 +2,7 @@
 <!DOCTYPE html>
 <html dir="ltr" lang="en">
 <head>
-<title>Buy Muze Bootstrap 5 Analytics Page</title>
+<title>Visão Geral</title>
 <meta charset="UTF-8">
 <meta name="description" content="Presenting Muze, All-in-one Bootstrap 5 Analytics Admin Dashboard, 30+ premium HTML pages, 500+ components, dark mode, RTL. Starts @ Only $35">
 <meta name="title" content="Muze Bootstrap 5 Analytics Templates, Pages & Dashboard, analytics chart, chart design, chart template">
@@ -11,6 +11,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
 <!-- Muze Favicon -->
 <link href="<?= $base;?>/assets/favicon.ico" rel="shortcut icon" type="image/x-icon">
+<link rel="shortcut icon" href="<?=$base;?>/assets/images/logo_padrao.svg" type="image/x-icon">
 <!-- Muze Plugins CSS -->
 <link href="<?= $base;?>/assets/vendor/simplebar/dist/simplebar.min.css" rel="stylesheet" type="text/css" media="all">
 <!-- Muze Theme CSS -->
@@ -1458,7 +1459,7 @@
                     <td>
                       <div class="d-flex align-items-center">
                         
-                        <span class="ps-2 font-weight-semibold text-gray-700">Nilóplis</span>
+                        <span class="ps-2 font-weight-semibold text-gray-700">Nilópolis</span>
                       </div>
                     </td>
                     <td>Em Andamento</td>

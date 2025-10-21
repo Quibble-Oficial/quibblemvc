@@ -2,7 +2,7 @@
 <!DOCTYPE html>
 <html dir="ltr" lang="en">
 <head>
-<title>Buy Muze Bootstrap 5 Analytics Page</title>
+<title>Relatórios</title>
 <meta charset="UTF-8">
 <meta name="description" content="Presenting Muze, All-in-one Bootstrap 5 Analytics Admin Dashboard, 30+ premium HTML pages, 500+ components, dark mode, RTL. Starts @ Only $35">
 <meta name="title" content="Muze Bootstrap 5 Analytics Templates, Pages & Dashboard, analytics chart, chart design, chart template">
@@ -11,12 +11,13 @@
 <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
 <!-- Muze Favicon -->
 <link href="<?= $base;?>/assets/favicon.ico" rel="shortcut icon" type="image/x-icon">
+<link rel="shortcut icon" href="<?=$base;?>/assets/images/logo_padrao.svg" type="image/x-icon">
 <!-- Muze Plugins CSS -->
 <link href="<?= $base;?>/assets/vendor/simplebar/dist/simplebar.min.css" rel="stylesheet" type="text/css" media="all">
 <!-- Muze Theme CSS -->
 <link href="<?= $base;?>/assets/css/theme.min.css" rel="stylesheet" type="text/css" media="all">
 </head>
-<body class="bg-gray-100 analytics-template">
+<body class="bg-gray-100 all-projects-template analytics-template">
 
 <!-- Muze Customize Sidebar -->
 <!-- <div class="customize-sidebar">
