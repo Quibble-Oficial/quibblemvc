@@ -834,6 +834,13 @@ main {
   border-top: 1px solid var(--azul-primario-claromais);
 }
 
+.feed-card .more-btn {
+  border: 0px;
+  font-size: 30px;
+  cursor: pointer;
+  color: var(--preto-escuro);
+}
+
 /* PARA A RESPONSIVIDADE */
 
 .header-content.mobile,
