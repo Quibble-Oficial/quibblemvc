@@ -16,7 +16,7 @@ $router->get('/mapa', 'DashboardController@mapa');
 $router->get('/comunidades', 'DashboardController@comunidades');
 $router->get('/relatorios', 'DashboardController@relatorios');
 $router->get('/chat', 'DashboardController@chat');
-$router->get('/empty-state', 'DashboardController@emptyState');
+$router->get('/gestao-interna', 'DashboardController@gestao-interna');
 $router->get('/transparencia', 'DashboardController@transparencia');
 $router->get('/gastosdetalhados', 'DashboardController@gastosDetalhados');
 $router->get('/relatoriosdown', 'DashboardController@relatoriosDown');

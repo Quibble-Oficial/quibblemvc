@@ -53,9 +53,9 @@ class DashboardController extends Controller
         $this->render('dashboard/chat', ['loggedUser' => $this->loggedUser]);
     }
 
-    public function emptyState()
+    public function gestaoInterna()
     {
-        $this->render('dashboard/empty-state', ['loggedUser' => $this->loggedUser]);
+        $this->render('dashboard/gestao-interna', ['loggedUser' => $this->loggedUser]);
     }
 
      public function transparencia()

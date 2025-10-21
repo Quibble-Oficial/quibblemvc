@@ -36,35 +36,53 @@
 
   <!-- CONTEÚDO DO MEIO PRINCIPAL -->
   <main>
-    <div id="feed">
+    <div id="feed">   
+      <div class="feed-filter-bar">
       <!-- ESSE FILTER SOME NO MOBILE -->
-      <div id="feed-filter">
-        <form method="GET" action="<?= $base; ?>/">
-          <select name="categoria" onchange="this.form.submit()">
-            <option value="">Todas as categorias</option>
-            <?php foreach ($categorias as $cat): ?>
-              <option value="<?= $cat['categoria_id']; ?>"
-                <?= ($filtroCategoria == $cat['categoria_id']) ? 'selected' : ''; ?>>
-                <?= htmlspecialchars($cat['nome']); ?>
-              </option>
-            <?php endforeach; ?>
-          </select>
-        </form>
-      </div>
-      <div id="feed-content">
-        <?php if (!empty($reclamacoes)): ?>
-          <?php foreach ($reclamacoes as $reclamacao): ?>
-            <?php $render("feed-card", [
-              'reclamacao' => $reclamacao,
-              'loggedUser' => $loggedUser
-            ]); ?>
-          <?php endforeach; ?>
-        <?php else: ?>
-          <p>Nenhuma reclamação encontrada.</p>
-        <?php endif; ?>
-      </div>
+
+    <div class="feed-tabs-left">
+        <a href="<?= $base; ?>/home" class="filter-tab active">Para Você</a>
+        <a href="<?= $base; ?>/seguindo" class="filter-tab">Seguindo</a>
     </div>
+
+    <div class="filter-dropdown-right">
+      </div>
+     
+        
+        <div id="feed-filter">
+            <form method="GET" action="<?= $base; ?>/" class="category-form"> 
+                <select name="categoria" onchange="this.form.submit()" class="category-select-styled">
+                    <option value="">Tudo</option>
+                    <?php foreach ($categorias as $cat): ?>
+                        <option value="<?= $cat['categoria_id']; ?>"
+                            <?= ($filtroCategoria == $cat['categoria_id']) ? 'selected' : ''; ?>>
+                            <?= htmlspecialchars($cat['nome']); ?>
+                        </option>
+                    <?php endforeach; ?>
+                </select>
+            </form>
+          </div>
+        </div>
+        </div>
+        
+        
+        <div id="feed-content">
+          </div>
+          <?php if (!empty($reclamacoes)): ?>
+            <?php foreach ($reclamacoes as $reclamacao): ?>
+              <?php $render("feed-card", [
+                'reclamacao' => $reclamacao,
+                'loggedUser' => $loggedUser
+              ]); ?>
+          <?php endforeach; ?>
+          <?php else: ?>
+            <p>Nenhuma reclamação encontrada.</p>
+            <?php endif; ?>
+          </div>
   </main>
+
+
+
 
   <!-- FOOTER (SÓ APARECE NO MOBILE)-->
 
