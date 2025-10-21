@@ -26,7 +26,7 @@
         <li>
           <a href="mapa.html">
             <img src="<?= $base; ?>/assets/images/map.png" alt="" class="icon">
-            <div class="tit">Mapa de Problemas</div>
+            <div class="tit">Mapa</div>
           </a>
         </li>
         <li>

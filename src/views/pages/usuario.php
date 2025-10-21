@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="shortcut icon" href="<?=$base;?>/assets/images/logo_padrao.svg" type="image/x-icon">
     <title>Quibble - Perfil</title>
-    <link rel="stylesheet" href="<?=$base;?>/assets/css/perfil.css">
+    <link rel="stylesheet" href="<?=$base;?>/assets/css/feed.css">
     <link rel="stylesheet" href="<?=$base;?>/assets/js/animacoes.css">
     <link href='https://cdn.boxicons.com/fonts/basic/boxicons.min.css' rel='stylesheet'>
     <script>
@@ -63,98 +63,55 @@
 
     <div class="perfil-noticias">
         <main>
-            <div id="perfil-feed">
-                <div class="perfil-central">
-                    <div class="card"></div>
-                    <div class="foto-seguir">
-                        <div class="descricao">
-                            <div class="foto-perfil-central">
-                                <img src="<?=$base;?>/assets/images/foto_perfil_central.png" alt="">
-                            </div>
-                            <div id="descricao-perfil">
-                                <div class="nome-recado">
-                                    <div class="nome-selo">
-                                        <h1><?=$usuario->nome;?></h1>
-                                    </div>
-                                    <span><?=$usuario->bio;?></span>
-                                </div>
-                            </div>
-                            <div class="informacoes">
-                                <div class="info-adc m">
-                                    <i class='bx  bxs-location'></i>
-                                    <span>RJ - Rio de Janeiro</span>
-                                </div>
-                                <div class="info-adc">
-                                    <i class='bx  bxs-calendar-alt'></i>
-                                    <span>Usuário desde <?=$usuario->criado_em;?></span>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="seguir">
-                            <i class='  bx  bx-dots-horizontal-rounded'></i>
-                            <i class='  bx  bx-share'></i>
-                            <?php if($usuario->usuario_id === $loggedUser->usuario_id): ?>
-                            <button class="btneditar">Editar Perfil</button>
-                            <?php else: ?>
-                            <div style="display: flex;">
-                                <button class="btnicone"><i class=' bx  bx-bell'></i></button>
-                                <button id="btnseguir" data-id="<?=$usuario->usuario_id;?>"  class="<?= $estáSeguindo ? 'seguindo' : '' ?>">
-                                    <?= $estáSeguindo ? 'Seguindo' : 'Seguir' ?>
-                                </button>
-                            </div>
-                            <?php endif; ?>
-                        </div>
+           <div class="card-perfil">
+            <div class="foto-user">
+                <h1>JS</h1>
+                <img src="" alt="">
+            </div>
+
+            <div class="descricao-perfil">
+                <div class="nome-botao">
+                    <h1>João Silva</h1>
+                    <a href="">
+                        <img src="<?= $base; ?>/assets/images/edit.svg" alt="">
+                        Editar Perfil
+                    </a>
+                </div>
+                <div class="localizacao-membro">
+                    <div class="local">
+                        <img src="<?= $base; ?>/assets/images/local.svg" alt="">
+                        <span>São Paulo - SP</span>
+                    </div>
+                    <div class="membro">
+                        <img src="<?= $base; ?>/assets/images/calendar.svg" alt="">
+                        <span>Membro desde Janeiro 2024</span>
                     </div>
                 </div>
-                <div class="filtros">
-                    <ul>
-                        <li><a href="">Reclamações <span id="texto-adc">Recentes</span></a></li>
-                        <li id="selecionado"><a href="">Upvotes</a></li>
-                        <li><a href="<?=$base;?>/prefeito">Comunidades</a></li>
-                    </ul>
+
+                <p class="descricao-bio">Morador preocupado com a qualidade de vida na cidade. Sempre atento aos problemas do bairro.</p>
+                <div class="estatisticas-perfil">
+                    <div class="estatistic postagens">
+                        <span>12</span>
+                        <p>Postagens</p>
+                    </div>
+                    <div class="estatistic curtidas">
+                        <span>89</span>
+                        <p>Curtidas</p>
+                    </div>
+                    <div class="estatistic comentarios">
+                        <span>156</span>
+                        <p>Comentários</p>
+                    </div>
+                    <div class="estatistic seguidores">
+                        <span>34</span>
+                        <p>Seguidores</p>
+                    </div>
                 </div>
-                <div id="feed">
-                    <div id="feed-content">
-                        <div class="feed-card">
-                            <div class="feed-card-content-feedback mobile">
-                                <div class="feedback-upvote">
-                                    <img src="<?=$base;?>/assets/images/upvote.svg" alt="">
-                                    2,5 mil
-                                </div>
-                                <div class="feedback-comment">
-                                    <img src="<?=$base;?>/assets/images/comentario.svg" alt="">
-                                    194
-                                </div>
-                                <div class="feedback-share">
-                                    <img src="<?=$base;?>/assets/images/compartilhar.svg" alt="">
-                                    Compartilhar
-                                </div>
-                            </div>
-                            <img src="<?=$base;?>/assets/images/feed.png" alt="">
-                            <div class="feed-card-content">
-                                <div class="feed-card-content-text">
-                                    <img src="<?=$base;?>/assets/images/bernardo.png" alt="">
-                                    <div class="feed-card-content-text-area">
-                                        <h5>Bernardo Cota</h5>
-                                        <p>Buraco em Rua A tá atrapalhando a passagem da população, completo descaso com o trabalhador...</p>
-                                    </div>
-                                </div>
-                                <div class="feed-card-content-feedback">
-                                    <div class="feedback-upvote">
-                                        <img src="<?=$base;?>/assets/images/upvote.svg" alt="">
-                                        2,5 mil
-                                    </div>
-                                    <div class="feedback-comment">
-                                        <img src="<?=$base;?>/assets/images/comentario.svg" alt="">
-                                        194
-                                    </div>
-                                    <div class="feedback-share">
-                                        <img src="<?=$base;?>/assets/images/compartilhar.svg" alt="">
-                                        Compartilhar
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
+            </div>
+        </div>
+        <div class="filtro-perfil">
+            
+        </div>
         </main>
     </div>
 
