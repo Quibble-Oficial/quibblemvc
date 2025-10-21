@@ -12,7 +12,7 @@
  <div class="feed-card-body">
   <div class="title-tag">
     <h4><?= htmlspecialchars($reclamacao['titulo'] ?? 'Título da reclamação'); ?></h4>
-    <span class="tag">Infraestrutura</span>
+    <span class="tag"><?= htmlspecialchars($reclamacao['categoria_nome'] ?? 'Título da reclamação'); ?></span>
   </div>
   <p><?= htmlspecialchars($reclamacao['descricao']); ?></p>
   
@@ -36,7 +36,7 @@
     <div class="feed-card-footer">
         <div class="feedback-upvote" data-id="<?= $reclamacao['reclamacao_id']; ?>">
             <img src="<?= $base; ?>/assets/images/gostar.png" alt="">
-            <span><?= $reclamacao['total_upvotes']; ?></span>
+            <span class="upvote-count"><?= $reclamacao['total_upvotes']; ?></span>
         </div>
         <div class="feedback-comment">
             <img src="<?= $base; ?>/assets/images/comentario.svg" alt="">

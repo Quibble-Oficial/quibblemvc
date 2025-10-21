@@ -73,7 +73,7 @@ class ReclamacaoHandler
             'localizacoes.cep as cep',
             
             // Upvotes
-            new Ex('COUNT(DISTINCT upvotes.reclamacao_id) AS total_upvotes'), // Usar DISTINCT aqui é mais seguro
+            new Ex('COUNT(upvotes.reclamacao_id) AS total_upvotes'), // Usar DISTINCT aqui é mais seguro
             new Ex('MAX(CASE WHEN upvotes.usuario_id = ' . $userId . ' THEN 1 ELSE 0 END) AS usuario_upvotou'),
             
             // NOVO: Contagem de Comentários
