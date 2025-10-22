@@ -71,7 +71,7 @@
 
             <div class="descricao-perfil">
                 <div class="nome-botao">
-                    <h1>João Silva</h1>
+                    <h1><?=$usuario->nome;?></h1>
                     <a href="<?=$base;?>/alterar-usuario">
                         <img src="<?= $base; ?>/assets/images/edit.svg" alt="">
                         Editar Perfil
@@ -80,7 +80,7 @@
                 <div class="localizacao-membro">
                     <div class="local">
                         <img src="<?= $base; ?>/assets/images/local.svg" alt="">
-                        <span>São Paulo - SP</span>
+                        <span>Bairro - RJ</span>
                     </div>
                     <div class="membro">
                         <img src="<?= $base; ?>/assets/images/calendar.svg" alt="">

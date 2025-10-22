@@ -109,8 +109,8 @@
       </div>
       <div id="perfil-header">
         <div id="text">
-          <span><b>Bernardo</b></span> <br>
-          <span>Anchieta-Rj</span>
+          <span><b><?= $usuario->nome; ?></b></span> <br>
+          <span>Bairro-Rj</span>
             </div>
         <img src="<?= $base; ?>/assets/images/bernardo.png" alt="" id='perfil-img' />
       </div>
@@ -146,7 +146,7 @@
         <div id="sugestoes-content">
 
             <div id="em-alta">
-                <h3><img src="<?= $base; ?>/assets/images/bernardo.png" alt="Ícone Em Alta" class="card-title-icon"> Em Alta</h3> 
+                <h3>Em Alta</h3> 
                 <div class="linha-em-alta"></div>
                 
                 <a href="#">
@@ -187,7 +187,7 @@
             </div>
                 
             <div id="sugestoes-area">
-                <h3><img src="<?= $base; ?>/assets/images/bernardo.png" alt="Ícone Prefeitos" class="card-title-icon"> Prefeitos para Seguir</h3> 
+                <h3>Prefeitos para Seguir</h3> 
                 <div class="linha-em-alta"></div>
                 
                 <div class="sugestoes-card">
@@ -218,7 +218,7 @@
                 </div>
             </div>
 
-            <div id="sugestoes-para-seguir">
+            <!-- <div id="sugestoes-para-seguir">
                 <h3><img src="<?= $base; ?>/assets/images/bernardo.png" alt="Ícone Sugestões" class="card-title-icon"> Sugestões para Seguir</h3> 
                 <div class="linha-em-alta"></div>
 
@@ -247,7 +247,7 @@
                         <p>São Paulo</p>
                     </div>
                     <a href="#" class="btn-seguir">Seguir</a>
-                </div>
+                </div> -->
             </div>
 
         </div>

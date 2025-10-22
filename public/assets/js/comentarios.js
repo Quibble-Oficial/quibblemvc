@@ -1,52 +1,43 @@
-// Constrói o HTML de um único comentário (facilita a injeção)
+
+let loadedComments = {};
+
 function createCommentHtml(comment) {
-    const avatar = comment.usuario_avatar || 'default.png'; 
+    const avatar = comment.usuario_avatar || 'bernardo.png'; 
     const dataFormatada = new Date(comment.criado_em).toLocaleDateString('pt-BR');
-    
-    // Constrói a URL do perfil
     const perfilUrl = `${BASE}/usuario/${comment.usuario_id}`; 
 
     return `
-        <div class="comment" data-comment-id="${comment.comentario_id}">
-            <a href="${perfilUrl}"> 
-                <img src="${BASE}/assets/images/avatars/${avatar}" alt="avatar">
+        <div class="comment-info" data-comment-id="${comment.comentario_id}">
+          <div class="feed-card-header">
+            <a href="${perfilUrl}">
+                <img class="user-avatar" src="${BASE}/assets/images/bernardo.png" alt="Avatar">
             </a>
-            <div class="comment-content">
+            <div class="user-info">
                 <a href="${perfilUrl}">
-                    <h6>${comment.usuario_nome}</h6>
+                    <h5>${comment.usuario_nome}</h5>
                 </a>
-                <p>${comment.comentario}</p>
-                <span class="comment-time">${dataFormatada}</span>
+                <span class="comment-time user-location">Comentou em: ${dataFormatada}</span>
             </div>
+            <button class="more-btn">...</button> 
+          </div>
+          <p>${comment.comentario}</p>
         </div>
     `;
 }
 
-// Atualiza o contador de comentários visível no feed card
 function updateCommentCounter(reclamacaoId, newCount) {
-    // Encontra o card da reclamação e atualiza o texto do botão
-    const card = document.querySelector(`.comments-box[data-reclamacao-id="${reclamacaoId}"]`).closest('.feed-card');
-    const toggleButton = card.querySelector('.toggle-comments');
-    const feedbackCommentCount = card.querySelector('.feedback-comment > span') || card.querySelector('.feedback-comment'); // Altere se o elemento for diferente
-
-    if (toggleButton) {
-        toggleButton.innerHTML = `💬 Ver comentários (${newCount})`;
-    }
-    // Opcional: atualiza o contador na barra de feedback
+    const card = document.querySelector(`.comment-area[data-reclamacao-id="${reclamacaoId}"]`).closest('.feed-card');
+    const feedbackCommentCount = card.querySelector('.feedback-comment span'); 
+    
     if (feedbackCommentCount) {
         feedbackCommentCount.textContent = newCount;
     }
 }
 
-let loadedComments = {}; // Cache simples para não recarregar comentários que já foram vistos
-
-async function loadComments(reclamacaoId, commentsBoxElement) {
-    const commentsList = commentsBoxElement.querySelector('.comments-list');
+async function loadComments(reclamacaoId, commentsAreaElement) {
+    const commentsList = commentsAreaElement.querySelector('.comments-list');
     
-    // Verifica se já carregou para evitar requisições repetidas
-    if (loadedComments[reclamacaoId]) {
-        return; // Sai da função se já estiver no cache
-    }
+    if (loadedComments[reclamacaoId]) return;
     
     commentsList.innerHTML = '<p class="loading-state">Carregando comentários...</p>';
 
@@ -54,7 +45,7 @@ async function loadComments(reclamacaoId, commentsBoxElement) {
         const response = await fetch(`${BASE}/comentario/${reclamacaoId}`);
         const result = await response.json();
 
-        commentsList.innerHTML = ''; // Limpa estado de carregamento
+        commentsList.innerHTML = '';
 
         if (result.success && result.comentarios) {
             let commentsHtml = '';
@@ -62,8 +53,8 @@ async function loadComments(reclamacaoId, commentsBoxElement) {
                 commentsHtml += createCommentHtml(comment);
             });
             
-            commentsList.innerHTML = commentsHtml || '<p class="empty-state">Nenhum comentário ainda. Seja o primeiro!</p>';
-            loadedComments[reclamacaoId] = true; // Marca como carregado
+            commentsList.innerHTML = commentsHtml || '<p class="empty-state">Nenhum comentário ainda.</p>';
+            loadedComments[reclamacaoId] = true; 
 
         } else {
             console.error('Erro ao carregar comentários:', result.error);
@@ -76,19 +67,19 @@ async function loadComments(reclamacaoId, commentsBoxElement) {
     }
 }
 
-async function postComment(reclamacaoId, inputElement) {
-    const comentario = inputElement.value.trim();
-    if (comentario === '') {
-        alert('O comentário não pode estar vazio.');
-        return;
-    }
-
-    const button = inputElement.nextElementSibling; // O botão "Publicar"
-    const originalButtonText = button.textContent;
+async function postComment(reclamacaoId, buttonElement) {
     
-    // Feedback visual
-    button.disabled = true;
-    button.textContent = 'Publicando...';
+    const commentArea = document.querySelector(`.comment-area[data-reclamacao-id="${reclamacaoId}"]`);
+    const inputElement = commentArea ? commentArea.querySelector('.comment-input-field') : null;
+
+    if (!inputElement) return;
+
+    const comentario = inputElement.value.trim();
+    if (comentario === '') return;
+
+    const originalButtonText = buttonElement.textContent;
+    buttonElement.disabled = true;
+    buttonElement.textContent = 'Publicando...';
 
     const formData = new FormData();
     formData.append('reclamacao_id', reclamacaoId);
@@ -103,15 +94,12 @@ async function postComment(reclamacaoId, inputElement) {
         const result = await response.json();
         
         if (result.success) {
-            inputElement.value = ''; // Limpa o input
+            inputElement.value = '';
             
-            // Força o recarregamento dos comentários
             loadedComments[reclamacaoId] = false; 
-            const commentsBox = inputElement.closest('.comments-box');
-            await loadComments(reclamacaoId, commentsBox); 
+            await loadComments(reclamacaoId, commentArea); 
             
-            // Atualiza o contador de comentários
-            const newCount = commentsBox.querySelectorAll('.comment').length;
+            const newCount = commentArea.querySelectorAll('.comment-info').length;
             updateCommentCounter(reclamacaoId, newCount);
             
         } else {
@@ -120,86 +108,53 @@ async function postComment(reclamacaoId, inputElement) {
 
     } catch (error) {
         alert('Erro de rede ao publicar o comentário.');
-        console.error('Erro de rede:', error);
     } finally {
-        button.disabled = false;
-        button.textContent = originalButtonText;
+        buttonElement.disabled = false;
+        buttonElement.textContent = originalButtonText;
     }
 }
 
 document.addEventListener('DOMContentLoaded', () => {
-    // Adiciona listener para todos os botões "Publicar"
-    document.querySelectorAll('.post-comment-btn').forEach(button => {
-        button.addEventListener('click', (e) => {
-            const reclamacaoId = e.target.getAttribute('data-reclamacao-id');
-            const inputElement = e.target.previousElementSibling; // O campo de input
-            postComment(reclamacaoId, inputElement);
-        });
+    
+    document.querySelectorAll('.comment-area').forEach(area => {
+        area.style.display = 'none';
     });
     
-    // Enviar ao apertar ENTER no campo de input
-    document.querySelectorAll('.comment-input').forEach(input => {
-        input.addEventListener('keypress', (e) => {
-            if (e.key === 'Enter') {
-                e.preventDefault(); // Impede o comportamento padrão
-                const reclamacaoId = input.getAttribute('data-reclamacao-id');
-                postComment(reclamacaoId, input);
+    document.querySelectorAll('.feedback-comment').forEach(btn => {
+        btn.addEventListener('click', () => {
+            const card = btn.closest('.feed-card');
+            let commentArea = card ? card.querySelector('.comment-area') : null;
+
+            if (!commentArea) return;
+
+            const isHidden = window.getComputedStyle(commentArea).display === 'none';
+            
+            if (isHidden) {
+                commentArea.style.display = 'block';
+                const reclamacaoId = commentArea.getAttribute('data-reclamacao-id');
+                loadComments(reclamacaoId, commentArea); 
+                
+            } else {
+                commentArea.style.display = 'none';
             }
         });
     });
-});
 
-function toggleComments(button, reclamacaoId) {
-    let commentsBox = button.nextElementSibling;
-
-    if (commentsBox.style.display === "none" || commentsBox.style.display === "") {
-        commentsBox.style.display = "block";
-        button.innerHTML = "🔽 Ocultar comentários";
-        
-        // CHAMA A FUNÇÃO PARA CARREGAR OS COMENTÁRIOS
-        loadComments(reclamacaoId, commentsBox); 
-        
-    } else { 
-        commentsBox.style.display = "none";
-        
-        // Pega a contagem atual da lista para mostrar no botão
-        const currentCount = commentsBox.querySelector('.comments-list').children.length; 
-        button.innerHTML = `💬 Ver comentários (${currentCount})`; 
-    }
-}
-document.addEventListener('DOMContentLoaded', () => {
-  // Esconde todas as áreas de comentário no carregamento
-  document.querySelectorAll('.comment-area').forEach(area => {
-    area.style.display = 'none';
-  });
-
-  // Para cada botão/área de comentário no rodapé
-  document.querySelectorAll('.feedback-comment').forEach(btn => {
-    btn.addEventListener('click', () => {
-      // encontra o feed-card pai
-      const card = btn.closest('.feed-card');
-
-      // tenta achar a comment-area dentro do card
-      let commentArea = card ? card.querySelector('.comment-area') : null;
-
-      // se não houver dentro do card, procura no próximo irmão (útil se .comment-area estiver fora)
-      if (!commentArea && card) {
-        let sibling = card.nextElementSibling;
-        while (sibling) {
-          if (sibling.classList && sibling.classList.contains('comment-area')) {
-            commentArea = sibling;
-            break;
-          }
-          sibling = sibling.nextElementSibling;
-        }
-      }
-
-      // se não achou a área (HTML diferente), não faz nada
-      if (!commentArea) return;
-
-      // alterna visibilidade simples
-      const isHidden = window.getComputedStyle(commentArea).display === 'none';
-      commentArea.style.display = isHidden ? 'block' : 'none';
+    document.querySelectorAll('.post-comment-btn').forEach(button => {
+        button.addEventListener('click', (e) => {
+            const reclamacaoId = e.target.getAttribute('data-reclamacao-id');
+            postComment(reclamacaoId, e.target); 
+        });
     });
-  });
+    
+    document.querySelectorAll('.comment-input-field').forEach(input => {
+        input.addEventListener('keypress', (e) => {
+            if (e.key === 'Enter') {
+                e.preventDefault(); 
+                const reclamacaoId = input.getAttribute('data-reclamacao-id');
+                const buttonElement = input.closest('.comment-area').querySelector('.post-comment-btn');
+                postComment(reclamacaoId, buttonElement);
+            }
+        });
+    });
 });
