@@ -110,7 +110,9 @@
             </div>
         </div>
         <div class="filtro-perfil">
-            
+            <a class="links minhas-postagens" href="">Minhas Postagens</a>
+            <a class="links interacoes" href="">Interações</a>   
+            <a class="links comunidades" href="">Comunidades</a>  
         </div>
         </main>
     </div>

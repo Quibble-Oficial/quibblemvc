@@ -864,7 +864,7 @@ footer {
 
 .card-perfil .descricao-perfil h1 {
   font-weight: 400;
-  font-size: 21px;
+  font-size: 23px;
 }
 
 .card-perfil .descricao-perfil {
@@ -959,6 +959,35 @@ footer {
 .postagens, .curtidas, .comentarios {
   margin-right: 20px;
 }
+
+.filtro-perfil {
+  width: 85%;
+  background-color: #FCEED180;
+  height: 38px;
+  padding: 20px;
+  border-radius: 21px;
+  display: flex;
+  align-items: center;
+  margin-top: 30px;
+  justify-content: space-between;
+}
+
+.filtro-perfil a {
+    font-size: 15px;
+    color: #000;
+}
+
+.filtro-perfil .minhas-postagens {
+  padding: 4px 20px;
+  background-color: #fff;
+  border-radius: 15px;
+}
+
+.filtro-perfil .comunidades {
+  margin-right: 40px;
+}
+
+
 
 
 
