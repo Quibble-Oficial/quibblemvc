@@ -1496,3 +1496,91 @@ cite.feed-card-header .more-btn {
     padding-right: 40px; /* Adiciona espaço para a seta não sobrepor o texto */
     cursor: pointer;
 }
+
+
+
+
+.config-container {
+    background: transparent;
+    padding: 24px 0;
+}
+.config-container h2 {
+    font-family: var(--fonte-titulo);
+    color: var(--azul-primario-escuro);
+    font-size: 28px;
+    margin-bottom: 6px;
+}
+.config-container p {
+    color: var(--cinza-4);
+    margin-bottom: 18px;
+}
+.tabs {
+    display: flex;
+    gap: 12px;
+    margin-bottom: 18px;
+}
+.tab {
+    background: #FFF8EF;
+    border: 1px solid #F0E6D8;
+    padding: 8px 18px;
+    border-radius: 22px;
+    font-family: var(--fonte-titulo);
+    color: var(--preto);
+    cursor: pointer;
+}
+.tab.active {
+    background: var(--amarelo);
+    color: #fff;
+}
+.settings-card {
+    background: #fff;
+    border-radius: 12px;
+    padding: 22px;
+    box-shadow: 0 6px 18px rgba(16,24,40,0.06);
+    border: 1px solid #eef2f6;
+}
+.profile-row {
+    display: flex;
+    align-items: center;
+    gap: 16px;
+    margin-bottom: 18px;
+}
+.avatar-large{
+    width: 72px;
+    height: 72px;
+    border-radius: 50%;
+    background: #F1F5F9;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: 700;
+    color: var(--azul-primario-escuro);
+    font-family: var(--fonte-titulo);
+}
+.form-grid{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 16px;
+}
+.form-group{
+    display: flex;
+    flex-direction: column;
+}
+.form-group.full{ grid-column: 1 / -1; }
+.form-group label{ font-weight:600; margin-bottom:8px; color:var(--cinza-3); }
+.form-group input, .form-group textarea{
+    padding: 12px 14px;
+    border-radius: 8px;
+    border: 1px solid #e6e9ee;
+    background: #fbfbfd;
+}
+.form-group textarea{ min-height: 80px; resize: vertical; }
+.actions{ display:flex; justify-content:flex-end; margin-top:18px; }
+.btn-primary{ background: var(--azul-primario); color:#fff; padding:10px 20px; border-radius:8px; border:0; cursor:pointer; }
+
+@media (max-width: 900px){
+    .form-grid{ grid-template-columns: 1fr; }
+    aside{ display:none; }
+    #feed{ width:100%; }
+}
+

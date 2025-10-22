@@ -100,4 +100,9 @@ class HomeController extends Controller
     {
         $this->render('dashboard/visao-geral', ['loggedUser' => $this->loggedUser]);
     }
+
+    public function alterarUsuario()
+    {
+        $this->render('alterar-usuario', ['loggedUser' => $this->loggedUser]);
+    }
 }

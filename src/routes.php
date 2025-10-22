@@ -38,6 +38,7 @@ $router->post('/reclamacao/nova', 'ReclamacaoController@criarReclamacao');
 
 $router->get('/usuario/{id}', 'HomeController@usuario');
 $router->get('/usuario/prefeito/{id}', 'HomeController@usuarioPrefeito');
+$router->get('/alterar-usuario', 'HomeController@alterarUsuario');
 
 $router->post('/reclamacao/{id}/upvote', 'UpvoteController@alternar');
 
