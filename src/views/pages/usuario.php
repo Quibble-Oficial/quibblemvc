@@ -72,7 +72,7 @@
             <div class="descricao-perfil">
                 <div class="nome-botao">
                     <h1>João Silva</h1>
-                    <a href="">
+                    <a href="<?=$base;?>/alterar-usuario">
                         <img src="<?= $base; ?>/assets/images/edit.svg" alt="">
                         Editar Perfil
                     </a>
