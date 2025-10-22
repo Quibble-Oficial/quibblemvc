@@ -159,7 +159,7 @@ function toggleComments(button, reclamacaoId) {
         // CHAMA A FUNÇÃO PARA CARREGAR OS COMENTÁRIOS
         loadComments(reclamacaoId, commentsBox); 
         
-    } else {
+    } else { 
         commentsBox.style.display = "none";
         
         // Pega a contagem atual da lista para mostrar no botão
@@ -167,3 +167,39 @@ function toggleComments(button, reclamacaoId) {
         button.innerHTML = `💬 Ver comentários (${currentCount})`; 
     }
 }
+document.addEventListener('DOMContentLoaded', () => {
+  // Esconde todas as áreas de comentário no carregamento
+  document.querySelectorAll('.comment-area').forEach(area => {
+    area.style.display = 'none';
+  });
+
+  // Para cada botão/área de comentário no rodapé
+  document.querySelectorAll('.feedback-comment').forEach(btn => {
+    btn.addEventListener('click', () => {
+      // encontra o feed-card pai
+      const card = btn.closest('.feed-card');
+
+      // tenta achar a comment-area dentro do card
+      let commentArea = card ? card.querySelector('.comment-area') : null;
+
+      // se não houver dentro do card, procura no próximo irmão (útil se .comment-area estiver fora)
+      if (!commentArea && card) {
+        let sibling = card.nextElementSibling;
+        while (sibling) {
+          if (sibling.classList && sibling.classList.contains('comment-area')) {
+            commentArea = sibling;
+            break;
+          }
+          sibling = sibling.nextElementSibling;
+        }
+      }
+
+      // se não achou a área (HTML diferente), não faz nada
+      if (!commentArea) return;
+
+      // alterna visibilidade simples
+      const isHidden = window.getComputedStyle(commentArea).display === 'none';
+      commentArea.style.display = isHidden ? 'block' : 'none';
+    });
+  });
+});
