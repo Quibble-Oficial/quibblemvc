@@ -686,8 +686,6 @@ main {
   z-index: -999;
 }
 
-
-
 .feed-card .feed-card-content-text {
   display: flex;
 }
@@ -1665,3 +1663,107 @@ div.conta {
     #feed{ width:100%; }
 }
 
+.comment-area {
+  padding: 16px;
+  display: none; /* escondida por padrão, JS alterna */
+  font-family: 'Inter', sans-serif;
+}
+
+/* ===== Campo de Inserir Comentário ===== */
+.comment-input {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-bottom: 16px;
+}
+
+.comment-avatar {
+  width: 36px;
+  height: 36px;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+.comment-input input {
+  flex: 1;
+  border: none;
+  background-color: #e9f1ff;
+  border-radius: 8px;
+  padding: 10px 14px;
+  font-size: 14px;
+  color: #333;
+  outline: none;
+}
+
+.comment-input input::placeholder {
+  color: #9aa7bf;
+}
+
+.comment-input button {
+  background-color: #2970ff;
+  color: white;
+  border: none;
+  padding: 8px 14px;
+  border-radius: 8px;
+  cursor: pointer;
+  font-size: 14px;
+  transition: 0.2s;
+}
+
+.comment-input button:hover {
+  background-color: #1e5de7;
+}
+
+/* ===== Cada comentário ===== */
+.comment-info {
+  border-top: 1px solid #f0f0f0;
+  padding: 12px 0;
+}
+
+/* Cabeçalho do comentário */
+.comment-info .feed-card-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.comment-info .user-avatar {
+  width: 36px;
+  height: 36px;
+  border-radius: 50%;
+  margin-right: 10px;
+}
+
+.comment-info .user-info {
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+}
+
+.comment-info .user-info h5 {
+  margin: 0;
+  font-size: 15px;
+  color: #333;
+  font-weight: 600;
+}
+
+.comment-info .user-location {
+  font-size: 13px;
+  color: #9aa7bf;
+}
+
+/* Botão de opções */
+.comment-info .more-btn {
+  background: none;
+  border: none;
+  font-size: 18px;
+  color: #999;
+  cursor: pointer;
+}
+
+.comment-info p {
+  margin: 8px 0 0 46px; /* alinhado com avatar */
+  font-size: 14px;
+  color: #444;
+  line-height: 1.5;
+}
