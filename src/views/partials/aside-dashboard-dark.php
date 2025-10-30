@@ -90,7 +90,7 @@
         <a href="Javascript:void(0);" class="btn btn-xl btn-outline-dark" id="ResetCustomizer">Reiniciar</a>
       </div>
       <div class="col-6 d-grid">
-        <a href="Javascript:void(0);" class="btn btn-xl btn-primary" id="CustomizerPreview">Vizualizar</a>
+        <a href="Javascript:void(0);" class="btn btn-xl btn-primary" id="CustomizerPreview">Visualizar</a>
       </div>
     </div>
   </div>

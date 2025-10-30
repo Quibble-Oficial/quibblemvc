@@ -892,11 +892,11 @@ footer {
   /* padding: 5px; */
   width: 100%;
   justify-content: space-between;
-  /* align-items: center; */
+  align-items: center;
 }
 
 .card-perfil .descricao-perfil .nome-botao a {
-  padding: 7px 15px;
+  padding: 5px 15px;
   background-color: #DAEDFF;
   border-radius: 7px;
   font-size: 12.5px;
@@ -913,7 +913,7 @@ footer {
 
 .card-perfil .descricao-perfil .localizacao-membro {
   display: flex;
-  margin-top: 5px;
+  margin-top: 10px;
 }
 
 .card-perfil .descricao-perfil .localizacao-membro .local {
@@ -964,7 +964,7 @@ footer {
   width: 85%;
   background-color: #FCEED180;
   height: 38px;
-  padding: 20px;
+  padding: 10px;
   border-radius: 21px;
   display: flex;
   align-items: center;
@@ -984,7 +984,7 @@ footer {
 }
 
 .filtro-perfil .comunidades {
-  margin-right: 40px;
+  margin-right: 20px;
 }
 
 
@@ -1048,10 +1048,16 @@ footer {
     margin-right: 0px;
   }
 
-  .header-content.mobile #perfil-mobile,
+  .header-content.mobile #perfil-mobile{
+    width: 34px;
+    height: 34px;
+
+    cursor: pointer;
+  }
+
   .header-content.mobile #logo-mobile {
-    width: 48px;
-    height: 48px;
+    width: 50px;
+    height: 50px;
 
     cursor: pointer;
   }
@@ -1305,6 +1311,72 @@ footer {
     width: 16px;
     height: 16px;
   }
+
+  .card-perfil {
+    width: 95%;
+    padding: 20px;
+    margin-top: 90px;
+    height: 195px;
+  }
+
+  .card-perfil .descricao-perfil h1 {
+    font-size: 17px;
+  }
+
+  .card-perfil .descricao-perfil .nome-botao a {
+    font-size: 10px;
+  }
+
+  .card-perfil .descricao-perfil .descricao-bio {
+    font-size: 11px;
+  }
+
+
+  .card-perfil .descricao-perfil .estatisticas-perfil .estatistic,
+  .card-perfil .descricao-perfil .estatisticas-perfil .estatistic p {
+    font-size: 11px;
+  }
+
+  .card-perfil .descricao-perfil .nome-botao a img {
+    width: 12px;
+  }
+
+  .foto-user {
+  width: 68px;
+  height: 68px;
+  background-color: #ECECF0;
+  border-radius: 50% ;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.foto-user h1 {
+  font-size: 17px;
+}
+
+.local, .membro {
+  font-size: 12px;
+}
+
+.filtro-perfil {
+  width: 90%;
+  padding: 10px;
+}
+
+.filtro-perfil a {
+  font-size: 13px
+}
+
+.filtro-perfil .minhas-postagens{
+  padding: 6px 15px;
+}
+
+.filtro-perfil .comunidades {
+  /* margin-right: 20px; */
+}
+
+
 }
 
 /* ESTILOS DO CARD DO FEED */

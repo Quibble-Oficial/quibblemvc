@@ -120,23 +120,23 @@
   <!-- ESSE HEADER SÓ APARECE NO MOBILE -->
   <div class="header-content mobile">
     <img src="<?= $base; ?>/assets/images/bernardo.png" alt="" id="perfil-mobile" />
-    <img src="<?= $base; ?>/assets/images/logo_padrao.svg" alt="" id="logo-mobile" />
+    <img src="<?= $base; ?>/assets/images/LogoQuibbleAzulMobile.png" alt="" id="logo-mobile" />
     <div id="header-buttons-mobile">
       <div id="pesquisa-mobile">
-        <img src="<?= $base; ?>/assets/images/pesquisa_mobile.svg" alt="" />
+        <img src="<?= $base; ?>/assets/images/notificacoes.svg" alt="" />
       </div>
-      <div id="notificacoes-mobile">
+      <!-- <div id="notificacoes-mobile">
         <img src="<?= $base; ?>/assets/images/chat.svg" alt="" />
-      </div>
+      </div> -->
     </div>
   </div>
   <!-- ESSE FILTER SÓ APARECE NO MOBILE -->
-  <div id="filter-mobile">
+  <!-- <div id="filter-mobile">
     <div class="filter-item-mobile">Defesa Civil</div>
     <div class="filter-item-mobile active">Infraestrutura</div>
     <div class="filter-item-mobile">Segurança</div>
   </div>
-  <div id="filter-line-mobile"></div>
+  <div id="filter-line-mobile"></div> -->
 </header>
 
 <!-- SUGESTÕES (DIREITA) -->
