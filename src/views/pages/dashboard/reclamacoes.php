@@ -319,7 +319,7 @@ if (!function_exists('getStatusBadgeClasses')) {
                       <div class="col">
                         <!-- <img src="<?= $base; ?>/assets/svg/icons/germany@26.svg" class="avatar avatar-xs avatar-circle me-1" alt="Flag"> -->
                         <span class="ps-ms-2 font-weight-semibold text-gray-700 fs-16 me-1">1°</span>
-                        <span class="ps-ms-2 font-weight-semibold text-gray-700 fs-16">Anchieta</span>
+                        <span class="ps-ms-2 font-weight-semibold text-gray-700 fs-16">Coréia</span>
                       </div>
                       <div class="col-auto">
                         <span class="text-gray-700 fs-16">67.43%</span>
@@ -331,7 +331,7 @@ if (!function_exists('getStatusBadgeClasses')) {
                       <div class="col">
                         <!-- <img src="<?= $base; ?>/assets/svg/icons/united-kingdom@26.svg" class="avatar avatar-xs avatar-circle me-1" alt="Flag"> -->
                         <span class="ps-ms-2 font-weight-semibold text-gray-700 fs-16">2°</span>
-                        <span class="ps-ms-2 font-weight-semibold text-gray-700 fs-16">Bangu</span>
+                        <span class="ps-ms-2 font-weight-semibold text-gray-700 fs-16">Chatuba</span>
                       </div>
                       <div class="col-auto">
                         <span class="text-gray-700 fs-16">20.11%</span>
@@ -343,7 +343,7 @@ if (!function_exists('getStatusBadgeClasses')) {
                       <div class="col ">
                         <!-- <img src="<?= $base; ?>/assets/svg/icons/brazil@26.svg" class="avatar avatar-xs avatar-circle me-1" alt="Flag"> -->
                         <span class="ps-ms-2 font-weight-semibold text-gray-700 fs-16">3°</span>
-                        <span class="ps-ms-2 font-weight-semibold text-gray-700 fs-16">Campo Grande</span>
+                        <span class="ps-ms-2 font-weight-semibold text-gray-700 fs-16">Edson Passos</span>
                       </div>
                       <div class="col-auto">
                         <span class="text-gray-700 fs-16">6.92%</span>
@@ -355,7 +355,7 @@ if (!function_exists('getStatusBadgeClasses')) {
                       <div class="col">
                         <!-- <img src="<?= $base; ?>/assets/svg/icons/united-states@26.svg" class="avatar avatar-xs avatar-circle me-1" alt="Flag"> -->
                         <span class="ps-ms-2 font-weight-semibold text-gray-700 fs-16 mr-4">4°</span>
-                        <span class="ps-ms-2 font-weight-semibold text-gray-700 fs-16">Realengo</span>
+                        <span class="ps-ms-2 font-weight-semibold text-gray-700 fs-16">Santo Elias</span>
                       </div>
                       <div class="col-auto">
                         <span class="text-gray-700 fs-16">3.56%</span>
@@ -367,7 +367,7 @@ if (!function_exists('getStatusBadgeClasses')) {
                       <div class="col">
                         <!-- <img src="<?= $base; ?>/assets/svg/icons/argentina@26.svg" class="avatar avatar-xs avatar-circle me-1" alt="Flag"> -->
                         <span class="ps-ms-2 font-weight-semibold text-gray-700 fs-16">5°</span>
-                        <span class="ps-ms-2 font-weight-semibold text-gray-700 fs-16">Marechal Hermes </span>
+                        <span class="ps-ms-2 font-weight-semibold text-gray-700 fs-16">Rocha Sobrinho</span>
                       </div>
                       <div class="col-auto">
                         <span class="text-gray-700 fs-16">1.07%</span>

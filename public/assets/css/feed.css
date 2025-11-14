@@ -989,18 +989,6 @@ footer {
 
 
 
-
-
-
-
-
-
-
-
- 
-
-
-
 /* RESPONSIVIDADE */
 
 @media (orientation: portrait) {
@@ -1229,6 +1217,9 @@ footer {
   .feed-card .feed-card-content-feedback .feedback-comment img,
   .feed-card .feed-card-content-feedback .feedback-share img {
     margin-right: 8px;
+  }
+  .card-perfil {
+    width: 70%;
   }
 
   /* FOOTER RESPONSIVIDADE */

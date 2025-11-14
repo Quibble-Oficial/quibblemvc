@@ -514,7 +514,7 @@
               <div class="row align-items-center">
                 <div class="col-5 col-xxl-7">
                   <span class="caption text-gray-600 d-block mb-1">Comunidade mais crítica</span>
-                  <span class="h3 mb-0">Nilópolis</span>
+                  <span class="h3 mb-0">Chatuba</span>
                   <span class="d-block fs-11 mt-2 font-weight-semibold"><svg class="me-1" xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 14 14">
                     <g data-name="Icons/Tabler/Trend down" transform="translate(0)">
                       <rect data-name="Icons/Tabler/Trend down background" width="14" height="14" fill="none"/>
