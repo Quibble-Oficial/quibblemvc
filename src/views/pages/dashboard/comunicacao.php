@@ -13,10 +13,11 @@
 <link href="<?= $base;?>/assets/favicon.ico" rel="shortcut icon" type="image/x-icon">
 <!-- Muze Plugins CSS -->
 <link href="<?= $base;?>/assets/vendor/simplebar/dist/simplebar.min.css" rel="stylesheet" type="text/css" media="all">
+<link href="<?= $base;?>/assets/vendor/quill/dist/quill.snow.css" rel="stylesheet" type="text/css" media="all">
 <!-- Muze Theme CSS -->
 <link href="<?= $base;?>/assets/css/theme.min.css" rel="stylesheet" type="text/css" media="all">
 </head>
-<body class="bg-gray-100 analytics-template">
+<body class="bg-gray-100 new-projects-template user-profile-template analytics-template">
 
 <!-- Muze Customize Sidebar -->
 <!-- <div class="customize-sidebar">
@@ -460,7 +461,7 @@
           <div class="card mb-4 rounded-12 shadow">
             <div class="card-body p-3 p-xl-3 p-xxl-4">
               <div class="row align-items-center">
-                <div class="col-5 col-xxl-6">
+                <div class="col-5 col-xxl-12">
                   <span class="caption text-gray-600 d-block mb-1">Comunidade mais Ativa em Interações</span>
                   <span class="h3 mb-0">Anchieta</span>
                   <span class="d-block fs-11 mt-2 font-weight-semibold"><svg class="me-1" xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 16 16">
@@ -480,7 +481,7 @@
           <div class="card mb-4 rounded-12 shadow">
             <div class="card-body p-3 p-xl-3 p-xxl-4">
               <div class="row align-items-center">
-                <div class="col-5 col-xxl-6">
+                <div class="col-5 col-xxl-10">
                   <span class="caption text-gray-600 d-block mb-1">Comunicações Pendentes</span>
                   <span class="h3 mb-0" >42 mensagens</span>
                   <span class="d-block fs-11 mt-2 font-weight-semibold"><svg class="me-1" xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 16 16">
@@ -497,75 +498,40 @@
           </div>
         </div>
 
-         <nav class="menu">
-        <ul>
-            <li class="active"><a href="<?= $base; ?>/dashboard/empty-state">Comunicados Oficiais</a></li>
-            <li><a href="<?= $base; ?>/dashboard/responder-cidadao">Responder Cidadão</a></li>
-            <li><a href="<?= $base; ?>/dashboard/canal-direto">Canal Direto</a></li>
+         <div class="container-fluid px-0">
+      <div class="mb-2 mb-md-3 mb-xl-4 pb-3">
+        <ul class="nav nav-tabs nav-tabs-md nav-tabs-line position-relative zIndex-0">
+          <li class="nav-item">
+            <a class="nav-link active" href="<?= $base;?>/comunicacao">Comunicados Oficiais</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="<?= $base;?>/responder-cidadao">Responder Cidadão</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="<?= $base;?>/canal-direto">Canal Direto</a>
+          </li>
         </ul>
-    </nav>
-      
-      <div class="row">
-        <div class="col-12 col-xl-8 mb-4">
-          <div class="card rounded-12 shadow-dark-80">
-            
-          </div>
-        </div>
-        <div class="col-12 col-xl-4 mb-4">
-          <div class="card h-100 rounded-12 shadow-dark-80">
-      
-          </div>
-        </div>
       </div>
-       <div class="row">
       
-      </div>
 
      <!--! area editavel  -->
       <div>
 
-              <div class="row group-cards pt-2">
+      <div class="row group-cards pt-2">
         <div class="col-xxl-12 mb-4">
           <div class="card rounded-12 shadow-dark-80 border border-gray-200 h-100">
             <div class="card-body pb-0 px-3 pt-3">
               <div class="pb-3 p-xl-5">
                 <form>
                   <div class="mb-4 mb-xl-5">
-                    <label class="form-label form-label-lg mb-3 mb-md-4">Titulo</label>
-                    <div class="d-flex align-items-center">
-                      <a href="#0" class="circle circle-xl border border-gray-300">
-                        <img src="<?= $base;?>/assets/img/project-logo.svg" alt="Project Logo">
-                      </a>
-                      <div class="ps-2 ps-md-3">
-                        <label class="text-primary font-weight-semibold d-block mb-1 mb-md-2">Upload logo</label>
-                        <a href="#0" class="text-gray-700 font-weight-semibold"><svg class="me-1" data-name="Icons/Tabler/Edit" xmlns="http://www.w3.org/2000/svg" width="12.003" height="12" viewBox="0 0 12.003 12">
-                          <rect data-name="Icons/Tabler/Edit background" width="12" height="12" fill="none"/>
-                          <path d="M.535,12A.532.532,0,0,1,0,11.517l0-.052V8.613A.538.538,0,0,1,.116,8.28l.041-.045L7.644.747a2.552,2.552,0,0,1,3.678,3.536l-.069.072-.713.713L3.765,11.844A.538.538,0,0,1,3.447,12l-.06,0ZM1.07,8.834v2.1h2.1L9.405,4.691l-2.1-2.1Zm9.092-4.9L10.5,3.6a1.482,1.482,0,0,0,.058-2.035L10.5,1.5a1.483,1.483,0,0,0-2.035-.058L8.4,1.5l-.335.335Z" fill="#495057"/>
-                        </svg> Edit</a>
-                      </div>
-                    </div>
-
-
-                    <!-- malta -->
-
-                    
-
-
+                    <label class="form-label form-label-lg" for="ProjectName">Título</label>
+                    <input type="text" placeholder="Escreva aqui..." id="ProjectName" class="form-control form-control-xl">
                   </div>
                   <div class="mb-4 mb-xl-5">
-                    <label class="form-label form-label-lg" for="ProjectName">Descrição</label>
-                    <input type="text" placeholder="Escreva aqui... id="ProjectName" class="form-control form-control-xl">
-                  </div>
-                  <div class="mb-4 mb-xl-5">
-                    <label class="form-label form-label-lg">Description</label>
-                    <div id="editor"></div>
-                  </div>
-                  <div class="mb-4 mb-xl-5">
-                    <label class="form-label form-label-lg" for="AddTeammates">Add teammates</label>
-                    <input type="text" placeholder="@username" id="AddTeammates" class="form-control form-control-xl">
+                    <label class="form-label form-label-lg">Descrição</label>
+                    <div id="editor" class="form-control"></div>
                   </div>
                   <div class="pt-xl-2 text-end">
-                    <span class="text-muted font-weight-semibold me-md-4 pe-sm-3 d-block d-sm-inline-block pb-2 pb-sm-0">STEP 2 OF 3</span>
                     <a href="#0" class="btn btn-xl btn-outline-dark text-gray-700 border-gray-700 me-2 me-md-4">Limpar</a>
                     <button type="button" class="btn btn-xl btn-primary">Enviar</button>
                   </div>
@@ -575,9 +541,6 @@
           </div>
         </div>
       </div>
-
-      </div>
-
       <!--!  area editavel 2 -->
 
 
@@ -1096,6 +1059,7 @@
 <script src="<?= $base;?>/assets/vendor/highcharts/highmaps.js"></script>
 <script src="<?= $base;?>/assets/vendor/apexcharts/dist/apexcharts.min.js"></script>
 <script src="<?= $base;?>/assets/vendor/simplebar/dist/simplebar.min.js"></script>
+<script src="<?= $base;?>/assets/vendor/quill/dist/quill.min.js"></script>
 <script src="<?= $base;?>/assets/js/theme-custom.js"></script>
 <script>
 

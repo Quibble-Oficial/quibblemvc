@@ -22,7 +22,7 @@ $router->get('/gastosdetalhados', 'DashboardController@gastosDetalhados');
 $router->get('/relatoriosdown', 'DashboardController@relatoriosDown');
 $router->get('/duvidasfiscalizacao', 'DashboardController@duvidasFiscalizacao');
 $router->get('/comunicacao', 'DashboardController@comunicacao');
-$router->get('/respondercidadao', 'DashboardController@responderCidadao');
+$router->get('/responder-cidadao', 'DashboardController@responderCidadao');
 $router->get('/canal-direto', 'DashboardController@canalDireto');
 
 

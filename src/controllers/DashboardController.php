@@ -119,6 +119,10 @@ class DashboardController extends Controller
 
     public function responderCidadao()
     {
-        $this->render('dashboard/respondercidadao', ['loggedUser' => $this->loggedUser]);
+        $this->render('dashboard/responder-cidadao', ['loggedUser' => $this->loggedUser]);
+    }
+    public function canalDireto()
+    {
+        $this->render('dashboard/canal-direto', ['loggedUser' => $this->loggedUser]);
     }
 }
