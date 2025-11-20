@@ -96,15 +96,15 @@ class DashboardController extends Controller
 
     public function gastosDetalhados()
     {
-        $this->render('dashboard/gastosdetalhados', ['loggedUser' => $this->loggedUser]);
+        $this->render('dashboard/gastos-detalhados', ['loggedUser' => $this->loggedUser]);
     }
     public function relatoriosDown()
     {
-        $this->render('dashboard/relatoriosdown', ['loggedUser' => $this->loggedUser]);
+        $this->render('dashboard/relatorios-para-download', ['loggedUser' => $this->loggedUser]);
     }
     public function duvidasFiscalizacao()
     {
-        $this->render('dashboard/duvidasfiscalizacao', ['loggedUser' => $this->loggedUser]);
+        $this->render('dashboard/canal-duvidas-fiscalizacao', ['loggedUser' => $this->loggedUser]);
     }
 
     public function comunicacao()

@@ -141,7 +141,7 @@
         </a>
       </li>
        <li class="nav-item">
-        <a class="nav-link" href="<?=$base;?>/gestao_interna" >
+        <a class="nav-link" href="<?=$base;?>/gestao-interna" >
           <img src="<?=$base;?>/assets/images/gestao_interna_dashboard.svg" alt=""> &nbsp;<span class="ms-2">Gestão Interna</span>
         </a>
       </li>

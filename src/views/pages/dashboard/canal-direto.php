@@ -9,11 +9,10 @@
 <meta name="keywords" content="bootstrap analytics dashboard page, bootstrap analytics dashboard template">
 <meta name="author" content="Muze Dashboard">
 <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-<!-- Muze Favicon -->
-<link href="<?= $base;?>/assets/favicon.ico" rel="shortcut icon" type="image/x-icon">
-<!-- Muze Plugins CSS -->
+
+
+<link rel="shortcut icon" href="<?=$base;?>/assets/images/logo_padrao.svg" type="image/x-icon">
 <link href="<?= $base;?>/assets/vendor/simplebar/dist/simplebar.min.css" rel="stylesheet" type="text/css" media="all">
-<!-- Muze Theme CSS -->
 <link href="<?= $base;?>/assets/css/theme.min.css" rel="stylesheet" type="text/css" media="all">
 </head>
 <body class="bg-gray-100 analytics-template chat-template">
@@ -516,7 +515,7 @@
       
       <!--!  area editavel 2 -->
 
-              <div class="container-fluid bg-white px-0 muze-chats">
+  <div class="container-fluid bg-white px-0 muze-chats">
     <div class="row g-0">
       <div class="has-xxl-4">
         
@@ -786,7 +785,7 @@
               </div>
               <div class="chat-message">
                 <div class="message-box">
-                  <p>Hey Bruce, sure thing! Here is the Roadmap document.</p>
+                  <p>Anchieta também está assim. Um completo descaso...</p>
                 </div>
                 <div class="px-3 py-2 d-flex align-items-center small text-gray-600 justify-content-end">
                   <span>7:03 AM</span>
@@ -799,7 +798,7 @@
                   <rect id="Icons_Tabler_Link_background" data-name="Icons/Tabler/Link background" width="16" height="16" fill="none"></rect>
                   <path id="Color" d="M1.143,14.857a3.9,3.9,0,0,1-.1-5.421l.1-.1L4.781,5.7a3.87,3.87,0,0,1,5.528,0,.683.683,0,1,1-.976.956,2.5,2.5,0,0,0-3.491-.083l-.091.088L2.109,10.3a2.537,2.537,0,0,0,3.5,3.672l.089-.085.455-.455a.683.683,0,0,1,1.015.91l-.049.056-.455.455a3.9,3.9,0,0,1-5.519,0ZM5.691,10.3a.683.683,0,1,1,.976-.956,2.5,2.5,0,0,0,3.491.084l.092-.088L13.892,5.7a2.537,2.537,0,0,0-3.5-3.672l-.089.085-.455.455a.683.683,0,0,1-1.015-.911l.05-.055.455-.455a3.9,3.9,0,0,1,5.614,5.42l-.1.1L11.219,10.3a3.869,3.869,0,0,1-5.529,0Z" fill="#495057"></path>
                 </g>
-              </svg> Roadmap.doc</a>
+              </svg> Quibble.docs</a>
             </div>
           </div>
           <div class="chat-item message-sender">

@@ -9,11 +9,10 @@
 <meta name="keywords" content="bootstrap analytics dashboard page, bootstrap analytics dashboard template">
 <meta name="author" content="Muze Dashboard">
 <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-<!-- Muze Favicon -->
-<link href="<?= $base;?>/assets/favicon.ico" rel="shortcut icon" type="image/x-icon">
-<!-- Muze Plugins CSS -->
+
+
+<link rel="shortcut icon" href="<?=$base;?>/assets/images/logo_padrao.svg" type="image/x-icon">
 <link href="<?= $base;?>/assets/vendor/simplebar/dist/simplebar.min.css" rel="stylesheet" type="text/css" media="all">
-<!-- Muze Theme CSS -->
 <link href="<?= $base;?>/assets/css/theme.min.css" rel="stylesheet" type="text/css" media="all">
 </head>
 <body class="bg-gray-100 analytics-template">

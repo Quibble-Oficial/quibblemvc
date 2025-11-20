@@ -2,18 +2,18 @@
 <!DOCTYPE html>
 <html dir="ltr" lang="en">
 <head>
-<title>Buy Muze Bootstrap 5 Analytics Page</title>
+<title>Transparência - Gastos Detalhados</title>
 <meta charset="UTF-8">
 <meta name="description" content="Presenting Muze, All-in-one Bootstrap 5 Analytics Admin Dashboard, 30+ premium HTML pages, 500+ components, dark mode, RTL. Starts @ Only $35">
 <meta name="title" content="Muze Bootstrap 5 Analytics Templates, Pages & Dashboard, analytics chart, chart design, chart template">
 <meta name="keywords" content="bootstrap analytics dashboard page, bootstrap analytics dashboard template">
 <meta name="author" content="Muze Dashboard">
 <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-<!-- Muze Favicon -->
-<link href="<?= $base;?>/assets/favicon.ico" rel="shortcut icon" type="image/x-icon">
-<!-- Muze Plugins CSS -->
+
+<link rel="shortcut icon" href="<?=$base;?>/assets/images/logo_padrao.svg" type="image/x-icon">
+
 <link href="<?= $base;?>/assets/vendor/simplebar/dist/simplebar.min.css" rel="stylesheet" type="text/css" media="all">
-<!-- Muze Theme CSS -->
+
 <link href="<?= $base;?>/assets/css/theme.min.css" rel="stylesheet" type="text/css" media="all">
 </head>
 <body class="bg-gray-100 analytics-template">
@@ -404,7 +404,7 @@
     <div class="container-fluid px-0">
       <div class="row align-items-center">
         <div class="col">
-          <h1 class="h2 mb-0">Gastos Detalhados</h1>
+          <h1 class="h2 mb-0">Transparência</h1>
         </div>
         <div class="col-auto d-flex align-items-center my-2 my-sm-0">
           <a href="#" class="btn btn-lg btn-outline-dark px-3 me-2 me-md-3"><span class="ps-1">Encaminhar Demanda</span> <svg class="ms-4" xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 14 14">
@@ -529,7 +529,7 @@
                   </svg> </span>
                 </div>
                 <div class="col-7 col-xxl-5 pe-xxl-0">
-                  <div id="MuzeSimpleDonut2"></div>
+                  <div id="MuzeColumnsChartTwo"></div>
                 </div>
               </div>
             </div>
@@ -538,66 +538,29 @@
       
     
         
-<div class="categorias">
-  <a href="/quibblemvc/public/gastosdetalhados" class="<?= ($active ?? '') === 'gastos' ? 'active' : '' ?>">Gastos Detalhados</a>
-  <a href="/quibblemvc/public/transparencia" class="<?= ($active ?? '') === 'transparencia' ? 'active' : '' ?>">Obras em Andamento</a>
-  <a href="dashboard/relatoriosdown" class="<?= ($active ?? '') === 'relatorios' ? 'active' : '' ?>">Relatórios para Download</a>
-  <a href="dashboard/duvidasfiscalizacao" class="<?= ($active ?? '') === 'duvidas' ? 'active' : '' ?>">Canal de Dúvidas e Fiscalização</a>
-</div>
+<div class="container-fluid px-0">
+      <div class="mb-2 mb-md-3 mb-xl-1 pb-0 mt-4">
+        <ul class="nav nav-tabs nav-tabs-md nav-tabs-line position-relative zIndex-0">
+          <li class="nav-item">
+            <a class="nav-link " href="<?= $base;?>/transparencia">Obras em Andamento</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link active" href="<?= $base;?>/gastos-detalhados">Gastos Detalhados</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link " href="<?= $base;?>/relatorios-para-download">Relatórios para Download</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link " href="<?= $base;?>/canal-duvidas-fiscalizacao">Canal de Dúvidas e Fiscalização</a>
+          </li>
+        </ul>
+      </div>
 
 
-<hr class="separador">
 
-<style>
-  .categorias {
-    display: flex;
-    justify-content: space-around;
-    margin-top: 20px;
-    margin-bottom: 10px;
-  }
-
-  .categorias a {
-  text-decoration: none;
-  color: black;
-  transition: all 0.3s ease;
-  position: relative; /* necessário pro efeito da borda */
-  font-family: 'Montserrat', sans-serif;
-  font-size: 20px ;
-}
-
-.categorias a::after {
-  content: "";
-  position: absolute;
-  left: 0;
-  bottom: -2px; /* distância da borda em relação ao texto */
-  width: 0;
-  height: 2px;
-  background-color: black;
-  transition: width 0.3s ease;
-}
-
-.categorias a:hover {
-  
-  transform: scale(1.1);
-}
-
-.categorias a:hover::after {
-  width: 100%; /* a borda cresce suavemente */
-}
-
-
-  .separador {
-    width: 100%;
-    border: 2px solid #000;
-    height: 5px;
-    background-color: #000;
-    
-  }
-</style>
-
-<div class="px-3 px-xxl-5 py-3 py-lg-4 border-bottom border-gray-200 after-header">
+<div class=" mt-4 mb-4 px- pb-xxl-5 py-1 py-lg-4 border-bottom border-gray-600 after-header">
         <div class="container-fluid px-0">
-        <div class="row align-items-center"> <!-- mantém os dois elementos na mesma linha -->
+        <div class="row align-items-center justify-content-between"> <!-- mantém os dois elementos na mesma linha -->
           
           <!-- Input de pesquisa -->
           <div class="col-3">
@@ -614,11 +577,8 @@
           <!-- Botão Exportar -->
           <div class="col-auto d-flex align-items-center">
             <div class="dropdown export-dropdown">
-              <a href="#" role="button" id="Exportbtn" data-bs-toggle="dropdown" aria-expanded="false" class="btn btn-lg btn-warning ms-1 px-3">
-                <span class="ps-1">Exportar</span> 
-                <svg class="ms-4" xmlns="http://www.w3.org/2000/svg" width="14" height="7.875" viewBox="0 0 14 7.875">
-                  <path d="M.231.228A.8.8,0,0,1,1.256.152l.088.075,6.3,6.222a.771.771,0,0,1,.076,1.013l-.076.087-6.3,6.222a.794.794,0,0,1-1.114,0,.771.771,0,0,1-.076-1.013l.076-.087L5.973,7,.231,1.328A.771.771,0,0,1,.154.315Z" transform="translate(14) rotate(90)" fill="#1e1e1e"/>
-                </svg>
+              <a href="#" role="button" id="Exportbtn" data-bs-toggle="dropdown" aria-expanded="false" class="btn btn-lg btn-primary ms-1 px-5 py-4">
+                <span class="">Exportar</span> 
               </a>
               <ul class="dropdown-menu" aria-labelledby="Exportbtn">
                 

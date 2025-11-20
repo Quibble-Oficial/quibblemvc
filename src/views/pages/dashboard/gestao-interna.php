@@ -30,9 +30,9 @@
             padding: 32px 32px 24px 32px;
         }
         .filtro-container h2 {
-            font-size: 2rem;
-            font-weight: 700;
-            margin-bottom: 24px;
+            font-size: 23px;
+            font-weight: 600;
+            margin-bottom: 16px;
             color: #222;
         }
         .filtro-form {
@@ -51,7 +51,7 @@
             border: 2px solid #bdbdbd;
             border-radius: 12px;
             padding: 8px 24px;
-            min-width: 220px;
+            min-width: 120px;
             height: 56px;
             position: relative;
         }
@@ -64,7 +64,7 @@
             background: transparent;
             border: none;
             color: #222;
-            font-size: 1.1rem;
+            font-size: 16px;
             outline: none;
             width: 100%;
         }
@@ -73,17 +73,18 @@
             padding-right: 24px;
         }
         .filtro-item input[type="text"] {
-            padding-right: 24px;
+            /* padding-right: 24px; */
+            width: 120px;
         }
         .filtrar {
-            background: #f6ecd3;
-            color: #2976f6;
+            background: #FCEED1;
+            color: #0F3876;
             border: none;
             border-radius: 12px;
             font-size: 1.1rem;
             font-weight: 600;
-            padding: 8px 40px;
-            margin-left: 16px;
+            padding: 8px 35px;
+            margin-left: 22px;
             cursor: pointer;
             height: 56px;
             box-shadow: 0 2px 8px rgba(0,0,0,0.04);
@@ -99,8 +100,7 @@
             border-radius: 12px;
             font-size: 1.1rem;
             font-weight: 600;
-            padding: 8px 40px;
-            margin-left: 16px;
+            padding: 8px 30px;
             cursor: pointer;
             height: 56px;
             transition: background 0.2s, color 0.2s;
@@ -1527,7 +1527,6 @@
   <div class="p-3 p-xxl-5">
     <div class="container-fluid px-0">
       <div class="filtro-container">
-        <div class="filtro-container">
         <h2>Filtro</h2>
         <form class="filtro-form">
             <div class="filtro-group">
@@ -1536,6 +1535,12 @@
                         <svg width="22" height="22" fill="none" stroke="#bdbdbd" stroke-width="2" viewBox="0 0 24 24"><circle cx="12" cy="8" r="4"></circle><path d="M4 20c0-4 4-6 8-6s8 2 8 6"></path></svg>
                     </span>
                     <select>
+                        <option>Comunidade</option>
+                        <option>Comunidade</option>
+                        <option>Comunidade</option>
+                        <option>Comunidade</option>
+                        <option>Comunidade</option>
+                        <option>Comunidade</option>
                         <option>Comunidade</option>
                     </select>
                 </div>
@@ -1569,11 +1574,10 @@
                     </span>
                     <input type="text" value="Nov 20, 2022" readonly="">
                 </div>
-                <button type="submit" class="filtrar">Filtrar</button>
+                <button type="submit" class="filtrar">Gerar</button>
                 <button type="button" class="limpar">Limpar</button>
             </div>
         </form>
-    </div>
       </div>
       <div class="row">
         <div class="col-12 mb-4">
@@ -1891,7 +1895,7 @@
                   <span class="h3 mb-0 text-truncate d-block"> 12 dias</span>
                 </div>
                 <div class="col-7 col-xxl-6" style="position: relative;">
-                  <div id="MuzeDoubleLine" style="min-height: 105px;"><div id="apexchartsafgjc9ei" class="apexcharts-canvas apexchartsafgjc9ei apexcharts-theme-light" style="width: 136.375px; height: 90px;"><svg id="SvgjsSvg1148" width="136.375" height="90" xmlns="http://www.w3.org/2000/svg" version="1.1" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:svgjs="http://svgjs.com/svgjs" class="apexcharts-svg" xmlns:data="ApexChartsNS" transform="translate(0, 0)" style="background: transparent;"><g id="SvgjsG1150" class="apexcharts-inner apexcharts-graphical" transform="translate(12, 30)"><defs id="SvgjsDefs1149"><clipPath id="gridRectMaskafgjc9ei"><rect id="SvgjsRect1155" width="121.375" height="48" x="-3.5" y="-1.5" rx="0" ry="0" opacity="1" stroke-width="0" stroke="none" stroke-dasharray="0" fill="#fff"></rect></clipPath><clipPath id="gridRectMarkerMaskafgjc9ei"><rect id="SvgjsRect1156" width="118.375" height="49" x="-2" y="-2" rx="0" ry="0" opacity="1" stroke-width="0" stroke="none" stroke-dasharray="0" fill="#fff"></rect></clipPath></defs><line id="SvgjsLine1154" x1="0" y1="0" x2="0" y2="45" stroke="#b6b6b6" stroke-dasharray="3" class="apexcharts-xcrosshairs" x="0" y="0" width="1" height="45" fill="#b1b9c4" filter="none" fill-opacity="0.9" stroke-width="1"></line><g id="SvgjsG1166" class="apexcharts-xaxis" transform="translate(0, 0)"><g id="SvgjsG1167" class="apexcharts-xaxis-texts-g" transform="translate(0, -4)"></g></g><g id="SvgjsG1176" class="apexcharts-grid"><g id="SvgjsG1177" class="apexcharts-gridlines-horizontal" style="display: none;"><line id="SvgjsLine1179" x1="0" y1="0" x2="114.375" y2="0" stroke="#e0e0e0" stroke-dasharray="0" class="apexcharts-gridline"></line><line id="SvgjsLine1180" x1="0" y1="11.25" x2="114.375" y2="11.25" stroke="#e0e0e0" stroke-dasharray="0" class="apexcharts-gridline"></line><line id="SvgjsLine1181" x1="0" y1="22.5" x2="114.375" y2="22.5" stroke="#e0e0e0" stroke-dasharray="0" class="apexcharts-gridline"></line><line id="SvgjsLine1182" x1="0" y1="33.75" x2="114.375" y2="33.75" stroke="#e0e0e0" stroke-dasharray="0" class="apexcharts-gridline"></line><line id="SvgjsLine1183" x1="0" y1="45" x2="114.375" y2="45" stroke="#e0e0e0" stroke-dasharray="0" class="apexcharts-gridline"></line></g><g id="SvgjsG1178" class="apexcharts-gridlines-vertical" style="display: none;"></g><line id="SvgjsLine1185" x1="0" y1="45" x2="114.375" y2="45" stroke="transparent" stroke-dasharray="0"></line><line id="SvgjsLine1184" x1="0" y1="1" x2="0" y2="45" stroke="transparent" stroke-dasharray="0"></line></g><g id="SvgjsG1157" class="apexcharts-line-series apexcharts-plot-series"><g id="SvgjsG1158" class="apexcharts-series" seriesName="2021" data:longestSeries="true" rel="1" data:realIndex="0"><path id="SvgjsPath1161" d="M 0 33.375C 6.671875 33.375 12.390625 30 19.0625 30C 25.734375 30 31.453125 34.5 38.125 34.5C 44.796875 34.5 50.515625 25.875 57.1875 25.875C 63.859375 25.875 69.578125 29.25 76.25 29.25C 82.921875 29.25 88.640625 4.125 95.3125 4.125C 101.984375 4.125 107.703125 7.5 114.375 7.5" fill="none" fill-opacity="1" stroke="rgba(0,143,251,0.85)" stroke-opacity="1" stroke-linecap="butt" stroke-width="3" stroke-dasharray="0" class="apexcharts-line" index="0" clip-path="url(#gridRectMaskafgjc9ei)" pathTo="M 0 33.375C 6.671875 33.375 12.390625 30 19.0625 30C 25.734375 30 31.453125 34.5 38.125 34.5C 44.796875 34.5 50.515625 25.875 57.1875 25.875C 63.859375 25.875 69.578125 29.25 76.25 29.25C 82.921875 29.25 88.640625 4.125 95.3125 4.125C 101.984375 4.125 107.703125 7.5 114.375 7.5" pathFrom="M -1 45L -1 45L 19.0625 45L 38.125 45L 57.1875 45L 76.25 45L 95.3125 45L 114.375 45"></path><g id="SvgjsG1159" class="apexcharts-series-markers-wrap" data:realIndex="0"><g class="apexcharts-series-markers"><circle id="SvgjsCircle1191" r="0" cx="0" cy="0" class="apexcharts-marker w9khke0wri no-pointer-events" stroke="#ffffff" fill="#008ffb" fill-opacity="1" stroke-width="2" stroke-opacity="0.9" default-marker-size="0"></circle></g></g></g><g id="SvgjsG1162" class="apexcharts-series" seriesName="2020" data:longestSeries="true" rel="2" data:realIndex="1"><path id="SvgjsPath1165" d="M 0 40.875C 6.671875 40.875 12.390625 33 19.0625 33C 25.734375 33 31.453125 15 38.125 15C 44.796875 15 50.515625 28.125 57.1875 28.125C 63.859375 28.125 69.578125 16.875 76.25 16.875C 82.921875 16.875 88.640625 15 95.3125 15C 101.984375 15 107.703125 29.625 114.375 29.625" fill="none" fill-opacity="1" stroke="rgba(168,203,254,0.85)" stroke-opacity="1" stroke-linecap="butt" stroke-width="3" stroke-dasharray="0" class="apexcharts-line" index="1" clip-path="url(#gridRectMaskafgjc9ei)" pathTo="M 0 40.875C 6.671875 40.875 12.390625 33 19.0625 33C 25.734375 33 31.453125 15 38.125 15C 44.796875 15 50.515625 28.125 57.1875 28.125C 63.859375 28.125 69.578125 16.875 76.25 16.875C 82.921875 16.875 88.640625 15 95.3125 15C 101.984375 15 107.703125 29.625 114.375 29.625" pathFrom="M -1 45L -1 45L 19.0625 45L 38.125 45L 57.1875 45L 76.25 45L 95.3125 45L 114.375 45"></path><g id="SvgjsG1163" class="apexcharts-series-markers-wrap" data:realIndex="1"><g class="apexcharts-series-markers"><circle id="SvgjsCircle1192" r="0" cx="0" cy="0" class="apexcharts-marker w8xbi4piug no-pointer-events" stroke="#ffffff" fill="#a8cbfe" fill-opacity="1" stroke-width="2" stroke-opacity="0.9" default-marker-size="0"></circle></g></g></g><g id="SvgjsG1160" class="apexcharts-datalabels" data:realIndex="0"></g><g id="SvgjsG1164" class="apexcharts-datalabels" data:realIndex="1"></g></g><line id="SvgjsLine1186" x1="0" y1="0" x2="114.375" y2="0" stroke="#b6b6b6" stroke-dasharray="0" stroke-width="1" class="apexcharts-ycrosshairs"></line><line id="SvgjsLine1187" x1="0" y1="0" x2="114.375" y2="0" stroke-dasharray="0" stroke-width="0" class="apexcharts-ycrosshairs-hidden"></line><g id="SvgjsG1188" class="apexcharts-yaxis-annotations"></g><g id="SvgjsG1189" class="apexcharts-xaxis-annotations"></g><g id="SvgjsG1190" class="apexcharts-point-annotations"></g></g><rect id="SvgjsRect1153" width="0" height="0" x="0" y="0" rx="0" ry="0" opacity="1" stroke-width="0" stroke="none" stroke-dasharray="0" fill="#fefefe"></rect><g id="SvgjsG1175" class="apexcharts-yaxis" rel="0" transform="translate(-18, 0)"></g><g id="SvgjsG1151" class="apexcharts-annotations"></g></svg><div class="apexcharts-legend" style="max-height: 45px;"></div><div class="apexcharts-tooltip apexcharts-theme-light"><div class="apexcharts-tooltip-series-group" style="order: 1;"><span class="apexcharts-tooltip-marker" style="background-color: rgb(0, 143, 251);"></span><div class="apexcharts-tooltip-text" style="font-family: Helvetica, Arial, sans-serif; font-size: 12px;"><div class="apexcharts-tooltip-y-group"><span class="apexcharts-tooltip-text-label"></span><span class="apexcharts-tooltip-text-value"></span></div><div class="apexcharts-tooltip-z-group"><span class="apexcharts-tooltip-text-z-label"></span><span class="apexcharts-tooltip-text-z-value"></span></div></div></div><div class="apexcharts-tooltip-series-group" style="order: 2;"><span class="apexcharts-tooltip-marker" style="background-color: rgb(0, 227, 150);"></span><div class="apexcharts-tooltip-text" style="font-family: Helvetica, Arial, sans-serif; font-size: 12px;"><div class="apexcharts-tooltip-y-group"><span class="apexcharts-tooltip-text-label"></span><span class="apexcharts-tooltip-text-value"></span></div><div class="apexcharts-tooltip-z-group"><span class="apexcharts-tooltip-text-z-label"></span><span class="apexcharts-tooltip-text-z-value"></span></div></div></div></div><div class="apexcharts-yaxistooltip apexcharts-yaxistooltip-0 apexcharts-yaxistooltip-left apexcharts-theme-light"><div class="apexcharts-yaxistooltip-text"></div></div></div></div>
+                  <div id="#MuzeSimpleDonut2"></div>
                 <div class="resize-triggers"><div class="expand-trigger"><div style="width: 161px; height: 106px;"></div></div><div class="contract-trigger"></div></div></div>
               </div>
             </div>
@@ -2856,6 +2860,61 @@ yaxis: {
 };
 
 var chart = new ApexCharts(document.querySelector("#MuzeSimpleDonut"), options);
+chart.render();
+
+var options = {
+  series: [50, 50],
+  chart: {
+  type: 'donut',
+  height: 125,
+},
+dataLabels: {
+  enabled: false,
+},
+colors: ['#a8cbfe', '#008ffb'],
+stroke: {
+  width: 0
+},
+legend: {
+  show: false,
+},
+states: {
+  hover: {
+    filter: {
+      type: 'none',
+    }
+  },
+},
+plotOptions: {
+  donut: {
+    size: '65%',
+    background: 'transparent',
+  },
+  pie: {
+    offsetX: 25
+  }
+},
+grid: {
+  show: false,
+  xaxis: {
+    lines: {
+      show: false
+    }
+  },
+  row: {
+    colors: undefined,
+    opacity: 0
+  },
+},
+tooltip: {
+  enabled: false,
+},
+yaxis: {
+  show: false,
+}
+};
+
+var chart = new ApexCharts(document.querySelector("#MuzeSimpleDonut2"), options);
 chart.render();
 
 //Muze Columns Chart JavaScript
