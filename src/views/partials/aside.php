@@ -109,8 +109,8 @@
       </div>
       <div id="perfil-header">
         <div id="text">
-          <span><b>Bernardo</b></span> <br>
-          <span>Anchieta-Rj</span>
+          <span><b><?= $usuario->nome; ?></b></span> <br>
+          <span>Bairro-Rj</span>
             </div>
         <img src="<?= $base; ?>/assets/images/bernardo.png" alt="" id='perfil-img' />
       </div>
@@ -120,23 +120,23 @@
   <!-- ESSE HEADER SÓ APARECE NO MOBILE -->
   <div class="header-content mobile">
     <img src="<?= $base; ?>/assets/images/bernardo.png" alt="" id="perfil-mobile" />
-    <img src="<?= $base; ?>/assets/images/logo_padrao.svg" alt="" id="logo-mobile" />
+    <img src="<?= $base; ?>/assets/images/LogoQuibbleAzulMobile.png" alt="" id="logo-mobile" />
     <div id="header-buttons-mobile">
       <div id="pesquisa-mobile">
-        <img src="<?= $base; ?>/assets/images/pesquisa_mobile.svg" alt="" />
+        <img src="<?= $base; ?>/assets/images/notificacoes.svg" alt="" />
       </div>
-      <div id="notificacoes-mobile">
+      <!-- <div id="notificacoes-mobile">
         <img src="<?= $base; ?>/assets/images/chat.svg" alt="" />
-      </div>
+      </div> -->
     </div>
   </div>
   <!-- ESSE FILTER SÓ APARECE NO MOBILE -->
-  <div id="filter-mobile">
+  <!-- <div id="filter-mobile">
     <div class="filter-item-mobile">Defesa Civil</div>
     <div class="filter-item-mobile active">Infraestrutura</div>
     <div class="filter-item-mobile">Segurança</div>
   </div>
-  <div id="filter-line-mobile"></div>
+  <div id="filter-line-mobile"></div> -->
 </header>
 
 <!-- SUGESTÕES (DIREITA) -->
@@ -146,7 +146,7 @@
         <div id="sugestoes-content">
 
             <div id="em-alta">
-                <h3><img src="<?= $base; ?>/assets/images/bernardo.png" alt="Ícone Em Alta" class="card-title-icon"> Em Alta</h3> 
+                <h3>Em Alta</h3> 
                 <div class="linha-em-alta"></div>
                 
                 <a href="#">
@@ -187,7 +187,7 @@
             </div>
                 
             <div id="sugestoes-area">
-                <h3><img src="<?= $base; ?>/assets/images/bernardo.png" alt="Ícone Prefeitos" class="card-title-icon"> Prefeitos para Seguir</h3> 
+                <h3>Prefeitos para Seguir</h3> 
                 <div class="linha-em-alta"></div>
                 
                 <div class="sugestoes-card">
@@ -218,7 +218,7 @@
                 </div>
             </div>
 
-            <div id="sugestoes-para-seguir">
+            <!-- <div id="sugestoes-para-seguir">
                 <h3><img src="<?= $base; ?>/assets/images/bernardo.png" alt="Ícone Sugestões" class="card-title-icon"> Sugestões para Seguir</h3> 
                 <div class="linha-em-alta"></div>
 
@@ -247,7 +247,7 @@
                         <p>São Paulo</p>
                     </div>
                     <a href="#" class="btn-seguir">Seguir</a>
-                </div>
+                </div> -->
             </div>
 
         </div>

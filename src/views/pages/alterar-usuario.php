@@ -32,19 +32,22 @@
 
   <main>
     <div id="feed">
-      <div class="feed-filter-bar">
+      <div style="margin:0;" class="feed-filter-bar">
        
 
-        <div class="filter-dropdown-right"></div>
+        <div style="margin:0;" class="filter-dropdown-right"></div>
 
         
       </div>
 
-      <div id="feed-content">
+      <div style="margin:0;" id="feed-content">
 
         <div class="conteudo">
           <section class="config-container">
-            <h2>Configurações</h2>
+            <div class="configuracoes-alterar">
+              <img src="<?= $base; ?>/assets/images/engrenagem.png" alt="">
+              <h2>Configurações</h2>
+            </div>
             <p>Gerencie suas preferências de conta e privacidade</p>
 
             <div class="tabs">
@@ -55,7 +58,10 @@
             </div>
 
             <div class="card settings-card">
-              <h3>Configurações da Conta</h3>
+              <div class="configuracoes-alterar conta">
+                <img src="<?= $base; ?>/assets/images/avatar.png" alt="">
+                <h3>Configurações da Conta</h3>
+              </div>
 
               <div class="profile-row">
                 <div class="avatar-large">
@@ -114,14 +120,6 @@
             </div>
           </section>
         </div>
-
-        <?php if (!empty($reclamacoes)): ?>
-          <?php foreach ($reclamacoes as $reclamacao): ?>
-            <?php $render("feed-card", ['reclamacao' => $reclamacao, 'loggedUser' => $loggedUser]); ?>
-          <?php endforeach; ?>
-        <?php else: ?>
-          <p>Nenhuma reclamação encontrada.</p>
-        <?php endif; ?>
 
       </div>
     </div>

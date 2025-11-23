@@ -687,13 +687,13 @@
 
             <div class="dropdown profile-dropdown">
               <a href="#" class="avatar avatar-sm avatar-circle ms-4 ms-xxl-5" data-bs-toggle="dropdown" aria-expanded="false" id="dropdownMenuButton">
-                <img class="avatar-img" src="<?= $base;?>/assets/images/avatar1.png" alt="Avatar">
+                <img class="avatar-img" src="<?= $base;?>/assets/images/marottomiranda1.jpeg" alt="Avatar">
                 <span class="avatar-status avatar-sm-status avatar-success">&nbsp;</span>
               </a>
               <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="dropdownMenuButton">
                 <li class="pt-2 px-4">
-                  <span class="fs-16 font-weight-bold text-black-600 Montserrat-font me-2">Dom Orani</span><img src="<?= $base;?>/assets/svg/icons/fill-check.svg" alt="icon">
-                  <small class="text-gray-600 pb-3 d-block">gabinetearcebispo@arqrio.org.br</small>
+                  <span class="fs-16 font-weight-bold text-black-600 Montserrat-font me-2">Marotto Miranda</span><img src="<?= $base;?>/assets/svg/icons/fill-check.svg" alt="icon">
+                  <small class="text-gray-600 pb-3 d-block">marottomiranda@ouvidoria.org.br</small>
                 </li>
                 <li class="dropdown">
                   <a class="dropdown-item" role="button" data-bs-toggle="dropdown" aria-expanded="false" id="Status" href="#"><svg data-name="Icons/Tabler/Share" xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16">

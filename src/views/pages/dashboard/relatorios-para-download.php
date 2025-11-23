@@ -2,19 +2,18 @@
 <!DOCTYPE html>
 <html dir="ltr" lang="en">
 <head>
-<title>Relatórios</title>
+<title>Transparência - Relatórios para Download</title>
 <meta charset="UTF-8">
 <meta name="description" content="Presenting Muze, All-in-one Bootstrap 5 Analytics Admin Dashboard, 30+ premium HTML pages, 500+ components, dark mode, RTL. Starts @ Only $35">
 <meta name="title" content="Muze Bootstrap 5 Analytics Templates, Pages & Dashboard, analytics chart, chart design, chart template">
 <meta name="keywords" content="bootstrap analytics dashboard page, bootstrap analytics dashboard template">
 <meta name="author" content="Muze Dashboard">
 <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-<!-- Muze Favicon -->
-<link href="<?= $base;?>/assets/favicon.ico" rel="shortcut icon" type="image/x-icon">
+
 <link rel="shortcut icon" href="<?=$base;?>/assets/images/logo_padrao.svg" type="image/x-icon">
-<!-- Muze Plugins CSS -->
+
 <link href="<?= $base;?>/assets/vendor/simplebar/dist/simplebar.min.css" rel="stylesheet" type="text/css" media="all">
-<!-- Muze Theme CSS -->
+
 <link href="<?= $base;?>/assets/css/theme.min.css" rel="stylesheet" type="text/css" media="all">
 </head>
 <body class="bg-gray-100 all-projects-template analytics-template">
@@ -398,18 +397,22 @@
 
 <!-- Muze Main Content -->
 <div class="main-content">
- 
+  
   <?php $render("header-dashboard", ['usuario' => $loggedUser]); ?>
-
-  <div class="px-3 px-xxl-5 py-3 py-lg-4 border-bottom border-gray-200 after-header">
+   <div class="px-3 px-xxl-5 py-3 py-lg-4 border-bottom border-gray-200 after-header">
     <div class="container-fluid px-0">
       <div class="row align-items-center">
         <div class="col">
-          <h1 class="h2 mb-0">Relatórios</h1>
+          <h1 class="h2 mb-0">Transparência</h1>
         </div>
         <div class="col-auto d-flex align-items-center my-2 my-sm-0">
+          <a href="#" class="btn btn-lg btn-outline-dark px-3 me-2 me-md-3"><span class="ps-1">Encaminhar Demanda</span> <svg class="ms-4" xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 14 14">
+            <rect data-name="Icons/Tabler/Add background" width="14" height="14" fill="none"/>
+            <path d="M6.329,13.414l-.006-.091V7.677H.677A.677.677,0,0,1,.585,6.329l.092-.006H6.323V.677A.677.677,0,0,1,7.671.585l.006.092V6.323h5.646a.677.677,0,0,1,.091,1.348l-.091.006H7.677v5.646a.677.677,0,0,1-1.348.091Z" fill="#1e1e1e"/>
+          </svg>
+          </a>
           <div class="dropdown export-dropdown">
-            <a href="#" role="button" id="Exportbtn" data-bs-toggle="dropdown" aria-expanded="false" class="btn btn-lg btn-warning ms-1 px-3"><span class="ps-1">Exportar</span> <svg class="ms-4" xmlns="http://www.w3.org/2000/svg" width="14" height="7.875" viewBox="0 0 14 7.875">
+            <a href="#" role="button" id="Exportbtn" data-bs-toggle="dropdown" aria-expanded="false" class="btn btn-lg btn-warning ms-1 px-3"><span class="ps-1">Gerar Relatório</span> <svg class="ms-4" xmlns="http://www.w3.org/2000/svg" width="14" height="7.875" viewBox="0 0 14 7.875">
               <path d="M.231.228A.8.8,0,0,1,1.256.152l.088.075,6.3,6.222a.771.771,0,0,1,.076,1.013l-.076.087-6.3,6.222a.794.794,0,0,1-1.114,0,.771.771,0,0,1-.076-1.013l.076-.087L5.973,7,.231,1.328A.771.771,0,0,1,.154.315Z" transform="translate(14) rotate(90)" fill="#1e1e1e"/>
             </svg>
             </a>
@@ -450,8 +453,8 @@
             <div class="card-body p-3 p-xl-3 p-xxl-4">
               <div class="row align-items-center">
                 <div class="col-5 col-xxl-6">
-                  <span class="caption text-gray-600 d-block mb-1">Total de Reclamações</span>
-                  <span class="h3 mb-0">15,979</span>
+                  <span class="caption text-gray-600 d-block mb-1">Orçamento Utilizado</span>
+                  <span class="h3 mb-0">79%</span>
                   <span class="d-block fs-11 mt-2 font-weight-semibold"><svg class="me-1" xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 16 16">
                     <g data-name="icons/tabler/trend-up" transform="translate(0)">
                       <rect data-name="Icons/Tabler/Trend background" width="16" height="16" fill="none"/>
@@ -471,8 +474,8 @@
             <div class="card-body p-3 p-xl-3 p-xxl-4">
               <div class="row align-items-center">
                 <div class="col-5 col-xxl-6">
-                  <span class="caption text-gray-600 d-block mb-1">Pendentes</span>
-                  <span class="h3 mb-0">6,443</span>
+                  <span class="caption text-gray-600 d-block mb-1">Obras Entregues</span>
+                  <span class="h3 mb-0">443</span>
                   <span class="d-block fs-11 mt-2 font-weight-semibold"><svg class="me-1" xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 14 14">
                     <g data-name="Icons/Tabler/Trend down" transform="translate(0)">
                       <rect data-name="Icons/Tabler/Trend down background" width="14" height="14" fill="none"/>
@@ -481,19 +484,20 @@
                   </svg> -10.45</span>
                 </div>
                 <div class="col-7 col-xxl-6 pe-xxl-0">
-                  <div id="MuzeSingleLineTwo"></div>
+                  <div id="MuzeSingleLine"></div>
                 </div>
               </div>
             </div>
           </div>
         </div>
+
         <div class="col-md-6 col-lg-12 col-xl-6 col-xxl-3">
           <div class="card mb-4 rounded-12 shadow">
             <div class="card-body p-3 p-xl-3 p-xxl-4">
               <div class="row align-items-center">
                 <div class="col-5 col-xxl-6">
-                  <span class="caption text-gray-600 d-block mb-1">Em andamento</span>
-                  <span class="h3 mb-0">50.1%</span>
+                  <span class="caption text-gray-600 d-block mb-1">Tempo Médio de Execução</span>
+                  <span class="h3 mb-0">14 dias</span>
                   <span class="d-block fs-11 mt-2 font-weight-semibold"><svg class="me-1" xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 16 16">
                     <g data-name="icons/tabler/trend-up" transform="translate(0)">
                       <rect data-name="Icons/Tabler/Trend background" width="16" height="16" fill="none"/>
@@ -508,19 +512,20 @@
             </div>
           </div>
         </div>
+
         <div class="col-md-6 col-lg-12 col-xl-6 col-xxl-3">
           <div class="card mb-4 rounded-12 shadow">
             <div class="card-body p-3 p-xl-3 p-xxl-4">
               <div class="row align-items-center">
                 <div class="col-5 col-xxl-7">
-                  <span class="caption text-gray-600 d-block mb-1">Comunidade mais crítica</span>
-                  <span class="h3 mb-0">Chatuba</span>
-                  <span class="d-block fs-11 mt-2 font-weight-semibold"><svg class="me-1" xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 14 14">
-                    <g data-name="Icons/Tabler/Trend down" transform="translate(0)">
-                      <rect data-name="Icons/Tabler/Trend down background" width="14" height="14" fill="none"/>
-                      <path d="M.218.106.158.158a.539.539,0,0,0-.052.7L.158.919,4.465,5.227a.539.539,0,0,0,.7.052l.06-.052L7.718,2.736l4.443,4.443H8.436a.539.539,0,0,0-.533.465L7.9,7.718a.54.54,0,0,0,.465.534l.073,0h5.012a.537.537,0,0,0,.5-.3h0l0-.007,0-.007h0A.537.537,0,0,0,14,7.791V7.783a.544.544,0,0,0,0-.06V2.692a.539.539,0,0,0-1.073-.072l0,.072V6.418L8.1,1.593a.539.539,0,0,0-.7-.052l-.061.052L4.846,4.084.919.158a.538.538,0,0,0-.7-.052Z" transform="translate(0 2.625)" fill="#FD7E14"/>
+                  <span class="caption text-gray-600 d-block mb-1">Comunidade Mais Beneficiada</span>
+                  <span class="h3 mb-0" >Nilópolis</span>
+                  <span class="d-block fs-11 mt-2 font-weight-semibold"><svg class="me-1" xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 16 16">
+                    <g data-name="icons/tabler/trend-up" transform="translate(0)">
+                      <rect data-name="Icons/Tabler/Trend background" width="16" height="16" fill="none"/>
+                      <path d="M.249,9.315.18,9.256a.616.616,0,0,1-.059-.8L.18,8.385,5.1,3.462A.616.616,0,0,1,5.9,3.4l.068.059L8.821,6.309,13.9,1.231H9.641A.616.616,0,0,1,9.031.7L9.025.616a.617.617,0,0,1,.532-.61L9.641,0h5.728a.614.614,0,0,1,.569.346h0l0,.008,0,.008h0a.613.613,0,0,1,.048.168V.541A.621.621,0,0,1,16,.61V6.359a.616.616,0,0,1-1.226.083l-.005-.083V2.1L9.256,7.615a.616.616,0,0,1-.8.059l-.069-.059L5.539,4.768,1.05,9.256a.615.615,0,0,1-.8.059Z" transform="translate(0 3)" fill="#20C997"/>
                     </g>
-                  </svg> -0.04%</span>
+                  </svg> </span>
                 </div>
                 <div class="col-7 col-xxl-5 pe-xxl-0">
                   <div id="MuzeColumnsChartTwo"></div>
@@ -529,20 +534,63 @@
             </div>
           </div>
         </div>
+      
+    
+        
+<div class="container-fluid px-0">
+      <div class="mb-2 mb-md-3 mb-xl-1 pb-0 mt-4">
+        <ul class="nav nav-tabs nav-tabs-md nav-tabs-line position-relative zIndex-0">
+          <li class="nav-item">
+            <a class="nav-link " href="<?= $base;?>/transparencia">Obras em Andamento</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link " href="<?= $base;?>/gastos-detalhados">Gastos Detalhados</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link active " href="<?= $base;?>/relatorios-para-download">Relatórios para Download</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link " href="<?= $base;?>/canal-duvidas-fiscalizacao">Canal de Dúvidas e Fiscalização</a>
+          </li>
+        </ul>
       </div>
-      <div class="row">
-        <div class="pb-2 pt-3 mb-4 mb-xl-5">
-          <form>
-            <div class="row align-items-center">
-              <div class="col-3">
-                <div class="input-group input-group-xl bg-white border border-gray-300 rounded px-3 me-2 me-xl-4">
-                  <button type="button" class="border-0 bg-transparent p-1"><img src="<?= $base;?>/assets/svg/icons/search@14.svg" alt="Search"></button>
-                  <input type="search" class="form-control border-0 bg-transparent" placeholder="Pesquisar">
-                </div>
+
+
+
+<div class=" mt-4 mb-4 px- pb-xxl-5 py-1 py-lg-4 border-bottom border-gray-600 after-header">
+        <div class="container-fluid px-0">
+        <div class="row align-items-center justify-content-between"> <!-- mantém os dois elementos na mesma linha -->
+          
+          <!-- Input de pesquisa -->
+          <div class="col-3">
+            <form>
+              <div class="input-group input-group-xl bg-white border border-gray-300 rounded px-3 me-2 me-xl-4">
+                <button type="button" class="border-0 bg-transparent p-1">
+                  <img src="<?= $base;?>/assets/svg/icons/search@14.svg" alt="Search">
+                </button>
+                <input type="search" class="form-control border-0 bg-transparent" placeholder="Procurar">
               </div>
+            </form>
+          </div>
+        
+          <!-- Botão Exportar -->
+          <div class="col-auto d-flex align-items-center">
+            <div class="dropdown export-dropdown">
+              <a href="#" role="button" id="Exportbtn" data-bs-toggle="dropdown" aria-expanded="false" class="btn btn-lg btn-primary ms-1 px-5 py-4">
+                <span class="">Exportar</span> 
+              </a>
+              <ul class="dropdown-menu" aria-labelledby="Exportbtn">
+                
+                <!-- seus itens do dropdown -->
+              </ul>
             </div>
-          </form>
-      </div>
+          </div>
+        
+        </div>
+        </div>
+        </div>
+
+     
         <div class="row group-cards">
         <div class="col-md-6 col-xxl-4 mb-4">
           <div class="card rounded-12 shadow-dark-80 border border-gray-200 h-100">

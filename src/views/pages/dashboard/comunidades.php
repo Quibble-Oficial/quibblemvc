@@ -497,7 +497,7 @@
                       </ul>
                     </div>
                   </div>
-                  <h5 class="font-weight-semibold title-box mb-0">Anchieta</h5>
+                  <h5 class="font-weight-semibold title-box mb-0">Vila Emil</h5>
                   <h6 class="font-weight-semibold title-box mb-0">Reclamações: 30</h6>
                   <h6 class="font-weight-semibold title-box mb-0">Resolvidas: 16</h6>
                   <div class="pt-4 pb-4">
@@ -570,7 +570,7 @@
                       </ul>
                     </div>
                   </div>
-                  <h5 class="font-weight-semibold title-box mb-0">Realengo</h5>
+                  <h5 class="font-weight-semibold title-box mb-0">Santa Terezinha</h5>
                   <h6 class="font-weight-semibold title-box mb-0">Reclamações: 30</h6>
                   <h6 class="font-weight-semibold title-box mb-0">Resolvidas: 16</h6>
 
@@ -641,7 +641,7 @@
                       </ul>
                     </div>
                   </div>
-                  <h5 class="font-weight-semibold title-box mb-0">Bangu</h5>
+                  <h5 class="font-weight-semibold title-box mb-0">Chatuba</h5>
                   <h6 class="font-weight-semibold title-box mb-0">Reclamações: 30</h6>
                   <h6 class="font-weight-semibold title-box mb-0">Resolvidas: 16</h6>
 
@@ -711,7 +711,7 @@
                 </thead>
                 <tbody class="list">
                   <tr>
-                    <td>Anchieta</td>
+                    <td>Vila Emil</td>
                     <td><span class="badge bg-teal-50 text-teal-500">105</span></td>
                     <td>73</td>
                     <td>20</td>
@@ -741,7 +741,7 @@
                      </td>
                     </tr>
                   <tr> 
-                   <td>Realengo</td>
+                   <td>Coréia</td>
                     <td><span class="badge bg-teal-50 text-teal-500">55</span></td>
                     <td>43</td>
                     <td>23</td>
@@ -770,7 +770,7 @@
                     </td>
                   </tr>
                     <tr>
-                  <td>Vilar dos teles</td>
+                  <td>Santa Terezinha</td>
                     <td><span class="badge bg-teal-50 text-teal-500">110</span></td>
                     <td>64</td>
                     <td>35</td>
@@ -799,7 +799,7 @@
                     </td>
                   </tr>
                     <tr>
-                  <td>Madureira</td>
+                  <td>Chatuba</td>
                     <td><span class="badge bg-teal-50 text-teal-500">37</span></td>
                     <td>19</td>
                     <td>11</td>
@@ -828,7 +828,7 @@
                     </td>
                   </tr>
                   <tr>
-                  <td>Marechal</td>
+                  <td>Santo Elias</td>
                     <td><span class="badge bg-teal-50 text-teal-500">43</span></td>
                     <td>26</td>
                     <td>13</td>
@@ -946,7 +946,7 @@
                     <div class="col">
                       <!-- <img src="<?= $base;?>/assets/svg/icons/germany@26.svg" class="avatar avatar-xs avatar-circle me-1" alt="Flag"> -->
                       <span class="ps-ms-2 font-weight-semibold text-gray-700 fs-16 me-1">1°</span> 
-                      <span class="ps-ms-2 font-weight-semibold text-gray-700 fs-16">Anchieta</span> 
+                      <span class="ps-ms-2 font-weight-semibold text-gray-700 fs-16">Coréia</span> 
                     </div>
                     <div class="col-auto">
                       <span class="text-gray-700 fs-16">67.43%</span>
@@ -958,7 +958,7 @@
                     <div class="col">
                       <!-- <img src="<?= $base;?>/assets/svg/icons/united-kingdom@26.svg" class="avatar avatar-xs avatar-circle me-1" alt="Flag"> -->
                       <span class="ps-ms-2 font-weight-semibold text-gray-700 fs-16">2°</span>
-                      <span class="ps-ms-2 font-weight-semibold text-gray-700 fs-16">Bangu</span>
+                      <span class="ps-ms-2 font-weight-semibold text-gray-700 fs-16">Chatuba</span>
                     </div>
                     <div class="col-auto">
                       <span class="text-gray-700 fs-16">20.11%</span>
@@ -970,7 +970,7 @@
                     <div class="col ">
                       <!-- <img src="<?= $base;?>/assets/svg/icons/brazil@26.svg" class="avatar avatar-xs avatar-circle me-1" alt="Flag"> -->
                       <span class="ps-ms-2 font-weight-semibold text-gray-700 fs-16">3°</span>
-                      <span class="ps-ms-2 font-weight-semibold text-gray-700 fs-16">Madureira</span>
+                      <span class="ps-ms-2 font-weight-semibold text-gray-700 fs-16">Edson Passos</span>
                     </div>
                     <div class="col-auto">
                       <span class="text-gray-700 fs-16">6.92%</span>
@@ -982,7 +982,7 @@
                     <div class="col">
                       <!-- <img src="<?= $base;?>/assets/svg/icons/united-states@26.svg" class="avatar avatar-xs avatar-circle me-1" alt="Flag"> -->
                       <span class="ps-ms-2 font-weight-semibold text-gray-700 fs-16 mr-4">4°</span>
-                      <span class="ps-ms-2 font-weight-semibold text-gray-700 fs-16">Realengo</span>
+                      <span class="ps-ms-2 font-weight-semibold text-gray-700 fs-16">Santo Elias</span>
                     </div>
                     <div class="col-auto">
                       <span class="text-gray-700 fs-16">3.56%</span>
@@ -994,7 +994,7 @@
                     <div class="col">
                       <!-- <img src="<?= $base;?>/assets/svg/icons/argentina@26.svg" class="avatar avatar-xs avatar-circle me-1" alt="Flag"> -->
                       <span class="ps-ms-2 font-weight-semibold text-gray-700 fs-16">5°</span>
-                      <span class="ps-ms-2 font-weight-semibold text-gray-700 fs-16">Marechal Hermes </span>
+                      <span class="ps-ms-2 font-weight-semibold text-gray-700 fs-16">Rocha Sobrinho</span>
                     </div>
                     <div class="col-auto">
                       <span class="text-gray-700 fs-16">1.07%</span>

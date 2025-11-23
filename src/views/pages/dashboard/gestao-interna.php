@@ -21,7 +21,7 @@
 <style>
 
    .filtro-container {
-            background: #fff;
+            background: #191919;
             color: #222;
             border-radius: 20px;
             margin-bottom: 40px;
@@ -30,9 +30,9 @@
             padding: 32px 32px 24px 32px;
         }
         .filtro-container h2 {
-            font-size: 2rem;
-            font-weight: 700;
-            margin-bottom: 24px;
+            font-size: 23px;
+            font-weight: 600;
+            margin-bottom: 16px;
             color: #222;
         }
         .filtro-form {
@@ -51,7 +51,7 @@
             border: 2px solid #bdbdbd;
             border-radius: 12px;
             padding: 8px 24px;
-            min-width: 220px;
+            min-width: 120px;
             height: 56px;
             position: relative;
         }
@@ -63,8 +63,8 @@
         .filtro-item select, .filtro-item input {
             background: transparent;
             border: none;
-            color: #222;
-            font-size: 1.1rem;
+            color: #bdbdbd;
+            font-size: 16px;
             outline: none;
             width: 100%;
         }
@@ -73,17 +73,18 @@
             padding-right: 24px;
         }
         .filtro-item input[type="text"] {
-            padding-right: 24px;
+            /* padding-right: 24px; */
+            width: 120px;
         }
         .filtrar {
-            background: #f6ecd3;
-            color: #2976f6;
+            background: #FCEED1;
+            color: #0F3876;
             border: none;
             border-radius: 12px;
             font-size: 1.1rem;
             font-weight: 600;
-            padding: 8px 40px;
-            margin-left: 16px;
+            padding: 8px 35px;
+            margin-left: 22px;
             cursor: pointer;
             height: 56px;
             box-shadow: 0 2px 8px rgba(0,0,0,0.04);
@@ -94,13 +95,12 @@
         }
         .limpar {
             background: transparent;
-            color: #222;
+            color: #bdbdbd;
             border: 2px solid #bdbdbd;
             border-radius: 12px;
             font-size: 1.1rem;
             font-weight: 600;
-            padding: 8px 40px;
-            margin-left: 16px;
+            padding: 8px 30px;
             cursor: pointer;
             height: 56px;
             transition: background 0.2s, color 0.2s;
@@ -1524,10 +1524,10 @@
       </div>
     </div>
   </div>
+  
   <div class="p-3 p-xxl-5">
     <div class="container-fluid px-0">
       <div class="filtro-container">
-        <div class="filtro-container">
         <h2>Filtro</h2>
         <form class="filtro-form">
             <div class="filtro-group">
@@ -1536,6 +1536,12 @@
                         <svg width="22" height="22" fill="none" stroke="#bdbdbd" stroke-width="2" viewBox="0 0 24 24"><circle cx="12" cy="8" r="4"></circle><path d="M4 20c0-4 4-6 8-6s8 2 8 6"></path></svg>
                     </span>
                     <select>
+                        <option>Comunidade</option>
+                        <option>Comunidade</option>
+                        <option>Comunidade</option>
+                        <option>Comunidade</option>
+                        <option>Comunidade</option>
+                        <option>Comunidade</option>
                         <option>Comunidade</option>
                     </select>
                 </div>
@@ -1573,8 +1579,229 @@
                 <button type="button" class="limpar">Limpar</button>
             </div>
         </form>
-    </div>
       </div>
+
+    <div class="row">
+            <div class="col-12 col-xxl-4 mb-4">
+              <div class="card rounded-24 shadow-dark-80 border border-gray-50 py-3 px-2 p-md-4">
+                <div class="p-2">
+                  <div class="d-flex align-items-center mb-2">
+                    <span class="small text-muted font-weight-semibold">15 Jun 2021</span>
+                    <div class="ms-auto dropdown">
+                      <a href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false" class="btn btn-dark-100 btn-icon btn-sm trounded-circle">
+                        <svg data-name="Icons/Tabler/Notification" xmlns="http://www.w3.org/2000/svg" width="13.419" height="13.419" viewBox="0 0 13.419 13.419">
+                          <rect data-name="Icons/Tabler/Dots background" width="13.419" height="13.419" fill="none"></rect>
+                          <path d="M0,10.4a1.342,1.342,0,1,1,1.342,1.342A1.344,1.344,0,0,1,0,10.4Zm1.15,0a.192.192,0,1,0,.192-.192A.192.192,0,0,0,1.15,10.4ZM0,5.871A1.342,1.342,0,1,1,1.342,7.213,1.344,1.344,0,0,1,0,5.871Zm1.15,0a.192.192,0,1,0,.192-.192A.192.192,0,0,0,1.15,5.871ZM0,1.342A1.342,1.342,0,1,1,1.342,2.684,1.344,1.344,0,0,1,0,1.342Zm1.15,0a.192.192,0,1,0,.192-.192A.192.192,0,0,0,1.15,1.342Z" transform="translate(5.368 0.839)" fill="#6c757d"></path>
+                        </svg>
+                      </a>
+                      <ul class="dropdown-menu">
+                        <li class="dropdown-sub-title">
+                          <span>EXPORT AS</span>
+                        </li>
+                        <li>
+                          <a class="dropdown-item" href="#"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16">
+                            <g data-name="Icons/Tabler/Share" transform="translate(0)">
+                              <rect data-name="Icons/Tabler/Code background" width="16" height="16" fill="none"></rect>
+                              <path d="M6.21,13.982a.6.6,0,0,1-.463-.647l.014-.08L9.044.455A.617.617,0,0,1,9.79.018a.6.6,0,0,1,.463.647l-.014.08-3.282,12.8a.612.612,0,0,1-.6.455A.629.629,0,0,1,6.21,13.982Zm5.458-3.357a.588.588,0,0,1-.059-.781l.059-.067L14.514,7,11.668,4.225a.588.588,0,0,1-.059-.781l.059-.068a.627.627,0,0,1,.8-.059l.069.059,3.282,3.2a.59.59,0,0,1,.059.781l-.059.068-3.282,3.2a.627.627,0,0,1-.87,0Zm-8.136.058-.069-.058L.18,7.424a.589.589,0,0,1-.059-.781L.18,6.575l3.282-3.2a.627.627,0,0,1,.87,0,.588.588,0,0,1,.059.781l-.059.068L1.486,7,4.333,9.776a.588.588,0,0,1,.059.781l-.059.068a.627.627,0,0,1-.8.058Z" transform="translate(0 1)" fill="#495057"></path>
+                            </g>
+                          </svg><span class="ms-2">HTML</span></a>
+                        </li>
+                        <li>
+                          <a class="dropdown-item" href="#"><svg data-name="Icons/Tabler/Share" xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16">
+                            <rect data-name="Icons/Tabler/File background" width="16" height="16" fill="none"></rect>
+                            <path data-name="Combined Shape" d="M2.256,16A2.259,2.259,0,0,1,0,13.744V2.256A2.259,2.259,0,0,1,2.256,0H8a.613.613,0,0,1,.4.148l0,0L8.41.157l0,0,.005.005L8.425.17l0,0L8.435.18l4.1,4.1a.614.614,0,0,1,.185.44v9.026A2.259,2.259,0,0,1,10.462,16ZM1.231,2.256V13.744a1.026,1.026,0,0,0,1.025,1.025h8.205a1.027,1.027,0,0,0,1.026-1.025V5.333H8.821A1.436,1.436,0,0,1,7.387,3.979l0-.082V1.231H2.256A1.026,1.026,0,0,0,1.231,2.256ZM8.616,3.9a.206.206,0,0,0,.168.2l.037,0h1.8l-2-2ZM3.9,12.718a.615.615,0,0,1-.059-1.228l.059,0H8.821a.615.615,0,0,1,.059,1.228l-.059,0Zm0-3.282a.615.615,0,0,1-.059-1.228l.059,0H8.821a.615.615,0,0,1,.059,1.228l-.059,0Zm0-3.281a.616.616,0,0,1-.059-1.228l.059,0h.821a.615.615,0,0,1,.059,1.228l-.059,0Z" transform="translate(2)" fill="#495057"></path>
+                          </svg><span class="ms-2">XML</span></a>
+                        </li>
+                        <li>
+                          <a class="dropdown-item" href="#"><svg data-name="Icons/Tabler/Share" xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16">
+                            <rect data-name="Icons/Tabler/Code02 background" width="16" height="16" fill="none"></rect>
+                            <path data-name="Combined Shape" d="M2.256,16A2.259,2.259,0,0,1,0,13.744V2.256A2.259,2.259,0,0,1,2.256,0H8a.613.613,0,0,1,.4.148l0,0L8.41.157l0,0,.005.005L8.425.17l0,0L8.435.18l4.1,4.1a.614.614,0,0,1,.185.44v9.026A2.259,2.259,0,0,1,10.462,16ZM1.231,2.256V13.744a1.026,1.026,0,0,0,1.025,1.025h8.205a1.027,1.027,0,0,0,1.026-1.025V5.333H8.821A1.436,1.436,0,0,1,7.387,3.979l0-.082V1.231H2.256A1.026,1.026,0,0,0,1.231,2.256ZM8.616,3.9a.206.206,0,0,0,.168.2l.037,0h1.8l-2-2Zm-.891,8.756a.615.615,0,0,1-.3-.768l.025-.058.683-1.366L7.449,9.1A.616.616,0,0,1,7.67,8.3l.055-.031a.615.615,0,0,1,.795.22l.031.055.821,1.641a.617.617,0,0,1,.029.484l-.029.067L8.55,12.378a.614.614,0,0,1-.825.275ZM4.2,12.433l-.031-.055-.821-1.641a.617.617,0,0,1-.029-.484l.029-.067.821-1.641a.615.615,0,0,1,1.126.492L5.269,9.1l-.684,1.366.684,1.366a.615.615,0,0,1-.22.794l-.055.031a.615.615,0,0,1-.795-.22Z" transform="translate(2)" fill="#495057"></path>
+                          </svg><span class="ms-2">JSON</span></a>
+                        </li>
+                        <li><hr class="dropdown-divider"></li>
+                        <li>
+                          <a class="dropdown-item" href="#"><svg data-name="Icons/Tabler/Share" xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16">
+                            <rect data-name="Icons/Tabler/Share background" width="16" height="16" fill="none"></rect>
+                            <path d="M9.846,12.923a3.07,3.07,0,0,1,.1-.768L5.516,9.874a3.077,3.077,0,1,1,0-3.748L9.943,3.845a3.084,3.084,0,1,1,.541,1.106L6.057,7.232a3.087,3.087,0,0,1,0,1.537l4.427,2.281a3.075,3.075,0,1,1-.638,1.874Zm1.231,0a1.846,1.846,0,1,0,.2-.84q-.011.028-.025.055l-.014.025A1.836,1.836,0,0,0,11.077,12.923ZM1.231,8a1.846,1.846,0,0,0,3.487.845.623.623,0,0,1,.027-.061l.017-.031a1.845,1.845,0,0,0,0-1.508l-.017-.031a.622.622,0,0,1-.027-.061A1.846,1.846,0,0,0,1.231,8ZM12.923,4.923a1.846,1.846,0,1,0-1.682-1.086l.013.024q.014.027.025.056A1.848,1.848,0,0,0,12.923,4.923Z" fill="#495057"></path>
+                          </svg><span class="ms-2">Share</span></a>
+                        </li>
+                      </ul>
+                    </div>
+                  </div>
+                  <h5 class="font-weight-semibold title-box mb-0">Equipe Pavimentação</h5>
+                  <h6 class="font-weight-semibold title-box mb-0">Demandas Ativas: 123</h6>
+                  <h6 class="font-weight-semibold title-box mb-0">Localização: Rua Olinda</h6>
+                  <div class="pt-4 pb-4">
+                    <span class="small font-weight-semibold mb-2 d-block">Progresso</span>
+                    <div class="progress rounded-pill" style="height: 5px;width: 100%;">
+                      <div class="progress-bar bg-teal-500" role="progressbar" style="width: 75%;" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100"></div>
+                    </div>
+                    <span class="small font-weight-semibold d-block text-end mt-2">75%</span>
+                  </div>
+                  <div class="d-flex align-items-center">
+                    <div class="avatar-group">
+                      <span class="avatar avatar-xs avatar-circle">
+                        <img class="avatar-img" src="<?= $base;?>/assets/images/avatar2.png" alt="Avatar">
+                      </span>
+                      <span class="avatar avatar-xs avatar-circle">
+                        <img class="avatar-img" src="<?= $base;?>/assets/images/avatar3.png" alt="Avatar">
+                      </span>
+                      <span class="avatar avatar-xs avatar-circle">
+                        <img class="avatar-img" src="<?= $base;?>/assets/images/avatar4.png" alt="Avatar">
+                      </span>
+                    </div>
+                    <span class="badge bg-teal-50 text-teal-500 p-2 ms-auto">Localizar</span>
+                    <span class="badge bg-teal-50 text-teal-500 p-2 ms-auto">Nova Demanda</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-12 col-xxl-4 mb-4">
+              <div class="card rounded-24 shadow-dark-80 border border-gray-50 py-3 px-2 p-md-4">
+                <div class="p-2">
+                  <div class="d-flex align-items-center mb-2">
+                    <span class="small text-muted font-weight-semibold">15 Jun 2021</span>
+                    <div class="ms-auto dropdown">
+                      <a href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false" class="btn btn-dark-100 btn-icon btn-sm rounded-circle">
+                        <svg data-name="Icons/Tabler/Notification" xmlns="http://www.w3.org/2000/svg" width="13.419" height="13.419" viewBox="0 0 13.419 13.419">
+                          <rect data-name="Icons/Tabler/Dots background" width="13.419" height="13.419" fill="none"></rect>
+                          <path d="M0,10.4a1.342,1.342,0,1,1,1.342,1.342A1.344,1.344,0,0,1,0,10.4Zm1.15,0a.192.192,0,1,0,.192-.192A.192.192,0,0,0,1.15,10.4ZM0,5.871A1.342,1.342,0,1,1,1.342,7.213,1.344,1.344,0,0,1,0,5.871Zm1.15,0a.192.192,0,1,0,.192-.192A.192.192,0,0,0,1.15,5.871ZM0,1.342A1.342,1.342,0,1,1,1.342,2.684,1.344,1.344,0,0,1,0,1.342Zm1.15,0a.192.192,0,1,0,.192-.192A.192.192,0,0,0,1.15,1.342Z" transform="translate(5.368 0.839)" fill="#6c757d"></path>
+                        </svg>
+                      </a>
+                      <ul class="dropdown-menu">
+                        <li class="dropdown-sub-title">
+                          <span>EXPORT AS</span>
+                        </li>
+                        <li>
+                          <a class="dropdown-item" href="#"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16">
+                            <g data-name="Icons/Tabler/Share" transform="translate(0)">
+                              <rect data-name="Icons/Tabler/Code background" width="16" height="16" fill="none"></rect>
+                              <path d="M6.21,13.982a.6.6,0,0,1-.463-.647l.014-.08L9.044.455A.617.617,0,0,1,9.79.018a.6.6,0,0,1,.463.647l-.014.08-3.282,12.8a.612.612,0,0,1-.6.455A.629.629,0,0,1,6.21,13.982Zm5.458-3.357a.588.588,0,0,1-.059-.781l.059-.067L14.514,7,11.668,4.225a.588.588,0,0,1-.059-.781l.059-.068a.627.627,0,0,1,.8-.059l.069.059,3.282,3.2a.59.59,0,0,1,.059.781l-.059.068-3.282,3.2a.627.627,0,0,1-.87,0Zm-8.136.058-.069-.058L.18,7.424a.589.589,0,0,1-.059-.781L.18,6.575l3.282-3.2a.627.627,0,0,1,.87,0,.588.588,0,0,1,.059.781l-.059.068L1.486,7,4.333,9.776a.588.588,0,0,1,.059.781l-.059.068a.627.627,0,0,1-.8.058Z" transform="translate(0 1)" fill="#495057"></path>
+                            </g>
+                          </svg><span class="ms-2">HTML</span></a>
+                        </li>
+                        <li>
+                          <a class="dropdown-item" href="#"><svg data-name="Icons/Tabler/Share" xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16">
+                            <rect data-name="Icons/Tabler/File background" width="16" height="16" fill="none"></rect>
+                            <path data-name="Combined Shape" d="M2.256,16A2.259,2.259,0,0,1,0,13.744V2.256A2.259,2.259,0,0,1,2.256,0H8a.613.613,0,0,1,.4.148l0,0L8.41.157l0,0,.005.005L8.425.17l0,0L8.435.18l4.1,4.1a.614.614,0,0,1,.185.44v9.026A2.259,2.259,0,0,1,10.462,16ZM1.231,2.256V13.744a1.026,1.026,0,0,0,1.025,1.025h8.205a1.027,1.027,0,0,0,1.026-1.025V5.333H8.821A1.436,1.436,0,0,1,7.387,3.979l0-.082V1.231H2.256A1.026,1.026,0,0,0,1.231,2.256ZM8.616,3.9a.206.206,0,0,0,.168.2l.037,0h1.8l-2-2ZM3.9,12.718a.615.615,0,0,1-.059-1.228l.059,0H8.821a.615.615,0,0,1,.059,1.228l-.059,0Zm0-3.282a.615.615,0,0,1-.059-1.228l.059,0H8.821a.615.615,0,0,1,.059,1.228l-.059,0Zm0-3.281a.616.616,0,0,1-.059-1.228l.059,0h.821a.615.615,0,0,1,.059,1.228l-.059,0Z" transform="translate(2)" fill="#495057"></path>
+                          </svg><span class="ms-2">XML</span></a>
+                        </li>
+                        <li>
+                          <a class="dropdown-item" href="#"><svg data-name="Icons/Tabler/Share" xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16">
+                            <rect data-name="Icons/Tabler/Code02 background" width="16" height="16" fill="none"></rect>
+                            <path data-name="Combined Shape" d="M2.256,16A2.259,2.259,0,0,1,0,13.744V2.256A2.259,2.259,0,0,1,2.256,0H8a.613.613,0,0,1,.4.148l0,0L8.41.157l0,0,.005.005L8.425.17l0,0L8.435.18l4.1,4.1a.614.614,0,0,1,.185.44v9.026A2.259,2.259,0,0,1,10.462,16ZM1.231,2.256V13.744a1.026,1.026,0,0,0,1.025,1.025h8.205a1.027,1.027,0,0,0,1.026-1.025V5.333H8.821A1.436,1.436,0,0,1,7.387,3.979l0-.082V1.231H2.256A1.026,1.026,0,0,0,1.231,2.256ZM8.616,3.9a.206.206,0,0,0,.168.2l.037,0h1.8l-2-2Zm-.891,8.756a.615.615,0,0,1-.3-.768l.025-.058.683-1.366L7.449,9.1A.616.616,0,0,1,7.67,8.3l.055-.031a.615.615,0,0,1,.795.22l.031.055.821,1.641a.617.617,0,0,1,.029.484l-.029.067L8.55,12.378a.614.614,0,0,1-.825.275ZM4.2,12.433l-.031-.055-.821-1.641a.617.617,0,0,1-.029-.484l.029-.067.821-1.641a.615.615,0,0,1,1.126.492L5.269,9.1l-.684,1.366.684,1.366a.615.615,0,0,1-.22.794l-.055.031a.615.615,0,0,1-.795-.22Z" transform="translate(2)" fill="#495057"></path>
+                          </svg><span class="ms-2">JSON</span></a>
+                        </li>
+                        <li><hr class="dropdown-divider"></li>
+                        <li>
+                          <a class="dropdown-item" href="#"><svg data-name="Icons/Tabler/Share" xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16">
+                            <rect data-name="Icons/Tabler/Share background" width="16" height="16" fill="none"></rect>
+                            <path d="M9.846,12.923a3.07,3.07,0,0,1,.1-.768L5.516,9.874a3.077,3.077,0,1,1,0-3.748L9.943,3.845a3.084,3.084,0,1,1,.541,1.106L6.057,7.232a3.087,3.087,0,0,1,0,1.537l4.427,2.281a3.075,3.075,0,1,1-.638,1.874Zm1.231,0a1.846,1.846,0,1,0,.2-.84q-.011.028-.025.055l-.014.025A1.836,1.836,0,0,0,11.077,12.923ZM1.231,8a1.846,1.846,0,0,0,3.487.845.623.623,0,0,1,.027-.061l.017-.031a1.845,1.845,0,0,0,0-1.508l-.017-.031a.622.622,0,0,1-.027-.061A1.846,1.846,0,0,0,1.231,8ZM12.923,4.923a1.846,1.846,0,1,0-1.682-1.086l.013.024q.014.027.025.056A1.848,1.848,0,0,0,12.923,4.923Z" fill="#495057"></path>
+                          </svg><span class="ms-2">Share</span></a>
+                        </li>
+                      </ul>
+                    </div>
+                  </div>
+                  <h5 class="font-weight-semibold title-box mb-0">Equipe Pavimentação</h5>
+                  <h6 class="font-weight-semibold title-box mb-0">Demandas Ativas: 123</h6>
+                  <h6 class="font-weight-semibold title-box mb-0">Localização: Rua Olinda</h6>
+
+                  <div class="pt-4 pb-4">
+                    <span class="small font-weight-semibold mb-2 d-block">Progresso</span>
+                    <div class="progress rounded-pill" style="height: 5px;width: 100%;">
+                      <div class="progress-bar bg-away" role="progressbar" style="width: 50%;" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100"></div>
+                    </div>
+                    <span class="small font-weight-semibold d-block text-end mt-2">50%</span>
+                  </div>
+                  <div class="d-flex align-items-center">
+                    <div class="avatar-group">
+                      <span class="avatar avatar-xs avatar-circle">
+                        <img class="avatar-img" src="<?= $base;?>/assets/images/avatar2.png" alt="Avatar">
+                      </span>
+                      <span class="avatar avatar-xs avatar-circle">
+                        <img class="avatar-img" src="<?= $base;?>/assets/images/avatar3.png" alt="Avatar">
+                      </span>
+                    </div>
+                    <span class="badge bg-ornage-150 text-orange-500 p-2 ms-auto">Localizar</span>
+                    <span class="badge bg-ornage-150 text-orange-500 p-2 ms-auto">Nova Demanda</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-12 col-xxl-4 mb-4">
+              <div class="card rounded-24 shadow-dark-80 border border-gray-50 py-3 px-2 p-md-4">
+                <div class="p-2">
+                  <div class="d-flex align-items-center mb-2">
+                    <span class="small text-muted font-weight-semibold">21 Jul 2021</span>
+                    <div class="ms-auto dropdown">
+                      <a href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false" class="btn btn-dark-100 btn-icon btn-sm rounded-circle">
+                        <svg data-name="Icons/Tabler/Notification" xmlns="http://www.w3.org/2000/svg" width="13.419" height="13.419" viewBox="0 0 13.419 13.419">
+                          <rect data-name="Icons/Tabler/Dots background" width="13.419" height="13.419" fill="none"></rect>
+                          <path d="M0,10.4a1.342,1.342,0,1,1,1.342,1.342A1.344,1.344,0,0,1,0,10.4Zm1.15,0a.192.192,0,1,0,.192-.192A.192.192,0,0,0,1.15,10.4ZM0,5.871A1.342,1.342,0,1,1,1.342,7.213,1.344,1.344,0,0,1,0,5.871Zm1.15,0a.192.192,0,1,0,.192-.192A.192.192,0,0,0,1.15,5.871ZM0,1.342A1.342,1.342,0,1,1,1.342,2.684,1.344,1.344,0,0,1,0,1.342Zm1.15,0a.192.192,0,1,0,.192-.192A.192.192,0,0,0,1.15,1.342Z" transform="translate(5.368 0.839)" fill="#6c757d"></path>
+                        </svg>
+                      </a>
+                      <ul class="dropdown-menu">
+                        <li class="dropdown-sub-title">
+                          <span>EXPORT AS</span>
+                        </li>
+                        <li>
+                          <a class="dropdown-item" href="#"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16">
+                            <g data-name="Icons/Tabler/Share" transform="translate(0)">
+                              <rect data-name="Icons/Tabler/Code background" width="16" height="16" fill="none"></rect>
+                              <path d="M6.21,13.982a.6.6,0,0,1-.463-.647l.014-.08L9.044.455A.617.617,0,0,1,9.79.018a.6.6,0,0,1,.463.647l-.014.08-3.282,12.8a.612.612,0,0,1-.6.455A.629.629,0,0,1,6.21,13.982Zm5.458-3.357a.588.588,0,0,1-.059-.781l.059-.067L14.514,7,11.668,4.225a.588.588,0,0,1-.059-.781l.059-.068a.627.627,0,0,1,.8-.059l.069.059,3.282,3.2a.59.59,0,0,1,.059.781l-.059.068-3.282,3.2a.627.627,0,0,1-.87,0Zm-8.136.058-.069-.058L.18,7.424a.589.589,0,0,1-.059-.781L.18,6.575l3.282-3.2a.627.627,0,0,1,.87,0,.588.588,0,0,1,.059.781l-.059.068L1.486,7,4.333,9.776a.588.588,0,0,1,.059.781l-.059.068a.627.627,0,0,1-.8.058Z" transform="translate(0 1)" fill="#495057"></path>
+                            </g>
+                          </svg><span class="ms-2">HTML</span></a>
+                        </li>
+                        <li>
+                          <a class="dropdown-item" href="#"><svg data-name="Icons/Tabler/Share" xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16">
+                            <rect data-name="Icons/Tabler/File background" width="16" height="16" fill="none"></rect>
+                            <path data-name="Combined Shape" d="M2.256,16A2.259,2.259,0,0,1,0,13.744V2.256A2.259,2.259,0,0,1,2.256,0H8a.613.613,0,0,1,.4.148l0,0L8.41.157l0,0,.005.005L8.425.17l0,0L8.435.18l4.1,4.1a.614.614,0,0,1,.185.44v9.026A2.259,2.259,0,0,1,10.462,16ZM1.231,2.256V13.744a1.026,1.026,0,0,0,1.025,1.025h8.205a1.027,1.027,0,0,0,1.026-1.025V5.333H8.821A1.436,1.436,0,0,1,7.387,3.979l0-.082V1.231H2.256A1.026,1.026,0,0,0,1.231,2.256ZM8.616,3.9a.206.206,0,0,0,.168.2l.037,0h1.8l-2-2ZM3.9,12.718a.615.615,0,0,1-.059-1.228l.059,0H8.821a.615.615,0,0,1,.059,1.228l-.059,0Zm0-3.282a.615.615,0,0,1-.059-1.228l.059,0H8.821a.615.615,0,0,1,.059,1.228l-.059,0Zm0-3.281a.616.616,0,0,1-.059-1.228l.059,0h.821a.615.615,0,0,1,.059,1.228l-.059,0Z" transform="translate(2)" fill="#495057"></path>
+                          </svg><span class="ms-2">XML</span></a>
+                        </li>
+                        <li>
+                          <a class="dropdown-item" href="#"><svg data-name="Icons/Tabler/Share" xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16">
+                            <rect data-name="Icons/Tabler/Code02 background" width="16" height="16" fill="none"></rect>
+                            <path data-name="Combined Shape" d="M2.256,16A2.259,2.259,0,0,1,0,13.744V2.256A2.259,2.259,0,0,1,2.256,0H8a.613.613,0,0,1,.4.148l0,0L8.41.157l0,0,.005.005L8.425.17l0,0L8.435.18l4.1,4.1a.614.614,0,0,1,.185.44v9.026A2.259,2.259,0,0,1,10.462,16ZM1.231,2.256V13.744a1.026,1.026,0,0,0,1.025,1.025h8.205a1.027,1.027,0,0,0,1.026-1.025V5.333H8.821A1.436,1.436,0,0,1,7.387,3.979l0-.082V1.231H2.256A1.026,1.026,0,0,0,1.231,2.256ZM8.616,3.9a.206.206,0,0,0,.168.2l.037,0h1.8l-2-2Zm-.891,8.756a.615.615,0,0,1-.3-.768l.025-.058.683-1.366L7.449,9.1A.616.616,0,0,1,7.67,8.3l.055-.031a.615.615,0,0,1,.795.22l.031.055.821,1.641a.617.617,0,0,1,.029.484l-.029.067L8.55,12.378a.614.614,0,0,1-.825.275ZM4.2,12.433l-.031-.055-.821-1.641a.617.617,0,0,1-.029-.484l.029-.067.821-1.641a.615.615,0,0,1,1.126.492L5.269,9.1l-.684,1.366.684,1.366a.615.615,0,0,1-.22.794l-.055.031a.615.615,0,0,1-.795-.22Z" transform="translate(2)" fill="#495057"></path>
+                          </svg><span class="ms-2">JSON</span></a>
+                        </li>
+                        <li><hr class="dropdown-divider"></li>
+                        <li>
+                          <a class="dropdown-item" href="#"><svg data-name="Icons/Tabler/Share" xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16">
+                            <rect data-name="Icons/Tabler/Share background" width="16" height="16" fill="none"></rect>
+                            <path d="M9.846,12.923a3.07,3.07,0,0,1,.1-.768L5.516,9.874a3.077,3.077,0,1,1,0-3.748L9.943,3.845a3.084,3.084,0,1,1,.541,1.106L6.057,7.232a3.087,3.087,0,0,1,0,1.537l4.427,2.281a3.075,3.075,0,1,1-.638,1.874Zm1.231,0a1.846,1.846,0,1,0,.2-.84q-.011.028-.025.055l-.014.025A1.836,1.836,0,0,0,11.077,12.923ZM1.231,8a1.846,1.846,0,0,0,3.487.845.623.623,0,0,1,.027-.061l.017-.031a1.845,1.845,0,0,0,0-1.508l-.017-.031a.622.622,0,0,1-.027-.061A1.846,1.846,0,0,0,1.231,8ZM12.923,4.923a1.846,1.846,0,1,0-1.682-1.086l.013.024q.014.027.025.056A1.848,1.848,0,0,0,12.923,4.923Z" fill="#495057"></path>
+                          </svg><span class="ms-2">Share</span></a>
+                        </li>
+                      </ul>
+                    </div>
+                  </div>
+                  <h5 class="font-weight-semibold title-box mb-0">Equipe Pavimentação</h5>
+                  <h6 class="font-weight-semibold title-box mb-0">Demandas Ativas: 123</h6>
+                  <h6 class="font-weight-semibold title-box mb-0">Localização: Rua Olinda</h6>
+
+                  <div class="pt-4 pb-4">
+                    <span class="small font-weight-semibold mb-2 d-block">Progresso</span>
+                    <div class="progress rounded-pill" style="height: 5px;width: 100%;">
+                      <div class="progress-bar bg-dnd" role="progressbar" style="width: 25%;" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
+                    </div>
+                    <span class="small font-weight-semibold d-block text-end mt-2">25%</span>
+                  </div>
+                  <div class="d-flex align-items-center">
+                    <div class="avatar-group">
+                      <span class="avatar avatar-xs avatar-circle">
+                        <img class="avatar-img" src="<?= $base;?>/assets/images/avatar2.png" alt="Avatar">
+                      </span>
+                      <span class="avatar avatar-xs avatar-circle">
+                        <img class="avatar-img" src="<?= $base;?>/assets/images/avatar3.png" alt="Avatar">
+                      </span>
+                    </div>
+                    <span class="badge bg-red-50 text-dnd p-2 ms-auto">Localizar</span>
+                    <span class="badge bg-red-50 text-dnd p-2 ms-auto">Nova Demanda</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
       <div class="row">
         <div class="col-12 mb-4">
           <div class="card rounded-12 shadow-dark-80">
@@ -1794,18 +2021,8 @@
           </div>
         </div>
       </div>
-
-      
-      <div class="row">
-       <!-- editavel -->
-
-
-
-
-
-       
         
-        <div class="row">
+      <div class="row">
        <div class="col-12 col-xl-8 col-xxl-9 mb-4">
           <div class="card rounded-12 shadow-dark-80 border border-gray-50">
             <div class="card-body px-0">
@@ -1839,11 +2056,8 @@
             </div>
           </div>
         </div>
-        
-                <!-- editavel -->
-
-
-                <div class="col-12 col-xl-4 col-xxl-3 mb-4">
+      
+        <div class="col-12 col-xl-4 col-xxl-3 mb-4">
           <div class="card mb-3 rounded-12 shadow border border-gray-50">
             <div class="card-body p-3 p-xxl-4">
               <div class="row align-items-center py-2">
@@ -1853,18 +2067,6 @@
                 </div>
                 <div class="col-7">
                   <div class="avatar-group justify-content-end">
-                    <span class="avatar avatar-circle">
-                      <img class="avatar-img" src="<?= $base;?>/assets/img/avatar2.png" alt="Avatar">
-                    </span>
-                    <span class="avatar avatar-circle">
-                      <img class="avatar-img" src="<?= $base;?>/assets/img/avatar3.png" alt="Avatar">
-                    </span>
-                    <span class="avatar avatar-circle">
-                      <img class="avatar-img" src="<?= $base;?>/assets/img/avatar4.png" alt="Avatar">
-                    </span>
-                    <span class="avatar avatar-circle">
-                      <span class="avatar-initials avatar-dark-light border-transprant">+6</span>
-                    </span>
                   </div>
                 </div>
               </div>
@@ -1891,15 +2093,14 @@
                   <span class="h3 mb-0 text-truncate d-block"> 12 dias</span>
                 </div>
                 <div class="col-7 col-xxl-6" style="position: relative;">
-                  <div id="MuzeDoubleLine" style="min-height: 105px;"><div id="apexchartsafgjc9ei" class="apexcharts-canvas apexchartsafgjc9ei apexcharts-theme-light" style="width: 136.375px; height: 90px;"><svg id="SvgjsSvg1148" width="136.375" height="90" xmlns="http://www.w3.org/2000/svg" version="1.1" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:svgjs="http://svgjs.com/svgjs" class="apexcharts-svg" xmlns:data="ApexChartsNS" transform="translate(0, 0)" style="background: transparent;"><g id="SvgjsG1150" class="apexcharts-inner apexcharts-graphical" transform="translate(12, 30)"><defs id="SvgjsDefs1149"><clipPath id="gridRectMaskafgjc9ei"><rect id="SvgjsRect1155" width="121.375" height="48" x="-3.5" y="-1.5" rx="0" ry="0" opacity="1" stroke-width="0" stroke="none" stroke-dasharray="0" fill="#fff"></rect></clipPath><clipPath id="gridRectMarkerMaskafgjc9ei"><rect id="SvgjsRect1156" width="118.375" height="49" x="-2" y="-2" rx="0" ry="0" opacity="1" stroke-width="0" stroke="none" stroke-dasharray="0" fill="#fff"></rect></clipPath></defs><line id="SvgjsLine1154" x1="0" y1="0" x2="0" y2="45" stroke="#b6b6b6" stroke-dasharray="3" class="apexcharts-xcrosshairs" x="0" y="0" width="1" height="45" fill="#b1b9c4" filter="none" fill-opacity="0.9" stroke-width="1"></line><g id="SvgjsG1166" class="apexcharts-xaxis" transform="translate(0, 0)"><g id="SvgjsG1167" class="apexcharts-xaxis-texts-g" transform="translate(0, -4)"></g></g><g id="SvgjsG1176" class="apexcharts-grid"><g id="SvgjsG1177" class="apexcharts-gridlines-horizontal" style="display: none;"><line id="SvgjsLine1179" x1="0" y1="0" x2="114.375" y2="0" stroke="#e0e0e0" stroke-dasharray="0" class="apexcharts-gridline"></line><line id="SvgjsLine1180" x1="0" y1="11.25" x2="114.375" y2="11.25" stroke="#e0e0e0" stroke-dasharray="0" class="apexcharts-gridline"></line><line id="SvgjsLine1181" x1="0" y1="22.5" x2="114.375" y2="22.5" stroke="#e0e0e0" stroke-dasharray="0" class="apexcharts-gridline"></line><line id="SvgjsLine1182" x1="0" y1="33.75" x2="114.375" y2="33.75" stroke="#e0e0e0" stroke-dasharray="0" class="apexcharts-gridline"></line><line id="SvgjsLine1183" x1="0" y1="45" x2="114.375" y2="45" stroke="#e0e0e0" stroke-dasharray="0" class="apexcharts-gridline"></line></g><g id="SvgjsG1178" class="apexcharts-gridlines-vertical" style="display: none;"></g><line id="SvgjsLine1185" x1="0" y1="45" x2="114.375" y2="45" stroke="transparent" stroke-dasharray="0"></line><line id="SvgjsLine1184" x1="0" y1="1" x2="0" y2="45" stroke="transparent" stroke-dasharray="0"></line></g><g id="SvgjsG1157" class="apexcharts-line-series apexcharts-plot-series"><g id="SvgjsG1158" class="apexcharts-series" seriesName="2021" data:longestSeries="true" rel="1" data:realIndex="0"><path id="SvgjsPath1161" d="M 0 33.375C 6.671875 33.375 12.390625 30 19.0625 30C 25.734375 30 31.453125 34.5 38.125 34.5C 44.796875 34.5 50.515625 25.875 57.1875 25.875C 63.859375 25.875 69.578125 29.25 76.25 29.25C 82.921875 29.25 88.640625 4.125 95.3125 4.125C 101.984375 4.125 107.703125 7.5 114.375 7.5" fill="none" fill-opacity="1" stroke="rgba(0,143,251,0.85)" stroke-opacity="1" stroke-linecap="butt" stroke-width="3" stroke-dasharray="0" class="apexcharts-line" index="0" clip-path="url(#gridRectMaskafgjc9ei)" pathTo="M 0 33.375C 6.671875 33.375 12.390625 30 19.0625 30C 25.734375 30 31.453125 34.5 38.125 34.5C 44.796875 34.5 50.515625 25.875 57.1875 25.875C 63.859375 25.875 69.578125 29.25 76.25 29.25C 82.921875 29.25 88.640625 4.125 95.3125 4.125C 101.984375 4.125 107.703125 7.5 114.375 7.5" pathFrom="M -1 45L -1 45L 19.0625 45L 38.125 45L 57.1875 45L 76.25 45L 95.3125 45L 114.375 45"></path><g id="SvgjsG1159" class="apexcharts-series-markers-wrap" data:realIndex="0"><g class="apexcharts-series-markers"><circle id="SvgjsCircle1191" r="0" cx="0" cy="0" class="apexcharts-marker w9khke0wri no-pointer-events" stroke="#ffffff" fill="#008ffb" fill-opacity="1" stroke-width="2" stroke-opacity="0.9" default-marker-size="0"></circle></g></g></g><g id="SvgjsG1162" class="apexcharts-series" seriesName="2020" data:longestSeries="true" rel="2" data:realIndex="1"><path id="SvgjsPath1165" d="M 0 40.875C 6.671875 40.875 12.390625 33 19.0625 33C 25.734375 33 31.453125 15 38.125 15C 44.796875 15 50.515625 28.125 57.1875 28.125C 63.859375 28.125 69.578125 16.875 76.25 16.875C 82.921875 16.875 88.640625 15 95.3125 15C 101.984375 15 107.703125 29.625 114.375 29.625" fill="none" fill-opacity="1" stroke="rgba(168,203,254,0.85)" stroke-opacity="1" stroke-linecap="butt" stroke-width="3" stroke-dasharray="0" class="apexcharts-line" index="1" clip-path="url(#gridRectMaskafgjc9ei)" pathTo="M 0 40.875C 6.671875 40.875 12.390625 33 19.0625 33C 25.734375 33 31.453125 15 38.125 15C 44.796875 15 50.515625 28.125 57.1875 28.125C 63.859375 28.125 69.578125 16.875 76.25 16.875C 82.921875 16.875 88.640625 15 95.3125 15C 101.984375 15 107.703125 29.625 114.375 29.625" pathFrom="M -1 45L -1 45L 19.0625 45L 38.125 45L 57.1875 45L 76.25 45L 95.3125 45L 114.375 45"></path><g id="SvgjsG1163" class="apexcharts-series-markers-wrap" data:realIndex="1"><g class="apexcharts-series-markers"><circle id="SvgjsCircle1192" r="0" cx="0" cy="0" class="apexcharts-marker w8xbi4piug no-pointer-events" stroke="#ffffff" fill="#a8cbfe" fill-opacity="1" stroke-width="2" stroke-opacity="0.9" default-marker-size="0"></circle></g></g></g><g id="SvgjsG1160" class="apexcharts-datalabels" data:realIndex="0"></g><g id="SvgjsG1164" class="apexcharts-datalabels" data:realIndex="1"></g></g><line id="SvgjsLine1186" x1="0" y1="0" x2="114.375" y2="0" stroke="#b6b6b6" stroke-dasharray="0" stroke-width="1" class="apexcharts-ycrosshairs"></line><line id="SvgjsLine1187" x1="0" y1="0" x2="114.375" y2="0" stroke-dasharray="0" stroke-width="0" class="apexcharts-ycrosshairs-hidden"></line><g id="SvgjsG1188" class="apexcharts-yaxis-annotations"></g><g id="SvgjsG1189" class="apexcharts-xaxis-annotations"></g><g id="SvgjsG1190" class="apexcharts-point-annotations"></g></g><rect id="SvgjsRect1153" width="0" height="0" x="0" y="0" rx="0" ry="0" opacity="1" stroke-width="0" stroke="none" stroke-dasharray="0" fill="#fefefe"></rect><g id="SvgjsG1175" class="apexcharts-yaxis" rel="0" transform="translate(-18, 0)"></g><g id="SvgjsG1151" class="apexcharts-annotations"></g></svg><div class="apexcharts-legend" style="max-height: 45px;"></div><div class="apexcharts-tooltip apexcharts-theme-light"><div class="apexcharts-tooltip-series-group" style="order: 1;"><span class="apexcharts-tooltip-marker" style="background-color: rgb(0, 143, 251);"></span><div class="apexcharts-tooltip-text" style="font-family: Helvetica, Arial, sans-serif; font-size: 12px;"><div class="apexcharts-tooltip-y-group"><span class="apexcharts-tooltip-text-label"></span><span class="apexcharts-tooltip-text-value"></span></div><div class="apexcharts-tooltip-z-group"><span class="apexcharts-tooltip-text-z-label"></span><span class="apexcharts-tooltip-text-z-value"></span></div></div></div><div class="apexcharts-tooltip-series-group" style="order: 2;"><span class="apexcharts-tooltip-marker" style="background-color: rgb(0, 227, 150);"></span><div class="apexcharts-tooltip-text" style="font-family: Helvetica, Arial, sans-serif; font-size: 12px;"><div class="apexcharts-tooltip-y-group"><span class="apexcharts-tooltip-text-label"></span><span class="apexcharts-tooltip-text-value"></span></div><div class="apexcharts-tooltip-z-group"><span class="apexcharts-tooltip-text-z-label"></span><span class="apexcharts-tooltip-text-z-value"></span></div></div></div></div><div class="apexcharts-yaxistooltip apexcharts-yaxistooltip-0 apexcharts-yaxistooltip-left apexcharts-theme-light"><div class="apexcharts-yaxistooltip-text"></div></div></div></div>
+                  <div id="#MuzeSimpleDonut2"></div>
                 <div class="resize-triggers"><div class="expand-trigger"><div style="width: 161px; height: 106px;"></div></div><div class="contract-trigger"></div></div></div>
               </div>
             </div>
           </div>
         </div>
 
-
-        <div class="row">
+      <div class="row">
         <div class="col-9 mb-4">
           <div class="card rounded-12 shadow-dark-80">
             <div class="d-flex align-items-center px-3 px-md-4 py-3">
@@ -2110,74 +2311,42 @@
                 <path d="M.26.26A.889.889,0,0,1,1.418.174l.1.086L8.629,7.371a.889.889,0,0,1,.086,1.157l-.086.1L1.517,15.74A.889.889,0,0,1,.174,14.582l.086-.1L6.743,8,.26,1.517A.889.889,0,0,1,.174.36Z" transform="translate(4)" fill="#1e1e1e"></path>
               </svg></a>
             </div>
-
-            
-
-            
-            
-            
           </div>
-          
-        
         </div>
-      </div>
-        <div class="col-12 col-xl-4 col-xxl-3 mb-4">
-          <div class="card mb-3 rounded-12 shadow border border-gray-50">
-            <div class="card-body p-3 p-xxl-4">
-              <div class="row align-items-center py-2">
-                <div class="col-5">
-                  <span class="caption text-gray-600 d-block mb-1 text-truncate">Demandas Atendidas</span>
-                  <span class="h3 mb-0 text-truncate">6,443</span>
-                </div>
-                <div class="col-7">
-                  <div class="avatar-group justify-content-end">
-                    <span class="avatar avatar-circle">
-                      <img class="avatar-img" src="http://localhost/quibblemvc/public/assets/img/avatar2.png" alt="Avatar">
-                    </span>
-                    <span class="avatar avatar-circle">
-                      <img class="avatar-img" src="http://localhost/quibblemvc/public/assets/img/avatar3.png" alt="Avatar">
-                    </span>
-                    <span class="avatar avatar-circle">
-                      <img class="avatar-img" src="http://localhost/quibblemvc/public/assets/img/avatar4.png" alt="Avatar">
-                    </span>
-                    <span class="avatar avatar-circle">
-                      <span class="avatar-initials avatar-dark-light border-transprant">+6</span>
-                    </span>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="card mb-3 rounded-12 shadow border border-gray-50">
-            <div class="card-body p-3 px-xxl-4">
-              <div class="row align-items-center">
-                <div class="col-5 col-xxl-6">
-                  <span class="caption text-gray-600 d-block mb-1">Produtividade da Equipe  </span>
-                  <span class="h3 mb-0">92%</span>
-                </div>
-                <div class="col-7 col-xxl-6" style="position: relative;">
-                  <div id="MuzeSimpleDonut" style="min-height: 107.8px;"><div id="apexchartst2muh9pd" class="apexcharts-canvas apexchartst2muh9pd apexcharts-theme-light" style="width: 158.708px; height: 107.8px;"><svg id="SvgjsSvg1134" width="158.708" height="107.8" xmlns="http://www.w3.org/2000/svg" version="1.1" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:svgjs="http://svgjs.com/svgjs" class="apexcharts-svg" xmlns:data="ApexChartsNS" transform="translate(0, 0)" style="background: transparent;"><g id="SvgjsG1136" class="apexcharts-inner apexcharts-graphical" transform="translate(54.854, 0)"><defs id="SvgjsDefs1135"><clipPath id="gridRectMaskt2muh9pd"><rect id="SvgjsRect1138" width="105" height="123" x="-2" y="0" rx="0" ry="0" opacity="1" stroke-width="0" stroke="none" stroke-dasharray="0" fill="#fff"></rect></clipPath><clipPath id="gridRectMarkerMaskt2muh9pd"><rect id="SvgjsRect1139" width="105" height="127" x="-2" y="-2" rx="0" ry="0" opacity="1" stroke-width="0" stroke="none" stroke-dasharray="0" fill="#fff"></rect></clipPath></defs><g id="SvgjsG1140" class="apexcharts-pie"><g id="SvgjsG1141" transform="translate(0, 0) scale(1)"><circle id="SvgjsCircle1142" r="29.424390243902444" cx="50.5" cy="50.5" fill="transparent"></circle><g id="SvgjsG1143" class="apexcharts-slices"><g id="SvgjsG1144" class="apexcharts-series apexcharts-pie-series" seriesName="seriesx1" rel="1" data:realIndex="0"><path id="SvgjsPath1145" d="M 50.5 5.231707317073166 A 45.268292682926834 45.268292682926834 0 0 1 50.5 95.76829268292684 L 50.5 79.92439024390245 A 29.424390243902444 29.424390243902444 0 0 0 50.5 21.075609756097556 L 50.5 5.231707317073166 z" fill="rgba(168,203,254,1)" fill-opacity="1" stroke-opacity="1" stroke-linecap="butt" stroke-width="0" stroke-dasharray="0" class="apexcharts-pie-area apexcharts-donut-slice-0" index="0" j="0" data:angle="180" data:startAngle="0" data:strokeWidth="0" data:value="50" data:pathOrig="M 50.5 5.231707317073166 A 45.268292682926834 45.268292682926834 0 0 1 50.5 95.76829268292684 L 50.5 79.92439024390245 A 29.424390243902444 29.424390243902444 0 0 0 50.5 21.075609756097556 L 50.5 5.231707317073166 z"></path></g><g id="SvgjsG1146" class="apexcharts-series apexcharts-pie-series" seriesName="seriesx2" rel="2" data:realIndex="1"><path id="SvgjsPath1147" d="M 50.5 95.76829268292684 A 45.268292682926834 45.268292682926834 0 0 1 50.49209919249937 5.231708006548686 L 50.49486447512459 21.075610204256645 A 29.424390243902444 29.424390243902444 0 0 0 50.5 79.92439024390245 L 50.5 95.76829268292684 z" fill="rgba(0,143,251,1)" fill-opacity="1" stroke-opacity="1" stroke-linecap="butt" stroke-width="0" stroke-dasharray="0" class="apexcharts-pie-area apexcharts-donut-slice-1" index="0" j="1" data:angle="180" data:startAngle="180" data:strokeWidth="0" data:value="50" data:pathOrig="M 50.5 95.76829268292684 A 45.268292682926834 45.268292682926834 0 0 1 50.49209919249937 5.231708006548686 L 50.49486447512459 21.075610204256645 A 29.424390243902444 29.424390243902444 0 0 0 50.5 79.92439024390245 L 50.5 95.76829268292684 z"></path></g></g></g></g><line id="SvgjsLine1148" x1="0" y1="0" x2="101" y2="0" stroke="#b6b6b6" stroke-dasharray="0" stroke-width="1" class="apexcharts-ycrosshairs"></line><line id="SvgjsLine1149" x1="0" y1="0" x2="101" y2="0" stroke-dasharray="0" stroke-width="0" class="apexcharts-ycrosshairs-hidden"></line></g><g id="SvgjsG1137" class="apexcharts-annotations"></g></svg><div class="apexcharts-legend"></div></div></div>
-                <div class="resize-triggers"><div class="expand-trigger"><div style="width: 161px; height: 109px;"></div></div><div class="contract-trigger"></div></div><div class="resize-triggers"><div class="expand-trigger"><div style="width: 184px; height: 109px;"></div></div><div class="contract-trigger"></div></div></div>
-              </div>
-            </div>
-          </div>
-          <div class="card rounded-12 shadow border border-gray-50">
-            <div class="card-body p-3 px-xxl-4">
-              <div class="row align-items-center">
-                <div class="col-5 col-xxl-6">
-                  <span class="caption text-gray-600 d-block mb-1 text-truncate">Tempo médio de resposta</span>
-                  <span class="h3 mb-0 text-truncate d-block"> 12 dias</span>
-                </div>
-                <div class="col-7 col-xxl-6" style="position: relative;">
-                  <div id="MuzeDoubleLine" style="min-height: 105px;"><div id="apexchartsk6ltzgzl" class="apexcharts-canvas apexchartsk6ltzgzl apexcharts-theme-light" style="width: 158.708px; height: 90px;"><svg id="SvgjsSvg1152" width="158.708" height="90" xmlns="http://www.w3.org/2000/svg" version="1.1" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:svgjs="http://svgjs.com/svgjs" class="apexcharts-svg" xmlns:data="ApexChartsNS" transform="translate(0, 0)" style="background: transparent;"><g id="SvgjsG1154" class="apexcharts-inner apexcharts-graphical" transform="translate(12, 30)"><defs id="SvgjsDefs1153"><clipPath id="gridRectMaskk6ltzgzl"><rect id="SvgjsRect1159" width="143.708" height="48" x="-3.5" y="-1.5" rx="0" ry="0" opacity="1" stroke-width="0" stroke="none" stroke-dasharray="0" fill="#fff"></rect></clipPath><clipPath id="gridRectMarkerMaskk6ltzgzl"><rect id="SvgjsRect1160" width="140.708" height="49" x="-2" y="-2" rx="0" ry="0" opacity="1" stroke-width="0" stroke="none" stroke-dasharray="0" fill="#fff"></rect></clipPath></defs><line id="SvgjsLine1158" x1="0" y1="0" x2="0" y2="45" stroke="#b6b6b6" stroke-dasharray="3" class="apexcharts-xcrosshairs" x="0" y="0" width="1" height="45" fill="#b1b9c4" filter="none" fill-opacity="0.9" stroke-width="1"></line><g id="SvgjsG1170" class="apexcharts-xaxis" transform="translate(0, 0)"><g id="SvgjsG1171" class="apexcharts-xaxis-texts-g" transform="translate(0, -4)"></g></g><g id="SvgjsG1180" class="apexcharts-grid"><g id="SvgjsG1181" class="apexcharts-gridlines-horizontal" style="display: none;"><line id="SvgjsLine1183" x1="0" y1="0" x2="136.708" y2="0" stroke="#e0e0e0" stroke-dasharray="0" class="apexcharts-gridline"></line><line id="SvgjsLine1184" x1="0" y1="11.25" x2="136.708" y2="11.25" stroke="#e0e0e0" stroke-dasharray="0" class="apexcharts-gridline"></line><line id="SvgjsLine1185" x1="0" y1="22.5" x2="136.708" y2="22.5" stroke="#e0e0e0" stroke-dasharray="0" class="apexcharts-gridline"></line><line id="SvgjsLine1186" x1="0" y1="33.75" x2="136.708" y2="33.75" stroke="#e0e0e0" stroke-dasharray="0" class="apexcharts-gridline"></line><line id="SvgjsLine1187" x1="0" y1="45" x2="136.708" y2="45" stroke="#e0e0e0" stroke-dasharray="0" class="apexcharts-gridline"></line></g><g id="SvgjsG1182" class="apexcharts-gridlines-vertical" style="display: none;"></g><line id="SvgjsLine1189" x1="0" y1="45" x2="136.708" y2="45" stroke="transparent" stroke-dasharray="0"></line><line id="SvgjsLine1188" x1="0" y1="1" x2="0" y2="45" stroke="transparent" stroke-dasharray="0"></line></g><g id="SvgjsG1161" class="apexcharts-line-series apexcharts-plot-series"><g id="SvgjsG1162" class="apexcharts-series" seriesName="2021" data:longestSeries="true" rel="1" data:realIndex="0"><path id="SvgjsPath1165" d="M 0 33.375C 7.974633333333332 33.375 14.810033333333333 30 22.784666666666666 30C 30.7593 30 37.5947 34.5 45.56933333333333 34.5C 53.54396666666666 34.5 60.37936666666667 25.875 68.354 25.875C 76.32863333333333 25.875 83.16403333333334 29.25 91.13866666666667 29.25C 99.1133 29.25 105.9487 4.125 113.92333333333333 4.125C 121.89796666666666 4.125 128.73336666666665 7.5 136.708 7.5" fill="none" fill-opacity="1" stroke="rgba(0,143,251,0.85)" stroke-opacity="1" stroke-linecap="butt" stroke-width="3" stroke-dasharray="0" class="apexcharts-line" index="0" clip-path="url(#gridRectMaskk6ltzgzl)" pathTo="M 0 33.375C 7.974633333333332 33.375 14.810033333333333 30 22.784666666666666 30C 30.7593 30 37.5947 34.5 45.56933333333333 34.5C 53.54396666666666 34.5 60.37936666666667 25.875 68.354 25.875C 76.32863333333333 25.875 83.16403333333334 29.25 91.13866666666667 29.25C 99.1133 29.25 105.9487 4.125 113.92333333333333 4.125C 121.89796666666666 4.125 128.73336666666665 7.5 136.708 7.5" pathFrom="M -1 45L -1 45L 22.784666666666666 45L 45.56933333333333 45L 68.354 45L 91.13866666666667 45L 113.92333333333333 45L 136.708 45"></path><g id="SvgjsG1163" class="apexcharts-series-markers-wrap" data:realIndex="0"><g class="apexcharts-series-markers"><circle id="SvgjsCircle1195" r="0" cx="0" cy="0" class="apexcharts-marker w6h6vlnwl no-pointer-events" stroke="#ffffff" fill="#008ffb" fill-opacity="1" stroke-width="2" stroke-opacity="0.9" default-marker-size="0"></circle></g></g></g><g id="SvgjsG1166" class="apexcharts-series" seriesName="2020" data:longestSeries="true" rel="2" data:realIndex="1"><path id="SvgjsPath1169" d="M 0 40.875C 7.974633333333332 40.875 14.810033333333333 33 22.784666666666666 33C 30.7593 33 37.5947 15 45.56933333333333 15C 53.54396666666666 15 60.37936666666667 28.125 68.354 28.125C 76.32863333333333 28.125 83.16403333333334 16.875 91.13866666666667 16.875C 99.1133 16.875 105.9487 15 113.92333333333333 15C 121.89796666666666 15 128.73336666666665 29.625 136.708 29.625" fill="none" fill-opacity="1" stroke="rgba(168,203,254,0.85)" stroke-opacity="1" stroke-linecap="butt" stroke-width="3" stroke-dasharray="0" class="apexcharts-line" index="1" clip-path="url(#gridRectMaskk6ltzgzl)" pathTo="M 0 40.875C 7.974633333333332 40.875 14.810033333333333 33 22.784666666666666 33C 30.7593 33 37.5947 15 45.56933333333333 15C 53.54396666666666 15 60.37936666666667 28.125 68.354 28.125C 76.32863333333333 28.125 83.16403333333334 16.875 91.13866666666667 16.875C 99.1133 16.875 105.9487 15 113.92333333333333 15C 121.89796666666666 15 128.73336666666665 29.625 136.708 29.625" pathFrom="M -1 45L -1 45L 22.784666666666666 45L 45.56933333333333 45L 68.354 45L 91.13866666666667 45L 113.92333333333333 45L 136.708 45"></path><g id="SvgjsG1167" class="apexcharts-series-markers-wrap" data:realIndex="1"><g class="apexcharts-series-markers"><circle id="SvgjsCircle1196" r="0" cx="0" cy="0" class="apexcharts-marker wfox8pp24 no-pointer-events" stroke="#ffffff" fill="#a8cbfe" fill-opacity="1" stroke-width="2" stroke-opacity="0.9" default-marker-size="0"></circle></g></g></g><g id="SvgjsG1164" class="apexcharts-datalabels" data:realIndex="0"></g><g id="SvgjsG1168" class="apexcharts-datalabels" data:realIndex="1"></g></g><line id="SvgjsLine1190" x1="0" y1="0" x2="136.708" y2="0" stroke="#b6b6b6" stroke-dasharray="0" stroke-width="1" class="apexcharts-ycrosshairs"></line><line id="SvgjsLine1191" x1="0" y1="0" x2="136.708" y2="0" stroke-dasharray="0" stroke-width="0" class="apexcharts-ycrosshairs-hidden"></line><g id="SvgjsG1192" class="apexcharts-yaxis-annotations"></g><g id="SvgjsG1193" class="apexcharts-xaxis-annotations"></g><g id="SvgjsG1194" class="apexcharts-point-annotations"></g></g><rect id="SvgjsRect1157" width="0" height="0" x="0" y="0" rx="0" ry="0" opacity="1" stroke-width="0" stroke="none" stroke-dasharray="0" fill="#fefefe"></rect><g id="SvgjsG1179" class="apexcharts-yaxis" rel="0" transform="translate(-18, 0)"></g><g id="SvgjsG1155" class="apexcharts-annotations"></g></svg><div class="apexcharts-legend" style="max-height: 45px;"></div><div class="apexcharts-tooltip apexcharts-theme-light"><div class="apexcharts-tooltip-series-group" style="order: 1;"><span class="apexcharts-tooltip-marker" style="background-color: rgb(0, 143, 251);"></span><div class="apexcharts-tooltip-text" style="font-family: Helvetica, Arial, sans-serif; font-size: 12px;"><div class="apexcharts-tooltip-y-group"><span class="apexcharts-tooltip-text-label"></span><span class="apexcharts-tooltip-text-value"></span></div><div class="apexcharts-tooltip-z-group"><span class="apexcharts-tooltip-text-z-label"></span><span class="apexcharts-tooltip-text-z-value"></span></div></div></div><div class="apexcharts-tooltip-series-group" style="order: 2;"><span class="apexcharts-tooltip-marker" style="background-color: rgb(0, 227, 150);"></span><div class="apexcharts-tooltip-text" style="font-family: Helvetica, Arial, sans-serif; font-size: 12px;"><div class="apexcharts-tooltip-y-group"><span class="apexcharts-tooltip-text-label"></span><span class="apexcharts-tooltip-text-value"></span></div><div class="apexcharts-tooltip-z-group"><span class="apexcharts-tooltip-text-z-label"></span><span class="apexcharts-tooltip-text-z-value"></span></div></div></div></div><div class="apexcharts-yaxistooltip apexcharts-yaxistooltip-0 apexcharts-yaxistooltip-left apexcharts-theme-light"><div class="apexcharts-yaxistooltip-text"></div></div></div></div>
-                <div class="resize-triggers"><div class="expand-trigger"><div style="width: 161px; height: 106px;"></div></div><div class="contract-trigger"></div></div><div class="resize-triggers"><div class="expand-trigger"><div style="width: 184px; height: 106px;"></div></div><div class="contract-trigger"></div></div></div>
+
+
+      <div class="col-12 col-xl-4 col-xxl-3 mb-4">
+        <div class="card mb-3 rounded-12 shadow border border-gray-50">
+          <div class="card-body p-3 p-xxl-4">
+            <div class="row align-items-center py-2">
+              <div class="col-5">
+                <span class="caption text-gray-600 d-block mb-1 text-truncate">Total de Materias</span>
+                <span class="h3 mb-0 text-truncate">6,443</span>
               </div>
             </div>
           </div>
         </div>
-        
-      </div>
-        
+        <div class="card mb-3 rounded-12 shadow border border-gray-50">
+          <div class="card-body p-3 px-xxl-4">
+            <div class="row align-items-center">
+              <div class="col-5 col-xxl-6">
+                <span class="caption text-gray-600 d-block mb-1">Itens Críticos</span>
+                <span class="h3 mb-0">12</span>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="card rounded-12 shadow border border-gray-50">
+          <div class="card-body p-3 px-xxl-4">
+            <div class="row align-items-center">
+              <div class="col-5 col-xxl-6">
+                <span class="caption text-gray-600 d-block mb-1 text-truncate">Solicitações Pendente</span>
+                <span class="h3 mb-0 text-truncate d-block">9</span>
+              </div>
+              </div>
+            </div>
+          </div>
+        </div>
       </div>
 
       
@@ -2856,6 +3025,61 @@ yaxis: {
 };
 
 var chart = new ApexCharts(document.querySelector("#MuzeSimpleDonut"), options);
+chart.render();
+
+var options = {
+  series: [50, 50],
+  chart: {
+  type: 'donut',
+  height: 125,
+},
+dataLabels: {
+  enabled: false,
+},
+colors: ['#a8cbfe', '#008ffb'],
+stroke: {
+  width: 0
+},
+legend: {
+  show: false,
+},
+states: {
+  hover: {
+    filter: {
+      type: 'none',
+    }
+  },
+},
+plotOptions: {
+  donut: {
+    size: '65%',
+    background: 'transparent',
+  },
+  pie: {
+    offsetX: 25
+  }
+},
+grid: {
+  show: false,
+  xaxis: {
+    lines: {
+      show: false
+    }
+  },
+  row: {
+    colors: undefined,
+    opacity: 0
+  },
+},
+tooltip: {
+  enabled: false,
+},
+yaxis: {
+  show: false,
+}
+};
+
+var chart = new ApexCharts(document.querySelector("#MuzeSimpleDonut2"), options);
 chart.render();
 
 //Muze Columns Chart JavaScript
