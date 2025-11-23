@@ -63,7 +63,11 @@
         .filtro-item select, .filtro-item input {
             background: transparent;
             border: none;
+<<<<<<< HEAD
             color: #bdbdbd;
+=======
+            color: #222;
+>>>>>>> 7fce434e0c10e450e2e4ed84b1c50b4e7c1c9220
             font-size: 16px;
             outline: none;
             width: 100%;
@@ -1575,7 +1579,7 @@
                     </span>
                     <input type="text" value="Nov 20, 2022" readonly="">
                 </div>
-                <button type="submit" class="filtrar">Filtrar</button>
+                <button type="submit" class="filtrar">Gerar</button>
                 <button type="button" class="limpar">Limpar</button>
             </div>
         </form>
