@@ -9,20 +9,17 @@ use ClanCats\Hydrahon\Query\Expression as Ex;
 class ReclamacaoHandler
 {
 
-    // Adiciona reclamação com foto
     public static function adicionarReclamacao($usuario_id, $categoria_id, $localizacao_id, $titulo, $descricao, $arquivo)
     {
         $midia = null;
 
-        // Se houver arquivo enviado
         if ($arquivo && $arquivo['tmp_name'] != '') {
-            // Cria pasta se não existir
+
             $uploadDir = __DIR__ . '/../../public/assets/uploads/reclamacoes/';
             if (!file_exists($uploadDir)) {
                 mkdir($uploadDir, 0755, true);
             }
 
-            // Gera nome único
             $extensao = pathinfo($arquivo['name'], PATHINFO_EXTENSION);
             $nomeArquivo = md5(time() . rand(0, 9999)) . '.' . $extensao;
             $caminhoServidor = $uploadDir . $nomeArquivo;
@@ -33,7 +30,6 @@ class ReclamacaoHandler
             }
         }
 
-        // Insere no banco
         Reclamacoe::insert([
             'usuario_id' => $usuario_id,
             'categoria_id' => $categoria_id,
@@ -43,7 +39,6 @@ class ReclamacaoHandler
             'midia' => $midia
         ])->execute();
 
-        // Retorna o ID da nova reclamação
         $ultima = Reclamacoe::select()
             ->orderBy('reclamacao_id', 'DESC')
             ->one();
@@ -72,11 +67,9 @@ class ReclamacaoHandler
             'localizacoes.numero as numero',
             'localizacoes.cep as cep',
 
-            // Upvotes
-            new Ex('COUNT(upvotes.reclamacao_id) AS total_upvotes'), // Usar DISTINCT aqui é mais seguro
+            new Ex('COUNT(upvotes.reclamacao_id) AS total_upvotes'),
             new Ex('MAX(CASE WHEN upvotes.usuario_id = ' . $userId . ' THEN 1 ELSE 0 END) AS usuario_upvotou'),
 
-            // NOVO: Contagem de Comentários
             new Ex('COUNT(DISTINCT comentarios.comentario_id) AS total_comentarios')
         ])
             ->join('usuarios', 'usuarios.usuario_id', '=', 'reclamacoes.usuario_id')
@@ -85,16 +78,13 @@ class ReclamacaoHandler
             ->leftJoin('comunidades', 'comunidades.comunidade_id', '=', 'reclamacoes.comunidade_id')
             ->leftJoin('localizacoes', 'localizacoes.localizacao_id', '=', 'reclamacoes.localizacao_id')
 
-            // JOINs para Agregação
             ->leftJoin('upvotes', 'upvotes.reclamacao_id', '=', 'reclamacoes.reclamacao_id')
-            // NOVO: LEFT JOIN para Comentários
+
             ->leftJoin('comentarios', 'comentarios.reclamacao_id', '=', 'reclamacoes.reclamacao_id')
 
-            // O GROUP BY é essencial para que o COUNT e o MAX funcionem
             ->groupBy('reclamacoes.reclamacao_id')
             ->orderBy('reclamacoes.reclamacao_id', 'DESC');
 
-        // Aplica filtro se tiver categoria selecionada
         if ($categoriaId) {
             $query->where('reclamacoes.categoria_id', $categoriaId);
         }
@@ -122,30 +112,28 @@ class ReclamacaoHandler
             'reclamacoes.midia',
             'reclamacoes.status',
             'reclamacoes.criado_em',
-            // Dados do Dono do Post
+
             'usuarios.nome as usuario_nome',
             'usuarios.foto_perfil as usuario_foto',
             'categorias.nome as categoria_nome',
-            // Localização
+
             'localizacoes.logradouro',
             'localizacoes.numero',
             'bairros.nome as bairro_nome',
 
-            // Contagens (Upvotes e Comentários)
             new Ex('COUNT(DISTINCT upvotes.reclamacao_id) AS total_upvotes'),
             new Ex('COUNT(DISTINCT comentarios.comentario_id) AS total_comentarios'),
-            // Verifica se quem está vendo (loggedUser) deu like
+
             new Ex('MAX(CASE WHEN upvotes.usuario_id = ' . $loggedUserId . ' THEN 1 ELSE 0 END) AS usuario_upvotou')
         ])
             ->join('usuarios', 'usuarios.usuario_id', '=', 'reclamacoes.usuario_id')
             ->join('categorias', 'categorias.categoria_id', '=', 'reclamacoes.categoria_id')
-            // Left Joins para garantir que traga mesmo sem localização
+
             ->leftJoin('localizacoes', 'localizacoes.localizacao_id', '=', 'reclamacoes.localizacao_id')
             ->leftJoin('bairros', 'bairros.bairro_id', '=', 'localizacoes.bairro_id')
             ->leftJoin('upvotes', 'upvotes.reclamacao_id', '=', 'reclamacoes.reclamacao_id')
             ->leftJoin('comentarios', 'comentarios.reclamacao_id', '=', 'reclamacoes.reclamacao_id')
 
-            // *** O FILTRO MÁGICO AQUI ***
             ->where('reclamacoes.usuario_id', $idUsuarioAlvo)
 
             ->groupBy('reclamacoes.reclamacao_id')
@@ -153,7 +141,6 @@ class ReclamacaoHandler
 
         $reclamacoes = $query->get();
 
-        // Converte tipos para o front-end não reclamar
         foreach ($reclamacoes as &$r) {
             $r['total_upvotes'] = intval($r['total_upvotes'] ?? 0);
             $r['total_comentarios'] = intval($r['total_comentarios'] ?? 0);
@@ -161,5 +148,40 @@ class ReclamacaoHandler
         }
 
         return $reclamacoes;
+    }
+
+    public static function mudarStatus($reclamacao_id, $novoStatus, $autorDaAcaoNome = 'Secretaria')
+    {
+        $reclamacao = Reclamacoe::select(['usuario_id', 'titulo'])
+            ->where('reclamacao_id', $reclamacao_id)
+            ->one();
+
+        if (!$reclamacao) {
+            return false;
+        }
+
+        Reclamacoe::update([
+            'status' => $novoStatus,
+            'atualizado_em' => date('Y-m-d H:i:s')
+        ])
+        ->where('reclamacao_id', $reclamacao_id)
+        ->execute();
+
+        if ($novoStatus === 'resolvido') {
+            $msg = "Boas notícias! Sua reclamação '{$reclamacao['titulo']}' foi marcada como RESOLVIDA por: $autorDaAcaoNome.";
+            
+            NotificacaoHandler::criarNotificacao(
+                $reclamacao['usuario_id'], 
+                'resolucao', 
+                $msg
+            );
+        }
+        
+        if ($novoStatus === 'em_andamento') {
+            $msg = "Sua reclamação '{$reclamacao['titulo']}' entrou em análise.";
+            NotificacaoHandler::criarNotificacao($reclamacao['usuario_id'], 'aviso', $msg);
+        }
+
+        return true;
     }
 }

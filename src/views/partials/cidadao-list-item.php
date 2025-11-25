@@ -28,7 +28,9 @@ $dataCriacao = date('d/m/Y', strtotime($reclamacao['criado_em']));
             </a>
             <div class="dropdown-menu dropdown-menu-end shadow-sm">
                 <a href="<?= $base; ?>/reclamacao/<?= $reclamacao['reclamacao_id']; ?>" class="dropdown-item">Visualizar Detalhes</a>
-                <a href="#!" class="dropdown-item">Mudar Status</a>
+                <?php if ($reclamacao['status'] !== 'resolvido'): ?>
+                <button class="dropdown-item btn-resolver" data-id="<?= $reclamacao['reclamacao_id']; ?>">Marcar como Resolvida ✅</button>
+                <?php endif; ?>
                 <a href="#!" class="dropdown-item">Atribuir Gestor</a>
             </div>
         </div>

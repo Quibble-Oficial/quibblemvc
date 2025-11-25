@@ -7,6 +7,7 @@ use \src\handlers\UsuarioHandler;
 use \src\handlers\CategoriaHandler;
 use \src\handlers\ReclamacaoHandler;
 use \src\handlers\SeguidorHandler;
+use \src\handlers\NotificacaoHandler;
 
 class HomeController extends Controller
 {
@@ -96,7 +97,14 @@ class HomeController extends Controller
 
     public function notificacoes()
     {
-        $this->render('notificacoes', ['loggedUser' => $this->loggedUser]);
+        $todas = NotificacaoHandler::getNotificacoesUsuario($this->loggedUser->usuario_id);
+
+        // 2. Filtra apenas as novas (lida == 0)
+        $novas = array_filter($todas, function ($n) {
+            return $n['lida'] == 0;
+        });
+
+        $this->render('notificacoes', ['loggedUser' => $this->loggedUser, 'todas' => $todas, 'novas' => $novas]);
     }
 
     public function comunidade()

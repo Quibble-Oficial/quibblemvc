@@ -112,7 +112,7 @@
           <span><b><?= $usuario->nome; ?></b></span> <br>
           <span>Centro - Mesquita</span>
             </div>
-        <img src="<?= $base; ?>/assets/uploads/avatars/<?= $usuario->foto_perfil; ?>" alt="" id='perfil-img' />
+        <img src="<?= $base; ?>/assets/uploads/avatars/<?= $usuario->foto_perfil ?? 'default.png' ?>" alt="" id='perfil-img' />
       </div>
       
     </div>

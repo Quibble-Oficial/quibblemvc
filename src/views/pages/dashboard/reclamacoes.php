@@ -1,14 +1,15 @@
 <?php
 if (!function_exists('getStatusBadgeClasses')) {
-    function getStatusBadgeClasses($status) {
-        return match ($status) {
-            'pendente' => ['bg' => 'bg-teal-50', 'text' => 'text-teal-500', 'label' => 'Pendente'],
-            'em_andamento' => ['bg' => 'bg-orange-50', 'text' => 'text-orange-500', 'label' => 'Em Andamento'],
-            'resolvido' => ['bg' => 'bg-green-50', 'text' => 'text-green-500', 'label' => 'Resolvida'],
-            'cancelado' => ['bg' => 'bg-red-50', 'text' => 'text-red-500', 'label' => 'Cancelada'],
-            default => ['bg' => 'bg-gray-50', 'text' => 'text-gray-500', 'label' => 'Desconhecido'],
-        };
-    }
+  function getStatusBadgeClasses($status)
+  {
+    return match ($status) {
+      'pendente' => ['bg' => 'bg-teal-50', 'text' => 'text-teal-500', 'label' => 'Pendente'],
+      'em_andamento' => ['bg' => 'bg-orange-50', 'text' => 'text-orange-500', 'label' => 'Em Andamento'],
+      'resolvido' => ['bg' => 'bg-green-50', 'text' => 'text-green-500', 'label' => 'Resolvida'],
+      'cancelado' => ['bg' => 'bg-red-50', 'text' => 'text-red-500', 'label' => 'Cancelada'],
+      default => ['bg' => 'bg-gray-50', 'text' => 'text-gray-500', 'label' => 'Desconhecido'],
+    };
+  }
 }
 ?>
 <!DOCTYPE html>
@@ -25,6 +26,9 @@ if (!function_exists('getStatusBadgeClasses')) {
   <link href="<?= $base; ?>/assets/vendor/simplebar/dist/simplebar.min.css" rel="stylesheet" type="text/css" media="all">
   <!-- Muze Theme CSS -->
   <link href="<?= $base; ?>/assets/css/theme.min.css" rel="stylesheet" type="text/css" media="all">
+  <script>
+    const BASE = "<?= $base; ?>";
+  </script>
 </head>
 
 <body class="bg-gray-100 analytics-template">
@@ -55,7 +59,7 @@ if (!function_exists('getStatusBadgeClasses')) {
               </a>
               <ul class="dropdown-menu" aria-labelledby="Exportbtn">
                 <li class="dropdown-sub-title">
-                  <span>EXPORT AS</span>
+                  <span>EXPORTAR COMO</span>
                 </li>
                 <li><a class="dropdown-item" href="#"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16">
                       <g data-name="Icons/Tabler/Share" transform="translate(0)">
@@ -77,7 +81,7 @@ if (!function_exists('getStatusBadgeClasses')) {
                 <li><a class="dropdown-item" href="#"><svg data-name="Icons/Tabler/Share" xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16">
                       <rect data-name="Icons/Tabler/Share background" width="16" height="16" fill="none" />
                       <path d="M9.846,12.923a3.07,3.07,0,0,1,.1-.768L5.516,9.874a3.077,3.077,0,1,1,0-3.748L9.943,3.845a3.084,3.084,0,1,1,.541,1.106L6.057,7.232a3.087,3.087,0,0,1,0,1.537l4.427,2.281a3.075,3.075,0,1,1-.638,1.874Zm1.231,0a1.846,1.846,0,1,0,.2-.84q-.011.028-.025.055l-.014.025A1.836,1.836,0,0,0,11.077,12.923ZM1.231,8a1.846,1.846,0,0,0,3.487.845.623.623,0,0,1,.027-.061l.017-.031a1.845,1.845,0,0,0,0-1.508l-.017-.031a.622.622,0,0,1-.027-.061A1.846,1.846,0,0,0,1.231,8ZM12.923,4.923a1.846,1.846,0,1,0-1.682-1.086l.013.024q.014.027.025.056A1.848,1.848,0,0,0,12.923,4.923Z" fill="#495057" />
-                    </svg><span class="ms-2">Share</span></a></li>
+                    </svg><span class="ms-2">Compartilhar</span></a></li>
               </ul>
             </div>
           </div>
@@ -413,6 +417,44 @@ if (!function_exists('getStatusBadgeClasses')) {
     <script src="<?= $base; ?>/assets/vendor/simplebar/dist/simplebar.min.js"></script>
     <script src="<?= $base; ?>/assets/js/theme-custom.js"></script>
     <script>
+      document.addEventListener('DOMContentLoaded', () => {
+        document.querySelectorAll('.btn-resolver').forEach(btn => {
+          btn.addEventListener('click', async (e) => {
+            if (!confirm("Tem certeza que deseja marcar esta reclamação como resolvida? O usuário será notificado.")) return;
+
+            const id = e.target.getAttribute('data-id');
+            const originalText = e.target.innerText;
+            e.target.innerText = "Processando...";
+            e.target.disabled = true;
+
+            const formData = new FormData();
+            formData.append('id', id);
+
+            try {
+              const response = await fetch(`${BASE}/reclamacoes/resolver`, {
+                method: 'POST',
+                body: formData
+              });
+              const json = await response.json();
+
+              if (json.success) {
+                alert(json.message);
+                // Atualiza a UI (Exemplo: recarrega a página ou muda o botão visualmente)
+                location.reload();
+              } else {
+                alert('Erro: ' + json.message);
+                e.target.innerText = originalText;
+                e.target.disabled = false;
+              }
+            } catch (error) {
+              console.error(error);
+              alert("Erro de conexão.");
+              e.target.innerText = originalText;
+              e.target.disabled = false;
+            }
+          });
+        });
+      });
       // Gráfico Fluxo de reclamações 
       Highcharts.chart('MuzeMultipleColumnsChartOne', {
         chart: {

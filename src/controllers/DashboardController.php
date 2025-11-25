@@ -85,6 +85,23 @@ class DashboardController extends Controller
         ]);
     }
 
+    public function resolverReclamacao()
+    {
+        $id = filter_input(INPUT_POST, 'id', FILTER_VALIDATE_INT);
+        
+        if ($id) {
+            // Chama o Handler passando o nome da secretaria logada como autora
+            $sucesso = ReclamacaoHandler::mudarStatus($id, 'resolvido', $this->loggedUser->nome);
+            
+            if ($sucesso) {
+                echo json_encode(['success' => true, 'message' => 'Reclamação resolvida e cidadão notificado!']);
+                exit;
+            }
+        }
+
+        echo json_encode(['success' => false, 'message' => 'Erro ao atualizar status.']);
+        exit;
+    }
 
     public function mapa()
     {

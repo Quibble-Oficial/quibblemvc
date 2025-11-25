@@ -11,7 +11,10 @@ $router->get('/notificacoes', 'HomeController@notificacoes');
 $router->get('/comunidade', 'HomeController@comunidade');
 
 $router->get('/visao-geral', 'DashboardController@visaoGeral');
+
 $router->get('/reclamacoes', 'DashboardController@reclamacoes');
+$router->post('/reclamacoes/resolver', 'DashboardController@resolverReclamacao');
+
 $router->get('/mapa', 'DashboardController@mapa');
 $router->get('/comunidades', 'DashboardController@comunidades');
 $router->get('/relatorios', 'DashboardController@relatorios');

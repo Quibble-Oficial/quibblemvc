@@ -10,7 +10,7 @@ function createCommentHtml(comment) {
         <div class="comment-info" data-comment-id="${comment.comentario_id}">
           <div class="feed-card-header">
             <a href="${perfilUrl}">
-                <img class="user-avatar" src="${BASE}/assets/images/bernardo.png" alt="Avatar">
+                <img class="user-avatar" src="${BASE}/assets/uploads/avatars/${avatar}" alt="Avatar">
             </a>
             <div class="user-info">
                 <a href="${perfilUrl}">
