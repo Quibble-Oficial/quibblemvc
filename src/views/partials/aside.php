@@ -68,7 +68,7 @@
       <input type="text" placeholder="Buscar reclamações, categorias ou usuários..." />
     </div>
     <div id="header-buttons">
-      <div id="notificacoes-wrapper">
+      <!-- <div id="notificacoes-wrapper">
         <div id="notificacoes">
           <img src="<?= $base; ?>/assets/images/not-branco.png" alt="" />
           <div id="notificacoes-qtd"></div>
@@ -105,7 +105,7 @@
           </div>
 
           <a href="#" class="see-more">Ver mais</a>
-        </div>
+        </div> -->
       </div>
       <div id="perfil-header">
         <div id="text">
