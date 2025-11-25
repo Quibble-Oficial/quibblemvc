@@ -54,13 +54,19 @@ class HomeController extends Controller
             return;
         }
 
+        $stats = UsuarioHandler::getStats($args['id']);
+
         $estáSeguindo = SeguidorHandler::estáSeguindo($this->loggedUser->usuario_id, $args['id']);
+
+        $mesmoUsuario = ($usuario->usuario_id === $this->loggedUser->usuario_id);
 
         // renderiza a view do perfil
         $this->render('usuario', [
             'loggedUser' => $this->loggedUser,
             'usuario' => $usuario,
-            'estáSeguindo' => $estáSeguindo
+            'estáSeguindo' => $estáSeguindo,
+            'mesmoUsuario' => $mesmoUsuario,
+            'stats' => $stats
         ]);
     }
 
@@ -99,5 +105,52 @@ class HomeController extends Controller
     public function alterarUsuario()
     {
         $this->render('alterar-usuario', ['loggedUser' => $this->loggedUser]);
+    }
+
+    public function alterarUsuarioAction()
+    {
+        // Recebe os inputs
+        $nome = filter_input(INPUT_POST, 'nome', FILTER_SANITIZE_SPECIAL_CHARS);
+        $email = filter_input(INPUT_POST, 'email', FILTER_VALIDATE_EMAIL);
+        $bio = filter_input(INPUT_POST, 'bio', FILTER_SANITIZE_SPECIAL_CHARS);
+        $senha = filter_input(INPUT_POST, 'senha');
+        $confirmarSenha = filter_input(INPUT_POST, 'confirmar_senha');
+
+        // Recebe o arquivo
+        $avatar = $_FILES['avatar'] ?? null;
+
+        // Validações básicas
+        if ($nome && $email) {
+
+            // Validação de senha
+            if (!empty($senha)) {
+                if ($senha !== $confirmarSenha) {
+                    $_SESSION['flash'] = 'As senhas não conferem.';
+                    $this->redirect('/alterar-usuario');
+                }
+            }
+
+            // Chama o Handler
+            $resultado = UsuarioHandler::updateUser(
+                $this->loggedUser->usuario_id,
+                $nome,
+                $email,
+                $bio,
+                $senha,
+                $avatar
+            );
+
+            if ($resultado === true) {
+                $_SESSION['flash'] = 'Perfil atualizado com sucesso!';
+                $this->redirect('/alterar-usuario');
+            } else {
+                // Se retornou string, é mensagem de erro (ex: email duplicado)
+                $_SESSION['flash'] = $resultado;
+                $this->redirect('/alterar-usuario');
+            }
+        } else {
+            $_SESSION['flash'] = 'Preencha os campos obrigatórios.';
+            $this->redirect('/alterar-usuario');
+        }
     }
 }

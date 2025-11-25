@@ -132,4 +132,27 @@ class RelatorioHandler
             'evolucaoMensal' => self::getEvolucaoMensal(6) // Últimos 6 meses
         ];
     }
+
+    public static function getDadosDesempenhoSecretaria()
+    {
+        // Reutiliza o método do Dashboard que já conta tudo (sem ir ao banco 2x)
+        // Se DashboardHandler não estiver acessível aqui, use o código da query original.
+        $stats = DashboardHandler::getStatsResumo(); 
+        
+        $total = intval($stats['total_reclamacoes']);
+        
+        // Cálculo de Porcentagens (Evitando divisão por zero)
+        $pct_resolvidas = $total > 0 ? round(($stats['total_resolvidas'] / $total) * 100, 1) : 0;
+        $pct_andamento = $total > 0 ? round(($stats['total_em_andamento'] / $total) * 100, 1) : 0;
+        $pct_pendentes = $total > 0 ? round(($stats['total_pendentes'] / $total) * 100, 1) : 0;
+
+        return [
+            'totais' => $stats,
+            'porcentagens' => [
+                'resolvidas' => $pct_resolvidas,
+                'em_andamento' => $pct_andamento,
+                'pendentes' => $pct_pendentes
+            ]
+        ];
+    }
 }

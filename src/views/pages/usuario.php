@@ -61,49 +61,49 @@
 
     <?php $render('aside', ['usuario' => $loggedUser])?>
 
-    <div class="perfil-noticias">
+    <div class="perfil-noticias" style="min-width: 50%;">
         <main>
            <div class="card-perfil">
-            <div class="foto-user">
-                <h1>JS</h1>
-                <img src="" alt="">
-            </div>
+            <img src="<?= $base; ?>/assets/uploads/avatars/<?= $usuario->foto_perfil ?? 'default.png'; ?>" alt="" style="width: 60px; height: 60px; object-fit: cover; border-radius: 50%;">
+            
 
             <div class="descricao-perfil">
                 <div class="nome-botao">
                     <h1><?=$usuario->nome;?></h1>
+                    <?php if ($mesmoUsuario): ?>
                     <a href="<?=$base;?>/alterar-usuario">
                         <img src="<?= $base; ?>/assets/images/edit.svg" alt="">
                         Editar Perfil
                     </a>
+                    <?php endif; ?>
                 </div>
                 <div class="localizacao-membro">
                     <div class="local">
                         <img src="<?= $base; ?>/assets/images/local.svg" alt="">
-                        <span>Bairro - RJ</span>
+                        <span>Centro - Mesquita</span>
                     </div>
                     <div class="membro">
                         <img src="<?= $base; ?>/assets/images/calendar.svg" alt="">
-                        <span>Membro desde Janeiro 2024</span>
+                        <span>Membro desde <?= date('F Y', strtotime($usuario->criado_em)); ?></span>
                     </div>
                 </div>
 
-                <p class="descricao-bio">Morador preocupado com a qualidade de vida na cidade. Sempre atento aos problemas do bairro.</p>
+                <p class="descricao-bio"><?= htmlspecialchars($usuario->bio); ?></p>
                 <div class="estatisticas-perfil">
                     <div class="estatistic postagens">
-                        <span>12</span>
+                        <span><?= $stats['reclamacoes'] ?? 0; ?></span>
                         <p>Postagens</p>
                     </div>
                     <div class="estatistic curtidas">
-                        <span>89</span>
-                        <p>Curtidas</p>
+                        <span><?= $stats['upvotes'] ?? 0; ?></span>
+                        <p>Upvotes</p>
                     </div>
                     <div class="estatistic comentarios">
-                        <span>156</span>
+                        <span><?= $stats['comentarios'] ?? 0; ?></span>
                         <p>Comentários</p>
                     </div>
                     <div class="estatistic seguidores">
-                        <span>34</span>
+                        <span><?= $stats['seguidores'] ?? 0; ?></span>
                         <p>Seguidores</p>
                     </div>
                 </div>
@@ -111,8 +111,8 @@
         </div>
         <div class="filtro-perfil">
             <a class="links minhas-postagens" href="">Minhas Postagens</a>
-            <a class="links interacoes" href="">Interações</a>   
-            <a class="links comunidades" href="">Comunidades</a>  
+            <!-- <a class="links interacoes" href="">Interações</a>   
+            <a class="links comunidades" href="">Comunidades</a>   -->
         </div>
         </main>
     </div>

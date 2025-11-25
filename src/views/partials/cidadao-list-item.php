@@ -16,7 +16,7 @@ $dataCriacao = date('d/m/Y', strtotime($reclamacao['criado_em']));
 
     <td><?= $dataCriacao; ?></td>
 
-    <td>???</td>
+    <td>Rua Estela 433</td>
     
     <td>
         <div class="dropdown text-end">

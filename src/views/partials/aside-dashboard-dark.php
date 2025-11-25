@@ -140,11 +140,11 @@
           <img src="<?=$base;?>/assets/images/relatorios_dashboard.svg" alt=""> &nbsp;<span class="ms-2">Relatórios</span>
         </a>
       </li>
-       <li class="nav-item">
+       <!-- <li class="nav-item">
         <a class="nav-link" href="<?=$base;?>/gestao-interna" >
           <img src="<?=$base;?>/assets/images/gestao_interna_dashboard.svg" alt=""> &nbsp;<span class="ms-2">Gestão Interna</span>
         </a>
-      </li>
+      </li> -->
        <li class="nav-item">
         <a class="nav-link" href="<?=$base;?>/comunicacao" >
           <img src="<?=$base;?>/assets/images/comunicacao_dashboard.svg" alt=""> &nbsp;<span class="ms-2">Comunicação</span>
@@ -177,7 +177,7 @@
           </svg></a>
         </li>
         <li class="dropup">
-          <a href="#" role="button" id="dropdownMenuLink" data-bs-toggle="dropdown" aria-expanded="false"><img src="<?= $base;?>/assets/svg/icons/united-states.svg" alt="United States" class="avatar avatar-xss avatar-circle"></a>
+          <a href="#" role="button" id="dropdownMenuLink" data-bs-toggle="dropdown" aria-expanded="false"><img src="<?= $base;?>/assets/svg/icons/latin.svg" alt="United States" class="avatar avatar-xss avatar-circle"></a>
           <ul class="dropdown-menu dropdown-menu-end" id="dropdown-menu" aria-labelledby="dropdownMenuLink">
             <li class="dropdown-sub-title">
               <span>Language</span>

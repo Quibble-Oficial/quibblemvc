@@ -110,9 +110,9 @@
       <div id="perfil-header">
         <div id="text">
           <span><b><?= $usuario->nome; ?></b></span> <br>
-          <span>Bairro-Rj</span>
+          <span>Centro - Mesquita</span>
             </div>
-        <img src="<?= $base; ?>/assets/images/bernardo.png" alt="" id='perfil-img' />
+        <img src="<?= $base; ?>/assets/uploads/avatars/<?= $usuario->foto_perfil; ?>" alt="" id='perfil-img' />
       </div>
       
     </div>

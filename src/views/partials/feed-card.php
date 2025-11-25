@@ -1,10 +1,12 @@
 <div class="feed-card">
   <div class="feed-card-header">
-    <img class="user-avatar" src="<?= $base; ?>/assets/images/bernardo.png" alt="">
-    <div class="user-info">
-      <h5><?= htmlspecialchars($reclamacao['usuario_nome']); ?></h5>
-      <span class="user-location">Santa Terezinha • 2h</span>
-    </div>
+    <a href="<?= $base; ?>/usuario/<?= $reclamacao['usuario_id']; ?>" class="user-info-link" style="display: flex; align-items: center; text-decoration: none; color: inherit;">
+      <img class="user-avatar" src="<?= $base; ?>/assets/uploads/avatars/<?= $reclamacao['usuario_foto'] ?? 'default.png'; ?>" alt="">
+      <div class="user-info">
+        <h5><?= htmlspecialchars($reclamacao['usuario_nome']); ?></h5>
+        <span class="user-location">Santa Terezinha • 2h</span>
+      </div>
+    </a>
     <button class="more-btn">...</button>
   </div>
 
@@ -22,7 +24,6 @@
 
     <div class="feed-location">
       <img src="<?= $base; ?>/assets/images/local.svg" alt="">
-      <img class="user-avatar" src="<?= $base; ?>/assets/images/mapas-e-bandeiras.png" alt="">
       <span><?= htmlspecialchars($reclamacao['endereco'] ?? 'Rua Estela 433 - Mesquita'); ?></span>
     </div>
   </div>

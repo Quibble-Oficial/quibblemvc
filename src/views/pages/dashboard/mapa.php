@@ -124,7 +124,7 @@
               <div class="row align-items-center">
                 <div class="col-5 col-xxl-6">
                   <span class="caption text-gray-600 d-block mb-1">Comunidade mais Crítica</span>
-                  <span class="h3 mb-0" >Nilópolis</span>
+                  <span class="h3 mb-0" >Chatuba</span>
                 </div>
                <div class="col-7 col-xxl-5 pe-xxl-0">
                   <div id="MuzeColumnsChartTwo"></div>

@@ -1,4 +1,16 @@
-<?php // Arquivo convertido de HTML para PHP ?>
+<?php
+if (!function_exists('getStatusBadgeClasses')) {
+    function getStatusBadgeClasses($status) {
+        return match ($status) {
+            'pendente' => ['bg' => 'bg-teal-50', 'text' => 'text-teal-500', 'label' => 'Pendente'],
+            'em_andamento' => ['bg' => 'bg-orange-50', 'text' => 'text-orange-500', 'label' => 'Em Andamento'],
+            'resolvido' => ['bg' => 'bg-green-50', 'text' => 'text-green-500', 'label' => 'Resolvida'],
+            'cancelado' => ['bg' => 'bg-red-50', 'text' => 'text-red-500', 'label' => 'Cancelada'],
+            default => ['bg' => 'bg-gray-50', 'text' => 'text-gray-500', 'label' => 'Desconhecido'],
+        };
+    }
+}
+?>
 <!DOCTYPE html>
 <html dir="ltr" lang="en">
 <head>
@@ -21,8 +33,6 @@
 
 
 <?php $render("aside-dashboard-dark", ['usuario' => $loggedUser]); ?>
-
-<?php print_r($loggedUser); ?>
 
 <!-- Muze Main Content -->
 <div class="main-content">
@@ -47,7 +57,7 @@
             </a>
             <ul class="dropdown-menu" aria-labelledby="Exportbtn">
               <li class="dropdown-sub-title">
-                <span>EXPORT AS</span>
+                <span>EXPORTAR COMO</span>
               </li>
               <li><a class="dropdown-item" href="#"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16">
                 <g data-name="Icons/Tabler/Share" transform="translate(0)">
@@ -67,7 +77,7 @@
               <li><a class="dropdown-item" href="#"><svg data-name="Icons/Tabler/Share" xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16">
                 <rect data-name="Icons/Tabler/Share background" width="16" height="16" fill="none"/>
                 <path d="M9.846,12.923a3.07,3.07,0,0,1,.1-.768L5.516,9.874a3.077,3.077,0,1,1,0-3.748L9.943,3.845a3.084,3.084,0,1,1,.541,1.106L6.057,7.232a3.087,3.087,0,0,1,0,1.537l4.427,2.281a3.075,3.075,0,1,1-.638,1.874Zm1.231,0a1.846,1.846,0,1,0,.2-.84q-.011.028-.025.055l-.014.025A1.836,1.836,0,0,0,11.077,12.923ZM1.231,8a1.846,1.846,0,0,0,3.487.845.623.623,0,0,1,.027-.061l.017-.031a1.845,1.845,0,0,0,0-1.508l-.017-.031a.622.622,0,0,1-.027-.061A1.846,1.846,0,0,0,1.231,8ZM12.923,4.923a1.846,1.846,0,1,0-1.682-1.086l.013.024q.014.027.025.056A1.848,1.848,0,0,0,12.923,4.923Z" fill="#495057"/>
-              </svg><span class="ms-2">Share</span></a></li>
+              </svg><span class="ms-2">Compartilhar</span></a></li>
             </ul>
           </div>
         </div>
@@ -129,8 +139,8 @@
             <div class="card-body p-3 p-xl-3 p-xxl-4">
               <div class="row align-items-center">
                 <div class="col-5 col-xxl-7">
-                  <span class="caption text-gray-600 d-block mb-1">Ex. Ornamentária</span>
-                  <span class="h3 mb-0" >12M/20M</span>
+                  <span class="caption text-gray-600 d-block mb-1">Obras em Andamento</span>
+                  <span class="h3 mb-0" >55%</span>
                 </div>
                 <div class="col-7 col-xxl-5 pe-xxl-0">
                   <div id="MuzeSimpleDonut2"></div>
@@ -242,184 +252,32 @@
             </div>
             <div class="table-responsive mb-0">
               <table class="table card-table table-nowrap overflow-hidden">
-                <thead>
-                  <tr>
-                    
-                    <th>Name</th>
-                    <th>Status</th> 
-                    <th>Progresso</th>
-                    <th>Memberos</th>
-                    <th>Data</th>
-                    <th></th>
-                  </tr>
-                </thead>
-                <tbody class="list">
-                  <tr>
-                    <td>
-                      <div class="d-flex align-items-center">
-                        <span class="ps-2 font-weight-semibold text-gray-700">Vila Emil</span>
-                      </div>
-                    </td>
-                    <td>Em Andamento</td>
-                    <td><span class="badge bg-teal-50 text-teal-500">+65.31%</span></td>
-                    <td>+6</td>
-                    <td>05/19/21</td>
-                    <td>
-                      <div class="dropdown text-end">
-                        <a href="#" class="btn btn-dark-100 btn-icon btn-sm rounded-circle" role="button" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                          <svg data-name="Icons/Tabler/Notification" xmlns="http://www.w3.org/2000/svg" width="13.419" height="13.419" viewBox="0 0 13.419 13.419">
-                            <rect data-name="Icons/Tabler/Dots background" width="13.419" height="13.419" fill="none"/>
-                            <path d="M0,10.4a1.342,1.342,0,1,1,1.342,1.342A1.344,1.344,0,0,1,0,10.4Zm1.15,0a.192.192,0,1,0,.192-.192A.192.192,0,0,0,1.15,10.4ZM0,5.871A1.342,1.342,0,1,1,1.342,7.213,1.344,1.344,0,0,1,0,5.871Zm1.15,0a.192.192,0,1,0,.192-.192A.192.192,0,0,0,1.15,5.871ZM0,1.342A1.342,1.342,0,1,1,1.342,2.684,1.344,1.344,0,0,1,0,1.342Zm1.15,0a.192.192,0,1,0,.192-.192A.192.192,0,0,0,1.15,1.342Z" transform="translate(5.368 0.839)" fill="#6c757d"/>
-                          </svg>
-                        </a>
-                        <div class="dropdown-menu dropdown-menu-end shadow-sm">
-                          <a href="#!" class="dropdown-item">
-                            Action
-                          </a>
-                          <a href="#!" class="dropdown-item">
-                            Another action
-                          </a>
-                          <a href="#!" class="dropdown-item">
-                            Something else here
-                          </a>
-                        </div>
-                      </div>
-                    </td>
-                  </tr>
-                  <tr>
-                    <td>
-                      <div class="d-flex align-items-center">
-                        
-                        <span class="ps-2 font-weight-semibold text-gray-700">Santa Terezinha</span>
-                      </div>
-                    </td>
-                    <td>Em Andamento</td>
-                    <td><span class="badge bg-teal-50 text-teal-500">+25.73%</span></td>
-                    <td>+3</td>
-                    <td>05/23/21</td>
-                    <td>
-                      <div class="dropdown text-end">
-                        <a href="#" class="btn btn-dark-100 btn-icon btn-sm rounded-circle" role="button" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                          <svg data-name="Icons/Tabler/Notification" xmlns="http://www.w3.org/2000/svg" width="13.419" height="13.419" viewBox="0 0 13.419 13.419">
-                            <rect data-name="Icons/Tabler/Dots background" width="13.419" height="13.419" fill="none"/>
-                            <path d="M0,10.4a1.342,1.342,0,1,1,1.342,1.342A1.344,1.344,0,0,1,0,10.4Zm1.15,0a.192.192,0,1,0,.192-.192A.192.192,0,0,0,1.15,10.4ZM0,5.871A1.342,1.342,0,1,1,1.342,7.213,1.344,1.344,0,0,1,0,5.871Zm1.15,0a.192.192,0,1,0,.192-.192A.192.192,0,0,0,1.15,5.871ZM0,1.342A1.342,1.342,0,1,1,1.342,2.684,1.344,1.344,0,0,1,0,1.342Zm1.15,0a.192.192,0,1,0,.192-.192A.192.192,0,0,0,1.15,1.342Z" transform="translate(5.368 0.839)" fill="#6c757d"/>
-                          </svg>
-                        </a>
-                        <div class="dropdown-menu dropdown-menu-end shadow-sm">
-                          <a href="#!" class="dropdown-item">
-                            Action
-                          </a>
-                          <a href="#!" class="dropdown-item">
-                            Another action
-                          </a>
-                          <a href="#!" class="dropdown-item">
-                            Something else here
-                          </a>
-                        </div>
-                      </div>
-                    </td>
-                  </tr>
-                  <tr>
-                    <td>
-                      <div class="d-flex align-items-center">
-                        
-                        <span class="ps-2 font-weight-semibold text-gray-700">Chatuba</span>
-                      </div>
-                    </td>
-                    <td>Concluida</td>
-                    <td><span class="badge bg-red-50 text-dnd">-12.56%</span></td>
-                    <td>+5</td>
-                    <td>06/12/21</td>
-                    <td>
-                      <div class="dropdown text-end">
-                        <a href="#" class="btn btn-dark-100 btn-icon btn-sm rounded-circle" role="button" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                          <svg data-name="Icons/Tabler/Notification" xmlns="http://www.w3.org/2000/svg" width="13.419" height="13.419" viewBox="0 0 13.419 13.419">
-                            <rect data-name="Icons/Tabler/Dots background" width="13.419" height="13.419" fill="none"/>
-                            <path d="M0,10.4a1.342,1.342,0,1,1,1.342,1.342A1.344,1.344,0,0,1,0,10.4Zm1.15,0a.192.192,0,1,0,.192-.192A.192.192,0,0,0,1.15,10.4ZM0,5.871A1.342,1.342,0,1,1,1.342,7.213,1.344,1.344,0,0,1,0,5.871Zm1.15,0a.192.192,0,1,0,.192-.192A.192.192,0,0,0,1.15,5.871ZM0,1.342A1.342,1.342,0,1,1,1.342,2.684,1.344,1.344,0,0,1,0,1.342Zm1.15,0a.192.192,0,1,0,.192-.192A.192.192,0,0,0,1.15,1.342Z" transform="translate(5.368 0.839)" fill="#6c757d"/>
-                          </svg>
-                        </a>
-                        <div class="dropdown-menu dropdown-menu-end shadow-sm">
-                          <a href="#!" class="dropdown-item">
-                            Action
-                          </a>
-                          <a href="#!" class="dropdown-item">
-                            Another action
-                          </a>
-                          <a href="#!" class="dropdown-item">
-                            Something else here
-                          </a>
-                        </div>
-                      </div>
-                    </td>
-                  </tr>
-                  <tr>
-                    <td>
-                      <div class="d-flex align-items-center">
-                     
-                        <span class="ps-2 font-weight-semibold text-gray-700">Coréia</span>
-                      </div>
-                    </td>
-                    <td>Pendente</td>
-                    <td><span class="badge bg-teal-50 text-teal-500">+34.67%</span></td>
-                    <td>+3</td>
-                    <td>06/09/21</td>
-                    <td>
-                      <div class="dropdown text-end">
-                        <a href="#" class="btn btn-dark-100 btn-icon btn-sm rounded-circle" role="button" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                          <svg data-name="Icons/Tabler/Notification" xmlns="http://www.w3.org/2000/svg" width="13.419" height="13.419" viewBox="0 0 13.419 13.419">
-                            <rect data-name="Icons/Tabler/Dots background" width="13.419" height="13.419" fill="none"/>
-                            <path d="M0,10.4a1.342,1.342,0,1,1,1.342,1.342A1.344,1.344,0,0,1,0,10.4Zm1.15,0a.192.192,0,1,0,.192-.192A.192.192,0,0,0,1.15,10.4ZM0,5.871A1.342,1.342,0,1,1,1.342,7.213,1.344,1.344,0,0,1,0,5.871Zm1.15,0a.192.192,0,1,0,.192-.192A.192.192,0,0,0,1.15,5.871ZM0,1.342A1.342,1.342,0,1,1,1.342,2.684,1.344,1.344,0,0,1,0,1.342Zm1.15,0a.192.192,0,1,0,.192-.192A.192.192,0,0,0,1.15,1.342Z" transform="translate(5.368 0.839)" fill="#6c757d"/>
-                          </svg>
-                        </a>
-                        <div class="dropdown-menu dropdown-menu-end shadow-sm">
-                          <a href="#!" class="dropdown-item">
-                            Action
-                          </a>
-                          <a href="#!" class="dropdown-item">
-                            Another action
-                          </a>
-                          <a href="#!" class="dropdown-item">
-                            Something else here
-                          </a>
-                        </div>
-                      </div>
-                    </td>
-                  </tr>
-                  <tr>
-                    <td>
-                      <div class="d-flex align-items-center">
-                        
-                        <span class="ps-2 font-weight-semibold text-gray-700">Edson Passos</span>
-                      </div>
-                    </td>
-                    <td>Concluida</td>
-                    <td><span class="badge bg-red-50 text-dnd">-54.79%</span></td>
-                    <td><a href="<?= $base;?>/assets/images/avatar-sm2.png"></a>+1</td>
-                    <td>01/12/21</td>
-                    <td>
-                      <div class="dropdown text-end">
-                        <a href="#" class="btn btn-dark-100 btn-icon btn-sm rounded-circle" role="button" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                          <svg data-name="Icons/Tabler/Notification" xmlns="http://www.w3.org/2000/svg" width="13.419" height="13.419" viewBox="0 0 13.419 13.419">
-                            <rect data-name="Icons/Tabler/Dots background" width="13.419" height="13.419" fill="none"/>
-                            <path d="M0,10.4a1.342,1.342,0,1,1,1.342,1.342A1.344,1.344,0,0,1,0,10.4Zm1.15,0a.192.192,0,1,0,.192-.192A.192.192,0,0,0,1.15,10.4ZM0,5.871A1.342,1.342,0,1,1,1.342,7.213,1.344,1.344,0,0,1,0,5.871Zm1.15,0a.192.192,0,1,0,.192-.192A.192.192,0,0,0,1.15,5.871ZM0,1.342A1.342,1.342,0,1,1,1.342,2.684,1.344,1.344,0,0,1,0,1.342Zm1.15,0a.192.192,0,1,0,.192-.192A.192.192,0,0,0,1.15,1.342Z" transform="translate(5.368 0.839)" fill="#6c757d"/>
-                          </svg>
-                        </a>
-                        <div class="dropdown-menu dropdown-menu-end shadow-sm">
-                          <a href="#!" class="dropdown-item">
-                            Action
-                          </a>
-                          <a href="#!" class="dropdown-item">
-                            Another action
-                          </a>
-                          <a href="#!" class="dropdown-item">
-                            Something else here
-                          </a>
-                        </div>
-                      </div>
-                    </td>
-                  </tr>
-                </tbody>
-              </table>
+                  <thead>
+                    <tr>
+                      <th>CIDADÃO</th>
+                      <th>STATUS</th>
+                      <th>CATEGORIA</th>
+                      <th>DATA</th>
+                      <th>LOCAL</th>
+                      <th></th>
+                    </tr>
+                  </thead>
+                  <tbody class="list">
+                    <?php if (!empty($listaReclamacoes)): ?>
+                      <?php foreach ($listaReclamacoes as $reclamacao): ?>
+
+                        <?php $render('cidadao-list-item', [
+                          'reclamacao' => $reclamacao
+                        ]); ?>
+
+                      <?php endforeach; ?>
+                    <?php else: ?>
+                      <tr>
+                        <td colspan="6" class="text-center">Nenhuma reclamação encontrada.</td>
+                      </tr>
+                    <?php endif; ?>
+                  </tbody>
+                </table>
             </div>
             <div class="d-flex align-items-center p-3 p-md-4 border-top border-gray-200">
               <a href="#" class="my-1 tiny font-weight-semibold mx-auto btn btn-link link-dark">Ver Mais<svg class="ms-1" data-name="icons/tabler/chevron right" xmlns="http://www.w3.org/2000/svg" width="10" height="10" viewBox="0 0 16 16">
@@ -613,7 +471,7 @@ chart.render();
 
 //Muze Simple Donut Chart JavaScript
 var options = {
-  series: [50, 50],
+  series: [30, 70],
   chart: {
   type: 'donut',
   height: 125,

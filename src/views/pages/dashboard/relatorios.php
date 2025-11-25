@@ -215,11 +215,11 @@
                     </div>
                   </div>
                   <div class="row align-items-center g-0 py-3">
-                    <div class="col">
+                    <!-- <div class="col">
                       <span class="text-gray-600 small">Tempo médio de Resposta</span>
-                    </div>
+                    </div> -->
                     <div class="col-auto">
-                      <span class="badge bg-gray-200 text-gray-700 font-weight-semibold py-2">Gerar Relatório</span>
+                      <a href="<?=$base?>/relatorio/gerarDesempenho" class="badge bg-gray-200 text-gray-700 font-weight-semibold py-2">Gerar Relatório</a>
                     </div>
                   </div>
                 </div>
@@ -277,7 +277,7 @@
                       <span class="text-gray-600 small">Evolução Temporal</span>
                     </div>
                     <div class="col-auto">
-                      <a href="<?=$base?>/relatorio/gerar" class="badge bg-gray-200 text-gray-700 font-weight-semibold py-2">Gerar Relatório</a>
+                      <a href="<?=$base?>/relatorio/gerarTipoProblema" class="badge bg-gray-200 text-gray-700 font-weight-semibold py-2">Gerar Relatório</a>
                     </div>
                   </div>
                 </div>

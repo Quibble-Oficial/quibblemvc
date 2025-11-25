@@ -39,6 +39,7 @@ $router->post('/reclamacao/nova', 'ReclamacaoController@criarReclamacao');
 $router->get('/usuario/{id}', 'HomeController@usuario');
 $router->get('/usuario/prefeito/{id}', 'HomeController@usuarioPrefeito');
 $router->get('/alterar-usuario', 'HomeController@alterarUsuario');
+$router->post('/alterar-usuario', 'HomeController@alterarUsuarioAction');
 
 $router->post('/reclamacao/{id}/upvote', 'UpvoteController@alternar');
 
@@ -50,4 +51,5 @@ $router->post('/comentario/novo', 'ComentarioController@novo');
 $router->get('/comentario/{id}', 'ComentarioController@buscar');
 
 
-$router->get('/relatorio/gerar', 'RelatorioController@gerar');
+$router->get('/relatorio/gerarTipoProblema', 'RelatorioController@gerarTipoProblema');
+$router->get('/relatorio/gerarDesempenho', 'RelatorioController@gerarDesempenho');

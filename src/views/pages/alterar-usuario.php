@@ -33,11 +33,11 @@
   <main>
     <div id="feed">
       <div style="margin:0;" class="feed-filter-bar">
-       
+
 
         <div style="margin:0;" class="filter-dropdown-right"></div>
 
-        
+
       </div>
 
       <div style="margin:0;" id="feed-content">
@@ -59,58 +59,48 @@
 
             <div class="card settings-card">
               <div class="configuracoes-alterar conta">
-                <img src="<?= $base; ?>/assets/images/avatar.png" alt="">
+                <img src="<?= $base; ?>/assets/images/avatars/<?= $loggedUser->foto_perfil ?? 'default.png'; ?>" class="avatar-small-icon" alt="">
                 <h3>Configurações da Conta</h3>
               </div>
 
-              <div class="profile-row">
-                <div class="avatar-large">
-                  <span>JS</span>
-                </div>
-                <div class="profile-actions">
-                  <button class="btn">Alterar Foto</button>
-                  <small>JPG, PNG ou GIF. Máximo 5MB.</small>
-                </div>
-              </div>
+              <form method="POST" action="<?= $base; ?>/alterar-usuario" enctype="multipart/form-data">
 
-              <form method="POST" action="<?= $base; ?>/usuario/atualizar">
+                <div class="profile-row">
+                  <div class="avatar-large">
+                    <img id="avatar-preview" src="<?= $base; ?>/assets/uploads/avatars/<?= $loggedUser->foto_perfil ?? 'default.png'; ?>" style="width:100%; height:100%; object-fit:cover; border-radius:50%;">
+                  </div>
+                  <div class="profile-actions">
+                    <input type="file" name="avatar" id="avatarField" style="display: none;" accept="image/png, image/jpeg, image/jpg">
+
+                    <button type="button" class="btn" onclick="document.getElementById('avatarField').click()">Alterar Foto</button>
+                    <small>JPG ou PNG. Máximo 5MB.</small>
+                  </div>
+                </div>
+
                 <div class="form-grid">
                   <div class="form-group">
                     <label>Nome Completo</label>
-                    <input type="text" name="nome" value="<?= htmlspecialchars($usuario->nome ?? '') ?>">
+                    <input type="text" name="nome" value="<?= htmlspecialchars($loggedUser->nome); ?>" required>
                   </div>
                   <div class="form-group">
                     <label>Email</label>
-                    <input type="email" name="email" value="<?= htmlspecialchars($usuario->email ?? '') ?>">
-                  </div>
-
-                  <div class="form-group full">
-                    <label>Localização</label>
-                    <input type="text" name="localizacao" value="<?= htmlspecialchars($usuario->localizacao ?? '') ?>">
+                    <input type="email" name="email" value="<?= htmlspecialchars($loggedUser->email); ?>" required>
                   </div>
 
                   <div class="form-group full">
                     <label>Biografia</label>
-                    <textarea name="bio"><?= htmlspecialchars($usuario->bio ?? '') ?></textarea>
+                    <textarea name="bio"><?= htmlspecialchars($loggedUser->bio); ?></textarea>
                   </div>
-                </div>
 
-                <hr>
-
-                <h4>Alterar Senha</h4>
-                <div class="form-grid">
+                  <!-- <div class="form-group full">
+                     <label>Nova Senha (Deixe em branco para manter)</label>
+                     <input type="password" name="senha">
+                  </div>
                   <div class="form-group full">
-                    <label>Senha Atual</label>
-                    <input type="password" name="senha_atual">
-                  </div>
-                  <div class="form-group">
-                    <label>Nova Senha</label>
-                    <input type="password" name="nova_senha">
-                  </div>
-                  <div class="form-group">
-                    <label>Confirmar Senha</label>
-                    <input type="password" name="confirmar_senha">
-                  </div>
+                     <label>Confirmar Nova Senha</label>
+                     <input type="password" name="confirmar_senha">
+                  </div> -->
+
                 </div>
 
                 <div class="actions">
@@ -126,6 +116,18 @@
   </main>
 
   <?php $render("footer-mobile", ['usuario' => $loggedUser]); ?>
+
+  <script>
+    document.getElementById('avatarField').addEventListener('change', function(e) {
+      if (e.target.files && e.target.files[0]) {
+        var reader = new FileReader();
+        reader.onload = function(e) {
+          document.getElementById('avatar-preview').src = e.target.result;
+        }
+        reader.readAsDataURL(e.target.files[0]);
+      }
+    });
+  </script>
 
   <script src="<?= $base; ?>/assets/js/upvotes.js"></script>
   <script src="<?= $base; ?>/assets/js/modal-nova-reclamacao.js"></script>

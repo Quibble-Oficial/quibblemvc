@@ -38,12 +38,15 @@ class DashboardController extends Controller
         setlocale(LC_TIME, 'pt_BR', 'pt_BR.utf-8', 'portuguese');
         $nomeMes = ucfirst(strftime('%B'));
 
+        $listaReclamacoes = DashboardHandler::getListaReclamacoesDashboard();
+
         $this->render('dashboard/visao-geral', [
             'loggedUser' => $this->loggedUser,
             'dadosPieChart' => $dadosPieChart,
             'dadosMesAtual' => $dadosMesAtual,
             'nomeMes' => $nomeMes,
-            'totalReclamacoesMes' => $totalReclamacoesMes
+            'totalReclamacoesMes' => $totalReclamacoesMes,
+            'listaReclamacoes' => $listaReclamacoes
         ]);
     }
 
