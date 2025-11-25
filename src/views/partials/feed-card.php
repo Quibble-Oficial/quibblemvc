@@ -49,7 +49,7 @@
   <div class="comment-area" data-reclamacao-id="<?= $reclamacao['reclamacao_id']; ?>" style="display: none;">
 
     <div class="comment-input">
-      <img class="comment-avatar" src="<?= $base; ?>/assets/uploads/avatars/<?= $usuario->foto_perfil ?? 'default.png' ?>" alt="Avatar">
+      <img class="comment-avatar" src="<?= $base; ?>/assets/uploads/avatars/<?= $loggedUser->foto_perfil ?? 'default.png' ?>" alt="Avatar">
 
       <input
         type="text"
