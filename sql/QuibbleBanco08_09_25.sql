@@ -253,3 +253,5 @@ INSERT INTO categorias (nome) VALUES
 ('Meio Ambiente'),
 ('Transporte Público'),
 ('Saneamento Básico');
+
+INSERT INTO usuarios (usuario_id, nome, email, senha, token, tipo_usuario, bio, foto_perfil, telefone, localizacao_id, criado_em, atualizado_em) VALUES (NULL, 'Juliana Bertolani', 'secretaria@gov.com.br', '$2y$10$XLadRelianuE/Xte8lSKwe8k0kVHL1aWxZkqROrT4LUr53pGnREpG', 'a7988eca12b7cc8ec33071afcaffc3cc', 'secretaria', NULL, NULL, NULL, NULL, '2025-11-23 23:24:57', '2025-11-25 18:36:22')

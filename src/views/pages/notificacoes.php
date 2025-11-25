@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="shortcut icon" href="<?=$base;?>/assets/images/logo_padrao.svg" type="image/x-icon">
     <title>Notificações - Quibble</title>
+    <link rel="stylesheet" href="<?=$base;?>/assets/css/feed.css">
     <link rel="stylesheet" href="<?=$base;?>/assets/css/notificacoes.css">
     <link rel="stylesheet" href="<?=$base;?>/assets/js/animacoes.css">
     <!-- Anime.js CDN -->
@@ -49,7 +50,7 @@
       });
     </script>
 
-    <?php $render('aside', ['mostrarsugestoes' => false])?>
+    <?php $render('aside', ['mostrarsugestoes' => false , 'usuario' => $loggedUser])?>
 
     <!-- CONTEÚDO PRINCIPAL -->
     <main>

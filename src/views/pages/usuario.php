@@ -4,14 +4,14 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="shortcut icon" href="<?=$base;?>/assets/images/logo_padrao.svg" type="image/x-icon">
+    <link rel="shortcut icon" href="<?= $base; ?>/assets/images/logo_padrao.svg" type="image/x-icon">
     <title>Quibble - Perfil</title>
-    <link rel="stylesheet" href="<?=$base;?>/assets/css/feed.css">
-    <link rel="stylesheet" href="<?=$base;?>/assets/js/animacoes.css">
+    <link rel="stylesheet" href="<?= $base; ?>/assets/css/feed.css">
+    <link rel="stylesheet" href="<?= $base; ?>/assets/js/animacoes.css">
     <link href='https://cdn.boxicons.com/fonts/basic/boxicons.min.css' rel='stylesheet'>
     <script>
-    const BASE = "<?= $base; ?>";
-    const id_usuario = "<?= $loggedUser->usuario_id; ?>";
+        const BASE = "<?= $base; ?>";
+        const id_usuario = "<?= $loggedUser->usuario_id; ?>";
     </script>
     <!-- Anime.js CDN -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/3.2.1/anime.min.js"></script>
@@ -59,67 +59,79 @@
         });
     </script>
 
-    <?php $render('aside', ['usuario' => $loggedUser])?>
+    <?php $render('aside', ['usuario' => $loggedUser]) ?>
 
-    <div class="perfil-noticias" style="min-width: 50%;">
+    <div class="perfil-noticias" style="min-width: 60%; margin-bottom: 20px;" >
         <main>
-           <div class="card-perfil">
-            <img src="<?= $base; ?>/assets/uploads/avatars/<?= $usuario->foto_perfil ?? 'default.png'; ?>" alt="" style="width: 60px; height: 60px; object-fit: cover; border-radius: 50%;">
-            
+            <div class="card-perfil">
+                <img src="<?= $base; ?>/assets/uploads/avatars/<?= $usuario->foto_perfil ?? 'default.png'; ?>" alt="" style="width: 60px; height: 60px; object-fit: cover; border-radius: 50%;">
 
-            <div class="descricao-perfil">
-                <div class="nome-botao">
-                    <h1><?=$usuario->nome;?></h1>
-                    <?php if ($mesmoUsuario): ?>
-                    <a href="<?=$base;?>/alterar-usuario">
-                        <img src="<?= $base; ?>/assets/images/edit.svg" alt="">
-                        Editar Perfil
-                    </a>
-                    <?php endif; ?>
-                </div>
-                <div class="localizacao-membro">
-                    <div class="local">
-                        <img src="<?= $base; ?>/assets/images/local.svg" alt="">
-                        <span>Centro - Mesquita</span>
-                    </div>
-                    <div class="membro">
-                        <img src="<?= $base; ?>/assets/images/calendar.svg" alt="">
-                        <span>Membro desde <?= date('F Y', strtotime($usuario->criado_em)); ?></span>
-                    </div>
-                </div>
 
-                <p class="descricao-bio"><?= htmlspecialchars($usuario->bio); ?></p>
-                <div class="estatisticas-perfil">
-                    <div class="estatistic postagens">
-                        <span><?= $stats['reclamacoes'] ?? 0; ?></span>
-                        <p>Postagens</p>
+                <div class="descricao-perfil">
+                    <div class="nome-botao">
+                        <h1><?= $usuario->nome; ?></h1>
+                        <?php if ($mesmoUsuario): ?>
+                            <a href="<?= $base; ?>/alterar-usuario">
+                                <img src="<?= $base; ?>/assets/images/edit.svg" alt="">
+                                Editar Perfil
+                            </a>
+                        <?php endif; ?>
                     </div>
-                    <div class="estatistic curtidas">
-                        <span><?= $stats['upvotes'] ?? 0; ?></span>
-                        <p>Upvotes</p>
+                    <div class="localizacao-membro">
+                        <div class="local">
+                            <img src="<?= $base; ?>/assets/images/local.svg" alt="">
+                            <span>Centro - Mesquita</span>
+                        </div>
+                        <div class="membro">
+                            <img src="<?= $base; ?>/assets/images/calendar.svg" alt="">
+                            <span>Membro desde <?= date('F Y', strtotime($usuario->criado_em)); ?></span>
+                        </div>
                     </div>
-                    <div class="estatistic comentarios">
-                        <span><?= $stats['comentarios'] ?? 0; ?></span>
-                        <p>Comentários</p>
-                    </div>
-                    <div class="estatistic seguidores">
-                        <span><?= $stats['seguidores'] ?? 0; ?></span>
-                        <p>Seguidores</p>
+
+                    <p class="descricao-bio"><?= htmlspecialchars($usuario->bio); ?></p>
+                    <div class="estatisticas-perfil">
+                        <div class="estatistic postagens">
+                            <span><?= $stats['reclamacoes'] ?? 0; ?></span>
+                            <p>Postagens</p>
+                        </div>
+                        <div class="estatistic curtidas">
+                            <span><?= $stats['upvotes'] ?? 0; ?></span>
+                            <p>Upvotes</p>
+                        </div>
+                        <div class="estatistic comentarios">
+                            <span><?= $stats['comentarios'] ?? 0; ?></span>
+                            <p>Comentários</p>
+                        </div>
+                        <div class="estatistic seguidores">
+                            <span><?= $stats['seguidores'] ?? 0; ?></span>
+                            <p>Seguidores</p>
+                        </div>
                     </div>
                 </div>
             </div>
-        </div>
-        <div class="filtro-perfil">
-            <a class="links minhas-postagens" href="">Minhas Postagens</a>
-            <!-- <a class="links interacoes" href="">Interações</a>   
+            <div class="filtro-perfil">
+                <a class="links minhas-postagens" href="">Minhas Postagens</a>
+                <!-- <a class="links interacoes" href="">Interações</a>   
             <a class="links comunidades" href="">Comunidades</a>   -->
-        </div>
+            </div>
         </main>
     </div>
+    <?php if (!empty($feedUsuario)): ?>
+        <?php foreach ($feedUsuario as $reclamacao): ?>
 
-    <?php $render("footer-mobile", ['usuario' => $loggedUser]);?>
-    
-    <script src="<?=$base;?>/assets/js/script.js"></script>
+            <?php $render("feed-card", [
+                'reclamacao' => $reclamacao,
+                'loggedUser' => $loggedUser
+            ]); ?>
+
+        <?php endforeach; ?>
+    <?php else: ?>
+        <p>Este usuário ainda não fez nenhuma reclamação.</p>
+    <?php endif; ?>
+
+    <?php $render("footer-mobile", ['usuario' => $loggedUser]); ?>
+
+    <script src="<?= $base; ?>/assets/js/script.js"></script>
 </body>
 
 </html>

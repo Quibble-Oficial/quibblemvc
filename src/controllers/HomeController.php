@@ -59,6 +59,7 @@ class HomeController extends Controller
         $estáSeguindo = SeguidorHandler::estáSeguindo($this->loggedUser->usuario_id, $args['id']);
 
         $mesmoUsuario = ($usuario->usuario_id === $this->loggedUser->usuario_id);
+        $feedUsuario = ReclamacaoHandler::getByUsuario($args['id'], $this->loggedUser->usuario_id);
 
         // renderiza a view do perfil
         $this->render('usuario', [
@@ -66,7 +67,8 @@ class HomeController extends Controller
             'usuario' => $usuario,
             'estáSeguindo' => $estáSeguindo,
             'mesmoUsuario' => $mesmoUsuario,
-            'stats' => $stats
+            'stats' => $stats,
+            'feedUsuario' => $feedUsuario
         ]);
     }
 
