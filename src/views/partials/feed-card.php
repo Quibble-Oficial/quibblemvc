@@ -3,7 +3,7 @@
     <img class="user-avatar" src="<?= $base; ?>/assets/images/bernardo.png" alt="">
     <div class="user-info">
       <h5><?= htmlspecialchars($reclamacao['usuario_nome']); ?></h5>
-      <span class="user-location">Vila Madalena, SP • 2h</span>
+      <span class="user-location">Santa Terezinha • 2h</span>
     </div>
     <button class="more-btn">...</button>
   </div>
@@ -23,7 +23,7 @@
     <div class="feed-location">
       <img src="<?= $base; ?>/assets/images/local.svg" alt="">
       <img class="user-avatar" src="<?= $base; ?>/assets/images/mapas-e-bandeiras.png" alt="">
-      <span><?= htmlspecialchars($reclamacao['endereco'] ?? 'Rua quaresma 17- Marechal Hermes'); ?></span>
+      <span><?= htmlspecialchars($reclamacao['endereco'] ?? 'Rua Estela 433 - Mesquita'); ?></span>
     </div>
   </div>
 

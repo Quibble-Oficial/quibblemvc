@@ -29,11 +29,6 @@
             <div class="tit">Mapa</div>
           </a>
         </li>
-        <li>
-          <a href="<?=$base;?>/visao-geral"><img src="<?= $base; ?>/assets/images/prefeito.png" alt="" class="icon">
-            <div class="tit">Prefeitos</div>
-          </a>
-        </li>
       </ul>
     </nav>
     <button id="btn-nova-reclamacao"> + Nova Reclamação</button>
@@ -51,6 +46,11 @@
         <li>
           <a href="config.html"><img src="<?= $base; ?>/assets/images/config.png" alt="" class="icon">
             <div class="tit">Configurações</div>
+          </a>
+        </li>
+        <li>
+          <a href="<?=$base?>/sair"><img src="<?= $base; ?>/assets/images/logout.png" alt="" class="icon">
+            <div class="tit">Logout</div>
           </a>
         </li>
       </ul>
@@ -153,7 +153,7 @@
                     <div class="em-alta-card">
                         <div class="em-alta-card-content">
                             <div class="em-alta-card-content-text">
-                                <h4>Obra na Marginal Tietê sem sinalização</h4>
+                                <h4>Obra na Rua Estela sem sinalização</h4>
                                 <p>Transporte <span>45 comentários</span></p> 
                             </div>
                         </div>
@@ -177,7 +177,7 @@
                     <div class="em-alta-card">
                         <div class="em-alta-card-content">
                             <div class="em-alta-card-content-text">
-                                <h4>Buraco gigante na Av. Brasil</h4>
+                                <h4>Buraco gigante na Av. Pres. Costa e Silva</h4>
                                 <p>Infraestrutura <span>32 comentários</span></p>
                             </div>
                         </div>
@@ -186,7 +186,7 @@
                 </a>
             </div>
                 
-            <div id="sugestoes-area">
+            <!-- <div id="sugestoes-area">
                 <h3>Prefeitos para Seguir</h3> 
                 <div class="linha-em-alta"></div>
                 
@@ -216,7 +216,7 @@
                     </div>
                     <a href="#" class="btn-seguir">Seguir</a>
                 </div>
-            </div>
+            </div> -->
 
             <!-- <div id="sugestoes-para-seguir">
                 <h3><img src="<?= $base; ?>/assets/images/bernardo.png" alt="Ícone Sugestões" class="card-title-icon"> Sugestões para Seguir</h3> 

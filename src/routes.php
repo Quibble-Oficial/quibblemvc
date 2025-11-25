@@ -9,8 +9,8 @@ $router->get('/sobre', 'HomeController@sobre');
 $router->get('/prefeito', 'HomeController@prefeito');
 $router->get('/notificacoes', 'HomeController@notificacoes');
 $router->get('/comunidade', 'HomeController@comunidade');
-$router->get('/visao-geral', 'HomeController@visaoGeral');
 
+$router->get('/visao-geral', 'DashboardController@visaoGeral');
 $router->get('/reclamacoes', 'DashboardController@reclamacoes');
 $router->get('/mapa', 'DashboardController@mapa');
 $router->get('/comunidades', 'DashboardController@comunidades');
@@ -48,3 +48,6 @@ $router->post('/usuario/deixar-seguir', 'SeguidorController@deixarSeguir');
 $router->post('/comentario/novo', 'ComentarioController@novo');
 
 $router->get('/comentario/{id}', 'ComentarioController@buscar');
+
+
+$router->get('/relatorio/gerar', 'RelatorioController@gerar');

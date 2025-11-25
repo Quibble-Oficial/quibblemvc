@@ -205,4 +205,95 @@ class DashboardHandler
 
         return $series;
     }
+
+    public static function getDadosPieChart()
+    {
+        // 1. Busca Categorias e Contagem de Reclamações
+        // (Usando o padrão de SELECT que já validamos que funciona no seu projeto)
+        $resultados = \src\models\Reclamacoe::select([
+            'categorias.nome',
+            new Ex('COUNT(*) as total')
+        ])
+            ->join('categorias', 'categorias.categoria_id', '=', 'reclamacoes.categoria_id')
+            ->groupBy('categorias.categoria_id')
+            ->orderBy('total', 'DESC') // As maiores fatias primeiro
+            ->get();
+
+        // 2. Paleta de cores para distribuir (adicione quantas quiser)
+        $cores = [
+            '#3485FD', // Azul Principal
+            '#81B4FE', // Azul Claro
+            '#127d1b', // Verde
+            '#FFC107', // Amarelo
+            '#DC3545', // Vermelho
+            '#6610f2', // Roxo
+            '#fd7e14', // Laranja
+            '#20c997'  // Verde Água
+        ];
+
+        $data = [];
+        $i = 0;
+
+        // 3. Formata para o Highcharts: {name: 'X', y: 10, color: '#...'}
+        foreach ($resultados as $row) {
+            $data[] = [
+                'name' => $row['nome'],
+                'y' => intval($row['total']),
+                // Pega a cor ciclicamente (se acabar as cores, volta para a primeira)
+                'color' => $cores[$i % count($cores)]
+            ];
+            $i++;
+        }
+
+        return $data;
+    }
+
+    public static function getEvolucaoDiariaMesAtual()
+    {
+        $anoAtual = date('Y');
+        $mesAtual = date('m');
+        // Pega quantos dias tem o mês atual (ex: 30, 31, 28)
+        $diasNoMes = date('t');
+
+        // 1. Cria um array preenchido com 0 para todos os dias (Dia 1 ao Dia X)
+        $dadosDias = array_fill(1, $diasNoMes, 0);
+
+        // 2. Consulta Hydrahon usando new Ex() para evitar problemas de citação
+        $resultados = \src\models\Reclamacoe::select([
+            new Ex('DAY(criado_em) as dia'),
+            new Ex('COUNT(*) as total')
+        ])
+            ->where(new Ex('YEAR(criado_em)'), $anoAtual)
+            ->where(new Ex('MONTH(criado_em)'), $mesAtual)
+            ->groupBy(new Ex('DAY(criado_em)'))
+            ->get();
+
+        // 3. Preenche os dias que tiveram reclamações
+        foreach ($resultados as $row) {
+            $dia = intval($row['dia']);
+            // Proteção para garantir que o dia retornado é válido
+            if (isset($dadosDias[$dia])) {
+                $dadosDias[$dia] = intval($row['total']);
+            }
+        }
+
+        // Retorna apenas os valores em ordem (índice 0 = dia 1, índice 1 = dia 2...)
+        return array_values($dadosDias);
+    }
+
+    public static function getTotalMesAtual()
+    {
+        $anoAtual = date('Y');
+        $mesAtual = date('m');
+
+        // Consulta simples usando new Ex() pra evitar problemas de aspas no SQL
+        $resultado = \src\models\Reclamacoe::select([
+            new Ex('COUNT(*) as total')
+        ])
+            ->where(new Ex('YEAR(criado_em)'), $anoAtual)
+            ->where(new Ex('MONTH(criado_em)'), $mesAtual)
+            ->one(); // Pega apenas uma linha
+
+        return intval($resultado['total'] ?? 0);
+    }
 }

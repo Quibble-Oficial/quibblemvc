@@ -6,21 +6,24 @@ use \src\models\Usuario;
 class UsuarioHandler {
     public static function checkLogin() {
         if (!empty($_SESSION['token'])) {
-            $token = $_SESSION['token'];
+        $token = $_SESSION['token'];
 
-            $data = Usuario::select()->where('token', $token)->one();
-            if ($data) {
-                $loggedUser = new Usuario();
-                $loggedUser->usuario_id = $data['usuario_id'];
-                $loggedUser->nome = $data['nome'];
-                $loggedUser->email = $data['email'];
-                $loggedUser->tipo_usuario = $data['tipo_usuario'];
-                $loggedUser->foto_perfil = $data['foto_perfil'];
+        $data = Usuario::select()->where('token', $token)->one();
 
-                return $loggedUser;
-            }
+        if ($data) {
+            $loggedUser = new Usuario();
+            $loggedUser->usuario_id = intval($data['usuario_id']);
+            $loggedUser->nome = $data['nome'];
+            $loggedUser->email = $data['email'];
+            $loggedUser->foto_perfil = $data['foto_perfil'];
+            
+            $loggedUser->tipo_usuario = $data['tipo_usuario']; 
+
+            return $loggedUser;
         }
-        return false;
+    }
+    
+    return false;
     }
 
     public static function verifyLogin($email, $senha) {

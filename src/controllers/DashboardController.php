@@ -21,11 +21,30 @@ class DashboardController extends Controller
         if ($this->loggedUser === false) {
             $this->redirect('/login');
         }
+
+        if ($this->loggedUser->tipo_usuario === 'cidadao') {
+            $this->redirect('/');
+        }
     }
 
     public function visaoGeral()
     {
-        $this->render('dashboard/visao-geral', ['loggedUser' => $this->loggedUser]);
+        $dadosPieChart = \src\handlers\DashboardHandler::getDadosPieChart();
+
+        $dadosMesAtual = \src\handlers\DashboardHandler::getEvolucaoDiariaMesAtual();
+
+        $totalReclamacoesMes = array_sum($dadosMesAtual);
+
+        setlocale(LC_TIME, 'pt_BR', 'pt_BR.utf-8', 'portuguese');
+        $nomeMes = ucfirst(strftime('%B'));
+
+        $this->render('dashboard/visao-geral', [
+            'loggedUser' => $this->loggedUser,
+            'dadosPieChart' => $dadosPieChart,
+            'dadosMesAtual' => $dadosMesAtual,
+            'nomeMes' => $nomeMes,
+            'totalReclamacoesMes' => $totalReclamacoesMes
+        ]);
     }
 
     public function reclamacoes()
@@ -66,7 +85,12 @@ class DashboardController extends Controller
 
     public function mapa()
     {
-        $this->render('dashboard/mapa', ['loggedUser' => $this->loggedUser]);
+        $statsResumo = DashboardHandler::getStatsResumo();
+
+        $this->render('dashboard/mapa', [
+            'loggedUser' => $this->loggedUser, 
+            'statsResumo' => $statsResumo
+        ]);
     }
 
     public function comunidades()
@@ -76,7 +100,12 @@ class DashboardController extends Controller
 
     public function relatorios()
     {
-        $this->render('dashboard/relatorios', ['loggedUser' => $this->loggedUser]);
+        $statsResumo = DashboardHandler::getStatsResumo();
+
+        $this->render('dashboard/relatorios', [
+            'loggedUser' => $this->loggedUser, 
+            'statsResumo' => $statsResumo
+        ]);
     }
 
     public function chat()
